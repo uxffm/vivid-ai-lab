@@ -9,7 +9,7 @@ const Contact = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
-  const [company, setCompany] = useState("");
+  
   const [message, setMessage] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -46,7 +46,7 @@ const Contact = () => {
         const response = await fetch(`/contact.php`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ firstName, lastName, email, company, message, page: typeof window !== "undefined" ? window.location.href : undefined }),
+          body: JSON.stringify({ firstName, lastName, email, message, page: typeof window !== "undefined" ? window.location.href : undefined }),
         });
         const data = await response.json().catch(() => ({}));
         if (!response.ok || data.ok === false) {
@@ -56,7 +56,6 @@ const Contact = () => {
         setFirstName("");
         setLastName("");
         setEmail("");
-        setCompany("");
         setMessage("");
       } catch (err) {
         toast.error("Senden fehlgeschlagen. Bitte später erneut versuchen.");
@@ -81,7 +80,6 @@ const Contact = () => {
           firstName,
           lastName,
           email,
-          company,
           message,
           page: typeof window !== "undefined" ? window.location.href : undefined,
         }),
@@ -95,7 +93,6 @@ const Contact = () => {
       setFirstName("");
       setLastName("");
       setEmail("");
-      setCompany("");
       setMessage("");
     } catch (error) {
       toast.error("Senden fehlgeschlagen. Bitte später erneut versuchen.");
@@ -175,15 +172,7 @@ const Contact = () => {
               />
             </div>
 
-            <div>
-              <label className="block text-sm font-medium mb-2">Unternehmen</label>
-              <Input
-                name="company"
-                placeholder="Ihr Unternehmen"
-                value={company}
-                onChange={(e) => setCompany(e.target.value)}
-              />
-            </div>
+            
 
             <div>
               <label className="block text-sm font-medium mb-2">Nachricht</label>
