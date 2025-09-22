@@ -27,8 +27,8 @@ const Services = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {homepageContent.services.services.map((service, index) => {
-            const isChatbots = service.title === "KI Chatbots einfügen";
-            const href = isChatbots ? "/ki-automatisierung" : undefined;
+            const isAutomation = service.title === "KI Automation";
+            const href = isAutomation ? "/ki-automatisierung" : undefined;
             const Card = ({ children }: { children: React.ReactNode }) => (
               href ? (
                 <a href={href} className="group relative p-8 rounded-2xl bg-card border border-border hover:border-primary/50 smooth-transition block" style={{ animationDelay: `${index * 0.1}s` }}>

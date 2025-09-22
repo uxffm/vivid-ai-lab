@@ -8,6 +8,7 @@ const navItems = homepageContent.navigation.menu;
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isServicesHovered, setIsServicesHovered] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,11 +20,30 @@ const Navigation = () => {
   }, []);
 
   const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+    // Check if we're on the homepage
+    const isHomepage = window.location.pathname === '/' || window.location.pathname === '/index.html';
+    
+    if (href === '#contact' && !isHomepage) {
+      // On other pages, scroll to contact section if it exists
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else if (isHomepage) {
+      // On homepage, scroll to section
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // On other pages, navigate to homepage with hash
+      window.location.href = `/${href}`;
     }
     setIsOpen(false);
+  };
+
+  const handleLogoClick = () => {
+    window.location.href = '/';
   };
 
   return (
@@ -36,7 +56,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <button
-            onClick={() => scrollToSection('#hero')}
+            onClick={handleLogoClick}
             className="flex items-center space-x-2 text-left"
             aria-label="Zur Startseite"
           >
@@ -48,15 +68,44 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {navItems.map((item) => (
-              <button
-                key={item.label}
-                onClick={() => scrollToSection(item.href)}
-                className="text-muted-foreground hover:text-foreground transition-colors font-medium"
-              >
-                {item.label}
-              </button>
-            ))}
+            {navItems.map((item) => {
+              if (item.label === "Services") {
+                return (
+                  <div
+                    key={item.label}
+                    className="relative"
+                    onMouseEnter={() => setIsServicesHovered(true)}
+                    onMouseLeave={() => setIsServicesHovered(false)}
+                  >
+                    <button
+                      onClick={() => scrollToSection(item.href)}
+                      className="text-muted-foreground hover:text-foreground transition-colors font-medium"
+                    >
+                      {item.label}
+                    </button>
+                    {isServicesHovered && (
+                      <div className="absolute top-full left-0 w-48 bg-background border border-border rounded-lg shadow-lg z-50">
+                        <a
+                          href="/ki-automatisierung"
+                          className="block px-4 py-3 text-sm text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-colors"
+                        >
+                          KI Automatisierung
+                        </a>
+                      </div>
+                    )}
+                  </div>
+                );
+              }
+              return (
+                <button
+                  key={item.label}
+                  onClick={() => scrollToSection(item.href)}
+                  className="text-muted-foreground hover:text-foreground transition-colors font-medium"
+                >
+                  {item.label}
+                </button>
+              );
+            })}
           </div>
 
           {/* CTA Button */}

@@ -5,7 +5,7 @@ import Services from '../components/Services';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 
-const pageTitle = "KI-Automatisierung – Prozesse automatisieren mit KI | KI Agentur Frankfurt";
+const pageTitle = "KI-Automatisierungs Agentur – Prozesse automatisieren mit KI | KI Agentur Frankfurt";
 const pageDescription = "Automatisieren Sie wiederkehrende Aufgaben mit KI: Chatbots, Workflows, Datenverarbeitung und mehr. Effizienter arbeiten, Kosten senken, schneller skalieren.";
 ---
 
@@ -20,7 +20,10 @@ const pageDescription = "Automatisieren Sie wiederkehrende Aufgaben mit KI: Chat
   <main>
     <!-- Hero -->
     <section class="relative py-28 md:py-36 overflow-hidden">
-      <div class="absolute inset-0 bg-gradient-to-br from-blue-600/30 via-purple-600/20 to-transparent" />
+      <div class="absolute inset-0 bg-gradient-to-br from-blue-600/20 via-purple-600/15 to-transparent" />
+      <div class="pointer-events-none absolute -top-24 -left-24 h-64 w-64 rounded-full bg-blue-500/10 blur-2xl" />
+      <div class="pointer-events-none absolute -bottom-24 -right-24 h-64 w-64 rounded-full bg-purple-500/10 blur-2xl" />
+      
       <div class="relative z-10 max-w-7xl mx-auto px-6">
         <div class="max-w-3xl">
           <h1 class="text-4xl md:text-6xl font-bold leading-tight">
@@ -33,17 +36,16 @@ const pageDescription = "Automatisieren Sie wiederkehrende Aufgaben mit KI: Chat
             <a href="#kontakt" class="inline-flex items-center justify-center px-6 py-3 rounded-[5px] bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:from-blue-700 hover:to-purple-700 transition-colors">
               Kostenlose Beratung
             </a>
-            <a href="/" class="inline-flex items-center justify-center px-6 py-3 rounded-[5px] border border-input bg-background hover:bg-accent hover:text-accent-foreground transition-colors">
-              Zur Startseite
-            </a>
+   
           </div>
         </div>
       </div>
     </section>
 
     <!-- Intro Text -->
-    <section class="py-16">
-      <div class="max-w-3xl mx-auto px-6 text-center">
+    <section class="py-16 bg-gradient-to-b from-blue-600/5 via-purple-600/5 to-transparent">
+      <div class="max-w-3xl mx-auto px-6">
+        <div class="rounded-2xl border border-border/60 bg-gradient-to-br from-background/80 to-background/60 backdrop-blur-sm p-8 shadow-lg text-center">
         <h2 class="text-2xl md:text-3xl font-semibold mb-4">Wie KI-Automatisierung Ihrem Team hilft</h2>
         <div class="space-y-8 text-lg text-muted-foreground">
           <p>
@@ -51,38 +53,99 @@ const pageDescription = "Automatisieren Sie wiederkehrende Aufgaben mit KI: Chat
           </p>
           <div>
             <h3 class="text-xl font-semibold mb-4 text-foreground">Typische Anwendungsfälle</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
-              <div class="p-4 rounded-lg border border-border bg-background/60">
+            <ul class="space-y-3 text-left">
+              <li class="p-4 rounded-lg border border-border bg-white/60 dark:bg-white/5">
                 Support-Chatbots, die Standardfragen sofort beantworten und Tickets vorsortieren.
-              </div>
-              <div class="p-4 rounded-lg border border-border bg-background/60">
+              </li>
+              <li class="p-4 rounded-lg border border-border bg-white/60 dark:bg-white/5">
                 Automatisierte E-Mail- und Angebotsprozesse (z. B. Leads qualifizieren, Antworten vorformulieren).
-              </div>
-              <div class="p-4 rounded-lg border border-border bg-background/60">
+              </li>
+              <li class="p-4 rounded-lg border border-border bg-white/60 dark:bg-white/5">
                 Dokumentenverarbeitung mit KI (Rechnungen, Verträge, Formulare automatisch auslesen und ablegen).
-              </div>
-              <div class="p-4 rounded-lg border border-border bg-background/60">
+              </li>
+              <li class="p-4 rounded-lg border border-border bg-white/60 dark:bg-white/5">
                 Marketing-Automation (Content-Entwürfe, Social-Posts, A/B-Varianten generieren und planen).
-              </div>
-              <div class="p-4 rounded-lg border border-border bg-background/60 md:col-span-2">
+              </li>
+              <li class="p-4 rounded-lg border border-border bg-white/60 dark:bg-white/5">
                 Interne Freigabe-Workflows, die sich selbst anstoßen und den Status transparent halten.
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
-          <p>
-            Unser Vorgehen in drei Schritten:
-            1) Analyse-Workshop: Wir kartieren Ihre Prozesse und priorisieren Quick Wins.
-            2) Prototyping: Wir bauen einen schlanken Proof-of-Concept mit Ihren Tools (z. B. Slack, Google Workspace, Microsoft 365, CRM, Shop-Systeme).
-            3) Rollout & Schulung: Wir integrieren zuverlässig, dokumentieren und machen Ihr Team handlungsfähig.
-          </p>
           <p>
             Ergebnisse, die Sie erwarten können: 20–50% weniger manuelle Arbeit in Routineaufgaben, höhere Datenqualität und schnellere Reaktionszeiten – ohne zusätzliche Personalkosten.
           </p>
         </div>
+        </div>
+      </div>
+      <!-- Wider three-step grid -->
+      <div class="mt-12 max-w-5xl mx-auto px-6">
+        <h3 class="text-xl font-semibold mb-4 text-foreground text-center">Unser Vorgehen in drei Schritten</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-left">
+          <div class="p-6 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+            <div class="text-sm font-semibold text-muted-foreground mb-1">Schritt 1</div>
+            <h4 class="text-3xl md:text-2xl font-semibold mb-2">Analyse-Workshop</h4>
+            <div class="text-sm text-muted-foreground mb-3">Wir analysieren Ihre Prozesse und priorisieren Quick Wins.</div>
+            <ul class="text-sm text-muted-foreground space-y-1 list-disc pl-4">
+              <li>Ist-Analyse Ihrer Tools und Workflows</li>
+              <li>Identifikation repetitiver Tätigkeiten</li>
+              <li>Roadmap mit Aufwand/Nutzen-Bewertung</li>
+            </ul>
+          </div>
+          <div class="p-6 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+            <div class="text-sm font-semibold text-muted-foreground mb-1">Schritt 2</div>
+            <h4 class="text-3xl md:text-2xl font-semibold mb-2">Prototyping</h4>
+            <div class="text-sm text-muted-foreground mb-3">POC mit Ihren Tools (z. B. Slack, Google Workspace, Microsoft 365, CRM, Shop-Systeme).</div>
+            <ul class="text-sm text-muted-foreground space-y-1 list-disc pl-4">
+              <li>Schneller Prototyp in 1–2 Wochen</li>
+              <li>Echte Daten, reale Use-Cases</li>
+              <li>Feedbackschleifen mit Ihrem Team</li>
+            </ul>
+          </div>
+          <div class="p-6 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+            <div class="text-sm font-semibold text-muted-foreground mb-1">Schritt 3</div>
+            <h4 class="text-3xl md:text-2xl font-semibold mb-2">Rollout & Schulung</h4>
+            <div class="text-sm text-muted-foreground mb-3">Zuverlässige Integration, Dokumentation und Enablement Ihres Teams.</div>
+            <ul class="text-sm text-muted-foreground space-y-1 list-disc pl-4">
+              <li>Sichere, skalierbare Implementierung</li>
+              <li>Dokumentation & Übergabe</li>
+              <li>Training & Support für Ihr Team</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
-    
+    <!-- Ihr KI Experte Section -->
+    <section class="py-16">
+      <div class="max-w-2xl mx-auto px-6">
+        <div class="flex flex-col items-center gap-8">
+          <div class="flex-shrink-0">
+            <!-- Placeholder for your photo - replace with actual image -->
+            <img 
+              src="/ki-ai-automatisierungsexperte.webp" 
+              alt="Ihr KI Experte" 
+              class="w-80 h-80 rounded-full object-cover"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            />
+            <div class="w-80 h-80 rounded-full bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center text-white text-4xl font-bold" style="display: none;">
+              KI
+            </div>
+          </div>
+          <div class="flex-1 text-left">
+            <h3 class="text-2xl font-semibold mb-4 text-center">Lukasz - Ihr KI-Automatisierungsexperte</h3>
+            <p class="text-lg text-muted-foreground mb-6">
+              Als einer der ersten KI-Enthusiasten in Deutschland arbeite ich bereits seit den frühen Tagen der künstlichen Intelligenz mit diesen revolutionären Technologien. Meine Leidenschaft für KI begann, als die meisten Unternehmen noch nicht einmal wussten, was Machine Learning bedeutet.
+            </p>
+            <p class="text-lg text-muted-foreground mb-6">
+              Mit über 8 Jahren Erfahrung in der KI-Entwicklung und Automatisierung habe ich bereits hunderten von Unternehmen geholfen, ihre Prozesse zu optimieren und effizienter zu gestalten. Von einfachen Chatbots bis hin zu komplexen KI-Workflows – ich bringe die richtige Lösung für Ihr Unternehmen.
+            </p>
+            <p class="text-lg text-muted-foreground">
+              Meine Expertise liegt darin, komplexe KI-Technologien verständlich zu machen und praktische Lösungen zu entwickeln, die sofort messbare Ergebnisse liefern. Lassen Sie uns gemeinsam Ihr Unternehmen in die Zukunft der KI-Automatisierung führen.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Kontakt -->
     <div id="kontakt">
