@@ -1,0 +1,96 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation';
+import Services from '../components/Services';
+import Contact from '../components/Contact';
+import Footer from '../components/Footer';
+
+const pageTitle = "KI-Automatisierung – Prozesse automatisieren mit KI | KI Agentur Frankfurt";
+const pageDescription = "Automatisieren Sie wiederkehrende Aufgaben mit KI: Chatbots, Workflows, Datenverarbeitung und mehr. Effizienter arbeiten, Kosten senken, schneller skalieren.";
+---
+
+<Layout 
+  title={pageTitle}
+  description={pageDescription}
+  image="/src/assets/ai-hero-image.jpg"
+  type="article"
+>
+  <Navigation client:load />
+
+  <main>
+    <!-- Hero -->
+    <section class="relative py-28 md:py-36 overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-blue-600/30 via-purple-600/20 to-transparent" />
+      <div class="relative z-10 max-w-7xl mx-auto px-6">
+        <div class="max-w-3xl">
+          <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+            KI-Automatisierung für Ihr Unternehmen
+          </h1>
+          <p class="mt-6 text-lg md:text-xl text-muted-foreground">
+            Wir automatisieren wiederkehrende Aufgaben mit KI – von Support-Chatbots über Prozess-Workflows bis zur intelligenten Datenverarbeitung. Weniger Handarbeit, mehr Fokus auf Wachstum.
+          </p>
+          <div class="mt-10 flex flex-col sm:flex-row gap-4">
+            <a href="#kontakt" class="inline-flex items-center justify-center px-6 py-3 rounded-[5px] bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:from-blue-700 hover:to-purple-700 transition-colors">
+              Kostenlose Beratung
+            </a>
+            <a href="/" class="inline-flex items-center justify-center px-6 py-3 rounded-[5px] border border-input bg-background hover:bg-accent hover:text-accent-foreground transition-colors">
+              Zur Startseite
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Intro Text -->
+    <section class="py-16">
+      <div class="max-w-3xl mx-auto px-6 text-center">
+        <h2 class="text-2xl md:text-3xl font-semibold mb-4">Wie KI-Automatisierung Ihrem Team hilft</h2>
+        <div class="space-y-8 text-lg text-muted-foreground">
+          <p>
+            Wir identifizieren repetitive Prozesse, setzen die passenden KI-Bausteine ein und verknüpfen Ihre Tools zu smarten Workflows – messbar schneller, günstiger und stabiler.
+          </p>
+          <div>
+            <h3 class="text-xl font-semibold mb-4 text-foreground">Typische Anwendungsfälle</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
+              <div class="p-4 rounded-lg border border-border bg-background/60">
+                Support-Chatbots, die Standardfragen sofort beantworten und Tickets vorsortieren.
+              </div>
+              <div class="p-4 rounded-lg border border-border bg-background/60">
+                Automatisierte E-Mail- und Angebotsprozesse (z. B. Leads qualifizieren, Antworten vorformulieren).
+              </div>
+              <div class="p-4 rounded-lg border border-border bg-background/60">
+                Dokumentenverarbeitung mit KI (Rechnungen, Verträge, Formulare automatisch auslesen und ablegen).
+              </div>
+              <div class="p-4 rounded-lg border border-border bg-background/60">
+                Marketing-Automation (Content-Entwürfe, Social-Posts, A/B-Varianten generieren und planen).
+              </div>
+              <div class="p-4 rounded-lg border border-border bg-background/60 md:col-span-2">
+                Interne Freigabe-Workflows, die sich selbst anstoßen und den Status transparent halten.
+              </div>
+            </div>
+          </div>
+          <p>
+            Unser Vorgehen in drei Schritten:
+            1) Analyse-Workshop: Wir kartieren Ihre Prozesse und priorisieren Quick Wins.
+            2) Prototyping: Wir bauen einen schlanken Proof-of-Concept mit Ihren Tools (z. B. Slack, Google Workspace, Microsoft 365, CRM, Shop-Systeme).
+            3) Rollout & Schulung: Wir integrieren zuverlässig, dokumentieren und machen Ihr Team handlungsfähig.
+          </p>
+          <p>
+            Ergebnisse, die Sie erwarten können: 20–50% weniger manuelle Arbeit in Routineaufgaben, höhere Datenqualität und schnellere Reaktionszeiten – ohne zusätzliche Personalkosten.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- Kontakt -->
+    <div id="kontakt">
+      <Contact client:load />
+    </div>
+  </main>
+
+  <Footer client:load />
+</Layout>
+
+

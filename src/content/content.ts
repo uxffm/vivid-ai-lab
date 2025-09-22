@@ -1,0 +1,109 @@
+export const homepageContent = {
+  // Hero Section
+  hero: {
+    title: {
+      line1: "Ihre KI Agentur",
+      line2: "aus Frankfurt am Main."
+    },
+    subtitle: "KI nutzen und live miterleben. Wir sind Ihre KI-Agentur aus Frankfurt am Main und revolutionieren Ihren digitalen Auftritt mit intelligenten Lösungen, die messbare Ergebnisse liefern. Ganz nah an der KI Entwicklung dran, nutzen wir die modernsten KI Methoden.",
+    buttons: {
+      primary: {
+        text: "Unseren KI Service entdecken",
+        href: "#services"
+      },
+      secondary: {
+        text: "Direkt Kontaktieren",
+        href: "#contact"
+      }
+    },
+    trust: "Vertraut von 20+ Unternehmen aus Frankfurt und Umgebung"
+  },
+
+  // Navigation
+  navigation: {
+    logo: "KI Agentur Frankfurt",
+    menu: [
+      { label: "Services", href: "#services" },
+      { label: "Über uns", href: "#about" },
+      { label: "Blog", href: "#blog" },
+      { label: "Kontakt", href: "#contact" }
+    ],
+    cta: "Kostenlose Beratung"
+  },
+
+  // Services Section
+  services: {
+    title: "Unsere KI-Services",
+    subtitle: "Wir bieten maßgeschneiderte KI-Lösungen für Ihr Unternehmen - von Chatbots über Prozessautomatisierung bis hin zu modernem Webdesign. Alle Lösungen sind kostengünstig, effizient und auf Ihre spezifischen Bedürfnisse zugeschnitten. Mit KI können Sie die langweiligen, repetitiven Aufgaben Ihres Unternehmens automatisieren, ohne auf teure Freelancer zurückgreifen zu müssen.",
+    services: [
+      {
+        title: "KI Chatbots einfügen",
+        description: "Intelligente Chatbots, die Ihre Kunden 24/7 unterstützen und Ihre Conversion-Raten steigern. Sparen Sie Zeit und Personal durch automatische Kundenbetreuung rund um die Uhr.",
+        icon: "🤖"
+      },
+      {
+        title: "KI Automation",
+        description: "Automatisierung aller Prozesse mit KI-Technologie - egal welche Abläufe Sie optimieren möchten. Reduzieren Sie manuelle Arbeit und steigern Sie die Effizienz Ihres Teams.",
+        icon: "⚡"
+      },
+      {
+        title: "KI-gestütztes Mediendesign",
+        description: "Professionelle Mediendesigns, die mit KI-Unterstützung erstellt werden für optimale Ergebnisse. Erhalten Sie einzigartige Designs in Rekordzeit und zu einem Bruchteil der üblichen Kosten.",
+        icon: "🎨"
+      },
+      {
+        title: "KI-gestütztes Webdesign",
+        description: "Moderne Websites mit KI-Unterstützung - der große Vorteil: Es ist günstig und modern! Erstellen Sie professionelle Webauftritte ohne teure Designer oder Entwickler.",
+        icon: "🌐"
+      }
+    ]
+  },
+
+  // About Section
+  about: {
+    title: "Über uns",
+    subtitle: "Ihre Experten für KI-Marketing in Frankfurt",
+    description: "Wir sind ein Team aus SEO-Experten, Designern und Programmierern, die mit der KI ganz früh angefangen haben. Die KI-Technologie ändert sich täglich - nichts entwickelt sich so schnell wie die künstliche Intelligenz. Als KI-Agentur wissen wir genau, welche KI-Technologie für welche Aufgabe die richtige ist. Wir setzen alle diese Änderungen sofort für unsere Kunden um und bleiben immer am Puls der Zeit.",
+    photo: {
+      src: "/team-photo.jpg",
+      alt: "Unser KI-Team aus Frankfurt"
+    },
+    stats: [
+      { number: "20+", label: "Zufriedene Kunden" },
+      { number: "95%", label: "Erfolgsrate" },
+      { number: "24/7", label: "Support" }
+    ]
+  },
+
+  // Blog Section
+  blog: {
+    title: "KI-Marketing Insights",
+    subtitle: "Bleiben Sie auf dem neuesten Stand der KI-Marketing-Entwicklungen",
+    cta: {
+      title: "Bleiben Sie informiert",
+      description: "Abonnieren Sie unseren Newsletter und erhalten Sie die neuesten KI-Marketing-Insights direkt in Ihren Posteingang.",
+      buttons: {
+        primary: "Newsletter abonnieren",
+        secondary: "Alle Artikel ansehen"
+      }
+    }
+  },
+
+  // Contact Section
+  contact: {
+    title: "Kontaktieren Sie uns",
+    subtitle: "Lassen Sie uns gemeinsam Ihre KI-Strategie entwickeln",
+    form: {
+      name: "Name",
+      email: "E-Mail",
+      company: "Unternehmen",
+      message: "Ihre Nachricht",
+      submit: "Nachricht senden"
+    },
+    info: {
+      address: "Frankfurt am Main, Deutschland",
+      email: "info@ki-marketing-frankfurt.de",
+      phone: "+49 69 123 456 78"
+    }
+  }
+};

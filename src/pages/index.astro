@@ -1,0 +1,93 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation';
+import Hero from '../components/Hero';
+import ProblemSection from '../components/ProblemSection';
+import Services from '../components/Services';
+import About from '../components/About';
+import Blog from '../components/Blog';
+import Contact from '../components/Contact';
+import Footer from '../components/Footer';
+import { getCollection } from 'astro:content';
+
+const pageTitle = "KI Agentur Frankfurt - Künstliche Intelligenz für Ihr Unternehmen";
+const pageDescription = "KI-Agentur in Frankfurt: Wir revolutionieren Ihre digitale Präsenz mit künstlicher Intelligenz. Maßgeschneiderte KI-Lösungen für messbare Ergebnisse.";
+
+const posts = (await getCollection('blog')).map((p) => ({
+  slug: p.slug,
+  title: p.data.title,
+  description: p.data.description,
+  category: p.data.category,
+  readTime: p.data.readTime,
+  author: p.data.author,
+  date: p.data.date,
+  image: (p.data as any).image
+}));
+---
+
+<Layout 
+  title={pageTitle}
+  description={pageDescription}
+  image="/src/assets/ai-hero-image.jpg"
+  type="website"
+>
+  <Navigation client:load />
+  
+  <main>
+    <div id="hero">
+      <Hero client:load />
+    </div>
+    
+    <div id="problems">
+      <ProblemSection client:load />
+    </div>
+    
+    <div id="services">
+      <Services client:load />
+    </div>
+    
+    <div id="about">
+      <About client:load />
+    </div>
+    
+    <div id="blog">
+      <Blog client:load posts={posts} />
+    </div>
+    
+    <div id="contact">
+      <Contact client:load />
+    </div>
+  </main>
+
+  <Footer client:load />
+
+  <!-- Additional Structured Data for Homepage -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "KI Marketing Frankfurt",
+    "url": "https://ki-marketing-frankfurt.de",
+    "description": pageDescription,
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://ki-marketing-frankfurt.de/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  })} />
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "KI-Marketing Services",
+    "provider": {
+      "@type": "Organization",
+      "name": "KI Marketing Frankfurt"
+    },
+    "serviceType": "KI-Marketing Agentur",
+    "areaServed": {
+      "@type": "Place",
+      "name": "Frankfurt am Main, Deutschland"
+    },
+    "description": "Professionelle KI-Marketing-Lösungen für Unternehmen in Frankfurt und Umgebung"
+  })} />
+</Layout>
