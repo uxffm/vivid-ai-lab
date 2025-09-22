@@ -10,6 +10,7 @@ export interface Props {
   publishedTime?: string;
   modifiedTime?: string;
   author?: string;
+  noindex?: boolean;
 }
 
 const { 
@@ -19,7 +20,8 @@ const {
   type = "website",
   publishedTime,
   modifiedTime,
-  author = "KI Marketing Frankfurt"
+  author = "KI Marketing Frankfurt",
+  noindex = false
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -42,7 +44,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
     <meta name="author" content={author} />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content={noindex ? "noindex, nofollow" : "index, follow"} />
     
     <!-- Canonical URL -->
     <link rel="canonical" href={canonicalURL} />
