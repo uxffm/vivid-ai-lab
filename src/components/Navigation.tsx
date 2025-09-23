@@ -48,8 +48,8 @@ const Navigation = () => {
 
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-      isScrolled 
-        ? 'bg-background/80 backdrop-blur-md border-b border-border' 
+      isScrolled || isOpen
+        ? 'bg-background/95 backdrop-blur-md border-b border-border' 
         : 'bg-transparent'
     }`}>
       <div className="max-w-7xl mx-auto px-6">
@@ -129,7 +129,7 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden py-6 border-t border-border">
+          <div className="md:hidden py-6 border-t border-border bg-background/95 backdrop-blur-md">
             <div className="flex flex-col space-y-4">
               {navItems.map((item) => (
                 <button

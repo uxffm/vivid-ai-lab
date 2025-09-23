@@ -21,3 +21,6 @@ ENV.EXAMPLE.txt
 .vscode/
 .idea/
 .DS_Store
+
+# Local Netlify folder
+.netlify
