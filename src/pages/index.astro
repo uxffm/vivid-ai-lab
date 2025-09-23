@@ -21,7 +21,7 @@ const posts = (await getCollection('blog')).map((p) => ({
   readTime: p.data.readTime,
   author: p.data.author,
   date: p.data.date,
-  image: p.data.image || "/placeholder.svg"
+  image: p.data.image ? `https://frankfurt-ai.de${p.data.image}` : "https://frankfurt-ai.de/placeholder.svg"
 }));
 ---
 
