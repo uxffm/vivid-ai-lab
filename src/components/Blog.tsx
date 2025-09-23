@@ -63,7 +63,7 @@ const Blog = ({ posts }: { posts: BlogCardPost[] }) => {
                     {post.title}
                   </h3>
                   <p className="text-sm text-muted-foreground line-clamp-3">
-                    {post.excerpt}
+                    {post.description}
                   </p>
                 </div>
 

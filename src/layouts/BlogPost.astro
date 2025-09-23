@@ -92,4 +92,16 @@ const { title, description, author, date, category, readTime } = Astro.props;
     padding: 0;
     color: hsl(var(--foreground));
   }
+  
+  .prose a {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: hsl(var(--primary));
+    text-underline-offset: 2px;
+  }
+  
+  .prose a:hover {
+    color: hsl(var(--primary));
+    text-decoration-color: white;
+  }
 </style>
