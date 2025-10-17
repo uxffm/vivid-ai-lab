@@ -59,7 +59,7 @@ const posts = (await getCollection('blog')).map((p) => ({
     </div>
   </main>
 
-  <Footer client:load />
+  <Footer />
 
   <!-- Additional Structured Data for Homepage -->
   <script type="application/ld+json" set:html={JSON.stringify({
