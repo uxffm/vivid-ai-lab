@@ -30,6 +30,14 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- New Blog Post: KI-Agenten -->
+  <url>
+    <loc>https://frankfurt-ai.de/blog/ki-agenten-was-können-sie</loc>
+    <lastmod>2025-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   
   <!-- KI Automatisierung Page -->
   <url>
