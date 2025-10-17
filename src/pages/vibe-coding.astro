@@ -1,0 +1,196 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation';
+import Services from '../components/Services';
+import Contact from '../components/Contact';
+import Footer from '../components/Footer.astro';
+
+const pageTitle = "Vibe Coding Agentur – Smarte Software mit KI-Flair | KI Agentur Frankfurt";
+const pageDescription = "Vibe Coding Agentur: Wir entwickeln clevere, KI-gestützte Anwendungen und Automationen – schnell, modular und mit Fokus auf Ergebnis.";
+---
+
+<Layout 
+  title={pageTitle}
+  description={pageDescription}
+  image="/src/assets/ai-hero-image.jpg"
+  type="article"
+>
+  <Navigation client:load />
+
+  <main>
+    <!-- Hero -->
+    <section class="relative py-28 md:py-36 overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-blue-400/20 via-purple-400/15 to-transparent" />
+      <div class="pointer-events-none absolute -top-24 -left-24 h-64 w-64 rounded-full bg-blue-500/10 blur-2xl" />
+      <div class="pointer-events-none absolute -bottom-24 -right-24 h-64 w-64 rounded-full bg-purple-400/10 blur-2xl" />
+      
+      <div class="relative z-10 max-w-7xl mx-auto px-6">
+        <div class="max-w-3xl">
+          <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+            Vibe Coding Agentur
+          </h1>
+          <p class="mt-6 text-lg md:text-xl text-muted-foreground">
+            Wir bauen Apps und Workflows mit modernem Tech‑Stack und KI – schnell, modular und mit klarem Fokus auf Ergebnis. Von Prototyp bis Rollout. 
+            Unser Ansatz: kleine, schnelle Sprints, klares Scope‑Management und saubere Übergaben an Ihr Team. Mit Tools wie Cursor und Claude Code beschleunigen wir Entwicklung und Design‑Prozesse spürbar – das senkt Ihre Kosten.
+          </p>
+          <div class="mt-10 flex flex-col sm:flex-row gap-4">
+            <a href="#kontakt" class="inline-flex items-center justify-center px-6 py-3 rounded-[5px] bg-gradient-to-r from-blue-500 to-purple-500 text-white hover:from-blue-600 hover:to-purple-600 transition-colors">
+              Kostenlose Beratung
+            </a>
+ 
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Intro Text -->
+    <section class="py-16 bg-gradient-to-b from-blue-400/5 via-purple-400/5 to-transparent">
+      <div class="max-w-3xl mx-auto px-6">
+        <div class="rounded-2xl border border-border/60 bg-gradient-to-br from-background/80 to-background/60 backdrop-blur-sm p-8 shadow-lg text-center">
+        <h2 class="text-2xl md:text-3xl font-semibold mb-4">Was Vibe Coding für Ihr Team bringt</h2>
+        <div class="space-y-8 text-lg text-muted-foreground">
+          <p>
+            Wir planen schlank, entwickeln iterativ und integrieren Ihre Tools sauber. So entstehen stabile Produkte mit spürbarem Nutzen – ohne Overhead.
+            Dabei achten wir auf klare Verantwortlichkeiten, kurze Feedback‑Schleifen und nachvollziehbare Entscheidungen.
+          </p>
+          <p>
+            Technisch setzen wir auf bewährte Patterns (API‑First, Events, Background‑Jobs) und halten die Architektur so einfach wie möglich. 
+            Das reduziert Komplexität und erleichtert Wartung, Onboarding und zukünftige Erweiterungen.
+          </p>
+          <p>
+            Durch den Einsatz von Cursor (Pair‑Programming in der IDE) und Claude Code (kontextstarke Code‑Assistenz) verkürzen wir Iterationen, generieren Boilerplate schneller und testen früher. 
+            Design‑Prozesse (Copy, Komponenten, Varianten) laufen damit ebenfalls schneller und konsistenter.
+          </p>
+          <div>
+            <h3 class="text-xl font-semibold mb-4 text-foreground">Typische Projekte</h3>
+            <ul class="space-y-3 text-left">
+              <li class="p-4 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+                KI‑gestützte Web‑Apps (Next/Astro) mit Auth, Datenanbindung und UI‑Kits.
+              </li>
+              <li class="p-4 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+                Automatisierte Backends & APIs (Node/Serverless) mit Workflows und Webhooks.
+              </li>
+              <li class="p-4 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+                RAG‑Suche, Dokument‑Pipelines und Agenten‑Funktionen für bestehende Systeme.
+              </li>
+              <li class="p-4 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+                Dashboards, interne Tools und Integrationen (CRM, ERP, Slack, HubSpot).
+              </li>
+              <li class="p-4 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+                UX‑Modernisierung: schnelle Oberflächen, klare Informationsarchitektur.
+              </li>
+            </ul>
+          </div>
+          <p>
+            Ergebnisse: kürzere Time‑to‑Value, weniger Wartung, klare Ownership – und ein Produkt, das sich gut anfühlt.
+          </p>
+          <p>
+            Transparenz ist uns wichtig: Sie sehen Roadmap, Velocity und offene Punkte jederzeit. Auf Wunsch setzen wir CI/CD, Tests und Monitoring auf,
+            damit Releases sicher und reproduzierbar laufen.
+          </p>
+        </div>
+        </div>
+      </div>
+      <!-- Wider three-step grid -->
+      <div class="mt-12 max-w-5xl mx-auto px-6">
+        <h3 class="text-xl font-semibold mb-4 text-foreground text-center">Unser Vorgehen in drei Schritten</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-left">
+          <div class="p-6 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+            <div class="text-sm font-semibold text-muted-foreground mb-1">Schritt 1</div>
+            <h4 class="text-3xl md:text-2xl font-semibold mb-2">Analyse-Workshop</h4>
+            <div class="text-sm text-muted-foreground mb-3">Wir klären Ziele, Nutzer, Schnittstellen – und definieren den MVP.</div>
+            <ul class="text-sm text-muted-foreground space-y-1 list-disc pl-4">
+              <li>User‑Flows und Anforderungen</li>
+              <li>Systemschnittstellen & Daten</li>
+              <li>MVP‑Scope & Roadmap</li>
+            </ul>
+          </div>
+          <div class="p-6 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+            <div class="text-sm font-semibold text-muted-foreground mb-1">Schritt 2</div>
+            <h4 class="text-3xl md:text-2xl font-semibold mb-2">Prototyping</h4>
+            <div class="text-sm text-muted-foreground mb-3">Clickable Prototype oder funktionaler POC in 1–2 Wochen.</div>
+            <ul class="text-sm text-muted-foreground space-y-1 list-disc pl-4">
+              <li>UI/UX‑Prototyp oder Tech‑POC</li>
+              <li>Echte Daten & Feedback‑Loops</li>
+              <li>Validierung der Architektur</li>
+            </ul>
+          </div>
+          <div class="p-6 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+            <div class="text-sm font-semibold text-muted-foreground mb-1">Schritt 3</div>
+            <h4 class="text-3xl md:text-2xl font-semibold mb-2">Rollout & Schulung</h4>
+            <div class="text-sm text-muted-foreground mb-3">Saubere Übergabe, Dokumentation und Enablement Ihres Teams.</div>
+            <ul class="text-sm text-muted-foreground space-y-1 list-disc pl-4">
+              <li>Stabile Deployments & Monitoring</li>
+              <li>Docs, Handover & Trainings</li>
+              <li>Support & Weiterentwicklung</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Zusatzbereich -->
+    <section class="py-16 bg-gradient-to-b from-purple-400/5 via-blue-400/5 to-transparent">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="rounded-2xl border border-border/60 bg-gradient-to-br from-background/80 to-background/60 backdrop-blur-sm p-8 shadow-lg">
+          <h2 class="text-2xl md:text-3xl font-semibold mb-6">Mehr über Vibe Coding</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-lg text-muted-foreground">
+            <div class="space-y-6">
+              <p>
+                Wir setzen auf klare Architektur, wiederverwendbare Komponenten und
+                eine sinnvolle Dosis KI – dort, wo sie echten Mehrwert schafft.
+              </p>
+              <p>
+                Das bedeutet: schnelle Releases, weniger Bugs und ein Code‑Fundament,
+                das sich gut erweitern lässt. Wir dokumentieren Kernentscheidungen und
+                halten komplexe Bereiche mit kurzen Architektur‑Notizen verständlich.
+              </p>
+              <p>
+                Starten wir klein und pragmatisch – und skalieren, wenn sich der
+                Nutzen zeigt.
+              </p>
+              <h3 class="text-xl font-semibold text-foreground">Ihre Vorteile auf einen Blick</h3>
+              <ul class="list-disc pl-5 space-y-2">
+                <li>Schnelle MVPs, frühes Nutzer‑Feedback</li>
+                <li>Saubere Integrationen & Performance</li>
+                <li>Wartbarer Code & klare Ownership</li>
+                <li>Skalierbar – Feature für Feature</li>
+                <li>Geringere Kosten durch KI‑gestützte Umsetzung (Cursor/Claude Code)</li>
+              </ul>
+            </div>
+            <div class="space-y-6">
+              <p>
+                Beispiele: App‑Frontend mit Auth, API‑Backend mit Jobs/Webhooks,
+                Vektor‑Suche (RAG), Agenten, PDF‑Pipelines, Dashboards und CRM‑Integrationen.
+              </p>
+              <p>
+                Sicherheit & Qualität: Rollenrechte, Audits, Tests (Unit/E2E), Observability
+                und Guardrails für verlässliche KI. Wir setzen auf Linters, Previews und Checklisten vor Go‑Live.
+              </p>
+              <p>
+                Nächste Schritte: Gespräch, kurzer Workshop, POC in 1–2 Wochen.
+                Danach wachsen wir gezielt weiter – mit klaren Milestones und Aufwandsschätzungen.
+              </p>
+              <h3 class="text-xl font-semibold text-foreground">Tech & Tools (Auszug)</h3>
+              <ul class="list-disc pl-5 space-y-2">
+                <li>Astro/Next.js, React, Tailwind, Shadcn UI</li>
+                <li>Node/Serverless, Edge‑Funktionen, Hintergrund‑Jobs</li>
+                <li>Postgres/Prisma, Vector DB (z. B. Pinecone/pgvector)</li>
+                <li>CI/CD (GitHub Actions), Tests (Vitest/Playwright)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontakt -->
+    <div id="kontakt">
+      <Contact client:load />
+    </div>
+  </main>
+
+  <Footer client:load />
+</Layout>
+
+

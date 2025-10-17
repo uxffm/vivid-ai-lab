@@ -62,6 +62,16 @@ const formattedDate = new Date(entry.data.date).toLocaleDateString('de-DE', {
           <p class="text-xl text-muted-foreground mb-8 max-w-3xl">
             {entry.data.description}
           </p>
+          {entry.data.image && (
+            <div class="mb-8">
+              <img 
+                src={entry.data.image} 
+                alt={entry.data.title} 
+                class="w-full rounded-xl border border-border shadow-sm"
+                loading="eager"
+              />
+            </div>
+          )}
           
           <!-- Meta Information -->
           <div class="flex flex-wrap items-center gap-6 text-sm text-muted-foreground border-t border-border pt-6">

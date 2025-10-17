@@ -37,24 +37,14 @@ export const homepageContent = {
     subtitle: "Wir bieten maßgeschneiderte KI-Lösungen für Ihr Unternehmen - von Chatbots über Prozessautomatisierung bis hin zu modernem Webdesign. Alle Lösungen sind kostengünstig, effizient und auf Ihre spezifischen Bedürfnisse zugeschnitten. Mit KI können Sie die langweiligen, repetitiven Aufgaben Ihres Unternehmens automatisieren, ohne auf teure Freelancer zurückgreifen zu müssen.",
     services: [
       {
-        title: "KI Chatbots einfügen",
-        description: "Intelligente Chatbots, die Ihre Kunden 24/7 unterstützen und Ihre Conversion-Raten steigern. Sparen Sie Zeit und Personal durch automatische Kundenbetreuung rund um die Uhr.",
-        icon: "🤖"
-      },
-      {
         title: "KI Automation",
         description: "Automatisierung aller Prozesse mit KI-Technologie - egal welche Abläufe Sie optimieren möchten. Reduzieren Sie manuelle Arbeit und steigern Sie die Effizienz Ihres Teams.",
         icon: "⚡"
       },
       {
-        title: "KI-gestütztes Mediendesign",
-        description: "Professionelle Mediendesigns, die mit KI-Unterstützung erstellt werden für optimale Ergebnisse. Erhalten Sie einzigartige Designs in Rekordzeit und zu einem Bruchteil der üblichen Kosten.",
+        title: "Vibe Coding Agentur",
+        description: "Smarte, KI‑gestützte Apps und Workflows – schnell, modular, kosteneffizient. Von MVP bis Rollout, mit klaren Sprints und sauberer Integration.",
         icon: "🎨"
-      },
-      {
-        title: "KI-gestütztes Webdesign",
-        description: "Moderne Websites mit KI-Unterstützung - der große Vorteil: Es ist günstig und modern! Erstellen Sie professionelle Webauftritte ohne teure Designer oder Entwickler.",
-        icon: "🌐"
       }
     ]
   },
