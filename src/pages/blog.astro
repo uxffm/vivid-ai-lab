@@ -1,0 +1,126 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation';
+import Footer from '../components/Footer.astro';
+import { getCollection } from 'astro:content';
+import { Badge } from '../components/ui/badge';
+import { Button } from '../components/ui/button';
+import { ArrowRight, Calendar, User } from 'lucide-react';
+
+const pageTitle = "Blog - KI Agentur Frankfurt | KI-Marketing Insights & Trends";
+const pageDescription = "Bleiben Sie auf dem neuesten Stand der KI-Marketing-Entwicklungen mit unseren Expertenartikeln und Analysen. Alles über KI-Automatisierung, KI-Agenten und mehr.";
+
+const posts = (await getCollection('blog'))
+  .map((p) => ({
+    slug: p.slug,
+    title: p.data.title,
+    description: p.data.description,
+    category: p.data.category,
+    readTime: p.data.readTime,
+    author: p.data.author,
+    date: p.data.date,
+    image: p.data.image || "/placeholder.svg",
+    formattedDate: new Date(p.data.date).toLocaleDateString('de-DE', {
+      day: '2-digit',
+      month: 'long',
+      year: 'numeric'
+    })
+  }))
+  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+---
+
+<Layout
+  title={pageTitle}
+  description={pageDescription}
+  image="/src/assets/ai-hero-image.jpg"
+  type="website"
+>
+  <Navigation client:load />
+
+  <main class="min-h-screen bg-background">
+    <!-- Hero Section -->
+    <section class="relative py-28 md:py-36 overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-blue-400/20 via-purple-400/15 to-transparent" />
+      <div class="pointer-events-none absolute -top-24 -left-24 h-64 w-64 rounded-full bg-blue-500/10 blur-2xl" />
+      <div class="pointer-events-none absolute -bottom-24 -right-24 h-64 w-64 rounded-full bg-purple-400/10 blur-2xl" />
+
+      <div class="relative z-10 max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-3xl mx-auto">
+          <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
+            KI-Marketing Insights & Trends
+          </h1>
+          <p class="text-lg md:text-xl text-muted-foreground">
+            Bleiben Sie auf dem neuesten Stand der KI-Marketing-Entwicklungen mit unseren
+            Expertenartikeln und Analysen.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="py-16">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {posts.map((post) => (
+            <a href={`/blog/${post.slug}`} class="block group">
+              <div class="group hover:shadow-2xl transition-all duration-300 cursor-pointer relative overflow-hidden rounded-lg p-6 border border-border h-full flex flex-col">
+                {/* Image */}
+                <div class="overflow-hidden rounded-t-lg mb-4">
+                  <img
+                    src={post.image}
+                    alt={`Blog Post: ${post.title} - ${post.category} Artikel von ${post.author}`}
+                    class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
+                  />
+                </div>
+
+                {/* Content */}
+                <div class="mb-4 flex-grow">
+                  <div class="flex items-center gap-2 mb-3">
+                    <span class="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80">
+                      {post.category}
+                    </span>
+                    <span class="text-xs text-muted-foreground">•</span>
+                    <span class="text-xs text-muted-foreground">{post.readTime}</span>
+                  </div>
+                  <h2 class="text-lg group-hover:text-primary transition-colors duration-300 line-clamp-2 mb-2 font-semibold">
+                    {post.title}
+                  </h2>
+                  <p class="text-sm text-muted-foreground line-clamp-3">
+                    {post.description}
+                  </p>
+                </div>
+
+                {/* Meta */}
+                <div class="flex items-center justify-between text-xs text-muted-foreground mb-4">
+                  <div class="flex items-center gap-1">
+                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                    </svg>
+                    {post.author}
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    </svg>
+                    {post.formattedDate}
+                  </div>
+                </div>
+
+                {/* Button */}
+                <button class="w-full inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-9 px-4 py-2 group-hover:bg-primary group-hover:text-primary-foreground">
+                  Weiterlesen
+                  <svg class="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                  </svg>
+                </button>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>

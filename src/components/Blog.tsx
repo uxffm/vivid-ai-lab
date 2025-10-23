@@ -13,7 +13,13 @@ type BlogCardPost = {
   image?: string;
 };
 
-const Blog = ({ posts }: { posts: BlogCardPost[] }) => {
+interface BlogProps {
+  posts: BlogCardPost[];
+  limit?: number;
+  showViewAll?: boolean;
+}
+
+const Blog = ({ posts, limit, showViewAll = false }: BlogProps) => {
   const blogPosts = posts
     .map((post) => ({
       ...post,
@@ -21,7 +27,8 @@ const Blog = ({ posts }: { posts: BlogCardPost[] }) => {
         day: '2-digit', month: 'long', year: 'numeric'
       })
     }))
-    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+    .slice(0, limit);
 
   return (
     <section id="blog" className="py-20">
@@ -90,7 +97,20 @@ const Blog = ({ posts }: { posts: BlogCardPost[] }) => {
           ))}
         </div>
 
-
+        {/* View All Button */}
+        {showViewAll && (
+          <div className="text-center mt-8">
+            <a href="/blog">
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-0"
+              >
+                Alle Artikel ansehen
+                <ArrowRight className="ml-2 w-4 h-4" aria-hidden="true" />
+              </Button>
+            </a>
+          </div>
+        )}
       </div>
     </section>
   );

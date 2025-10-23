@@ -51,7 +51,7 @@ const posts = (await getCollection('blog')).map((p) => ({
     </div>
     
     <div id="blog">
-      <Blog client:load posts={posts} />
+      <Blog client:load posts={posts} limit={3} showViewAll={true} />
     </div>
     
     <div id="contact">
