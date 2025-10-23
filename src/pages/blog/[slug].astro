@@ -1,5 +1,7 @@
 ---
 import BlogPost from '../../layouts/BlogPost.astro';
+import Navigation from '../../components/Navigation';
+import Footer from '../../components/Footer.astro';
 import { getCollection, getEntryBySlug } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -24,7 +26,7 @@ const formattedDate = new Date(entry.data.date).toLocaleDateString('de-DE', {
 });
 ---
 
-<BlogPost 
+<BlogPost
   title={entry.data.title}
   description={entry.data.description}
   author={entry.data.author}
@@ -34,19 +36,7 @@ const formattedDate = new Date(entry.data.date).toLocaleDateString('de-DE', {
 >
   <div class="min-h-screen bg-background">
     <!-- Navigation -->
-    <nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
-      <div class="max-w-4xl mx-auto px-6">
-        <div class="flex items-center justify-between h-20">
-          <a href="/" class="flex items-center space-x-2 text-muted-foreground hover:text-foreground transition-colors">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
-            </svg>
-            <span>Zurück zur KI Agentur</span>
-          </a>
-          <span class="px-3 py-1 text-sm border rounded-full">{entry.data.category}</span>
-        </div>
-      </div>
-    </nav>
+    <Navigation client:load />
 
     <!-- Blog Post Content -->
     <div class="pt-48 pb-16">
@@ -114,5 +104,8 @@ const formattedDate = new Date(entry.data.date).toLocaleDateString('de-DE', {
         </div>
       </div>
     </div>
+
+    <!-- Footer -->
+    <Footer />
   </div>
 </BlogPost>
