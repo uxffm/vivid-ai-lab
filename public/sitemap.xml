@@ -63,6 +63,14 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- New Blog Post: Zimmer mit KI einrichten -->
+  <url>
+    <loc>https://frankfurt-ai.de/blog/zimmer-mit-ki-einrichten</loc>
+    <lastmod>2025-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- KI Automatisierung Page -->
   <url>
     <loc>https://frankfurt-ai.de/ki-automatisierung</loc>
