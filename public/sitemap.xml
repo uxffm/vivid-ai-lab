@@ -86,7 +86,15 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-  
+
+  <!-- KI Beratung Page -->
+  <url>
+    <loc>https://frankfurt-ai.de/ki-beratung</loc>
+    <lastmod>2025-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
   <!-- 404 Page -->
   <url>
     <loc>https://frankfurt-ai.de/404</loc>

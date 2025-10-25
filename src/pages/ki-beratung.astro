@@ -1,0 +1,189 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation';
+import Contact from '../components/Contact';
+import Footer from '../components/Footer.astro';
+
+const pageTitle = "KI Beratung Frankfurt – Strategische KI-Integration für Ihr Unternehmen | KI Agentur Frankfurt";
+const pageDescription = "Professionelle KI-Beratung in Frankfurt: Wir helfen Ihnen, künstliche Intelligenz strategisch in Ihr Unternehmen zu integrieren. Individuelle Beratung für nachhaltige Erfolge.";
+---
+
+<Layout
+  title={pageTitle}
+  description={pageDescription}
+  image="/src/assets/ai-hero-image.jpg"
+  type="article"
+>
+  <Navigation client:load />
+
+  <main>
+    <!-- Hero -->
+    <section class="relative py-28 md:py-36 overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-blue-400/20 via-purple-400/15 to-transparent" />
+      <div class="pointer-events-none absolute -top-24 -left-24 h-64 w-64 rounded-full bg-blue-500/10 blur-2xl" />
+      <div class="pointer-events-none absolute -bottom-24 -right-24 h-64 w-64 rounded-full bg-purple-400/10 blur-2xl" />
+
+      <div class="relative z-10 max-w-7xl mx-auto px-6">
+        <div class="max-w-3xl">
+          <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+            KI Beratung Frankfurt
+          </h1>
+          <p class="mt-6 text-lg md:text-xl text-muted-foreground">
+            Strategische KI-Beratung für nachhaltigen Unternehmenserfolg. Wir analysieren Ihr Geschäft, identifizieren Potenziale und begleiten Sie von der ersten Idee bis zur erfolgreichen Implementierung – mit klarem Fokus auf messbare Ergebnisse.
+            Unser Ansatz: Praxisnahe Workshops, realistische Roadmaps und hands-on Unterstützung. Wir helfen Ihnen, KI-Tools sinnvoll einzusetzen und Ihre Prozesse nachhaltig zu optimieren.
+          </p>
+          <div class="mt-10 flex flex-col sm:flex-row gap-4">
+            <a href="#kontakt" class="inline-flex items-center justify-center px-6 py-3 rounded-[5px] bg-gradient-to-r from-blue-500 to-purple-500 text-white hover:from-blue-600 hover:to-purple-600 transition-colors">
+              Kostenlose Erstberatung
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Intro Text -->
+    <section class="py-16 bg-gradient-to-b from-blue-400/5 via-purple-400/5 to-transparent">
+      <div class="max-w-3xl mx-auto px-6">
+        <div class="rounded-2xl border border-border/60 bg-gradient-to-br from-background/80 to-background/60 backdrop-blur-sm p-8 shadow-lg text-center">
+        <h2 class="text-2xl md:text-3xl font-semibold mb-4">Was KI-Beratung für Ihr Unternehmen bringt</h2>
+        <div class="space-y-8 text-lg text-muted-foreground">
+          <p>
+            Wir entwickeln gemeinsam eine maßgeschneiderte KI-Strategie, die zu Ihren Geschäftszielen passt. Dabei fokussieren wir uns auf Use Cases mit echtem ROI und begleiten Sie durch den gesamten Implementierungsprozess – ohne unnötigen Overhead.
+          </p>
+          <p>
+            Transparenz und Pragmatismus sind dabei unsere Leitprinzipien: Sie verstehen jederzeit, was möglich ist, was es kostet und welche Ergebnisse Sie erwarten können.
+            Wir arbeiten iterativ, liefern früh Ergebnisse und passen die Strategie basierend auf realem Feedback an.
+          </p>
+          <p>
+            Durch unsere Expertise in modernen KI-Tools und -Plattformen (OpenAI, Claude, Gemini, Custom Models) helfen wir Ihnen, die richtige Technologie für Ihre spezifischen Anforderungen zu finden.
+            Dabei achten wir auf Datenschutz, Compliance und langfristige Wartbarkeit.
+          </p>
+          <div>
+            <h3 class="text-xl font-semibold mb-4 text-foreground">Typische Beratungsschwerpunkte</h3>
+            <ul class="space-y-3 text-left">
+              <li class="p-4 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+                KI-Potenzialanalyse: Identifikation von Quick Wins und strategischen Projekten.
+              </li>
+              <li class="p-4 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+                Tool-Evaluation: Vergleich von KI-Plattformen, APIs und Custom Solutions.
+              </li>
+              <li class="p-4 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+                Prozessoptimierung: Automatisierung von Routineaufgaben mit KI-Unterstützung.
+              </li>
+              <li class="p-4 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+                Change Management: Vorbereitung Ihrer Teams auf KI-gestützte Workflows.
+              </li>
+              <li class="p-4 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+                Pilotprojekte: Schnelle POCs zur Validierung von Business Cases.
+              </li>
+            </ul>
+          </div>
+          <p>
+            Ergebnisse: Klare Roadmap, validierte Use Cases, reduzierte Risiken – und ein Team, das KI-Tools effektiv nutzen kann.
+          </p>
+          <p>
+            Wir dokumentieren alle Erkenntnisse, Entscheidungen und nächsten Schritte transparent.
+            So können Sie jederzeit nachvollziehen, warum welche Empfehlung ausgesprochen wurde und wie Sie eigenständig weitermachen können.
+          </p>
+        </div>
+        </div>
+      </div>
+      <!-- Wider three-step grid -->
+      <div class="mt-12 max-w-5xl mx-auto px-6">
+        <h3 class="text-xl font-semibold mb-4 text-foreground text-center">Unser Beratungsprozess in drei Schritten</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-left">
+          <div class="p-6 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+            <div class="text-sm font-semibold text-muted-foreground mb-1">Schritt 1</div>
+            <h4 class="text-3xl md:text-2xl font-semibold mb-2">Discovery Workshop</h4>
+            <div class="text-sm text-muted-foreground mb-3">Wir analysieren Ihre Prozesse, Ziele und identifizieren konkrete KI-Potenziale.</div>
+            <ul class="text-sm text-muted-foreground space-y-1 list-disc pl-4">
+              <li>Analyse bestehender Workflows</li>
+              <li>Identifikation von Optimierungspotenzialen</li>
+              <li>Priorisierung nach ROI & Aufwand</li>
+            </ul>
+          </div>
+          <div class="p-6 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+            <div class="text-sm font-semibold text-muted-foreground mb-1">Schritt 2</div>
+            <h4 class="text-3xl md:text-2xl font-semibold mb-2">Strategie & Roadmap</h4>
+            <div class="text-sm text-muted-foreground mb-3">Gemeinsame Entwicklung einer KI-Strategie mit konkreten Meilensteinen.</div>
+            <ul class="text-sm text-muted-foreground space-y-1 list-disc pl-4">
+              <li>Detaillierte Use-Case-Bewertung</li>
+              <li>Tool- & Technologie-Empfehlungen</li>
+              <li>Phasenplan mit Quick Wins</li>
+            </ul>
+          </div>
+          <div class="p-6 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+            <div class="text-sm font-semibold text-muted-foreground mb-1">Schritt 3</div>
+            <h4 class="text-3xl md:text-2xl font-semibold mb-2">Implementierung & Enablement</h4>
+            <div class="text-sm text-muted-foreground mb-3">Begleitung bei Umsetzung und Training Ihrer Teams für nachhaltige Nutzung.</div>
+            <ul class="text-sm text-muted-foreground space-y-1 list-disc pl-4">
+              <li>Pilotprojekt-Begleitung</li>
+              <li>Team-Schulungen & Workshops</li>
+              <li>Performance-Monitoring & Optimierung</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Zusatzbereich -->
+    <section class="py-16 bg-gradient-to-b from-purple-400/5 via-blue-400/5 to-transparent">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="rounded-2xl border border-border/60 bg-gradient-to-br from-background/80 to-background/60 backdrop-blur-sm p-8 shadow-lg">
+          <h2 class="text-2xl md:text-3xl font-semibold mb-6">Mehr über unsere KI-Beratung</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-lg text-muted-foreground">
+            <div class="space-y-6">
+              <p>
+                Unsere Beratung basiert auf jahrelanger Praxiserfahrung mit KI-Projekten in verschiedenen Branchen.
+                Wir kennen die typischen Stolpersteine und wissen, worauf es bei erfolgreicher KI-Integration ankommt.
+              </p>
+              <p>
+                Das bedeutet: Realistische Erwartungen, fokussierte Use Cases und ein klarer Plan für die schrittweise Einführung.
+                Wir vermeiden Hype und konzentrieren uns auf das, was wirklich funktioniert und messbaren Mehrwert schafft.
+              </p>
+              <p>
+                Starten wir mit einem Quick Win – und skalieren systematisch, sobald sich der Erfolg zeigt.
+              </p>
+              <h3 class="text-xl font-semibold text-foreground">Ihre Vorteile auf einen Blick</h3>
+              <ul class="list-disc pl-5 space-y-2">
+                <li>Vermeidung kostspieliger Fehlentscheidungen</li>
+                <li>Schnellerer ROI durch fokussierte Umsetzung</li>
+                <li>Praxiserprobte Tool- & Technologieempfehlungen</li>
+                <li>Team-Enablement für eigenständige Nutzung</li>
+                <li>Transparente Dokumentation aller Entscheidungen</li>
+              </ul>
+            </div>
+            <div class="space-y-6">
+              <p>
+                Beispiele: Chatbot-Integration, Dokumentenautomatisierung, Predictive Analytics,
+                Content-Generierung, Sentiment-Analyse, KI-gestützte Datenauswertung und Custom AI Agents.
+              </p>
+              <p>
+                Compliance & Sicherheit: Wir achten auf DSGVO-Konformität, Datenschutz,
+                Audit-Trails und sichere API-Nutzung. Ihre Daten bleiben geschützt – auch bei Cloud-Services.
+              </p>
+              <p>
+                Nächste Schritte: Kostenloses Erstgespräch, Discovery Workshop, dann iterative Umsetzung.
+                Sie entscheiden nach jeder Phase, ob und wie es weitergeht – ohne lange Vertragsbindung.
+              </p>
+              <h3 class="text-xl font-semibold text-foreground">KI-Tools & Plattformen (Auszug)</h3>
+              <ul class="list-disc pl-5 space-y-2">
+                <li>OpenAI (GPT-4, GPT-o1, Embeddings, Whisper)</li>
+                <li>Anthropic Claude (Claude 3.5 Sonnet, Haiku)</li>
+                <li>Google (Gemini, Vertex AI)</li>
+                <li>Vektor-Datenbanken (Pinecone, Weaviate, pgvector)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontakt -->
+    <div id="kontakt">
+      <Contact client:load />
+    </div>
+  </main>
+
+  <Footer />
+</Layout>

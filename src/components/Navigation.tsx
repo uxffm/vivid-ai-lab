@@ -86,6 +86,12 @@ const Navigation = () => {
                     {isServicesHovered && (
                       <div className="absolute top-full left-0 w-48 bg-background border border-border rounded-lg shadow-lg z-50">
                         <a
+                          href="/ki-beratung"
+                          className="block px-4 py-3 text-sm text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-colors"
+                        >
+                          KI Beratung
+                        </a>
+                        <a
                           href="/ki-automatisierung"
                           className="block px-4 py-3 text-sm text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-colors"
                         >
