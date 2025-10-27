@@ -25,11 +25,12 @@ const Services = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {homepageContent.services.services.map((service, index) => {
             const isAutomation = service.title === "KI Automation";
             const isVibeCoding = service.title === "Vibe Coding Agentur";
-            const href = isAutomation ? "/ki-automatisierung" : isVibeCoding ? "/vibe-coding" : undefined;
+            const isBeratung = service.title === "KI Beratung";
+            const href = isAutomation ? "/ki-automatisierung" : isVibeCoding ? "/vibe-coding" : isBeratung ? "/ki-beratung" : undefined;
             const Card = ({ children }: { children: React.ReactNode }) => (
               href ? (
                 <a href={href} className="group relative p-8 rounded-2xl bg-card border border-border hover:border-primary/50 smooth-transition block" style={{ animationDelay: `${index * 0.1}s` }}>
@@ -61,7 +62,7 @@ const Services = () => {
 
                   {href && (
                     <div className="flex justify-center">
-                      <Button variant="ghost" className="px-0">Mehr erfahren →</Button>
+                      <Button variant="ghost" className="px-6 py-2 bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white rounded-lg transition-all">Mehr erfahren →</Button>
                     </div>
                   )}
                 </div>

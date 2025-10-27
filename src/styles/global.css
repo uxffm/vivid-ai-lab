@@ -77,6 +77,15 @@
     color: hsl(var(--foreground));
     background: hsl(var(--background));
   }
+
+  /* Scroll offset for anchor links */
+  html {
+    scroll-padding-top: 100px;
+  }
+
+  :target {
+    scroll-margin-top: 100px;
+  }
 }
 
 @layer components {
@@ -146,4 +155,60 @@
 
 .animate-data-stream {
   animation: data-stream 8s linear infinite;
+}
+
+/* Table of Contents Styling - Collapsible */
+.prose details {
+  border: 1px solid hsl(var(--border));
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  background: hsl(var(--card));
+}
+
+.prose details summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  color: hsl(var(--foreground));
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  user-select: none;
+}
+
+.prose details summary:hover {
+  color: #60a5fa;
+}
+
+.prose details summary::marker {
+  content: "▶ ";
+}
+
+.prose details[open] summary::marker {
+  content: "▼ ";
+}
+
+.prose details ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.prose details ul li {
+  margin: 0.75rem 0;
+  padding-left: 1.5rem;
+}
+
+.prose details ul li a {
+  text-decoration: none;
+  color: hsl(var(--foreground));
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  display: block;
+}
+
+.prose details ul li a:hover {
+  color: #60a5fa;
+  transform: translateX(4px);
 }

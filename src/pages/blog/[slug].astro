@@ -2,6 +2,7 @@
 import BlogPost from '../../layouts/BlogPost.astro';
 import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer.astro';
+import Blog from '../../components/Blog';
 import { getCollection, getEntryBySlug } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -24,6 +25,23 @@ const formattedDate = new Date(entry.data.date).toLocaleDateString('de-DE', {
   month: 'long',
   year: 'numeric'
 });
+
+// Get all posts except the current one and pick 3 random ones
+const allPosts = await getCollection('blog');
+const otherPosts = allPosts
+  .filter(post => post.slug !== slug)
+  .map(p => ({
+    slug: p.slug,
+    title: p.data.title,
+    description: p.data.description,
+    category: p.data.category,
+    readTime: p.data.readTime,
+    author: p.data.author,
+    date: p.data.date,
+    image: p.data.image || "/placeholder.svg"
+  }))
+  .sort(() => Math.random() - 0.5)
+  .slice(0, 3);
 ---
 
 <BlogPost
@@ -104,6 +122,18 @@ const formattedDate = new Date(entry.data.date).toLocaleDateString('de-DE', {
         </div>
       </div>
     </div>
+
+    <!-- Related Articles -->
+    {otherPosts.length > 0 && (
+      <div class="py-16 bg-gradient-to-b from-blue-400/5 via-purple-400/5 to-transparent">
+        <div class="max-w-7xl mx-auto px-6">
+          <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
+            Weitere interessante Artikel
+          </h2>
+          <Blog client:load posts={otherPosts} limit={3} showViewAll={false} />
+        </div>
+      </div>
+    )}
 
     <!-- Footer -->
     <Footer />

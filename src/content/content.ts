@@ -45,6 +45,11 @@ export const homepageContent = {
         title: "Vibe Coding Agentur",
         description: "Smarte, KI‑gestützte Apps und Workflows – schnell, modular, kosteneffizient. Von MVP bis Rollout, mit klaren Sprints und sauberer Integration.",
         icon: "🎨"
+      },
+      {
+        title: "KI Beratung",
+        description: "Strategische KI-Beratung für nachhaltigen Unternehmenserfolg. Von der Potenzialanalyse über Strategie-Entwicklung bis zur Implementierung – praxisnah und messbar.",
+        icon: "🤖"
       }
     ]
   },
