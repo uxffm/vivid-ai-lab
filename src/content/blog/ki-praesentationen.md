@@ -1,5 +1,5 @@
 ---
-title: "KI optimal einsetzen zur Erstellung von Präsentationen"
+title: "KI für Präsentationen - KI Optimal einsetzen für PowerPoint & Co."
 description: "KI revolutioniert die Präsentationserstellung – von Layout über Textarbeit bis Design. Erfahren Sie, wie Sie KI-Tools effizient nutzen und worauf Sie achten müssen."
 author: "KI Agentur Frankfurt"
 date: "2025-10-27"
