@@ -11,7 +11,7 @@ import Footer from '../components/Footer.astro';
 import { getCollection } from 'astro:content';
 
 const pageTitle = "KI Agentur aus Frankfurt - Künstliche Intelligenz für Ihr Unternehmen";
-const pageDescription = "KI-Agentur in Frankfurt: Wir revolutionieren Ihre digitale Präsenz mit künstlicher Intelligenz. Maßgeschneiderte KI-Lösungen für messbare Ergebnisse.";
+const pageDescription = "KI-Agentur in Frankfurt: Wir verbessern Ihre digitale Präsenz mit künstlicher Intelligenz. Maßgeschneiderte KI-Lösungen für messbare Ergebnisse.";
 
 const posts = (await getCollection('blog')).map((p) => ({
   slug: p.slug,
@@ -65,7 +65,7 @@ const posts = (await getCollection('blog')).map((p) => ({
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "KI Marketing Frankfurt",
+    "name": "KI Frankfurt",
     "url": "https://ki-marketing-frankfurt.de",
     "description": pageDescription,
     "potentialAction": {
@@ -78,16 +78,16 @@ const posts = (await getCollection('blog')).map((p) => ({
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "KI-Marketing Services",
+    "name": "KI-Frankfurt",
     "provider": {
       "@type": "Organization",
-      "name": "KI Marketing Frankfurt"
+      "name": "KI  Frankfurt"
     },
     "serviceType": "KI-Marketing Agentur",
     "areaServed": {
       "@type": "Place",
       "name": "Frankfurt am Main, Deutschland"
     },
-    "description": "Professionelle KI-Marketing-Lösungen für Unternehmen in Frankfurt und Umgebung"
+    "description": "Professionelle KI--Lösungen für Unternehmen in Frankfurt und Umgebung"
   })} />
 </Layout>
