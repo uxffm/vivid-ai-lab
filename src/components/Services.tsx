@@ -5,9 +5,10 @@ import { homepageContent } from "@/content/content";
 const getIcon = (iconName: string) => {
   const iconMap: { [key: string]: string } = {
     "🤖": "🤖",
-    "⚡": "⚡", 
+    "⚡": "⚡",
     "🎨": "🎨",
-    "🌐": "🌐"
+    "🌐": "🌐",
+    "🔒": "🔒"
   };
   return iconMap[iconName] || "🤖";
 };
@@ -30,7 +31,8 @@ const Services = () => {
             const isAutomation = service.title === "KI Automation";
             const isVibeCoding = service.title === "Vibe Coding Agentur";
             const isBeratung = service.title === "KI Beratung";
-            const href = isAutomation ? "/ki-automatisierung" : isVibeCoding ? "/vibe-coding" : isBeratung ? "/ki-beratung" : undefined;
+            const isLokaleModelle = service.title === "Lokale KI Modelle";
+            const href = isAutomation ? "/ki-automatisierung" : isVibeCoding ? "/vibe-coding" : isBeratung ? "/ki-beratung" : isLokaleModelle ? "/ki-modelle-lokal" : undefined;
             const Card = ({ children }: { children: React.ReactNode }) => (
               href ? (
                 <a href={href} className="group relative p-8 rounded-2xl bg-card border border-border hover:border-primary/50 smooth-transition block" style={{ animationDelay: `${index * 0.1}s` }}>

@@ -1,0 +1,272 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation';
+import Contact from '../components/Contact';
+import Footer from '../components/Footer.astro';
+
+const pageTitle = "Lokale KI-Modelle für Unternehmen – Datenschutz & Kontrolle | KI Agentur";
+const pageDescription = "Implementierung lokaler KI-Modelle für maximale Datensicherheit und Kontrolle. On-Premise oder Private Cloud – DSGVO-konform und unabhängig von externen Anbietern.";
+---
+
+<Layout
+  title={pageTitle}
+  description={pageDescription}
+  image="/src/assets/ai-hero-image.jpg"
+  type="article"
+>
+  <Navigation client:load />
+
+  <main>
+    <!-- Hero -->
+    <section class="relative py-28 md:py-36 overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-blue-400/20 via-purple-400/15 to-transparent" />
+      <div class="pointer-events-none absolute -top-24 -left-24 h-64 w-64 rounded-full bg-blue-500/10 blur-2xl" />
+      <div class="pointer-events-none absolute -bottom-24 -right-24 h-64 w-64 rounded-full bg-purple-400/10 blur-2xl" />
+
+      <div class="relative z-10 max-w-7xl mx-auto px-6">
+        <div class="max-w-3xl">
+          <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+            Lokale KI-Modelle für Ihr Unternehmen
+          </h1>
+          <p class="mt-6 text-lg md:text-xl text-muted-foreground">
+            Nutzen Sie die Kraft moderner KI-Technologie – ohne Ihre sensiblen Daten externen Anbietern anzuvertrauen. Wir implementieren leistungsstarke KI-Modelle direkt in Ihrer Infrastruktur für maximale Kontrolle, Datenschutz und Unabhängigkeit.
+          </p>
+          <div class="mt-10 flex flex-col sm:flex-row gap-4">
+            <a href="#kontakt" class="inline-flex items-center justify-center px-6 py-3 rounded-[5px] bg-gradient-to-r from-blue-500 to-purple-500 text-white hover:from-blue-600 hover:to-purple-600 transition-colors">
+              Kostenlose Beratung
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Intro Text -->
+    <section class="py-16 bg-gradient-to-b from-blue-400/5 via-purple-400/5 to-transparent">
+      <div class="max-w-3xl mx-auto px-6">
+        <div class="rounded-2xl border border-border/60 bg-gradient-to-br from-background/80 to-background/60 backdrop-blur-sm p-8 shadow-lg text-center">
+        <h2 class="text-2xl md:text-3xl font-semibold mb-4">Warum lokale KI-Modelle?</h2>
+        <div class="space-y-8 text-lg text-muted-foreground">
+          <p>
+            Bei sensiblen Geschäftsdaten, strengen Compliance-Anforderungen oder kritischen Anwendungen reichen Cloud-basierte KI-Lösungen oft nicht aus. Lokale KI-Modelle bieten Ihnen vollständige Kontrolle über Ihre Daten und Prozesse – ohne Kompromisse bei Leistung oder Funktionalität.
+          </p>
+          <div>
+            <h3 class="text-xl font-semibold mb-4 text-foreground">Ihre Vorteile mit lokalen KI-Modellen</h3>
+            <ul class="space-y-3 text-left">
+              <li class="p-4 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+                <strong>100% Datenkontrolle:</strong> Ihre Daten verlassen niemals Ihre Infrastruktur – keine Übertragung an Drittanbieter.
+              </li>
+              <li class="p-4 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+                <strong>DSGVO-Konformität:</strong> Erfüllen Sie höchste Datenschutzstandards ohne komplexe Vertragswerke mit Cloud-Anbietern.
+              </li>
+              <li class="p-4 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+                <strong>Niedrigere Betriebskosten:</strong> Keine laufenden API-Kosten – kalkulierbare Infrastrukturkosten statt Pay-per-Use.
+              </li>
+              <li class="p-4 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+                <strong>Höhere Performance:</strong> Minimale Latenz durch lokale Verarbeitung – ideal für Echtzeit-Anwendungen.
+              </li>
+              <li class="p-4 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+                <strong>Anpassungsfähigkeit:</strong> Fine-Tuning auf Ihre spezifischen Use Cases und Branchenterminologie.
+              </li>
+              <li class="p-4 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+                <strong>Unabhängigkeit:</strong> Keine Abhängigkeit von externen Anbietern, deren Preisen oder Verfügbarkeit.
+              </li>
+            </ul>
+          </div>
+          <p>
+            Typische Einsparungen: 40–70% geringere Betriebskosten gegenüber Cloud-APIs bei mittlerer bis hoher Nutzung. Schnellere Antwortzeiten (&lt; 100ms statt 500–2000ms) und vollständige Kontrolle über Updates und Modellversionen.
+          </p>
+        </div>
+        </div>
+      </div>
+      <!-- Wider three-step grid -->
+      <div class="mt-12 max-w-5xl mx-auto px-6">
+        <h3 class="text-xl font-semibold mb-4 text-foreground text-center">Unser Implementierungsprozess</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-left">
+          <div class="p-6 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+            <div class="text-sm font-semibold text-muted-foreground mb-1">Schritt 1</div>
+            <h4 class="text-3xl md:text-2xl font-semibold mb-2">Anforderungsanalyse</h4>
+            <div class="text-sm text-muted-foreground mb-3">Wir analysieren Ihre Use Cases und definieren die optimale Modell-Architektur.</div>
+            <ul class="text-sm text-muted-foreground space-y-1 list-disc pl-4">
+              <li>Bewertung von Use Cases und Datenvolumen</li>
+              <li>Infrastruktur-Assessment (On-Prem/Cloud)</li>
+              <li>Modellauswahl und Kosten-Nutzen-Analyse</li>
+            </ul>
+          </div>
+          <div class="p-6 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+            <div class="text-sm font-semibold text-muted-foreground mb-1">Schritt 2</div>
+            <h4 class="text-3xl md:text-2xl font-semibold mb-2">Setup & Fine-Tuning</h4>
+            <div class="text-sm text-muted-foreground mb-3">Installation, Konfiguration und Anpassung der Modelle auf Ihre spezifischen Anforderungen.</div>
+            <ul class="text-sm text-muted-foreground space-y-1 list-disc pl-4">
+              <li>Infrastruktur-Setup und Optimierung</li>
+              <li>Modell-Deployment und Testing</li>
+              <li>Fine-Tuning mit Ihren Daten (optional)</li>
+            </ul>
+          </div>
+          <div class="p-6 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+            <div class="text-sm font-semibold text-muted-foreground mb-1">Schritt 3</div>
+            <h4 class="text-3xl md:text-2xl font-semibold mb-2">Integration & Betrieb</h4>
+            <div class="text-sm text-muted-foreground mb-3">Nahtlose Integration in Ihre bestehenden Systeme und Prozesse.</div>
+            <ul class="text-sm text-muted-foreground space-y-1 list-disc pl-4">
+              <li>API-Integration und Workflows</li>
+              <li>Monitoring und Performance-Optimierung</li>
+              <li>Schulung und Dokumentation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Zusätzlicher Textbereich -->
+    <section class="py-16 bg-gradient-to-b from-purple-400/5 via-blue-400/5 to-transparent">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="rounded-2xl border border-border/60 bg-gradient-to-br from-background/80 to-background/60 backdrop-blur-sm p-8 shadow-lg">
+          <h2 class="text-2xl md:text-3xl font-semibold mb-6">Technologie & Anwendungsfälle</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-lg text-muted-foreground">
+            <div class="space-y-6">
+              <p>
+                Moderne Open-Source-Modelle wie Llama 3, Mistral, Gemma oder spezialisierte
+                Domain-Modelle erreichen heute Leistungsniveaus, die vor einem Jahr nur
+                kommerziellen Cloud-APIs vorbehalten waren.
+              </p>
+              <p>
+                Wir setzen auf bewährte Modelle, die in Ihrer Infrastruktur laufen –
+                auf eigenen Servern, in Ihrer Private Cloud oder auf dedizierten
+                GPU-Instanzen. Sie behalten die volle Kontrolle über Updates, Versionen
+                und Datenzugriffe.
+              </p>
+              <p>
+                Die Implementierung erfolgt modular: Start mit einem Kern-Use-Case,
+                dann schrittweise Erweiterung auf weitere Anwendungen. So minimieren
+                wir Risiken und maximieren den ROI.
+              </p>
+              <p>
+                Fine-Tuning ermöglicht es, Modelle präzise auf Ihre Fachterminologie,
+                Prozesse und Datenformate anzupassen – für deutlich bessere Ergebnisse
+                als generische Cloud-Modelle.
+              </p>
+              <h3 class="text-xl font-semibold text-foreground">Typische Anwendungsfälle</h3>
+              <ul class="list-disc pl-5 space-y-2">
+                <li>Interne Wissensdatenbanken und Dokumentensuche (RAG)</li>
+                <li>Vertrauliche Dokumentenanalyse und -verarbeitung</li>
+                <li>Kundenservice-Chatbots mit sensiblen Daten</li>
+                <li>Code-Analyse und automatisierte Reviews</li>
+                <li>Medizinische oder rechtliche Textanalyse</li>
+                <li>Qualitätssicherung und Content-Moderation</li>
+              </ul>
+            </div>
+            <div class="space-y-6">
+              <p>
+                Hardware-Anforderungen: Je nach Modellgröße und Use Case reichen moderne
+                Server mit GPU (z.B. NVIDIA A100, H100 oder kostengünstigere Consumer-GPUs
+                für kleinere Modelle). Wir helfen bei der Dimensionierung.
+              </p>
+              <p>
+                Sicherheit inklusive: Vollständige Verschlüsselung, Zugriffskontrolle,
+                Audit-Logs und Compliance-Dokumentation. Ihre IT-Sicherheitsrichtlinien
+                werden vollständig eingehalten.
+              </p>
+              <p>
+                Wartung und Updates: Wir unterstützen Sie bei der laufenden Optimierung,
+                Modell-Updates und Skalierung. Optional übernehmen wir das komplette
+                Management für Sie.
+              </p>
+              <p>
+                Performance-Garantien: Wir definieren gemeinsam klare KPIs (Antwortzeit,
+                Durchsatz, Qualität) und optimieren kontinuierlich. Monitoring-Dashboards
+                geben Ihnen jederzeit Einblick.
+              </p>
+              <h3 class="text-xl font-semibold text-foreground">Unterstützte Modelle & Frameworks</h3>
+              <ul class="list-disc pl-5 space-y-2">
+                <li>Meta Llama 3.x (8B, 70B, 405B)</li>
+                <li>Mistral AI (7B, Mixtral 8x7B, 8x22B)</li>
+                <li>Google Gemma & Gemma 2</li>
+                <li>Qwen, DeepSeek, Phi-3</li>
+                <li>Spezialisierte Domain-Modelle (Medical, Legal, Code)</li>
+                <li>Custom Fine-Tuned Models</li>
+              </ul>
+              <h3 class="text-xl font-semibold text-foreground mt-4">Deployment-Optionen</h3>
+              <ul class="list-disc pl-5 space-y-2">
+                <li>On-Premise (eigene Server/Datacenter)</li>
+                <li>Private Cloud (AWS, Azure, GCP)</li>
+                <li>Hybrid-Setup (lokale + Cloud-Modelle)</li>
+                <li>Edge Deployment (für IoT/mobile Anwendungen)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cost Comparison Section -->
+    <section class="py-16">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-2xl md:text-3xl font-semibold mb-8 text-center">Kostenvergleich: Cloud vs. Lokal</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="p-6 rounded-2xl border border-border/60 bg-gradient-to-br from-red-500/5 to-orange-500/5">
+            <h3 class="text-xl font-semibold mb-4 text-foreground">Cloud-APIs (z.B. GPT-4)</h3>
+            <ul class="space-y-3 text-muted-foreground">
+              <li>✗ Pay-per-Token: $0.03–$0.15 per 1K tokens</li>
+              <li>✗ Bei 10M Tokens/Monat: $300–$1,500/Monat</li>
+              <li>✗ Kosten skalieren linear mit Nutzung</li>
+              <li>✗ Keine Kostenkontrolle bei Spitzenlasten</li>
+              <li>✗ Vendor Lock-in und Preisänderungen</li>
+              <li>✗ Daten verlassen Ihre Infrastruktur</li>
+            </ul>
+          </div>
+          <div class="p-6 rounded-2xl border border-border/60 bg-gradient-to-br from-green-500/5 to-blue-500/5">
+            <h3 class="text-xl font-semibold mb-4 text-foreground">Lokale Modelle</h3>
+            <ul class="space-y-3 text-muted-foreground">
+              <li>✓ Einmalige Setup-Kosten: €5,000–€25,000</li>
+              <li>✓ Laufende Kosten: €200–€800/Monat (Hardware/Strom)</li>
+              <li>✓ Unbegrenzte Nutzung ohne Token-Kosten</li>
+              <li>✓ Volle Kostenkontrolle und Planbarkeit</li>
+              <li>✓ Unabhängigkeit von Anbietern</li>
+              <li>✓ 100% Datenschutz und Kontrolle</li>
+            </ul>
+          </div>
+        </div>
+        <p class="mt-6 text-center text-muted-foreground">
+          Break-Even typischerweise nach 3–12 Monaten, abhängig vom Nutzungsvolumen und Use Case.
+        </p>
+      </div>
+    </section>
+
+    <!-- Expert Section -->
+    <section class="py-16">
+      <div class="max-w-2xl mx-auto px-6">
+        <div class="flex flex-col items-center gap-8">
+          <div class="flex-shrink-0">
+            <img
+              src="/ki-ai-automatisierungsexperte.webp"
+              alt="Ihr KI Experte"
+              class="w-80 h-80 rounded-full object-cover"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            />
+            <div class="w-80 h-80 rounded-full bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center text-white text-4xl font-bold" style="display: none;">
+              KI
+            </div>
+          </div>
+          <div class="flex-1 text-left">
+            <h3 class="text-2xl font-semibold mb-4 text-center">Lukasz - Ihr Experte für lokale KI-Modelle</h3>
+            <p class="text-lg text-muted-foreground mb-6">
+              Als KI-Pionier habe ich bereits dutzende Unternehmen bei der erfolgreichen Implementierung lokaler KI-Modelle begleitet – von mittelständischen Betrieben bis zu Konzernen mit strengsten Compliance-Anforderungen.
+            </p>
+            <p class="text-lg text-muted-foreground mb-6">
+              Meine Expertise umfasst die gesamte Bandbreite: von der Hardware-Dimensionierung über Modellauswahl und Fine-Tuning bis zur produktiven Integration in bestehende IT-Landschaften. Dabei lege ich besonderen Wert auf pragmatische Lösungen, die sofort Mehrwert liefern.
+            </p>
+            <p class="text-lg text-muted-foreground">
+              Ich helfe Ihnen, die richtige Balance zwischen Leistung, Kosten und Datenschutz zu finden – und begleite Sie von der ersten Analyse bis zum erfolgreichen Produktivbetrieb.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontakt -->
+    <div id="kontakt">
+      <Contact client:load />
+    </div>
+  </main>
+
+  <Footer />
+</Layout>

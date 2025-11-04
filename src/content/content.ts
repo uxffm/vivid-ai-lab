@@ -42,6 +42,11 @@ export const homepageContent = {
         icon: "⚡"
       },
       {
+        title: "Lokale KI Modelle",
+        description: "Maximale Datenkontrolle und DSGVO-Konformität durch lokale KI-Modelle in Ihrer Infrastruktur. Unabhängig, kosteneffizient und vollständig unter Ihrer Kontrolle.",
+        icon: "🔒"
+      },
+      {
         title: "Vibe Coding Agentur",
         description: "Smarte, KI‑gestützte Apps und Workflows – schnell, modular, kosteneffizient. Von MVP bis Rollout, mit klaren Sprints und sauberer Integration.",
         icon: "🎨"

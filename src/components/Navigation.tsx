@@ -98,6 +98,12 @@ const Navigation = () => {
                           KI Automatisierung
                         </a>
                         <a
+                          href="/ki-modelle-lokal"
+                          className="block px-4 py-3 text-sm text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-colors"
+                        >
+                          Lokale KI Modelle
+                        </a>
+                        <a
                           href="/vibe-coding"
                           className="block px-4 py-3 text-sm text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-colors"
                         >
