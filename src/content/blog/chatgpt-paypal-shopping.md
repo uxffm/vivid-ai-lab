@@ -14,6 +14,8 @@ image: "/paypal-chatgpt.png"
 
 Wenn du ChatGPT nach einem Produkt fragst („Zeig mir einen Keramik-Kaffeebecher"), schlägt es dir passende Angebote vor. Unterstützt ein Produkt „Instant Checkout", bekommst du einen „Kaufen"-Button direkt im Chat. Ein Beispiel ist ChatGPTs Anzeige für ein Keramik-Geschirr-Set von Etsy (mit Preis und „Buy"-Button). Klickst du darauf, bestätigt ChatGPT noch deine Lieferadresse und Zahlungsart, und der Kauf geht automatisch durch. Du verlässt die ChatGPT-App dafür nicht. Alles läuft in einem Fenster ab.
 
+![ChatGPT zeigt Produktdetails im Chat mit Kauf-Button („Buy") für Instant Checkout (hier ein Frühstücks-Set).](/paypal-chatgpt-2.png)
+
 ChatGPT zeigt Produktdetails im Chat mit Kauf-Button („Buy") für Instant Checkout (hier ein Frühstücks-Set).
 
 ## Wie PayPal technisch eingebunden wird
