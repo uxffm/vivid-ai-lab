@@ -95,6 +95,14 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- New Blog Post: ChatGPT PayPal Shopping -->
+  <url>
+    <loc>https://frankfurt-ai.de/blog/chatgpt-paypal-shopping</loc>
+    <lastmod>2025-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- KI Automatisierung Page -->
   <url>
     <loc>https://frankfurt-ai.de/ki-automatisierung</loc>
