@@ -122,11 +122,10 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <!-- Hidden static Netlify form for detection at build time -->
     <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
       <input type="hidden" name="form-name" value="contact" />
-      <input type="text" name="firstName" />
-      <input type="text" name="lastName" />
+      <input type="text" name="name" />
       <input type="email" name="email" />
       <textarea name="message"></textarea>
-      <p class="hidden"><label>Don’t fill this out: <input name="bot-field" /></label></p>
+      <p class="hidden"><label>Don't fill this out: <input name="bot-field" /></label></p>
     </form>
     <SonnerToaster client:load />
   </body>
