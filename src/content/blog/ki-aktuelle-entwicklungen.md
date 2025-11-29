@@ -1,83 +1,121 @@
 ---
-title: "KI Aktuelle Entwicklungen 2025: November 2025"
-description: "Die wichtigsten KI-Updates im Überblick: Von Chinas Chip-Verbot über ChatGPT-Features bis zu neuen Entwicklertools."
+title: "KI Aktuelle Entwicklungen 2025: Woche 48 (25.-29. November)"
+description: "Die wichtigsten KI-Updates der Woche: Webdesign-Tools, Bildgenerierung, neue Assistenten und technische Durchbrüche."
 author: "KI Agentur Frankfurt"
-date: "2025-11-14"
+date: "2025-11-29"
 category: "KI-News"
-readTime: "15 min Lesezeit"
+readTime: "20 min Lesezeit"
 image: "/aktuelle-ki-entwicklungen.png"
 ---
 
-# Aktuelle KI-Updates im Überblick
+# Wöchentlicher KI-Überblick – Kalenderwoche 48 (25.–29. Nov 2025)
 
-Die neusten News der KI frisch aus unserer [KI Agentur](/)
+Die neuesten KI-Entwicklungen der aktuellen Woche frisch aus unserer [KI Agentur](/).
 
-# Aktualisiert 14. November 2025
+## Webdesign und KI
 
-Microsoft baut gerade eine riesige AI-Fabrik in Atlanta. Du kannst dir das wie ein gigantisches Rechenzentrum vorstellen, vollgepackt mit GPUs. Das Ding ist so groß, dass es wie ein eigenes Industriegebiet wirkt. Es wird OpenAI, Mistral, xAI und viele andere mit Power versorgen. Und genau das zeigt dir, wie stark der Wettlauf um Rechenleistung geworden ist. Mehr Rechenpower heißt mehr Modelle, schnellere Modelle, größere Modelle.
+### Figma: Neue KI-Funktionen und Sites CMS
 
-OpenAI hat GPT-5.1 rausgebracht. Die Stimmung dazu ist gemischt. Du bekommst zwei Modi. Ein Modus redet schneller und wärmer. Der andere denkt länger und tiefer. Und du kannst die Persönlichkeit einstellen. Viele Leute finden das cool. Andere merken schon jetzt, dass der Ton manchmal seltsam wird, fast bissig. Reddit redet viel darüber, warum OpenAI das Update so leise rausgebracht hat. Es wirkt, als würden sie schon auf das nächste große Modell hinarbeiten.
+Das Design-Tool Figma hat diese Woche seine KI-Funktionen ausgebaut. In Figma Make können jetzt experimentelle KI-Modelle genutzt werden – darunter Google Gemini 3 Pro, der neueste KI-Gigant von Google. Gleichzeitig hat Figma mit Sites CMS ein eigenes Content-Management-System als Beta gestartet, damit Designer direkt in Figma dynamische Webseiten und Blogs erstellen können. Außerdem gibt es Verbesserungen für Design-Systeme wie erweiterte Collections für Multi-Brand-Designs. Kurz: Figma verknüpft immer stärker Design-Workflows mit KI, um Prototyping und Webdesign zu beschleunigen.
 
-Fei-Fei Li hat ein neues Modell namens Marble vorgestellt. Marble baut dir ganze 3D-Welten aus Texten, Bildern oder Videos. Du schreibst etwas, und das Modell baut dir einen Raum oder eine Szene, die bleibt, sich erweitern lässt und exportiert werden kann. Leute im Machine-Learning-Bereich feiern das, weil es zeigt, wohin AI als nächstes geht: weg vom Chat und rein in echte Welten.
+### Wix: Neue KI-Design-Plattform Wixel
 
-Anthropic investiert fünfzig Milliarden Dollar in neue AI-Rechenzentren in den USA. Texas, New York und viele weitere Standorte kommen. Das ist ein unglaublicher Betrag. Und es zeigt dir, wie groß ihre Ambition ist. Sie wollen nicht auf Amazon oder Google angewiesen sein. Sie wollen eigene Power. Eigene Gebäude. Eigene Infrastruktur. Reddit sieht das als großen Schritt, um OpenAI ernsthaft Konkurrenz zu machen.
+Auch der Webbaukasten Wix setzt voll auf KI. Bereits zuvor hatte Wix einen AI Site Builder vorgestellt, der per Chat-Dialog komplette Websites samt Layout, Text und Bildern generiert. Nun geht Wix noch weiter: Mit Wixel hat das Unternehmen eine eigene KI-Design-Plattform gestartet. Wixel soll professionelle Grafikbearbeitung für alle zugänglich machen. Nutzer können z.B. ein Produktfoto hochladen und den Hintergrund oder die Umgebung per KI austauschen, Farben anpassen oder Texte einfügen – alles in wenigen Minuten. Im Hintergrund wählt Wixel automatisch die besten Modelle für jede Aufgabe aus, u.a. OpenAIs neueste Bild-KI. Das Ziel: Design auf Profi-Niveau, ohne dass man selbst Experte sein muss.
 
-Ein anderes Thema ist das Modell Kimi K2. Das sorgt gerade richtig für Diskussionen. Das Modell denkt in vielen Schritten. Es löst Aufgaben, indem es Tools nutzt, Code schreibt, sucht, nachdenkt. Viele sagen, dass es bei bestimmten komplexen Aufgaben sogar besser abschneidet als GPT-5. Das ist spannend, weil es zeigt, dass offene Modelle die geschlossenen Modelle einholen.
+### Adobe: Firefly Image Model 5 und Audio-KI
 
-Auf Reddit läuft auch ein Experiment mit AI, die autonom Krypto tradet. Und das Lustige ist: Kimi macht Gewinne. DeepSeek auch. ChatGPT dagegen verliert fast alles. Das zeigt schön, dass nicht jedes Modell gleich gut für reale Entscheidungen geeignet ist. Und es zeigt, dass diese AIs manchmal mutiger oder dümmer handeln, je nach Training.
+Der Kreativsoftware-Riese Adobe hat auf seiner MAX-Konferenz Ende Oktober weitreichende KI-Neuerungen angekündigt, die jetzt ausgerollt werden. Adobe Firefly, Adobes generative Bild-KI, wurde auf Image Model 5 aktualisiert – dieser erzeugt Bilder in höherer 4-Megapixel-Auflösung (ca. 2K) und erlaubt erstmals ebenenbasiertes Bearbeiten. In der Praxis heißt das: Firefly kann Objekte im Bild erkennen, verschieben oder ersetzen, ohne Qualitätseinbußen.
 
-Morgan Freeman hat sich öffentlich über AI-Stimmen beschwert. Er ist genervt davon, dass Leute seine Stimme klonen. Er sagt klar, dass es Diebstahl ist. Seine Anwälte sind dran. Und Reddit stimmt ihm zu. Viele finden, dass die Grenzen bei Stimmklonen überschritten wurden. Künstler fühlen sich bedroht. Die Diskussion wird größer.
+Zudem hat Adobe KI-Audiofunktionen eingeführt: Generate Soundtrack schlägt automatisch Hintergrundmusik für Videos vor, und Generate Speech erzeugt Sprachkommentare in 15 Sprachen (auch mit Emotionseffekten). Selbst ein KI-gestützter Video-Editor im Browser ist in Arbeit. Darüber hinaus bekommen Programme wie Photoshop und Express eingebaute KI-Assistenten, die bei Aufgaben helfen oder Einstellungen automatisch vornehmen. Adobe zeigt damit, dass KI künftig ein Kernbestandteil der Kreativ-Tools ist.
 
-Dann gibt es den Neo-Roboter. Der wurde als smarter Haushaltsroboter beworben. Auf Reddit hat man aber schnell gemerkt, dass viele Aufgaben heimlich von Menschen ferngesteuert werden, wenn der Roboter es nicht schafft. Das zerstört natürlich den ganzen “AI-Roboter”-Hype. Leute fanden das eher peinlich als beeindruckend.
+### Canva: Editierbare generative Designs
 
-Der CEO von Cloudflare wirft Google vor, seine Such-Marktstellung zu nutzen, um die AI zu trainieren. Reddit diskutiert darüber, ob das unfair ist oder einfach nur logisch. Die Frage bleibt: wem gehört das Web, wenn jeder alles crawlt und in AI stopft.
+Auch Canva – die beliebte Online-Design-Plattform – setzt verstärkt auf KI. Kürzlich hat Canva ein eigenes generatives Design-Modell vorgestellt, das nicht nur flache Bilder erzeugt, sondern voll editierbare Entwürfe mit einzelnen Ebenen und Objekten. Damit können Nutzer ein Design per Textprompt erstellen und anschließend jedes Element (Text, Bild, Grafik) nach Belieben bearbeiten.
 
-Und ein großes Thema war Musik. Eine Studie hat gezeigt, dass fast niemand erkennt, ob ein Song von AI stammt oder von einem Menschen. Neunundsiebzig von hundert lag daneben. Viele Menschen fühlen sich unwohl, weil sie nichts mehr unterscheiden können. Und ein Drittel der neuen Songs soll inzwischen komplett AI-generiert sein. Das hat viele wachgerüttelt. Die meisten wollen klare Kennzeichnungen.
+Zusätzlich hat Canva seinen KI-Assistenten ausgebaut: In der Oberfläche lässt sich nun überall ein Chatbot (@Canva AI) ansprechen, um z.B. Textvorschläge oder Bildideen zu erhalten. Neu sind auch Funktionen wie automatisch generierte 3D-Objekte, die sich ins Design einfügen lassen, sowie KI-gestützte Formular- und E-Mail-Designs. Canva zeigt damit, wie KI den Kreativprozess vereinfacht – von Social-Media-Posts bis hin zu Präsentationen und Marketingmaterial.
+
+## Bildgenerierung (Text-zu-Bild)
+
+### Google & Adobe – Neues Bildmodell Nano Banana Pro
+
+Ein Highlight dieser Woche ist Googles neues Bildgenerierungs-Modell „Nano Banana Pro", das als Teil von Gemini 3 veröffentlicht wurde. Diese KI erzeugt gestochen scharfe Bilder bis 4K-Auflösung und kann Texte in Bildern fehlerfrei darstellen. Adobe hat das Modell sofort in seine Tools eingebunden: In Photoshop und der Firefly-Webapp können Nutzer jetzt Nano Banana Pro direkt nutzen.
+
+Zum Ausprobieren hat Adobe sogar bis Anfang Dezember unbegrenzte KI-Generierungen für zahlende Kunden freigeschaltet – ein Zeichen dafür, wie wichtig dieses Update ist. Nano Banana Pro bietet auch mehr Steuerungsmöglichkeiten („Kamera"-Parameter für Perspektive usw.) und kennzeichnet erstellte Bilder automatisch mit unsichtbaren Wasserzeichen. Damit setzt Google ein Ausrufezeichen in Sachen Bild-KI und Adobe sorgt dafür, dass Kreative sofort davon profitieren.
+
+### Midjourney: Profile und Style Creator
+
+Die bekannte KI-Bildplattform Midjourney hat ihre Tools diese Woche um praktische Features erweitert. Neu ist Midjourney Profiles – jeder Nutzer erhält nun ein öffentliches Profil auf midjourney.com, um dort die eigenen KI-Bilder zu präsentieren. Das fördert den Community-Aspekt und ermöglicht es, Inspiration bei anderen zu finden.
+
+Noch spannender ist der Start des Style Creator (Beta) am 21. November: Statt mühsam einen Prompt zu perfektionieren, können Anwender jetzt einen eigenen Bildstil trainieren. Man wählt Beispielbilder oder gibt Referenzen vor, und Midjourney erstellt daraus einen Style-Parameter, mit dem man konsistente Bildserien in diesem Look erzeugen kann. Dieser Style Creator nimmt einem das Rätselraten bei Prompt-Beschreibungen ab – die KI lernt den gewünschten Stil und reproduziert ihn zuverlässig. Für kreative Köpfe bedeutet das: Lieblingsästhetiken lassen sich in Zukunft per Klick anwenden, von Comic-Stil über Fotorealismus bis hin zu abstrakten Kunststilen.
+
+### Recraft: Ebenen-Effekte und neue Modelle
+
+Abseits der großen Player tut sich auch bei unabhängigen KI-Design-Tools einiges. Die Plattform Recraft, die auf KI-generierte Grafiken für Designer spezialisiert ist, hat in dieser Woche zwei bemerkenswerte Updates erhalten. Erstens wurde Googles Nano Banana Pro als neues Bildmodell integriert, sodass Recraft-Nutzer Zugriff auf die hohe Qualität dieses Modells haben.
+
+Zweitens hat Recraft sein Editor-Werkzeug erweitert: Ab sofort gibt es Ebenen-Effekte wie Schatten, Konturen (Stroke) und Unschärfe, die man direkt auf generierte oder importierte Bildelemente anwenden kann. Damit lassen sich KI-Grafiken feinschleifend bearbeiten – z.B. ein leichter Schatten für mehr Tiefe oder ein Glow-Effekt für Highlights. Diese Funktionen bringen Recraft näher an klassische Designprogramme heran und geben Nutzern „unprecedented control" über KI-Bilder.
+
+## KI-Tools und Assistenten
+
+### ChatGPT mit Gruppenchat
+
+OpenAI hat seinen KI-Assistenten ChatGPT in einen kleinen „Teamplayer" verwandelt. Seit dieser Woche können Nutzer Gruppen-Chats eröffnen, in denen bis zu 20 Personen gemeinsam mit einem ChatGPT-Bot kommunizieren. Das Feature wurde zunächst getestet und nun weltweit freigeschaltet.
+
+In so einem Chat kann man zum Beispiel mit Freunden eine Reise planen oder im Team an einem Dokument arbeiten, während ChatGPT live mithilft – etwa Infos nachschlagen, Zusammenfassungen liefern oder Ideen vorschlagen. Wichtig: Jeder Teilnehmer behält seine persönlichen Voreinstellungen, und ChatGPT antwortet nur, wenn es direkt angesprochen oder „@ChatGPT" getaggt wird. OpenAI sieht darin den Startschuss, ChatGPT von einem reinen 1-zu-1-Assistenten zu einer kollaborativen Plattform zu entwickeln.
+
+### OpenAI GPT-5.1 und Codex-Max
+
+Neben dem Gruppenchat hat OpenAI vor Kurzem weitere Verbesserungen ausgerollt. Das Sprachmodell hinter ChatGPT wurde auf GPT‑5.1 angehoben – mit zwei Varianten: **Instant** (schnelle, dialogfreudige Antworten) und **Thinking** (gründlicheres, schrittweises Vorgehen für komplexe Aufgaben). GPT‑5.1 reagiert spürbar natürlicher und lässt sich vom Nutzer in Tonfall und Stil stärker anpassen.
+
+Ebenfalls wichtig für Entwickler: OpenAI hat eine neue Version seines Codierassistenten vorgestellt, **GPT‑5.1-Codex-Max**, der speziell auf Softwareentwicklung ausgelegt ist. Dieses Modell kann umfangreiche Coding-Probleme lösen, über Stunden an großen Projekten arbeiten und in mehreren Dateien gleichzeitig Code verstehen und verbessern. Mit GPT-5.1 Codex-Max will OpenAI die Messlatte für KI-Codetools höher legen – es soll weniger „halluzinieren" (also falschen Code schreiben) und komplexe Programmieraufgaben nahezu fehlerfrei bewältigen.
+
+### xAI Grok 4.1
+
+Nicht nur OpenAI, auch Elon Musks Startup xAI hat ein Upgrade herausgebracht. Deren Chatbot Grok liegt jetzt in Version 4.1 vor. Grok 4.1 zielt darauf ab, aus dem vieldiskutierten „frechen" Chatbot einen zuverlässigen KI-Gefährten zu machen. Laut xAI ist das neue Modell deutlich schneller und hat eine geringere Halluzinationsrate, gibt also weniger unsinnige Antworten.
+
+Gleichzeitig wurde Groks „Persönlichkeit" weiterentwickelt, um kreativer und einfühlsamer zu reagieren – Grok 4.1 soll Nutzer besser emotional verstehen können und natürlicher plaudern. Ein besonderes Feature ist der **„Thinking Mode"**: Ähnlich wie ChatGPTs Denkmodus kann Grok dabei schwierige Fragen Schritt für Schritt durchdenken (z.B. Matheaufgaben oder Code-Probleme), was präzisere Lösungen liefern soll. Seit dem 19. November ist Grok 4.1 für alle Nutzer verfügbar.
+
+### Weitere neue Helfer
+
+Überall entstehen aktuell neue spezialisierte KI-Tools. Ein Beispiel: **Google Antigravity**, diese Woche vorgestellt, ist eine KI-gestützte Entwicklungsumgebung für Programmierer. Hier arbeiten mehrere KI-Agenten zusammen, um Code zu schreiben, Tests durchzuführen oder sogar eigenständig im Browser Informationen zu suchen – alles integriert in einer IDE (Entwicklungsoberfläche).
+
+Ein weiteres Beispiel ist **Perplexity AI**, dessen neuer Comet-Browser für Android diese Woche Schlagzeilen machte. Comet ist ein smarter mobiler Webbrowser, der Webseiten automatisch zusammenfasst, per Chat Fragen zu offenen Tabs beantwortet und sogar Aufgaben wie Buchungen im Hintergrund erledigen kann.
+
+## Technische Neuerungen und Forschung
+
+### Google Gemini 3
+
+In der KI-Forschung markiert Google einen Meilenstein mit Gemini 3, vorgestellt am 18. November. Dieses Modell wird als Googles bisher „intelligentestes" KI-Modell beschrieben. Gemini 3 kombiniert alle Fortschritte der Vorgänger: Es versteht komplexe Zusammenhänge besser, kann multimodal arbeiten (also mit Text, Bildern und Code umgehen) und zeigt herausragende Fähigkeiten im logischen Schlussfolgern.
+
+In internen Tests übertrifft Gemini 3 Pro die vorherigen Google-Modelle deutlich – etwa bei Verständnisfragen, Programmieraufgaben und beim Lösen kniffliger Probleme. Ein spezieller „Deep Think"-Modus soll bald für zahlende Nutzer kommen und die Intelligenz bei sehr schwierigen Aufgaben nochmals steigern. Wichtig auch: Google hat Gemini 3 direkt breit verfügbar gemacht – es steckt hinter dem neuen Gemini AI Assistant (einer eigenständigen App), ist über die Google Cloud (Vertex AI) nutzbar und treibt sogar neue Entwickler-Tools wie das oben erwähnte Antigravity an.
+
+### Anthropic Claude Opus 4.5
+
+Auch Anthropic – das KI-Startup hinter Claude – hat diese Woche sein neuestes Sprachmodell vorgestellt. Claude Opus 4.5 (Codename Opus) ist am 24. Nov erschienen und hat besonders in Sachen Programmierung und Agenten große Sprünge gemacht. Laut Anthropic ist Opus 4.5 derzeit weltweit führend bei Coding-Benchmarks; es ist das erste KI-Modell überhaupt, das über 80% auf dem schwierigen SWE-Bench (Software-Engineering-Test) erreicht.
+
+Das heißt, Claude kann jetzt Code schreiben und verstehen auf einem Niveau, das menschliche Top-Programmierer schlägt. Gleichzeitig wurden „Agentic"-Fähigkeiten verbessert: Opus 4.5 kann eigenständiger Tools nutzen und mehrere Schritte planen – etwa mehrere KI-Unteragenten koordinieren, um komplexe Aufgaben zu lösen.
+
+Für Anwender bemerkbar sind auch praktische Updates: Anthropic hat Claude für Chrome (eine Browser-Erweiterung) und Claude für Excel veröffentlicht, die nun allen Pro-Nutzern bzw. Enterprise-Kunden offenstehen. Zudem hat Claude jetzt ein ultralanges Gedächtnis und beherrscht „endlose Chats" – in langen Gesprächen komprimiert Claude automatisch ältere Kontexte, sodass man ohne Reset weiterschreiben kann.
+
+### Meta SAM 3 & SAM 3D
+
+Von Meta (Facebook) kommt ein Durchbruch im Bereich Computer Vision. Am 19. Nov hat Meta SAM 3 und SAM 3D vorgestellt, neueste Versionen des Segment-Anything-Modells. SAM 3 kann nun Objekte in Bildern und Videos nicht nur mit Klick, sondern auch per Textbeschreibung segmentieren und verfolgen. Beispiel: Man tippt „roter Baseballcap" ein, und SAM 3 markiert in einem Video alle roten Kappen – etwas, das frühere Modelle mangels Sprach-Verständnis nicht hinbekamen.
+
+SAM 3D geht noch einen Schritt weiter: Dieses offene Modell kann aus einem einzigen Foto ein 3D-Modell des abgebildeten Objekts oder sogar einer Person erzeugen. Dabei werden zwei KI-Modelle genutzt – eines für allgemeine Objekte/Umgebungen, eines speziell für menschliche Körper. Die erzeugten 3D-Objekte sind so gut, dass Meta sie direkt einsetzt: Auf Facebook Marketplace gibt es nun eine „Im Raum ansehen"-Funktion, bei der ein einfaches Produktfoto von SAM 3D in ein 3D-Modell umgewandelt wird. Nutzer können z.B. eine Lampe virtuell in ihrem Wohnzimmer platzieren, um Größe und Stil vor dem Kauf besser einzuschätzen.
+
+### DeepMind WeatherNext 2
+
+Im Schatten der großen Modellankündigungen gab es auch in der angewandten Forschung spannende News. DeepMind (Googles KI-Tochter) hat ein KI-Modell namens WeatherNext 2 präsentiert, das die Wettervorhersage revolutionieren könnte. WeatherNext 2 erstellt Stundenprognosen bis zu 15 Tage im Voraus – und das achtmal schneller als herkömmliche meteorologische Modelle. Insbesondere bei Unwettern und Stürmen soll das System deutlich bessere Trefferquoten haben.
+
+Möglich wird dies durch eine Kombination aus DeepMinds KI-Expertise und klassischen physikalischen Wetterdaten. WeatherNext 2 kann enorme Mengen historischer Wetterdaten verarbeiten und Muster erkennen, wo traditionelle Modelle an Rechen- und Zeitgrenzen stoßen. Für Meteorologen heißt das: präzisere und schnellere Vorhersagen, die z.B. bei Extremwetter Warnzeiten verlängern könnten.
+
+## Fazit
+
+In dieser Woche hat sich im KI-Bereich enorm viel getan – von praktischen Produkt-Updates bis zu technischen Durchbrüchen. Design-Plattformen wie Figma, Wix, Adobe und Canva statten Kreative mit immer smarteren KI-Werkzeugen aus, während bei den Bildgeneratoren ein regelrechtes Wettrüsten herrscht (Google vs. Adobe vs. Midjourney etc.).
+
+Gleichzeitig wachsen KI-Assistenten wie ChatGPT oder Claude über sich hinaus und lernen zusammenzuarbeiten oder programmieren. Und in den Forschungslaboren entstehen Modelle, die die Grenzen des Möglichen verschieben – sei es bei multimodaler Intelligenz (Gemini 3), 3D-Verständnis (SAM 3D) oder Wetterprognosen.
+
+Alles in allem sieht man: die KI-Welt bleibt hochdynamisch. Was letzte Woche noch neu war, ist diese Woche schon im Einsatz – und erleichtert Webdesign, Kreativarbeit, Programmierung und vieles mehr. Es bleibt spannend, wohin uns diese rasante Entwicklung führt – aber Kalenderwoche 48 hat jedenfalls gezeigt, dass KI weiterhin auf der Überholspur ist.
 
 ---
 
-## Ältere News
-
-## China: Verbot ausländischer KI-Chips in staatlichen Rechenzentren
-
-China hat laut Reuters eine Richtlinie erlassen, wonach neue, staatlich geförderte Rechenzentrumsprojekte nur noch inländische KI-Chips verwenden dürfen. Projekte, die weniger als 30 % fertiggestellt sind, müssen demnach bereits installierte ausländische Chips entfernen oder geplante Käufe stornieren. Dies gilt damit faktisch als Verbot für Nvidia-, AMD- oder Intel-Chips in neuen staatlich unterstützten KI-Rechenzentren. Beobachter sehen darin einen harten Schritt, um lokale Chip-Hersteller (etwa Huawei) zu fördern und von US-Technik unabhängiger zu werden – ein möglicher Auslöser für neuen Chip-Konflikt zwischen China und den USA.
-
-## ChatGPT: Abfrage-Unterbrechung in Echtzeit
-
-OpenAI hat eine neue Funktion eingeführt, mit der Anwender laufende ChatGPT-Abfragen unterbrechen und nachträglich Kontext hinzufügen können. Über den Button „Update" lässt sich während der KI-Antwort ein Detail ergänzen oder korrigieren, ohne den Dialog neu starten zu müssen. Dies spart besonders bei langen Recherchen Zeit: Statt das gesamte Gespräch neu zu beginnen, passt das Modell seine Antwort sofort an die neuen Informationen an. Laut OpenAI soll dies vor allem für „Deep Research"-Sitzungen oder GPT‑5‑Pro-Anfragen nützlich sein, bei denen komplexe Fragen sehr lange generieren und Nutzer oft nachträglich Details einfließen lassen möchten.
-
-## Gemini Deep Research: Zugriff auf Gmail und Drive
-
-Google hat für sein Modell „Gemini Deep Research" den Zugriff auf Workspace-Daten freigeschaltet. Nutzer können nun direkt Dokumente aus Gmail, Google Drive (Docs, Slides, Sheets, PDFs) und Google Chat in ihre KI-Recherche einbinden. Damit lassen sich etwa Marktanalysen starten, die unternehmensinterne Projektpläne oder E-Mail-Verläufe mit öffentlichen Web-Quellen kombinieren. Die Funktion steht bereits für alle Desktop-Nutzer zur Verfügung (mobile Apps folgen zeitnah) – einfach über das „Deep Research"-Tool in Gemini auswählbar. So wird die KI-Recherche um private interne Daten erweitert, etwa um firmeninterne Strategiedokumente oder Präsentationen einzubeziehen.
-
-## Snapchat: Perplexity wird Standard-KI
-
-Snapchat hat eine Partnerschaft mit Perplexity AI bekanntgegeben. Ab Januar 2026 soll Perplexitys KI-basierte Suchmaschine in den Snapchat-Chat integriert werden, sodass Nutzer:innen direkt in „My AI" und Chats Antworten mit Quellenangaben erhalten. Im Rahmen des Deals zahlt Perplexity etwa 400 Mio. USD in bar und Aktien an Snap. Die Integration startet „früh 2026" weltweit, zunächst schrittweise, und macht Perplexity zur Standard-KI für Textanfragen in Snapchat. Ziel ist es, Jugendliche und Early Adopter stärker über Snapchat an Perplexity zu binden, indem dort schnelle und zitierfähige KI-Antworten ohne App-Wechsel angeboten werden.
-
-## Google Opal: No-Code-KI-Apps weltweit
-
-Google Labs bringt seinen No-Code-KI-App-Builder Opal in über 160 Länder. Ursprünglich in nur 15 Ländern verfügbar, kann nun jeder Nutzer unter „opal.google" Mini-Apps erstellen, etwa zur Automatisierung von Recherchen oder Erstellung von Marketing-Inhalten. Opal wandelt natürliche Sprache in selbstablaufende Workflows um und bietet Baukästen, mit denen man ohne Programmierkenntnisse eigene Anwendungen generieren kann. Google hebt Beispiele hervor wie automatisierte Newsletter-Generierung, individuelle Marketing-Tools oder Datenanalyse-Apps, die nun weltweit zugänglich sind. Mit der globalen Expansion „geht Vibecoding global" – die Art, Software per KI-Dialog zu entwickeln, wird so für sehr viele Entwickler:innen und Gründer:innen nutzbar.
-
-## OpenAI: GPT-5-Codex-Mini gestartet
-
-OpenAI hat GPT-5-Codex-Mini veröffentlicht, eine abgespeckte, kostengünstige Version des GPT-5-Codex-Modells für Programmierer. Das neue Modell soll Entwicklern viermal so viele API-Aufrufe ermöglichen wie die Standardversion, bei nur geringfügig reduzierter Leistung. Firmenangaben zufolge erreicht GPT-5-Codex-Mini in Benchmarks immer noch sehr hohe Genauigkeitswerte und eignet sich besonders für mittlere bis niedrige Komplexitätsaufgaben. Parallel dazu hat OpenAI die Nutzungslimits für ChatGPT-Zahlkunden erhöht: Plus-, Business- und Edu-Abonnements erhalten 50 % mehr API-Kapazität, Pro- und Enterprise-Nutzende genießen prioritäre Ressourcenzuteilung. Ziel ist offenbar, Entwickler flexibel ansprechender Ressourcen anzubieten und Kosten bei hohem Volumen zu sparen.
-
-## Gamma: KI-Präsentationsplattform mit 2,1 Mrd. USD Bewertung
-
-Die KI-Präsentationsplattform Gamma sammelte in einer Series-B-Finanzierungsrunde 68 Mio. USD ein und erreicht damit eine Bewertung von rund 2,1 Mrd. USD. Gamma ermöglicht es Nutzern, per KI in Minuten interaktive Präsentationen, Websites oder Social-Media-Beiträge zu erstellen. Das Unternehmen ist profitabel und verzeichnet mittlerweile etwa 100 Mio. USD Jahresumsatz (ARR). Laut Berichten hat Gamma etwa 70 Millionen Nutzer, die täglich über eine Million neue Inhalte generieren, insgesamt wurden über 400 Millionen Dokumente erstellt – das entspricht etwa 30 Millionen pro Monat. In seiner Ankündigung erklärte Gründer Grant Lee, dass nun 30 Mio. Inhalte monatlich auf Gamma entstehen. Gleichzeitig gab er bekannt, dass die Gamma-API jetzt öffentlich verfügbar ist, sodass Entwickler die Plattform in eigene Workflows integrieren können.
-
-## Circle: Neue KI-Tools für Entwickler
-
-Das Krypto-Unternehmen Circle (Herausgeber der Stablecoin USDC) hat neue KI-gestützte Entwicklungswerkzeuge vorgestellt. Ein webbasiertes KI-Chatbot und ein „MCP Server" ermöglichen es, Code direkt im Browser oder in IDEs wie Cursor zu generieren. Damit lassen sich Integrationen für USDC, CCTP (Cross-Chain-Token-Transfer-Standard), Gateways, Wallets und Smart Contracts in kurzer Zeit erstellen – zum Beispiel Boilerplate-Code für Blockchain-Funktionen oder Zahlungsschnittstellen. Circle betont, dass die Tools auf den eigenen API-Schnittstellen und SDK-Dokumentationen basieren, um korrekten, zuverlässigen Codeoutput zu garantieren. Das soll Entwicklern helfen, innerhalb weniger Minuten funktionierende Prototypen oder Integrationslösungen zu generieren.
-
-## xAI: Hackathon mit frühem Grok-Zugang
-
-xAI (die KI-Firma von Elon Musk) veranstaltet am 6. und 7. Dezember 2025 einen 24-Stunden-Hackathon in der San Francisco Bay Area. Teilnehmer erhalten exklusiven Zugriff auf kommende Grok-Modelle und die neuen X-APIs, um neuartige KI-Anwendungen zu bauen. Das Event (mit Verpflegung rund um die Uhr) zeichnet die besten Projekte aus: Die Top-5-Teams werden auf dem offiziellen xAI-Account vorgestellt, die drei Gewinner erhalten Preise. Bewerbungen für den Hackathon laufen bis zum 22. November 2025 und werden laufend geprüft. Dies bietet frühen Zugang zur nächsten Generation von Grok-KI, noch vor der öffentlichen Veröffentlichung.
-
-## Lovable & imagi: Vibe Coding in Schulen
-
-Die skandinavische No-Code-Plattform Lovable kooperiert mit dem Bildungsanbieter imagi und OpenAI, um KI-gestütztes Programmieren („Vibe Coding") in Schulen zu bringen. Lehrer können nun über imagi Edu auf Lovables KI-Tools zugreifen, um interaktive Programmier-Lektionen durchzuführen. OpenAI stellt dafür rund 1 Mio. USD an Credits bereit, damit Schulen Lovable kostenlos nutzen können (z.B. während der „Hour of AI"). Laut Ankündigung bietet die Zusammenarbeit fertige Unterrichtseinheiten und Materialien, um Schülern ohne Vorwissen KI-basierte App-Entwicklung näherzubringen. Lovable betont dabei, dass es dieselbe Plattform ist, die bereits "über die Hälfte der Fortune-500-Unternehmen" zur Ideen- und Produktentwicklung nutzen. So wird Bildungsarbeit mit aktuellen Profi-Tools verbunden – ermöglicht durch OpenAIs Förderung der Initiative.
-
----
-
-*Quellen: Recherchen und Presseartikel von Reuters, Google, OpenAI, TechCrunch u.a.*
+*Hinweis: Diese Zusammenfassung basiert auf öffentlich zugänglichen Quellen, Unternehmensankündigungen und Community-Diskussionen der Woche 25.-29. November 2025.*
