@@ -11,17 +11,19 @@ export interface Props {
   modifiedTime?: string;
   author?: string;
   noindex?: boolean;
+  customSchema?: object;
 }
 
-const { 
-  title, 
+const {
+  title,
   description = "KI-Marketing Agentur in Frankfurt - Wir revolutionieren Ihr digitales Marketing mit künstlicher Intelligenz. Maßgeschneiderte KI-Lösungen für messbare Ergebnisse.",
   image = "/src/assets/ai-hero-image.jpg",
   type = "website",
   publishedTime,
   modifiedTime,
   author = "KI Marketing Frankfurt",
-  noindex = false
+  noindex = false,
+  customSchema
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -116,6 +118,56 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
         "https://www.xing.com/companies/ki-marketing-frankfurt"
       ]
     })} />
+
+    <!-- LocalBusiness Schema for Frankfurt location (only on service pages) -->
+    {type === "website" && Astro.url.pathname.includes("/ki-") && (
+      <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "KI Marketing Frankfurt",
+        "image": new URL(image, Astro.site),
+        "description": description,
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Kaiserstraße 123",
+          "addressLocality": "Frankfurt am Main",
+          "addressRegion": "Hessen",
+          "postalCode": "60311",
+          "addressCountry": "DE"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "50.1109",
+          "longitude": "8.6821"
+        },
+        "url": new URL(Astro.url.pathname, Astro.site),
+        "telephone": "+49-69-123-456-78",
+        "email": "info@ki-marketing-frankfurt.de",
+        "priceRange": "€€",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "09:00",
+            "closes": "18:00"
+          }
+        ],
+        "areaServed": {
+          "@type": "GeoCircle",
+          "geoMidpoint": {
+            "@type": "GeoCoordinates",
+            "latitude": "50.1109",
+            "longitude": "8.6821"
+          },
+          "geoRadius": "50000"
+        }
+      })} />
+    )}
+
+    <!-- Custom Schema (for service-specific structured data) -->
+    {customSchema && (
+      <script type="application/ld+json" set:html={JSON.stringify(customSchema)} />
+    )}
   </head>
   <body class="dark">
     <slot />

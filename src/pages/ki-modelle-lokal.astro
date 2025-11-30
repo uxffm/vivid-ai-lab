@@ -6,15 +6,96 @@ import Footer from '../components/Footer.astro';
 
 const pageTitle = "Lokale KI-Modelle für Unternehmen – Datenschutz & Kontrolle | KI Agentur";
 const pageDescription = "Implementierung lokaler KI-Modelle für maximale Datensicherheit und Kontrolle. On-Premise oder Private Cloud – DSGVO-konform und unabhängig von externen Anbietern.";
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Lokale KI-Modelle",
+  "name": "Lokale KI-Modelle für Unternehmen",
+  "description": pageDescription,
+  "provider": {
+    "@type": "Organization",
+    "name": "KI Frankfurt",
+    "url": "https://frankfurt-ai.de",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Frankfurt am Main",
+      "addressRegion": "Hessen",
+      "addressCountry": "DE"
+    }
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "Deutschland"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Lokale KI-Modell Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "On-Premise KI-Deployment",
+          "description": "Installation und Betrieb von KI-Modellen auf eigenen Servern"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Private Cloud Setup",
+          "description": "Deployment in AWS, Azure oder GCP Private Cloud"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Modell Fine-Tuning",
+          "description": "Anpassung von KI-Modellen auf spezifische Unternehmensanforderungen"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Infrastruktur-Beratung",
+          "description": "Hardware-Dimensionierung und Architektur-Planung"
+        }
+      }
+    ]
+  }
+};
 ---
 
 <Layout
   title={pageTitle}
   description={pageDescription}
   image="/src/assets/ai-hero-image.jpg"
-  type="article"
+  type="website"
+  customSchema={serviceSchema}
 >
   <Navigation client:load />
+
+  <!-- Breadcrumbs -->
+  <nav class="pt-32 pb-4" aria-label="Breadcrumb">
+    <div class="max-w-7xl mx-auto px-6">
+      <ol class="flex items-center gap-2 text-sm text-muted-foreground" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/" itemprop="item" class="hover:text-foreground transition-colors">
+            <span itemprop="name">Home</span>
+          </a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <li aria-hidden="true">/</li>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <span itemprop="name" class="text-foreground">Lokale KI-Modelle</span>
+          <meta itemprop="position" content="2" />
+        </li>
+      </ol>
+    </div>
+  </nav>
 
   <main>
     <!-- Hero -->

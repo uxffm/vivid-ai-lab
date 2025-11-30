@@ -7,15 +7,96 @@ import Footer from '../components/Footer.astro';
 
 const pageTitle = "KI-Automatisierung Agentur – Prozesse automatisieren mit KI | KI Agentur";
 const pageDescription = "Automatisieren Sie wiederkehrende Aufgaben mit KI: Chatbots, Workflows, Datenverarbeitung und mehr. Effizienter arbeiten, Kosten senken, schneller skalieren.";
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "KI-Automatisierung",
+  "name": "KI-Automatisierung für Unternehmen",
+  "description": pageDescription,
+  "provider": {
+    "@type": "Organization",
+    "name": "KI Frankfurt",
+    "url": "https://frankfurt-ai.de",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Frankfurt am Main",
+      "addressRegion": "Hessen",
+      "addressCountry": "DE"
+    }
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "Deutschland"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "KI-Automatisierungslösungen",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Support-Chatbots",
+          "description": "KI-Chatbots für automatisierten Kundensupport"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Workflow-Automatisierung",
+          "description": "Automatisierung von E-Mail- und Geschäftsprozessen"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Dokumentenverarbeitung",
+          "description": "KI-gestützte Verarbeitung von Rechnungen, Verträgen und Formularen"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Marketing-Automation",
+          "description": "Automatisierte Content-Erstellung und Social-Media-Planung"
+        }
+      }
+    ]
+  }
+};
 ---
 
-<Layout 
+<Layout
   title={pageTitle}
   description={pageDescription}
   image="/src/assets/ai-hero-image.jpg"
-  type="article"
+  type="website"
+  customSchema={serviceSchema}
 >
   <Navigation client:load />
+
+  <!-- Breadcrumbs -->
+  <nav class="pt-32 pb-4" aria-label="Breadcrumb">
+    <div class="max-w-7xl mx-auto px-6">
+      <ol class="flex items-center gap-2 text-sm text-muted-foreground" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/" itemprop="item" class="hover:text-foreground transition-colors">
+            <span itemprop="name">Home</span>
+          </a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <li aria-hidden="true">/</li>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <span itemprop="name" class="text-foreground">KI-Automatisierung</span>
+          <meta itemprop="position" content="2" />
+        </li>
+      </ol>
+    </div>
+  </nav>
 
   <main>
     <!-- Hero -->
