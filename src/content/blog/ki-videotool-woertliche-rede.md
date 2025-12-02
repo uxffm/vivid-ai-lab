@@ -1,7 +1,7 @@
 ---
 title: "KI Videotool für Videos mit wörtlicher Rede – Die besten Tools 2025"
 description: "Entdecken Sie die besten KI Videotools für Videos mit wörtlicher Rede auf Deutsch. Von Text-zu-Sprache bis AI-Avatare – erstellen Sie professionelle Videos mit natürlicher deutscher Sprachsynthese."
-author: "KI Agentur Frankfurt"
+author: "KI Agentur"
 date: "2025-11-04"
 category: "KI-Video"
 readTime: "15 min Lesezeit"

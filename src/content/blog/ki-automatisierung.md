@@ -1,7 +1,7 @@
 ---
 title: "KI-Automatisierung im Alltag, Büro, Unternehmen und für Entwickler"
 description: "Entdecken Sie, wie künstliche Intelligenz den Alltag, das Büro, Unternehmen und die Softwareentwicklung revolutioniert und automatisiert."
-author: "KI Agentur Frankfurt"
+author: "KI Agentur"
 date: "2025-08-20"
 category: "KI-Automatisierung"
 readTime: "15 min Lesezeit"

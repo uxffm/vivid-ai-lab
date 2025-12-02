@@ -1,7 +1,7 @@
 ---
 title: "Zimmer mit KI einrichten: KI-gestützte Tools für die Raumplanung"
 description: "Künstliche Intelligenz erobert die Innenarchitektur. Moderne Apps und Web-Tools können per KI Möbel vorschlagen, Farben abstimmen und Räume in 3D visualisieren – ohne teure Fehlkäufe."
-author: "KI Agentur Frankfurt"
+author: "KI Agentur"
 date: "2025-10-23"
 category: "Künstliche Intelligenz"
 readTime: "10 min Lesezeit"

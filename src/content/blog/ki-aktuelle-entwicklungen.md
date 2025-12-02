@@ -1,7 +1,7 @@
 ---
 title: "KI Neuigkeiten Dezember 2025: Woche vom 25. November bis 2. Dezember"
 description: "Aktuelles aus der KI-Welt: Forschungsdurchbrüche, neue Modelle, Milliarden-Investitionen und politische Weichenstellungen der ersten Dezemberwoche 2025."
-author: "KI Agentur Frankfurt"
+author: "KI Agentur"
 date: "2025-12-02"
 category: "KI-News"
 readTime: "25 min Lesezeit"

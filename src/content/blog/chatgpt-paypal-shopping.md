@@ -1,7 +1,7 @@
 ---
 title: "So läuft das Einkaufen über ChatGPT mit PayPal"
 description: "Erfahren Sie, wie ChatGPT Shopping mit PayPal funktioniert und was die Integration für Nutzer und Händler bedeutet."
-author: "KI Agentur Frankfurt"
+author: "KI Agentur"
 date: "2025-11-10"
 category: "KI-Shopping"
 readTime: "12 min Lesezeit"

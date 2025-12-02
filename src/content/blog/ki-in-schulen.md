@@ -1,7 +1,7 @@
 ---
 title: "Künstliche Intelligenz in Schulen: Vorteile und Nachteile"
 description: "KI hält Einzug in Klassenzimmer – von smarten Lern-Apps bis zu automatischer Testkorrektur. Welche Chancen und Risiken bringt das für Schüler und Lehrer?"
-author: "KI Agentur Frankfurt"
+author: "KI Agentur"
 date: "2025-10-27"
 category: "Künstliche Intelligenz"
 readTime: "12 min Lesezeit"

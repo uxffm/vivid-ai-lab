@@ -1,7 +1,7 @@
 ---
 title: "Reiseplanung mit KI: So planst du deine Reise ganzheitlich"
 description: "Die Planung einer Reise lässt sich heute mit Künstlicher Intelligenz deutlich einfacher und effizienter gestalten. KI-Tools können dich ganzheitlich unterstützen – von der ersten Inspiration bis zur Organisation."
-author: "KI Agentur Frankfurt"
+author: "KI Agentur"
 date: "2025-10-23"
 category: "Künstliche Intelligenz"
 readTime: "12 min Lesezeit"

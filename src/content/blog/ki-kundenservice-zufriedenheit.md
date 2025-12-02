@@ -1,7 +1,7 @@
 ---
 title: "Wie Deutsche über KI-Kundenservice denken - KI Agentur"
 description: "Wie ist die Zufriedenheit der deutschen beim KI Kundenservice. Kann AI hier punkten und wenn ja, was kann noch verbessert werden?"
-author: "KI Agentur Frankfurt"
+author: "KI Agentur"
 date: "2025-09-23"
 category: "KI-Zufriedenheit"
 readTime: "5 min Lesezeit"

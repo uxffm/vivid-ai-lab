@@ -1,7 +1,7 @@
 ---
 title: "Beste KI-Bildgeneratoren (Stand Oktober 2025)"
 description: "Die Auswahl an KI-Bildgeneratoren ist 2025 so groß wie nie zuvor. Doch welche gelten aktuell als die besten und worin unterscheiden sie sich?"
-author: "KI Agentur Frankfurt"
+author: "KI Agentur"
 date: "2025-10-14"
 category: "KI-Bilder"
 readTime: "10 min Lesezeit"

@@ -1,7 +1,7 @@
 ---
 title: "Mini-PC/PC Empfehlungen für lokale KI"
 description: "Hardware-Empfehlungen und KI-Modelle für datenschutzkonforme, offline laufende KI-Assistenten zur Dokumentenanalyse und Textzusammenfassung."
-author: "KI Agentur Frankfurt"
+author: "KI Agentur"
 date: "2025-11-14"
 category: "Lokale KI"
 readTime: "18 min Lesezeit"

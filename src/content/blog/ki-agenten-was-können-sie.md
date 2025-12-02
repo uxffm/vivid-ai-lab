@@ -1,7 +1,7 @@
 ---
 title: "KI-Agenten - Was können sie eigentlich?"
 description: "KI-Agenten verändern gerade alles. Sie übernehmen Aufgaben, treffen Entscheidungen und handeln eigenständig. Doch welche KI-Agenten sind aktuell führend – und was können sie wirklich?"
-author: "KI Agentur Frankfurt"
+author: "KI Agentur"
 date: "2025-10-14"
 category: "Künstliche Intelligenz"
 readTime: "10 min Lesezeit"

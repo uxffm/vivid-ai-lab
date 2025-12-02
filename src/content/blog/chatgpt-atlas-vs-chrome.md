@@ -1,7 +1,7 @@
 ---
 title: "ChatGPT Atlas vs. Google Chrome – welcher Browser passt besser?"
 description: "Ein detaillierter Vergleich zwischen ChatGPT Atlas und Google Chrome: Datenschutz, Geschwindigkeit, KI-Funktionen und Alltagstauglichkeit im Test."
-author: "KI Agentur Frankfurt"
+author: "KI Agentur"
 date: "2025-10-22"
 category: "KI-Browser"
 readTime: "10 min Lesezeit"
