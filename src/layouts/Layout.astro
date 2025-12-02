@@ -96,7 +96,8 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": "Organization",
-      "name": "KI Frankfurt",
+      "name": "KI Agentur Frankfurt",
+      "alternateName": "KI Frankfurt",
       "url": "https://frankfurt-ai.de",
       "logo": "https://frankfurt-ai.de",
       "description": description,
@@ -107,11 +108,23 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
         "postalCode": "60311",
         "addressCountry": "DE"
       },
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "Deutschland"
+        },
+        {
+          "@type": "City",
+          "name": "Frankfurt am Main"
+        }
+      ],
       "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+49-69-123-456-78",
         "contactType": "customer service",
-        "email": "info@ki-marketing-frankfurt.de"
+        "email": "info@ki-marketing-frankfurt.de",
+        "areaServed": "DE",
+        "availableLanguage": ["German", "English"]
       },
       "sameAs": [
         "https://www.linkedin.com/company/ki-marketing-frankfurt",

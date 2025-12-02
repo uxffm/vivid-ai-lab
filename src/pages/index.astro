@@ -10,8 +10,8 @@ import Contact from '../components/Contact';
 import Footer from '../components/Footer.astro';
 import { getCollection } from 'astro:content';
 
-const pageTitle = "KI Agentur aus Frankfurt - Künstliche Intelligenz für Ihr Unternehmen";
-const pageDescription = "KI-Agentur in Frankfurt: Wir verbessern Ihre digitale Präsenz mit künstlicher Intelligenz. Maßgeschneiderte KI-Lösungen für messbare Ergebnisse.";
+const pageTitle = "KI Agentur - Künstliche Intelligenz für Ihr Unternehmen | Aus Frankfurt";
+const pageDescription = "KI Agentur aus Frankfurt mit deutschlandweitem Service: Maßgeschneiderte KI-Lösungen, Automatisierung und Beratung für messbare Ergebnisse. Ihre KI-Experten vor Ort.";
 
 const posts = (await getCollection('blog')).map((p) => ({
   slug: p.slug,
