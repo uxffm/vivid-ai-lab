@@ -21,7 +21,7 @@ export const homepageContent = {
 
   // Navigation
   navigation: {
-    logo: "KI Agentur Frankfurt",
+    logo: "KI Agentur FAI",
     menu: [
       { label: "Services", href: "#services" },
       { label: "Über uns", href: "#about" },
