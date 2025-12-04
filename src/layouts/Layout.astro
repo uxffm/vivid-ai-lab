@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import { Toaster as SonnerToaster } from '../components/ui/sonner';
+import CookieConsent from '../components/CookieConsent';
 
 export interface Props {
   title: string;
@@ -34,13 +35,26 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
   <head>
     <meta charset="UTF-8" />
     
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HGXHZVR4LV"></script>
+    <!-- Google tag (gtag.js) with Consent Mode -->
     <script is:inline>
       window.dataLayer = window.dataLayer || [];
       function gtag(){ dataLayer.push(arguments); }
+
+      // Default consent to denied (will be updated by cookie banner)
+      gtag('consent', 'default', {
+        'analytics_storage': 'denied',
+        'ad_storage': 'denied',
+        'wait_for_update': 500
+      });
+
       gtag('js', new Date());
-      gtag('config', 'G-HGXHZVR4LV');
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HGXHZVR4LV"></script>
+    <script is:inline>
+      gtag('config', 'G-HGXHZVR4LV', {
+        'anonymize_ip': true,
+        'cookie_flags': 'SameSite=None;Secure'
+      });
     </script>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -193,5 +207,6 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
       <p class="hidden"><label>Don't fill this out: <input name="bot-field" /></label></p>
     </form>
     <SonnerToaster client:load />
+    <CookieConsent client:load />
   </body>
 </html>
