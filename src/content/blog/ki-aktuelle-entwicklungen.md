@@ -282,52 +282,6 @@ Im Schatten der großen Modellankündigungen gab es auch in der angewandten Fors
 
 Möglich wird dies durch eine Kombination aus DeepMinds KI-Expertise und klassischen physikalischen Wetterdaten. WeatherNext 2 kann enorme Mengen historischer Wetterdaten verarbeiten und Muster erkennen, wo traditionelle Modelle an Rechen- und Zeitgrenzen stoßen. Für Meteorologen heißt das: präzisere und schnellere Vorhersagen, die z.B. bei Extremwetter Warnzeiten verlängern könnten.
 
-## Weitere wichtige KI-Updates der Woche
-
-### ChatGPT zeigt jetzt Werbung – auch für Pro-Nutzer
-
-Eine kontroverse Entwicklung sorgt für Aufregung in der KI-Community: **ChatGPT zeigt jetzt Werbeanzeigen, selbst für zahlende Pro-Nutzer**. Markenerwähnungen erscheinen direkt in den Antworten, und auf iOS sind bereits bezahlte Platzierungen sichtbar. Die Nutzer reagieren empört, da selbst die höchsten Abo-Stufen nicht mehr werbefrei sind. OpenAI monetarisiert damit aggressiver als erwartet – ein Schritt, der die Glaubwürdigkeit des Assistenten gefährden könnte. Viele Nutzer befürchten, dass ChatGPT künftig nicht mehr objektive Hilfe bietet, sondern durch kommerzielle Interessen beeinflusst wird.
-
-### Perplexity startet Memory-Feature über alle Modelle
-
-Die KI-Suchmaschine **Perplexity AI** hat ein neues Memory-Feature eingeführt, das über alle Modelle hinweg funktioniert. Das System merkt sich Gesprächsverläufe, Nutzerinteressen und Präferenzen für intelligentere, personalisierte Antworten. Die Memory-Funktion arbeitet nahtlos mit Perplexitys Agent Assistant zusammen und funktioniert über alle Suchmodi hinweg. Nutzer behalten dabei volle Kontrolle – im Inkognito-Modus ist das Feature automatisch deaktiviert. Das macht Perplexity zu einem noch persönlicheren Assistenten, der sich an frühere Anfragen erinnert.
-
-### OpenAI Images V2 steht kurz vor dem Launch – Konkurrenz für Nano Banana Pro
-
-OpenAI arbeitet an einer komplett überarbeiteten Bildgenerierung. Die aktuelle Version ist langsam und bietet nur begrenzte Bearbeitungsmöglichkeiten. Die neue **GPT-Image V2** soll mit Googles Nano Banana Pro konkurrieren können – mit schnellerer Generierung und fortgeschrittenen Bearbeitungsfunktionen. Ein durchgesickertes „ImageGenV2Banner" in der ChatGPT-Web-App bestätigt den baldigen Release. Diese Entwicklung zeigt, dass OpenAI im Rennen um die beste Bild-KI nicht zurückfallen will.
-
-### Google Gemini bietet Studenten kostenlosen Pro-Plan für ein Jahr
-
-In einem strategischen Schachzug bietet Google **Gemini Pro kostenlos für berechtigte Studenten für ein volles Jahr** an. Die Aktion zielt klar darauf ab, den Bildungsmarkt zu erobern und früh Loyalität aufzubauen – eine direkte Herausforderung an ChatGPTs Dominanz im Bildungsbereich. Studenten erhalten Zugriff auf alle Pro-Features ohne Kosten, was Gemini zu einer attraktiven Alternative für die nächste Generation macht.
-
-### Prime Intellect launcht INTELLECT-3: 100B+ MoE-Modell mit skaliertem RL
-
-Das KI-Startup **Prime Intellect** hat **INTELLECT-3** vorgestellt – ein Mixture-of-Experts (MoE) Modell mit über 100 Milliarden Parametern. Das Modell zeigt State-of-the-Art-Performance in seiner Größenklasse bei Mathematik, Code und logischem Denken. Gebaut auf Prime Intellects End-to-End-Stack, stehen dieselben Tools Entwicklern zur Verfügung – inklusive Umgebungen, Evaluierungen, RL-Frameworks und Sandboxes. Als nächstes plant Prime Intellect die Skalierung agentischer RL-Systeme und langfristiger Agenten.
-
-### Runwayml enthüllt Gen-4.5 Frontier Video-Modell
-
-**Runway** hat mit **Gen-4.5** sein neuestes Video-Modell vorgestellt, das State-of-the-Art-Qualität bei Bewegung, Prompt-Befolgung und visueller Präzision bietet. Gen-4.5 kann komplexe sequenzierte Anweisungen mit beispielloser physikalischer Genauigkeit ausführen – realistisches Gewicht, Momentum und Oberflächenverhalten inklusive. Das Modell wurde vollständig auf NVIDIA-GPUs trainiert und wird jetzt ausgerollt. Für Content Creator bedeutet das: Videos mit noch realistischeren Bewegungen und Physik.
-
-### Grok AI jetzt direkt im X-Compose-Fenster integriert
-
-**Grok AI** ist jetzt nativ in das Compose-Fenster von X (ehemals Twitter) integriert. Mit einem Klick stehen Grammatikkorrekturen, Post-Verkürzungen und Stil-Umschreibungen zur Verfügung – direkt beim Verfassen. KI-Schreibhilfe ist damit ein fester Bestandteil der Plattform, keine Browser-Extension mehr nötig. Grok lebt in deinem Compose-Flow und hilft in Echtzeit beim Formulieren besserer Tweets.
-
-### MistralAI bereitet Ministral 3 und Mistral Large 3 vor
-
-Das französische KI-Startup **MistralAI** arbeitet an zwei neuen Modellen: **Ministral 3** nutzt die Llama2/3-Architektur, während **Mistral Large 3** ein MoE-Modell ähnlich DeepSeek V3 wird – mit spekulativem Decoding via Eagle. Beide Modelle implementieren Llama4 RoPE-Scaling. Architekturdetails wurden über GitHub-Pull-Requests geleakt. MistralAI festigt damit seine Position als europäischer KI-Champion.
-
-### Kling AI startet Kling O1 Multimodale Kreativ-Engine
-
-**Kling AI** hat die **Kling O1 Multimodale Kreativ-Engine** gelauncht – ein System mit echtem multimodalem Verständnis über Text, Bild und Video hinweg. Die vereinheitlichte Verarbeitung macht Content-Erstellung schneller und müheloser. Ein zeitlich begrenztes Subscriber-Angebot ist verfügbar, und weitere Ankündigungen sollen folgen.
-
-### Telegram startet Cocoon – dezentrales KI-Computing-Netzwerk
-
-**Telegram** hat **Cocoon** gestartet, ein dezentrales KI-Computing-Netzwerk mit 100% vertraulicher KI-Verarbeitung. Das System fordert Amazons und Microsofts zentralisierte Modelle heraus – mit besserer Privatsphäre und Wirtschaftlichkeit. Neue KI-Features für Telegram werden auf Cocoon aufbauen. Das könnte ein Wendepunkt für privacy-fokussierte KI-Anwendungen sein.
-
-### Norton Neo Browser jetzt verfügbar
-
-**Norton**, bekannt für Antiviren-Software, hat seinen neuen **Neo Browser** offiziell gelauncht. Der Browser setzt auf eingebaute Sicherheit und Privatsphäre – mit integrierten Features zum Schutz vor Tracking, Malware und Phishing. Neo richtet sich an sicherheitsbewusste Nutzer, die einen Browser ohne Kompromisse beim Datenschutz suchen. Norton kombiniert damit seine Sicherheitsexpertise mit moderner Browser-Technologie.
-
 ## Fazit
 
 In dieser Woche hat sich im KI-Bereich enorm viel getan – von praktischen Produkt-Updates bis zu technischen Durchbrüchen. Design-Plattformen wie Figma, Wix, Adobe und Canva statten Kreative mit immer smarteren KI-Werkzeugen aus, während bei den Bildgeneratoren ein regelrechtes Wettrüsten herrscht (Google vs. Adobe vs. Midjourney etc.).
