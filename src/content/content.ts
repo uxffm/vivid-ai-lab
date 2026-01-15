@@ -37,7 +37,7 @@ export const homepageContent = {
     subtitle: "Wir bieten maßgeschneiderte KI-Lösungen für Ihr Unternehmen - von Chatbots über Prozessautomatisierung bis hin zu modernem Webdesign. Alle Lösungen sind kostengünstig, effizient und auf Ihre spezifischen Bedürfnisse zugeschnitten. Mit KI können Sie die langweiligen, repetitiven Aufgaben Ihres Unternehmens automatisieren, ohne auf teure Freelancer zurückgreifen zu müssen.",
     services: [
       {
-        title: "KI Automation",
+        title: "KI Automatisierung",
         description: "Automatisierung aller Prozesse mit KI-Technologie - egal welche Abläufe Sie optimieren möchten. Reduzieren Sie manuelle Arbeit und steigern Sie die Effizienz Ihres Teams.",
         icon: "⚡"
       },

@@ -28,7 +28,7 @@ const Services = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {homepageContent.services.services.map((service, index) => {
-            const isAutomation = service.title === "KI Automation";
+            const isAutomation = service.title === "KI Automatisierung";
             const isVibeCoding = service.title === "Vibe Coding Agentur";
             const isBeratung = service.title === "KI Beratung";
             const isLokaleModelle = service.title === "Lokale KI Modelle";
