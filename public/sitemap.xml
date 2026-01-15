@@ -1,170 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Homepage -->
-  <url>
-    <loc>https://frankfurt-ai.de/</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-  <!-- Blog Listing Page -->
-  <url>
-    <loc>https://frankfurt-ai.de/blog</loc>
-    <lastmod>2026-01-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
 
-  <!-- Blog Posts -->
-  <url>
-    <loc>https://frankfurt-ai.de/blog/ki-automatisierung</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://frankfurt-ai.de/blog/ki-kundenservice-zufriedenheit</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+<url>
+  <loc>https://frankfurt-ai.de/</loc>
+  <lastmod>2026-01-15T14:42:10+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://frankfurt-ai.de/ki-automatisierung/</loc>
+  <lastmod>2026-01-15T14:42:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://frankfurt-ai.de/ki-modelle-lokal/</loc>
+  <lastmod>2026-01-15T14:42:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://frankfurt-ai.de/vibe-coding/</loc>
+  <lastmod>2026-01-15T14:42:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://frankfurt-ai.de/ki-beratung/</loc>
+  <lastmod>2026-01-15T14:42:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://frankfurt-ai.de/blog/ki-aktuelle-entwicklungen/</loc>
+  <lastmod>2026-01-15T14:42:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://frankfurt-ai.de/blog/n8n-vs-make-vergleich/</loc>
+  <lastmod>2026-01-15T14:42:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://frankfurt-ai.de/blog/norton-neo-browser/</loc>
+  <lastmod>2026-01-15T14:42:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://frankfurt-ai.de/blog/</loc>
+  <lastmod>2026-01-15T14:42:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://frankfurt-ai.de/blog/lokale-ki-mini-pc-empfehlungen/</loc>
+  <lastmod>2026-01-15T14:42:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://frankfurt-ai.de/blog/chatgpt-paypal-shopping/</loc>
+  <lastmod>2026-01-15T14:42:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://frankfurt-ai.de/blog/ki-videotool-woertliche-rede/</loc>
+  <lastmod>2026-01-15T14:42:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://frankfurt-ai.de/blog/chatgpt-atlas-vs-chrome/</loc>
+  <lastmod>2026-01-15T14:42:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://frankfurt-ai.de/blog/ki-agenten-was-k%C3%B6nnen-sie/</loc>
+  <lastmod>2026-01-15T14:42:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://frankfurt-ai.de/blog/ki-kundenservice-zufriedenheit/</loc>
+  <lastmod>2026-01-15T14:42:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://frankfurt-ai.de/blog/ki-automatisierung/</loc>
+  <lastmod>2026-01-15T14:42:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://frankfurt-ai.de/blog/ki-in-schulen/</loc>
+  <lastmod>2026-01-15T14:42:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://frankfurt-ai.de/blog/ki-praesentationen/</loc>
+  <lastmod>2026-01-15T14:42:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://frankfurt-ai.de/blog/ki-reiseplanung/</loc>
+  <lastmod>2026-01-15T14:42:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://frankfurt-ai.de/blog/zimmer-mit-ki-einrichten/</loc>
+  <lastmod>2026-01-15T14:42:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://frankfurt-ai.de/blog/ki-bildgeneratoren/</loc>
+  <lastmod>2026-01-15T14:42:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
 
-  <!-- New Blog Post -->
-  <url>
-    <loc>https://frankfurt-ai.de/blog/ki-bildgeneratoren</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
-  <!-- New Blog Post: KI-Agenten -->
-  <url>
-    <loc>https://frankfurt-ai.de/blog/ki-agenten-was-können-sie</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- New Blog Post: ChatGPT Atlas vs Chrome -->
-  <url>
-    <loc>https://frankfurt-ai.de/blog/chatgpt-atlas-vs-chrome</loc>
-    <lastmod>2025-10-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- New Blog Post: KI Reiseplanung -->
-  <url>
-    <loc>https://frankfurt-ai.de/blog/ki-reiseplanung</loc>
-    <lastmod>2025-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- New Blog Post: Zimmer mit KI einrichten -->
-  <url>
-    <loc>https://frankfurt-ai.de/blog/zimmer-mit-ki-einrichten</loc>
-    <lastmod>2025-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- New Blog Post: KI in Schulen -->
-  <url>
-    <loc>https://frankfurt-ai.de/blog/ki-in-schulen</loc>
-    <lastmod>2025-10-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- New Blog Post: KI Präsentationen -->
-  <url>
-    <loc>https://frankfurt-ai.de/blog/ki-praesentationen</loc>
-    <lastmod>2025-10-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- New Blog Post: KI Videotool wörtliche Rede -->
-  <url>
-    <loc>https://frankfurt-ai.de/blog/ki-videotool-woertliche-rede</loc>
-    <lastmod>2025-11-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- New Blog Post: ChatGPT PayPal Shopping -->
-  <url>
-    <loc>https://frankfurt-ai.de/blog/chatgpt-paypal-shopping</loc>
-    <lastmod>2025-11-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- New Blog Post: KI Aktuelle Entwicklungen -->
-  <url>
-    <loc>https://frankfurt-ai.de/blog/ki-aktuelle-entwicklungen</loc>
-    <lastmod>2025-11-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- New Blog Post: Lokale KI Mini-PC-Empfehlungen -->
-  <url>
-    <loc>https://frankfurt-ai.de/blog/lokale-ki-mini-pc-empfehlungen</loc>
-    <lastmod>2025-11-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- New Blog Post: n8n vs. Make -->
-  <url>
-    <loc>https://frankfurt-ai.de/blog/n8n-vs-make-vergleich</loc>
-    <lastmod>2026-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- KI Automatisierung Page -->
-  <url>
-    <loc>https://frankfurt-ai.de/ki-automatisierung</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- Vibe Coding Page -->
-  <url>
-    <loc>https://frankfurt-ai.de/vibe-coding</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- KI Beratung Page -->
-  <url>
-    <loc>https://frankfurt-ai.de/ki-beratung</loc>
-    <lastmod>2025-10-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- Lokale KI Modelle Page -->
-  <url>
-    <loc>https://frankfurt-ai.de/ki-modelle-lokal</loc>
-    <lastmod>2025-11-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- 404 Page -->
-  <url>
-    <loc>https://frankfurt-ai.de/404</loc>
-    <lastmod>2024-12-19</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.1</priority>
-  </url>
 </urlset>
-
