@@ -10,7 +10,11 @@ image: "/lokale-ki-mini-pc.png"
 
 # Mini-PC-Empfehlungen, Leistungsbedarf und passende Modelle
 
-Ein Lehrer möchte KI komplett offline einsetzen, um Unterrichtsmaterialien (PDFs, Word-Dokumente etc.) auszuwerten, zusammenzufassen und Fragen dazu zu generieren – datenschutzkonform ohne Cloud-Dienste. Dafür braucht es geeignete Hardware (einen Mini-PC oder kleinen Desktop) mit ausreichendem Arbeitsspeicher und Rechenleistung, sowie lokal laufende KI-Modelle für Textzusammenfassungen und Dokumenten-Analyse. Im Folgenden geben wir konkrete Empfehlungen zu Hardware (inkl. RAM/Leistung) und stellen KI-Modelle vor, die sich lokal bewährt haben.
+Ein Lehrer möchte KI komplett offline einsetzen, um Unterrichtsmaterialien (PDFs, Word-Dokumente etc.) auszuwerten, zusammenzufassen und Fragen dazu zu generieren – datenschutzkonform ohne Cloud-Dienste. 
+
+Dafür braucht es geeignete Hardware (einen Mini-PC oder kleinen Desktop) mit ausreichendem Arbeitsspeicher und Rechenleistung, sowie lokal laufende KI-Modelle für Textzusammenfassungen und Dokumenten-Analyse. 
+
+Im Folgenden geben wir konkrete Empfehlungen zu Hardware (inkl. RAM/Leistung) und stellen KI-Modelle vor, die sich lokal bewährt haben.
 
 ## Warum PC für lokale KI? Datenschutz und Kontrolle
 

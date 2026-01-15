@@ -11,7 +11,7 @@
   <!-- Blog Listing Page -->
   <url>
     <loc>https://frankfurt-ai.de/blog</loc>
-    <lastmod>2025-11-14</lastmod>
+    <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -119,6 +119,14 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- New Blog Post: n8n vs. Make -->
+  <url>
+    <loc>https://frankfurt-ai.de/blog/n8n-vs-make-vergleich</loc>
+    <lastmod>2026-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- KI Automatisierung Page -->
   <url>
     <loc>https://frankfurt-ai.de/ki-automatisierung</loc>
@@ -159,5 +167,4 @@
     <priority>0.1</priority>
   </url>
 </urlset>
-
 
