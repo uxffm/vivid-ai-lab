@@ -55,6 +55,11 @@ export const homepageContent = {
         title: "KI Beratung",
         description: "Strategische KI-Beratung für nachhaltigen Unternehmenserfolg. Von der Potenzialanalyse über Strategie-Entwicklung bis zur Implementierung – praxisnah und messbar.",
         icon: "🤖"
+      },
+      {
+        title: "KI Rezeption",
+        description: "24/7 erreichbar, nie krank, immer freundlich. KI-gestützte Anrufannahme, automatische Terminbuchung und intelligente Kundenbetreuung für Ihr Unternehmen.",
+        icon: "📞"
       }
     ]
   },

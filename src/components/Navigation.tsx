@@ -109,6 +109,12 @@ const Navigation = () => {
                         >
                           Vibe Coding Agentur
                         </a>
+                        <a
+                          href="/ki-rezeption"
+                          className="block px-4 py-3 text-sm text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-colors"
+                        >
+                          KI Rezeption
+                        </a>
                       </div>
                     )}
                   </div>

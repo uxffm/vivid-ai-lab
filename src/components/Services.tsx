@@ -8,7 +8,8 @@ const getIcon = (iconName: string) => {
     "⚡": "⚡",
     "🎨": "🎨",
     "🌐": "🌐",
-    "🔒": "🔒"
+    "🔒": "🔒",
+    "📞": "📞"
   };
   return iconMap[iconName] || "🤖";
 };
@@ -32,7 +33,8 @@ const Services = () => {
             const isVibeCoding = service.title === "Vibe Coding Agentur";
             const isBeratung = service.title === "KI Beratung";
             const isLokaleModelle = service.title === "Lokale KI Modelle";
-            const href = isAutomation ? "/ki-automatisierung" : isVibeCoding ? "/vibe-coding" : isBeratung ? "/ki-beratung" : isLokaleModelle ? "/ki-modelle-lokal" : undefined;
+            const isRezeption = service.title === "KI Rezeption";
+            const href = isAutomation ? "/ki-automatisierung" : isVibeCoding ? "/vibe-coding" : isBeratung ? "/ki-beratung" : isLokaleModelle ? "/ki-modelle-lokal" : isRezeption ? "/ki-rezeption" : undefined;
             const Card = ({ children }: { children: React.ReactNode }) => (
               href ? (
                 <a href={href} className="group relative p-8 rounded-2xl bg-card border border-border hover:border-primary/50 smooth-transition block" style={{ animationDelay: `${index * 0.1}s` }}>
