@@ -5,7 +5,7 @@ author: "KI Agentur"
 date: "2026-01-27"
 category: "KI-Agenten"
 readTime: "28 min Lesezeit"
-image: "/placeholder.svg"
+image: "/clawdbot-mac-mini.jpg"
 ---
 
 Die Landschaft der persönlichen künstlichen Intelligenz durchlief Ende 2025 und Anfang 2026 eine strukturelle Transformation mit der Entstehung agentischer Systeme, die die Grenzen herkömmlicher Chat-Schnittstellen überschreiten. Im Zentrum dieses Wandels steht das Projekt, das ursprünglich als Clawdbot bekannt war und kürzlich in Moltbot umbenannt wurde – ein quelloffener KI-Assistent, der für den lokalen Einsatz und die persistente Ausführung konzipiert wurde. Im Gegensatz zur reaktiven, zustandslosen Natur standardmäßiger Large Language Model (LLM)-Anwendungen wie ChatGPT oder Claude fungiert Moltbot als proaktiver digitaler Mitarbeiter, der zu autonomer Entscheidungsfindung und direkter Interaktion mit dem Betriebssystem eines Host-Computers fähig ist. Dieser Übergang von der beratenden KI zur exekutiven KI hat die Hardware-Anforderungen des durchschnittlichen Power-Users grundlegend verändert und einen signifikanten Anstieg der Verkaufszahlen von Apples Mac-mini-Hardware als bevorzugte Plattform für eine "Always-on"-Intelligenz ausgelöst.
