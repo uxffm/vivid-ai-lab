@@ -1,9 +1,9 @@
 ---
-title: "Die Konvergenz von agentischer Intelligenz und lokaler Infrastruktur: Eine umfassende Analyse des Moltbot-Ökosystems auf Apple-Silicon-Hardware"
-description: "Die Landschaft der persönlichen künstlichen Intelligenz durchlief Ende 2025 eine strukturelle Transformation mit agentischen Systemen wie Moltbot. Eine umfassende Analyse der Architektur, Hardware-Synergien und Sicherheitsaspekte."
+title: "Moltbot (Clawdbot) auf dem Mac mini: KI-Agent lokal betreiben"
+description: "Moltbot (ehemals Clawdbot) verwandelt den Mac mini mit Apple Silicon in einen 24/7 KI-Agenten. Architektur, Setup, Hardware-Vergleich, Kosten und Sicherheit im Detail."
 author: "KI Agentur"
 date: "2026-01-27"
-category: "Künstliche Intelligenz"
+category: "KI-Agenten"
 readTime: "28 min Lesezeit"
 image: "/placeholder.svg"
 ---
