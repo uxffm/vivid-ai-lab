@@ -3,6 +3,7 @@ import BlogPost from '../../layouts/BlogPost.astro';
 import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer.astro';
 import Blog from '../../components/Blog';
+import BlogSidebar from '../../components/BlogSidebar.astro';
 import { getCollection, getEntryBySlug } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -85,9 +86,9 @@ const otherPosts = allPosts
 
     <!-- Blog Post Content -->
     <article class="pb-16">
-      <div class="max-w-4xl mx-auto px-6">
-        <!-- Header -->
-        <header class="mb-12">
+      <div class="max-w-6xl mx-auto px-6">
+        <!-- Header (full width above grid) -->
+        <header class="mb-12 max-w-4xl">
           <span class="inline-block px-3 py-1 text-sm bg-secondary text-secondary-foreground rounded-full mb-4">
             {entry.data.category}
           </span>
@@ -133,21 +134,36 @@ const otherPosts = allPosts
           </div>
         </header>
 
-        <!-- Content from Markdown -->
-        <div class="max-w-4xl mx-auto">
-          <div class="prose prose-lg prose-headings:text-foreground prose-p:text-muted-foreground prose-strong:text-foreground prose-ul:text-muted-foreground prose-li:text-muted-foreground" style="max-width: none !important; width: 100% !important;">
-            <Content />
+        <!-- Grid: Article + Sidebar -->
+        <div class="lg:grid lg:grid-cols-[1fr_280px] lg:gap-10">
+          <!-- Main Content -->
+          <div>
+            <div class="prose prose-lg prose-headings:text-foreground prose-p:text-muted-foreground prose-strong:text-foreground prose-ul:text-muted-foreground prose-li:text-muted-foreground" style="max-width: none !important; width: 100% !important;">
+              <Content />
+            </div>
+
+            <!-- Back to Blog -->
+            <div class="mt-16 pt-8 border-t border-border">
+              <a href="/blog" class="inline-flex items-center px-4 py-2 border border-input bg-background hover:bg-accent hover:text-accent-foreground rounded-2xl transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                </svg>
+                Zurück zu allen Artikeln
+              </a>
+            </div>
+          </div>
+
+          <!-- Sidebar (sticky, hidden on mobile) -->
+          <div class="hidden lg:block">
+            <div class="sticky top-32">
+              <BlogSidebar />
+            </div>
           </div>
         </div>
 
-        <!-- Back to Blog -->
-        <div class="mt-16 pt-8 border-t border-border">
-          <a href="/blog" class="inline-flex items-center px-4 py-2 border border-input bg-background hover:bg-accent hover:text-accent-foreground rounded-2xl transition-colors">
-            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
-            </svg>
-            Zurück zu allen Artikeln
-          </a>
+        <!-- Sidebar mobile (below article) -->
+        <div class="mt-12 lg:hidden">
+          <BlogSidebar />
         </div>
       </div>
     </article>
