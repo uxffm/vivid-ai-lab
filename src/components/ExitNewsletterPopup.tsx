@@ -3,6 +3,9 @@ import { useState, useEffect } from 'react';
 export default function ExitNewsletterPopup() {
   const [isOpen, setIsOpen] = useState(false);
   const [hasShown, setHasShown] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showSuccess, setShowSuccess] = useState(false);
+  const [showError, setShowError] = useState(false);
 
   useEffect(() => {
     // Check if popup was already shown in this session
@@ -32,19 +35,50 @@ export default function ExitNewsletterPopup() {
     setIsOpen(false);
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
-    const email = formData.get('email');
+    const email = formData.get('email') as string;
 
-    // Here you would typically send the email to your newsletter service
-    console.log('Newsletter signup:', email);
+    if (!email) return;
 
-    // Close the popup
-    setIsOpen(false);
+    setIsSubmitting(true);
+    setShowError(false);
+    setShowSuccess(false);
 
-    // Show success message (you could use a toast notification here)
-    alert('Vielen Dank für Ihre Anmeldung!');
+    try {
+      const googleSheetsUrl = import.meta.env.PUBLIC_GOOGLE_SHEETS_URL;
+
+      if (!googleSheetsUrl) {
+        console.error('Google Sheets URL not configured');
+        throw new Error('Configuration error');
+      }
+
+      await fetch(googleSheetsUrl, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email: email,
+          source: 'Exit Popup'
+        })
+      });
+
+      // no-cors mode doesn't allow reading response, so we assume success
+      setShowSuccess(true);
+
+      // Close popup after 2 seconds
+      setTimeout(() => {
+        setIsOpen(false);
+      }, 2000);
+    } catch (error) {
+      console.error('Newsletter signup error:', error);
+      setShowError(true);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (!isOpen) return null;
@@ -96,10 +130,25 @@ export default function ExitNewsletterPopup() {
 
           <button
             type="submit"
-            className="w-full px-6 py-3 text-sm font-medium text-white rounded-lg bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 transition-all"
+            disabled={isSubmitting}
+            className="w-full px-6 py-3 text-sm font-medium text-white rounded-lg bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            Jetzt kostenlos anmelden
+            {isSubmitting ? 'Wird gesendet...' : 'Jetzt kostenlos anmelden'}
           </button>
+
+          {/* Success Message */}
+          {showSuccess && (
+            <p className="text-sm text-center text-green-500 font-medium">
+              Vielen Dank! Sie erhalten bald unseren Newsletter.
+            </p>
+          )}
+
+          {/* Error Message */}
+          {showError && (
+            <p className="text-sm text-center text-red-500">
+              Fehler beim Anmelden. Bitte versuchen Sie es später erneut.
+            </p>
+          )}
         </form>
 
         {/* Privacy Note */}

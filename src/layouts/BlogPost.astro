@@ -129,6 +129,7 @@ const publishedTime = new Date(date).toISOString();
   </head>
   <body class="dark">
     <slot />
+    <ExitNewsletterPopup client:load />
     <SonnerToaster client:load />
     <CookieConsent client:load />
   </body>
