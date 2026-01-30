@@ -20,6 +20,8 @@ Die Architektur von Moltbot ist modular aufgebaut und basiert auf vier zentralen
 
 ### Kernkomponenten der Moltbot-Systemarchitektur
 
+<div style="color: white;">
+
 | Komponente | Technische Realisierung | Sicherheitsrelevanz |
 |------------|------------------------|---------------------|
 | Gateway | Node.js-Prozess mit WebSocket-API | Zentraler Angriffspunkt für unbefugten Fernzugriff. |
@@ -27,6 +29,8 @@ Die Architektur von Moltbot ist modular aufgebaut und basiert auf vier zentralen
 | Agent-Runtime | LLM-Orchestrierungsschicht | Ort der Entscheidungsfindung; anfällig für logische Manipulation. |
 | Skill-Framework | Modulares Tool-System (JS/TS) | Ermöglicht Shell-Zugriff und Dateisystemoperationen. |
 | Persistenz-Layer | Lokale Markdown- und JSON-Dateien | Speicherung von Kontext, Gedächtnis und Anmeldedaten. |
+
+</div>
 
 Das Gateway fungiert als das neuronale Zentrum von Moltbot. Es läuft kontinuierlich im Hintergrund und verwaltet die Sitzungen, das Routing von Nachrichten und die Weiterleitung an die Agent-Runtime. Ein wesentliches Merkmal ist die proaktive Natur des Systems. Im Gegensatz zu passiven Chatbots kann Moltbot selbstständig Kommunikation initiieren, etwa um Erinnerungen zu senden oder Status-Updates zu Aufgaben zu liefern, die über Stunden oder Tage hinweg laufen. Diese Persistenz wird durch ein Langzeitgedächtnis gestützt, das Informationen über vergangene Interaktionen und Nutzerpräferenzen in lokalen Dateien wie MEMORY.md speichert.
 
@@ -40,12 +44,16 @@ Diese Sicherheitslücke resultiert primär aus Fehlkonfigurationen bei der Verwe
 
 ### Risiken durch exponierte Gateways und ungeschützte Endpunkte
 
+<div style="color: white;">
+
 | Risiko-Kategorie | Beschreibung der Bedrohung | Mögliche Konsequenzen |
 |-----------------|---------------------------|----------------------|
 | Unbefugter Datenzugriff | Auslesen von Konfigurationsdaten und API-Keys | Diebstahl von Identitäten und Cloud-Ressourcen. |
 | Kommunikationsüberwachung | Einsicht in private Chat-Verläufe | Verletzung der Privatsphäre und Exfiltration von Interna. |
 | Session-Hijacking | Übernahme von Messenger-Verbindungen | Impersonation des Nutzers auf WhatsApp/Telegram. |
 | Remote Command Execution | Ausführung von Befehlen über die Weboberfläche | Vollständige Systemübernahme durch den Angreifer. |
+
+</div>
 
 Ein besonders drastisches Beispiel für die Auswirkungen dieser Schwachstelle war die Entdeckung eines exponierten Servers, auf dem ein Nutzer sein Signal-Konto verknüpft hatte. Ein Angreifer konnte den QR-Code zur Gerätekopplung direkt über das Web-Interface auslesen und sich somit vollen Zugriff auf die verschlüsselte Kommunikation des Nutzers verschaffen. Diese Vorfälle verdeutlichen, dass das Design von Moltbot auf "Ease of Deployment" (einfache Bereitstellung) optimiert wurde, anstatt einem "Secure-by-Default"-Ansatz zu folgen.
 
