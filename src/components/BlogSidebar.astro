@@ -21,6 +21,17 @@
         required
         class="w-full px-3 py-2 text-sm rounded-md border border-input bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary"
       />
+      <label class="flex items-start gap-2 text-xs text-muted-foreground cursor-pointer">
+        <input
+          type="checkbox"
+          name="consent"
+          required
+          class="mt-0.5 rounded border-input bg-background text-primary focus:ring-2 focus:ring-primary"
+        />
+        <span>
+          Ich stimme der <a href="/datenschutz" class="text-primary hover:underline">Datenschutzerklärung</a> zu und möchte den Newsletter erhalten.*
+        </span>
+      </label>
       <button
         type="submit"
         class="inline-flex items-center justify-center w-full gap-2 px-4 py-2.5 text-sm font-medium text-white rounded-[5px] bg-blue-600 hover:bg-blue-700 transition-colors disabled:opacity-50"
@@ -102,16 +113,8 @@
     if (submitBtn) submitBtn.disabled = true;
 
     try {
-      const googleSheetsUrl = import.meta.env.PUBLIC_GOOGLE_SHEETS_URL;
-
-      if (!googleSheetsUrl) {
-        console.error('Google Sheets URL not configured');
-        throw new Error('Configuration error');
-      }
-
-      await fetch(googleSheetsUrl, {
+      const response = await fetch('/.netlify/functions/subscribe', {
         method: 'POST',
-        mode: 'no-cors',
         headers: {
           'Content-Type': 'application/json',
         },
@@ -121,14 +124,19 @@
         })
       });
 
-      // no-cors mode doesn't allow reading response, so we assume success
-      successMsg?.classList.remove('hidden');
-      errorMsg?.classList.add('hidden');
-      form.reset();
+      const data = await response.json();
 
-      setTimeout(() => {
-        successMsg?.classList.add('hidden');
-      }, 5000);
+      if (response.ok) {
+        successMsg?.classList.remove('hidden');
+        errorMsg?.classList.add('hidden');
+        form.reset();
+
+        setTimeout(() => {
+          successMsg?.classList.add('hidden');
+        }, 5000);
+      } else {
+        throw new Error(data.error || 'Subscription failed');
+      }
     } catch (error) {
       console.error('Newsletter signup error:', error);
       errorMsg?.classList.remove('hidden');

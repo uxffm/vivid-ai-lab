@@ -47,16 +47,8 @@ export default function ExitNewsletterPopup() {
     setShowSuccess(false);
 
     try {
-      const googleSheetsUrl = import.meta.env.PUBLIC_GOOGLE_SHEETS_URL;
-
-      if (!googleSheetsUrl) {
-        console.error('Google Sheets URL not configured');
-        throw new Error('Configuration error');
-      }
-
-      await fetch(googleSheetsUrl, {
+      const response = await fetch('/.netlify/functions/subscribe', {
         method: 'POST',
-        mode: 'no-cors',
         headers: {
           'Content-Type': 'application/json',
         },
@@ -66,13 +58,18 @@ export default function ExitNewsletterPopup() {
         })
       });
 
-      // no-cors mode doesn't allow reading response, so we assume success
-      setShowSuccess(true);
+      const data = await response.json();
 
-      // Close popup after 2 seconds
-      setTimeout(() => {
-        setIsOpen(false);
-      }, 2000);
+      if (response.ok) {
+        setShowSuccess(true);
+
+        // Close popup after 2 seconds
+        setTimeout(() => {
+          setIsOpen(false);
+        }, 2000);
+      } else {
+        throw new Error(data.error || 'Subscription failed');
+      }
     } catch (error) {
       console.error('Newsletter signup error:', error);
       setShowError(true);
@@ -127,6 +124,18 @@ export default function ExitNewsletterPopup() {
               className="w-full px-4 py-3 rounded-lg border border-input bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
+
+          <label className="flex items-start gap-2 text-xs text-muted-foreground cursor-pointer">
+            <input
+              type="checkbox"
+              name="consent"
+              required
+              className="mt-0.5 rounded border-input bg-background text-blue-500 focus:ring-2 focus:ring-blue-500"
+            />
+            <span>
+              Ich stimme der <a href="/datenschutz" className="text-blue-500 hover:underline">Datenschutzerklärung</a> zu und möchte den Newsletter erhalten.*
+            </span>
+          </label>
 
           <button
             type="submit"

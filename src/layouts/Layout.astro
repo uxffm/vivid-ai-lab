@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import { Toaster as SonnerToaster } from '../components/ui/sonner';
 import CookieConsent from '../components/CookieConsent';
+import ExitNewsletterPopup from '../components/ExitNewsletterPopup';
 
 export interface Props {
   title: string;
@@ -206,6 +207,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
       <textarea name="message"></textarea>
       <p class="hidden"><label>Don't fill this out: <input name="bot-field" /></label></p>
     </form>
+    <ExitNewsletterPopup client:load />
     <SonnerToaster client:load />
     <CookieConsent client:load />
   </body>
