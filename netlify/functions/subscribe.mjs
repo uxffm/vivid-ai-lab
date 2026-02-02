@@ -40,9 +40,21 @@ export const handler = async function(event, context) {
       }),
     });
 
-    const data = await response.json();
+    console.log('Brevo response status:', response.status);
 
-    if (response.ok || response.status === 400) {
+    let data = {};
+    const responseText = await response.text();
+    console.log('Brevo response text:', responseText);
+
+    if (responseText) {
+      try {
+        data = JSON.parse(responseText);
+      } catch (e) {
+        console.error('Failed to parse response:', e);
+      }
+    }
+
+    if (response.ok || response.status === 400 || response.status === 204) {
       // 400 might mean contact already exists, which is OK
       return {
         statusCode: 200,
