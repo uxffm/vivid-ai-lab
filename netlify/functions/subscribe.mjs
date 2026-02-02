@@ -1,4 +1,8 @@
 export const handler = async function(event, context) {
+  // Debug logging
+  console.log('BREVO_API_KEY:', process.env.BREVO_API_KEY ? 'SET' : 'NOT SET');
+  console.log('BREVO_LIST_ID:', process.env.BREVO_LIST_ID);
+
   // Only allow POST requests
   if (event.httpMethod !== 'POST') {
     return {
