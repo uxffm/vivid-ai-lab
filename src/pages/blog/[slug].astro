@@ -26,6 +26,13 @@ const formattedDate = new Date(entry.data.date).toLocaleDateString('de-DE', {
   month: 'long',
   year: 'numeric'
 });
+const formattedUpdatedDate = entry.data.updatedDate
+  ? new Date(entry.data.updatedDate).toLocaleDateString('de-DE', {
+      day: '2-digit',
+      month: 'long',
+      year: 'numeric'
+    })
+  : null;
 
 // Get all posts except the current one and pick 3 random ones
 const allPosts = await getCollection('blog');
@@ -50,6 +57,7 @@ const otherPosts = allPosts
   description={entry.data.description}
   author={entry.data.author}
   date={entry.data.date}
+  updatedDate={entry.data.updatedDate}
   category={entry.data.category}
   readTime={entry.data.readTime}
   image={entry.data.image}
@@ -123,7 +131,12 @@ const otherPosts = allPosts
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
               </svg>
-              <time datetime={entry.data.date}>{formattedDate}</time>
+              <time datetime={entry.data.date}>
+                {formattedDate}
+                {formattedUpdatedDate && formattedUpdatedDate !== formattedDate && (
+                  <span class="text-xs"> (aktualisiert: {formattedUpdatedDate})</span>
+                )}
+              </time>
             </div>
             <div class="flex items-center gap-2">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
