@@ -1,6 +1,6 @@
 ---
-title: "Moltbot Anwendungsfälle: Die agentische Revolution am Desktop"
-description: "Entdecken Sie die vielfältigen Moltbot Anwendungsfälle: Von automatisiertem Code-Management über intelligentes Postfach-Management bis hin zu Web-Automatisierung und Marktanalyse."
+title: "OpenClaw (Moltbot) Anwendungsfälle: Die agentische Revolution am Desktop"
+description: "Entdecken Sie die vielfältigen OpenClaw (Moltbot) Anwendungsfälle: Von automatisiertem Code-Management über intelligentes Postfach-Management bis hin zu Web-Automatisierung und Marktanalyse."
 author: "KI Agentur"
 date: "2026-01-30"
 category: "KI-Agenten"

@@ -1,6 +1,6 @@
 ---
-title: "Moltbot (Clawdbot) auf dem Mac mini: KI-Agent lokal betreiben"
-description: "Moltbot (ehemals Clawdbot) verwandelt den Mac mini mit Apple Silicon in einen 24/7 KI-Agenten. Architektur, Setup, Hardware-Vergleich, Kosten und Sicherheit im Detail."
+title: "OpenClaw (Moltbot) auf dem Mac mini: KI-Agent lokal betreiben"
+description: "OpenClaw (Moltbot, ehemals Clawdbot) verwandelt den Mac mini mit Apple Silicon in einen 24/7 KI-Agenten. Architektur, Setup, Hardware-Vergleich, Kosten und Sicherheit im Detail."
 author: "KI Agentur"
 date: "2026-01-27"
 category: "KI-Agenten"

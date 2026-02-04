@@ -1,6 +1,6 @@
 ---
-title: "Ist Moltbot sicher? Umfassende Sicherheitsanalyse des Moltbot-Agenten"
-description: "Umfassende Sicherheitsanalyse des Moltbot-Ökosystems: Risikoprofile, Architekturschwachstellen und Strategien zur Bedrohungsabwehr"
+title: "Ist OpenClaw (Moltbot) sicher? Umfassende Sicherheitsanalyse des OpenClaw-Agenten"
+description: "Umfassende Sicherheitsanalyse des OpenClaw (Moltbot) Ökosystems: Risikoprofile, Architekturschwachstellen und Strategien zur Bedrohungsabwehr"
 author: "KI Agentur"
 date: "2026-01-29"
 category: "Künstliche Intelligenz"
