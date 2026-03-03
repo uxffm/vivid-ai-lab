@@ -17,7 +17,7 @@ Die gute Nachricht: Das ist heute problemlos möglich.
 
 Die Herausforderung: Sie brauchen die richtige Hardware.
 
-**Hier sind die Top-Empfehlungen für lokale KI im Jahr 2025:**
+**Hier sind die Top-Empfehlungen für lokale KI im Jahr 2026:**
 
 <a href="https://amzn.to/409dUo5" target="_blank" rel="noopener">
   <img src="/lokale-ki-welt.jpg" alt="Lokale KI Welt Mini-PC Empfehlungen" style="width: 100%; max-width: 500px; margin: 20px 0;">
