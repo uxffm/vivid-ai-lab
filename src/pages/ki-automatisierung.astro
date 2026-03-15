@@ -1,12 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Navigation from '../components/Navigation';
-import Services from '../components/Services';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer.astro';
 
-const pageTitle = "KI Automatisierung Agentur – Prozesse automatisieren mit KI";
-const pageDescription = "KI Automatisierung Agentur für Unternehmen: Chatbots, Workflows, Datenverarbeitung und mehr. Effizienter arbeiten, Kosten senken, schneller skalieren.";
+const pageTitle = "KI Automatisierung Agentur Rhein-Main – Prozesse automatisieren mit KI";
+const pageDescription = "KI Automatisierung Agentur für Rhein-Main: Chatbots, Workflows, Datenverarbeitung und mehr für Unternehmen in Frankfurt, Wiesbaden, Darmstadt und dem gesamten Rhein-Main-Gebiet. Effizienter arbeiten, Kosten senken, schneller skalieren.";
 
 const serviceSchema = {
   "@context": "https://schema.org",
@@ -25,10 +24,28 @@ const serviceSchema = {
       "addressCountry": "DE"
     }
   },
-  "areaServed": {
-    "@type": "Country",
-    "name": "Deutschland"
-  },
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Frankfurt am Main"
+    },
+    {
+      "@type": "City",
+      "name": "Wiesbaden"
+    },
+    {
+      "@type": "City",
+      "name": "Darmstadt"
+    },
+    {
+      "@type": "City",
+      "name": "Mainz"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Rhein-Main-Gebiet"
+    }
+  ],
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "KI-Automatisierungslösungen",
@@ -91,7 +108,7 @@ const serviceSchema = {
         </li>
         <li aria-hidden="true">/</li>
         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <span itemprop="name" class="text-foreground">KI-Automatisierung</span>
+          <span itemprop="name" class="text-foreground">KI-Automatisierung Rhein-Main</span>
           <meta itemprop="position" content="2" />
         </li>
       </ol>
@@ -108,13 +125,13 @@ const serviceSchema = {
       <div class="relative z-10 max-w-7xl mx-auto px-6">
         <div class="max-w-3xl mx-auto text-center">
           <h1 class="text-4xl md:text-6xl font-bold leading-tight">
-            KI Automatisierung Agentur
+            KI Automatisierung Agentur Rhein-Main
           </h1>
           <p class="mt-6 text-lg md:text-xl text-muted-foreground">
-            Als KI Automatisierung Agentur automatisieren wir wiederkehrende Aufgaben mit KI – von Support-Chatbots über Prozess-Workflows bis zur intelligenten Datenverarbeitung. Weniger Handarbeit, mehr Fokus auf Wachstum.
+            Als KI Automatisierung Agentur im Rhein-Main-Gebiet automatisieren wir wiederkehrende Aufgaben mit KI – von Support-Chatbots über Prozess-Workflows bis zur intelligenten Datenverarbeitung. Weniger Handarbeit, mehr Fokus auf Wachstum.
           </p>
           <p class="mt-4 text-lg md:text-xl text-muted-foreground">
-            Wir analysieren Ihre bestehenden Prozesse, identifizieren Automatisierungspotenziale und implementieren maßgeschneiderte KI-Lösungen. Mit Tools wie n8n und Make bauen wir stabile Workflows, die Ihr Team entlasten und messbare Effizienzgewinne bringen – ohne komplexe IT-Infrastruktur.
+            Wir analysieren Ihre bestehenden Prozesse, identifizieren Automatisierungspotenziale und implementieren maßgeschneiderte KI-Lösungen. Mit Tools wie n8n, Make und OpenClaw bauen wir stabile Workflows, die Ihr Team entlasten und messbare Effizienzgewinne bringen – für Unternehmen in Frankfurt, Wiesbaden, Mainz, Darmstadt und dem gesamten Rhein-Main-Gebiet.
           </p>
           <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
             <a href="#kontakt" class="inline-flex items-center justify-center px-6 py-3 rounded-[5px] bg-gradient-to-r from-blue-500 to-purple-500 text-white hover:from-blue-600 hover:to-purple-600 transition-colors">
@@ -133,7 +150,7 @@ const serviceSchema = {
         <p class="text-lg text-muted-foreground text-center mb-12 max-w-3xl mx-auto">
           Als KI Automatisierung Agentur setzen wir auf bewährte und leistungsstarke Automatisierungs-Plattformen, um Ihre Workflows effizient und zuverlässig zu gestalten.
         </p>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div class="p-8 rounded-2xl border border-border/60 bg-gradient-to-br from-background/80 to-background/60 backdrop-blur-sm shadow-lg hover:shadow-xl transition-shadow">
             <div class="flex items-start gap-4">
               <div class="flex-shrink-0 w-16 h-16 rounded-lg bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center text-white text-2xl font-bold">
@@ -174,9 +191,29 @@ const serviceSchema = {
               </div>
             </div>
           </div>
+          <div class="p-8 rounded-2xl border border-border/60 bg-gradient-to-br from-background/80 to-background/60 backdrop-blur-sm shadow-lg hover:shadow-xl transition-shadow">
+            <div class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-16 h-16 rounded-lg bg-gradient-to-br from-emerald-500 to-teal-500 flex items-center justify-center text-white text-xl font-bold">
+                OC
+              </div>
+              <div class="flex-1">
+                <h3 class="text-xl font-semibold mb-2">
+                  <a href="https://openclaw.ai" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-500 transition-colors">
+                    OpenClaw
+                  </a>
+                </h3>
+                <p class="text-muted-foreground mb-4">
+                  KI-Agenten-Plattform für intelligente Prozessautomatisierung. Ermöglicht autonome Agenten, die komplexe mehrstufige Aufgaben selbstständig ausführen und mit Ihren bestehenden Systemen interagieren.
+                </p>
+                <a href="https://openclaw.ai" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-emerald-500 hover:text-emerald-600 transition-colors">
+                  Mehr erfahren →
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
         <p class="text-center text-muted-foreground mt-8">
-          Wir wählen die passende Plattform basierend auf Ihren Anforderungen – ob Self-Hosted für maximale Kontrolle oder Cloud-basiert für schnelle Skalierung.
+          Wir wählen die passende Plattform basierend auf Ihren Anforderungen – ob Self-Hosted für maximale Kontrolle, Cloud-basiert für schnelle Skalierung oder KI-Agenten mit OpenClaw für autonome, mehrstufige Prozesse.
         </p>
       </div>
     </section>
@@ -359,6 +396,31 @@ const serviceSchema = {
               Meine Expertise liegt darin, komplexe KI-Technologien verständlich zu machen und praktische Lösungen zu entwickeln, die sofort messbare Ergebnisse liefern. Lassen Sie uns gemeinsam Ihr Unternehmen in die Zukunft der KI-Automatisierung führen.
             </p>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rhein-Main Region -->
+    <section class="py-16 bg-gradient-to-b from-blue-400/5 via-purple-400/5 to-transparent">
+      <div class="max-w-5xl mx-auto px-6">
+        <div class="rounded-2xl border border-border/60 bg-gradient-to-br from-background/80 to-background/60 backdrop-blur-sm p-8 shadow-lg">
+          <h2 class="text-2xl md:text-3xl font-semibold mb-4">KI Automatisierung im Rhein-Main-Gebiet</h2>
+          <p class="text-lg text-muted-foreground mb-6">
+            Als regionale KI-Agentur sind wir vor Ort für Unternehmen im Rhein-Main-Gebiet – von Frankfurt über Wiesbaden und Mainz bis Darmstadt und Offenbach. Wir kennen die lokale Unternehmenslandschaft und begleiten Sie persönlich von der ersten Idee bis zur fertigen Lösung.
+          </p>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {["Frankfurt am Main", "Wiesbaden", "Mainz", "Darmstadt", "Offenbach", "Rüsselsheim", "Bad Homburg"].map((city) => (
+              <div class="p-3 rounded-lg border border-border bg-white/60 dark:bg-white/5 text-center text-sm font-medium">
+                {city}
+              </div>
+            ))}
+            <a href="/ki-automatisierung-hanau" class="p-3 rounded-lg border border-blue-400/50 bg-white/60 dark:bg-white/5 text-center text-sm font-medium text-blue-500 hover:border-blue-500 transition-colors">
+              Hanau
+            </a>
+          </div>
+          <p class="text-muted-foreground mt-6">
+            Persönliche Beratung vor Ort, kurze Wege und ein tiefes Verständnis für den Mittelstand im Rhein-Main-Raum – das unterscheidet uns von überregionalen Anbietern.
+          </p>
         </div>
       </div>
     </section>

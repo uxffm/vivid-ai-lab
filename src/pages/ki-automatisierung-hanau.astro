@@ -1,0 +1,220 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation';
+import Contact from '../components/Contact';
+import Footer from '../components/Footer.astro';
+
+const pageTitle = "KI Automatisierung Agentur Hanau – KI-Workflows & Chatbots";
+const pageDescription = "KI Automatisierung Agentur für Hanau: Maßgeschneiderte Workflows, Chatbots und Prozessautomatisierung für Unternehmen in Hanau und dem Main-Kinzig-Kreis. Persönliche Beratung vor Ort.";
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "KI-Automatisierung",
+  "name": "KI-Automatisierung für Unternehmen in Hanau",
+  "description": pageDescription,
+  "provider": {
+    "@type": "Organization",
+    "name": "Vivid AI Lab",
+    "url": "https://frankfurt-ai.de",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Frankfurt am Main",
+      "addressRegion": "Hessen",
+      "addressCountry": "DE"
+    }
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Hanau" },
+    { "@type": "AdministrativeArea", "name": "Main-Kinzig-Kreis" },
+    { "@type": "AdministrativeArea", "name": "Rhein-Main-Gebiet" }
+  ]
+};
+---
+
+<Layout
+  title={pageTitle}
+  description={pageDescription}
+  image="/src/assets/ai-hero-image.jpg"
+  type="website"
+  customSchema={serviceSchema}
+>
+  <Navigation client:load />
+
+  <!-- Breadcrumbs -->
+  <nav class="pt-32 pb-4" aria-label="Breadcrumb">
+    <div class="max-w-7xl mx-auto px-6">
+      <ol class="flex items-center gap-2 text-sm text-muted-foreground flex-wrap" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/" itemprop="item" class="hover:text-foreground transition-colors">
+            <span itemprop="name">Home</span>
+          </a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <li aria-hidden="true">/</li>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/ki-automatisierung" itemprop="item" class="hover:text-foreground transition-colors">
+            <span itemprop="name">KI-Automatisierung Rhein-Main</span>
+          </a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <li aria-hidden="true">/</li>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <span itemprop="name" class="text-foreground">Hanau</span>
+          <meta itemprop="position" content="3" />
+        </li>
+      </ol>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero -->
+    <section class="relative min-h-screen flex items-center overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-blue-400/20 via-purple-400/15 to-transparent" />
+      <div class="pointer-events-none absolute -top-24 -left-24 h-64 w-64 rounded-full bg-blue-500/10 blur-2xl" />
+      <div class="pointer-events-none absolute -bottom-24 -right-24 h-64 w-64 rounded-full bg-purple-400/10 blur-2xl" />
+
+      <div class="relative z-10 max-w-7xl mx-auto px-6">
+        <div class="max-w-3xl mx-auto text-center">
+          <div class="inline-block px-4 py-1 rounded-full border border-border/60 bg-white/60 dark:bg-white/5 text-sm text-muted-foreground mb-6">
+            KI-Agentur für Hanau & Main-Kinzig-Kreis
+          </div>
+          <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+            KI Automatisierung Agentur Hanau
+          </h1>
+          <p class="mt-6 text-lg md:text-xl text-muted-foreground">
+            Hanau ist ein starker Industriestandort mit Fertigungs-, Chemie- und Logistikunternehmen – Branchen, die besonders von KI-gestützter Prozessautomatisierung profitieren. Wir entwickeln maßgeschneiderte KI-Lösungen für Unternehmen in Hanau und dem Main-Kinzig-Kreis.
+          </p>
+          <p class="mt-4 text-lg md:text-xl text-muted-foreground">
+            Von automatisierten Workflows mit n8n und Make bis zu autonomen KI-Agenten mit OpenClaw – wir analysieren Ihre Prozesse, bauen den Prototyp in 1–2 Wochen und begleiten Sie persönlich vor Ort.
+          </p>
+          <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="#kontakt" class="inline-flex items-center justify-center px-6 py-3 rounded-[5px] bg-gradient-to-r from-blue-500 to-purple-500 text-white hover:from-blue-600 hover:to-purple-600 transition-colors">
+              Kostenlose Beratung in Hanau
+            </a>
+            <a href="/ki-automatisierung" class="inline-flex items-center justify-center px-6 py-3 rounded-[5px] border border-border hover:bg-white/10 transition-colors">
+              KI-Automatisierung Rhein-Main →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Branchen Hanau -->
+    <section class="py-16 bg-gradient-to-b from-purple-400/5 via-blue-400/5 to-transparent">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-2xl md:text-3xl font-semibold mb-4 text-center">Branchen in Hanau, die wir bedienen</h2>
+        <p class="text-muted-foreground text-center mb-10 max-w-2xl mx-auto">
+          Hanaus Wirtschaft ist geprägt von Industrie, Chemie, Logistik und Handel. Genau hier liegen die größten Automatisierungspotenziale.
+        </p>
+        <div class="flex flex-wrap gap-3 justify-center">
+          {["Industrie & Fertigung", "Chemie & Pharma", "Logistik & Transport", "Handel & E-Commerce", "Handwerk", "Dienstleistungen", "Gesundheitswesen"].map((industry) => (
+            <span class="px-5 py-2 rounded-full border border-border bg-white/60 dark:bg-white/5 text-sm font-medium">
+              {industry}
+            </span>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Leistungen -->
+    <section class="py-16 bg-gradient-to-b from-blue-400/5 via-purple-400/5 to-transparent">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-2xl md:text-3xl font-semibold mb-8 text-center">Was wir für Hanauer Unternehmen tun</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="p-6 rounded-2xl border border-border/60 bg-gradient-to-br from-background/80 to-background/60 backdrop-blur-sm shadow-sm">
+            <h3 class="text-lg font-semibold mb-2">Workflow-Automatisierung</h3>
+            <p class="text-muted-foreground text-sm">
+              Wir verbinden Ihre bestehenden Systeme (ERP, CRM, E-Mail, Shop) mit KI-Bausteinen zu stabilen Workflows – mit n8n, Make oder OpenClaw. Weniger manuelle Übergaben, weniger Fehler.
+            </p>
+          </div>
+          <div class="p-6 rounded-2xl border border-border/60 bg-gradient-to-br from-background/80 to-background/60 backdrop-blur-sm shadow-sm">
+            <h3 class="text-lg font-semibold mb-2">Dokumentenverarbeitung</h3>
+            <p class="text-muted-foreground text-sm">
+              Rechnungen, Lieferscheine, Verträge und Formulare automatisch auslesen, prüfen und ins System übertragen. Gerade in Produktion und Logistik ein riesiger Zeitsparfaktor.
+            </p>
+          </div>
+          <div class="p-6 rounded-2xl border border-border/60 bg-gradient-to-br from-background/80 to-background/60 backdrop-blur-sm shadow-sm">
+            <h3 class="text-lg font-semibold mb-2">Support-Chatbots</h3>
+            <p class="text-muted-foreground text-sm">
+              KI-Chatbots beantworten Standardfragen sofort, sortieren Tickets vor und leiten komplexe Anfragen an Ihr Team weiter – rund um die Uhr, ohne Wartezeit.
+            </p>
+          </div>
+          <div class="p-6 rounded-2xl border border-border/60 bg-gradient-to-br from-background/80 to-background/60 backdrop-blur-sm shadow-sm">
+            <h3 class="text-lg font-semibold mb-2">Qualitätssicherung & Reporting</h3>
+            <p class="text-muted-foreground text-sm">
+              KI prüft automatisch Daten, erkennt Abweichungen und erstellt Reports – ohne manuelle Aufbereitung. Ideal für produzierende Unternehmen mit hohem Qualitätsanspruch.
+            </p>
+          </div>
+          <div class="p-6 rounded-2xl border border-border/60 bg-gradient-to-br from-background/80 to-background/60 backdrop-blur-sm shadow-sm">
+            <h3 class="text-lg font-semibold mb-2">Marketing-Automation</h3>
+            <p class="text-muted-foreground text-sm">
+              Content-Entwürfe, Social-Posts und E-Mail-Kampagnen automatisch generieren und planen. Mehr Sichtbarkeit für Ihr Unternehmen in Hanau – mit weniger Aufwand.
+            </p>
+          </div>
+          <div class="p-6 rounded-2xl border border-border/60 bg-gradient-to-br from-background/80 to-background/60 backdrop-blur-sm shadow-sm">
+            <h3 class="text-lg font-semibold mb-2">Individuelle KI-Agenten</h3>
+            <p class="text-muted-foreground text-sm">
+              Mit OpenClaw bauen wir autonome KI-Agenten, die mehrstufige Aufgaben selbstständig erledigen und tief in Ihre Systeme integriert sind – für anspruchsvolle Automatisierungsszenarien.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tools -->
+    <section class="py-16 bg-gradient-to-b from-purple-400/5 via-blue-400/5 to-transparent">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-2xl md:text-3xl font-semibold mb-8 text-center">Womit wir arbeiten</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="p-6 rounded-2xl border border-border/60 bg-gradient-to-br from-background/80 to-background/60 backdrop-blur-sm shadow-sm text-center">
+            <div class="w-14 h-14 rounded-lg bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center text-white text-xl font-bold mx-auto mb-4">n8n</div>
+            <h3 class="font-semibold mb-2">n8n</h3>
+            <p class="text-muted-foreground text-sm">Open-Source Workflow-Automatisierung mit über 400 Integrationen. Self-Hosting für volle Datenkontrolle.</p>
+          </div>
+          <div class="p-6 rounded-2xl border border-border/60 bg-gradient-to-br from-background/80 to-background/60 backdrop-blur-sm shadow-sm text-center">
+            <div class="w-14 h-14 rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-white text-xl font-bold mx-auto mb-4">M</div>
+            <h3 class="font-semibold mb-2">Make</h3>
+            <p class="text-muted-foreground text-sm">Visuelle Automatisierungsplattform – intuitiv, schnell implementierbar, ideal für agile Anpassungen.</p>
+          </div>
+          <div class="p-6 rounded-2xl border border-border/60 bg-gradient-to-br from-background/80 to-background/60 backdrop-blur-sm shadow-sm text-center">
+            <div class="w-14 h-14 rounded-lg bg-gradient-to-br from-emerald-500 to-teal-500 flex items-center justify-center text-white text-xl font-bold mx-auto mb-4">OC</div>
+            <h3 class="font-semibold mb-2">OpenClaw</h3>
+            <p class="text-muted-foreground text-sm">KI-Agenten-Plattform für autonome, mehrstufige Prozessautomatisierung – tief integriert in Ihre Systemlandschaft.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vorgehen -->
+    <section class="py-16 bg-gradient-to-b from-blue-400/5 via-purple-400/5 to-transparent">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-2xl md:text-3xl font-semibold mb-8 text-center">Unser Vorgehen in Hanau</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="p-6 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+            <div class="text-sm font-semibold text-muted-foreground mb-1">Schritt 1</div>
+            <h3 class="text-xl font-semibold mb-2">Analyse-Workshop</h3>
+            <p class="text-sm text-muted-foreground">Persönlich vor Ort in Hanau oder remote – wir analysieren Ihre Prozesse, identifizieren Automatisierungspotenziale und erstellen eine priorisierte Roadmap.</p>
+          </div>
+          <div class="p-6 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+            <div class="text-sm font-semibold text-muted-foreground mb-1">Schritt 2</div>
+            <h3 class="text-xl font-semibold mb-2">Prototyp in 1–2 Wochen</h3>
+            <p class="text-sm text-muted-foreground">Kein Konzeptpapier – ein echter, lauffähiger Prototyp mit Ihren Daten. So sehen Sie sofort, was möglich ist, und können direkt Feedback geben.</p>
+          </div>
+          <div class="p-6 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+            <div class="text-sm font-semibold text-muted-foreground mb-1">Schritt 3</div>
+            <h3 class="text-xl font-semibold mb-2">Rollout & Schulung</h3>
+            <p class="text-sm text-muted-foreground">Sichere Integration in Ihre Systeme, Dokumentation und Schulung Ihres Teams. Laufender Support und Weiterentwicklung nach Bedarf.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontakt -->
+    <div id="kontakt">
+      <Contact client:load />
+    </div>
+  </main>
+
+  <Footer />
+</Layout>
