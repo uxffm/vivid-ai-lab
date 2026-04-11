@@ -8,12 +8,12 @@ export const homepageContent = {
     subtitle: "KI nutzen und live miterleben. Wir sind Ihre KI-Agentur aus Frankfurt am Main und revolutionieren Ihren digitalen Auftritt mit intelligenten Lösungen, die messbare Ergebnisse liefern. Ganz nah an der KI Entwicklung dran, nutzen wir die modernsten KI Methoden.",
     buttons: {
       primary: {
-        text: "Unseren KI Service entdecken",
-        href: "#services"
-      },
-      secondary: {
         text: "Direkt Kontaktieren",
         href: "#contact"
+      },
+      secondary: {
+        text: "Anrufen",
+        href: "tel:+491627519335"
       }
     },
     trust: "Vertraut von 20+ Unternehmen aus Frankfurt und Umgebung"

@@ -85,7 +85,7 @@ const Hero = () => {
               <a href={homepageContent.hero.buttons.primary.href}>{homepageContent.hero.buttons.primary.text}<ArrowRight className="ml-2 w-5 h-5" /></a>
             </Button>
             <Button variant="glass" size="lg" className="text-lg px-8 py-6" asChild>
-              <a href="#contact">{homepageContent.hero.buttons.secondary.text}</a>
+              <a href={homepageContent.hero.buttons.secondary.href}>{homepageContent.hero.buttons.secondary.text}</a>
             </Button>
           </div>
           
