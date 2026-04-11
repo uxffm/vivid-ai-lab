@@ -19,6 +19,10 @@ Die Herausforderung: Sie brauchen die richtige Hardware.
 
 **Hier sind die Top-Empfehlungen für lokale KI im Jahr 2026:**
 
+Die Wahl ist eigentlich ganz einfach. Es gibt einen klaren Gewinner: den Mac mini. Warum er so weit vorne liegt und für welche Anwendungsfälle er sich besonders eignet, erfahren Sie weiter unten im Text.
+
+[Mac mini kaufen bei Amazon](https://amzn.to/409dUo5)
+
 <a href="https://amzn.to/409dUo5" target="_blank" rel="noopener">
   <img src="/lokale-ki-welt.jpg" alt="Lokale KI Welt Mini-PC Empfehlungen" style="width: 100%; max-width: 500px; margin: 20px 0;">
 </a>

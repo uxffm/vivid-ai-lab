@@ -106,6 +106,13 @@ const otherPosts = allPosts
           <p class="text-xl text-muted-foreground mb-8 max-w-3xl">
             {entry.data.description}
           </p>
+          {entry.data.affiliateLink && (
+            <div class="mb-3">
+              <a href={entry.data.affiliateLink} target="_blank" rel="noopener nofollow" class="text-sm text-blue-500 hover:underline">
+                Mac mini kaufen bei Amazon
+              </a>
+            </div>
+          )}
           {entry.data.image && (
             <div class="mb-8">
               <img

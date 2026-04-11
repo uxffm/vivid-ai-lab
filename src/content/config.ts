@@ -11,6 +11,7 @@ const blog = defineCollection({
     category: z.string(),
     readTime: z.string(),
     image: z.string().optional(),
+    affiliateLink: z.string().optional(),
   }),
 });
 
