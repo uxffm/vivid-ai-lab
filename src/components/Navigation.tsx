@@ -104,6 +104,18 @@ const Navigation = () => {
                           → Hanau
                         </a>
                         <a
+                          href="/ki-automatisierung-wiesbaden"
+                          className="block px-4 py-3 pl-7 text-sm text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-colors"
+                        >
+                          → Wiesbaden
+                        </a>
+                        <a
+                          href="/automatisierung-agentur-marburg"
+                          className="block px-4 py-3 pl-7 text-sm text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-colors"
+                        >
+                          → Marburg
+                        </a>
+                        <a
                           href="/ki-modelle-lokal"
                           className="block px-4 py-3 text-sm text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-colors"
                         >
