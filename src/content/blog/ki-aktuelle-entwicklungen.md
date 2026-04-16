@@ -208,4 +208,16 @@ Ein ausführlicher Community-Post trifft einen Nerv: ChatGPT korrigiert buchstä
 
 ---
 
+---
+
+## Weiterführende Links
+
+- [Anthropic News & Research](https://www.anthropic.com/news) – Offizielle Blogbeiträge und Paper zu Claude-Modellen, Safety-Forschung und Agentic AI
+- [Qwen-Modelle auf HuggingFace](https://huggingface.co/Qwen) – Alle Qwen-Releases direkt zum Download, inklusive Qwen3.6-35B-A3B
+- [r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/) – Die aktivste Community rund um lokale Sprachmodelle, Benchmarks und Hardware-Tipps
+- [Figure AI](https://www.figure.ai) – Offizielle Seite zu den humanoiden Robotern Figure 02 und Figure 03, inklusive Vulcan-Updates
+- [Tennessee General Assembly](https://www.capitol.tn.gov) – Offizielle Gesetzgebungsseite des Staates Tennessee, um den Stand von HB1455/SB1493 zu verfolgen
+
+---
+
 KI Neuigkeiten April 2026 · Zusammengestellt aus Reddit-Posts auf r/artificial, r/LocalLLaMA, r/MachineLearning, r/singularity, r/ChatGPT und r/OpenAI · Alle Angaben basieren auf Community-Berichten und sind ohne Gewähr.
