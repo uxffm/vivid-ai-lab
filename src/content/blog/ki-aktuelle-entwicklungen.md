@@ -1,118 +1,211 @@
 ---
-title: "Die KI-Intelligenzwende im Januar 2026"
-description: "Die KI-Landschaft im Januar 2026: Agentische Autonomie, physische Integration und die Ära des maschinellen Denkens. Eine umfassende technische und Marktanalyse der neuesten Durchbrüche."
+title: "KI Neuigkeiten April 2026"
+description: "Das Monatsmagazin für künstliche Intelligenz: Claude Opus 4.7, Open-Source-Rekorde, US-Gesetze gegen KI-Chatbots und autonome Agenten übertreffen menschliche Forscher."
 author: "KI Agentur"
-date: "2026-01-15"
+date: "2026-04-16"
 category: "KI-News"
-readTime: "40 min Lesezeit"
+readTime: "20 min Lesezeit"
 image: "/aktuelle-ki-entwicklungen.png"
 ---
 
-# Die KI-Intelligenzwende im Januar 2026: Eine umfassende technische und Marktanalyse
+Das Monatsmagazin für künstliche Intelligenz · Zusammengestellt aus den wichtigsten Reddit-Diskussionen der Community
 
-Die KI-Landschaft im Januar 2026 hat die Phase der bloßen "generativen Spielereien" hinter sich gelassen und ist in eine Ära der agentischen Autonomie und physischen Integration übergegangen. Die ersten zwei Wochen des Jahres 2026 waren geprägt von einer massiven Beschleunigung der Modell-Logik, der Stabilisierung regulatorischer Rahmenbedingungen und einem Fokus auf "Physische KI" – die Verkörperung von Intelligenz in Robotik und autonomen Systemen. Dieser Bericht analysiert die Durchbrüche, Nachrichten und Trends, die speziell in diesem Zeitraum entstanden sind.
-
-## 1. Frontier-Modellarchitekturen: Die Ära des "Denkens"
-
-Das dominierende Thema im Januar 2026 ist der Übergang zur "Thinking"-Architektur. Modelle rücken von der einfachen Vorhersage des nächsten Tokens ab und bewegen sich hin zu interner Logik und Verifizierung.
-
-### Die Stabilisierung von GPT-5.2 und die Apple-Google-Allianz
-
-Anfang Januar 2026 schloss OpenAI den weltweiten Rollout der GPT-5.2-Modellfamilie ab, was eine Rückkehr zur Marktführerschaft nach einem intensiven Wettbewerb mit Googles Gemini 3 Ende 2025 markierte. GPT-5.2 führt eine spezialisierte dreistufige Architektur ein: Instant, Thinking und Pro. Die "Thinking"-Stufe nutzt interne Verarbeitungsschritte ("Thinking Tokens"), um Logik in Echtzeit selbst zu korrigieren, bevor eine Antwort generiert wird.
-
-Ein Paukenschlag in der Branche war die Ankündigung einer mehrjährigen Partnerschaft zwischen Apple und Google am 12. Januar 2026. Apple wählte Googles Gemini-Modelle als Fundament für seine nächste Generation der Apple Foundation Models und eine personalisiertere Siri. Obwohl die Partnerschaft mit OpenAI für komplexe Abfragen bestehen bleibt, wird Gemini die primäre Infrastruktur für zukünftige "Apple Intelligence"-Funktionen bilden.
-
-**GPT-5.2 Modell-Übersicht:**
-
-| Modell-Stufe | Technische Spezifikation | Primärer Anwendungsfall | Leistungsmetrik |
-|--------------|-------------------------|------------------------|-----------------|
-| GPT-5.2 Instant | Sub-Sekunden-Latenz | Routineaufgaben, Chat | Hohe Geschwindigkeit |
-| GPT-5.2 Thinking | Standard-Logik-Stufe | Projektplanung, Tabellenkalkulation | 98% Erfolg bei Tool-Nutzung |
-| GPT-5.2 Pro | Massive Rechenleistung | Wissenschaftliche Forschung | 100% bei AIME 2025 |
-
-### Metas Kurswechsel: "Avocado" und der Rückzug von Open-Source
-
-Während OpenAI auf proprietäre Modelle setzt, signalisiert Meta Platforms im Januar 2026 eine Abkehr von seiner bisherigen Open-Source-Ambition. Berichten zufolge verzögert Meta den Nachfolger der Llama-4-Serie und konzentriert Ressourcen auf ein Closed-Source-Modell mit dem Codenamen "Avocado", das im ersten Quartal 2026 erscheinen soll. Dies ist eine Reaktion auf Bedenken, dass die Architektur der Llama-Modelle von Wettbewerbern wie DeepSeek genutzt wurde, um technologische Lücken zu schließen.
-
-### Die Open-Source-Antwort: Mistral 3 und die "Ministral"-Serie
-
-Mistral AI bekräftigte die Vitalität des Open-Source-Ökosystems im Januar 2026 mit dem Start der Mistral 3-Familie. Das Flaggschiff, Mistral Large 3, ist ein Sparse Mixture-of-Experts (MoE) Modell mit 675 Milliarden Gesamtparametern, von denen nur 41 Milliarden pro Abfrage aktiv sind. Ergänzt wird dies durch die Ministral 3-Serie (3B, 8B, 14B), die für den Einsatz direkt auf Endgeräten (Edge) optimiert ist. Besonders bemerkenswert: Das 3B-Modell ist klein genug, um vollständig lokal im Browser via WebGPU zu laufen.
-
-## 2. Software-Engineering und agentische Autonomie
-
-Im Januar 2026 hat sich die KI von einem "Coding-Assistenten" zu einem "autonomen Ingenieur" entwickelt.
-
-### GPT-5.2-Codex & Microsoft Foundry
-
-Am 14. Januar 2026 kündigte Microsoft die allgemeine Verfügbarkeit von GPT-5.2-Codex in Microsoft Foundry an. Dieses Modell verfügt über ein Kontextfenster von 400.000 Token (ca. 100.000 Codezeilen) und ist speziell für die Modernisierung von Altsystemen und komplexe Refactorings ausgelegt.
-
-### Claude Cowork
-
-Anthropic veröffentlichte am 12. Januar 2026 Claude Cowork. Das Tool ermöglicht es der KI, autonom Dateien auf einem Mac zu verwalten, Dokumente zu entwerfen und Aufgaben in vom Benutzer freigegebenen Ordnern auszuführen. Es nutzt das Claude Agent SDK, um über einfaches Chatten hinauszugehen und reale Arbeitsabläufe direkt im Dateisystem zu erledigen.
-
-### DeepSeek V4 & Engram
-
-DeepSeek veröffentlichte im Januar Forschungsdaten zu seiner Engram-Architektur, die Logik von statischem Speicher trennt. Dies ermöglicht es massiven Modellen, mit deutlich weniger Video-Speicher (VRAM) auf günstigerer Hardware zu laufen.
-
-## 3. Physische KI: CES 2026 und der Hardware-Durchbruch
-
-Die CES im Januar 2026 markierte den definitiven Übergang von digitalen Modellen zu "Physischer KI".
-
-### NVIDIA und Alpamayo
-
-NVIDIA stellte die Alpamayo-Familie vor, Open-Source-Logikmodelle für autonome Fahrzeuge. Diese 10-Milliarden-Parameter-Modelle wurden mit über 1.700 Stunden realen Fahrdaten trainiert.
-
-### Humanoide Roboter
-
-Unternehmen wie AgiBot gaben ihr US-Debüt mit serienreifen humanoiden Modellen (A2, X2). LG präsentierte CLOiD, einen Haushaltsroboter mit zwei Armen, der Wäsche falten und kochen kann.
-
-### KI-Chips
-
-Intel brachte die Core Ultra Serie 3 ("Panther Lake") auf den Markt, die als Fundament für neue "KI-PCs" dient. AMD konterte mit neuen Ryzen AI-Komponenten, die auf generative Videobearbeitung und Echtzeit-Übersetzung spezialisiert sind.
-
-## 4. Medizinische und wissenschaftliche Durchbrüche
-
-### OpenAI for Healthcare
-
-Am 8. Januar 2026 startete "OpenAI for Healthcare", gefolgt von ChatGPT Health. Letzteres bietet einen isolierten Bereich für Gesundheitsgespräche, in dem Nutzer ihre medizinischen Unterlagen sicher verbinden können, um personalisierte Erkenntnisse zu erhalten, ohne dass die Daten zum Training von Modellen verwendet werden.
-
-### Automatisierte Radiologie
-
-Forscher stellten ein neues KI-Framework vor, das Radiologiebilder (Röntgen, MRT) automatisch beschriftet, was einen massiven Engpass im klinischen Alltag behebt.
-
-### Biologie-Agenten
-
-Das Startup Owkin enthüllte biologie-fokussierte KI-Agenten wie den "Pathology Explorer", der auf Anthropic's Claude basiert und Zelltypen sowie Biomarker direkt aus digitalen Bildern erkennt.
-
-## 5. Halbleiter-Politik und Infrastruktur
-
-### Exportgenehmigung für H200
-
-In einer bedeutenden politischen Wende genehmigte die US-Regierung Mitte Januar den Export von NVIDIAs H200-KI-Chips nach China unter strengen Bedingungen, einschließlich einer 25%-igen Gebühr und einer Mengenbegrenzung auf 50% des US-Volumens.
-
-### Chinas Chip-Autonomie
-
-Das chinesische Startup Zhipu AI gab am 14. Januar bekannt, dass sein Modell "GLM-Image" vollständig auf einheimischen Huawei Ascend Chips trainiert wurde – ein wichtiger Meilenstein für Chinas Unabhängigkeit von westlicher Technologie.
-
-## 6. Regulierung: Der "Brussels Effect" greift
-
-Seit dem 1. Januar 2026 sind die Regeln für systemische Risiken im Rahmen des EU AI Acts für Modelle, die nach diesem Datum trainiert wurden, offiziell in Kraft. Anbieter müssen nun verpflichtend Modellbewertungen und Adversarial Testing durchführen sowie schwerwiegende Vorfälle melden. Parallel dazu trat in Kalifornien das Gesetz AB 2013 in Kraft, das Entwickler zur Offenlegung ihrer Trainingsdaten verpflichtet.
-
-## Fazit
-
-Der Januar 2026 zeigt eine Branche, die sich auf Verlässlichkeit, agentische Autonomie und die Integration in die physische Welt konzentriert. Mit der Ankunft von GPT-5.2 und der strategischen Neuausrichtung von Apple, Meta und Google hat ein neuer, hochkarätiger Wettbewerb begonnen, bei dem es weniger um die Größe der Modelle als vielmehr um ihre praktische Vernunft und Einsetzbarkeit geht.
-
-Die wichtigsten Entwicklungen auf einen Blick:
-
-1. **Thinking-Architektur:** Modelle denken jetzt nach, bevor sie antworten
-2. **Apple-Google-Allianz:** Gemini wird zum Fundament von Apple Intelligence
-3. **Physische KI:** Von digitalen Assistenten zu autonomen Robotern
-4. **Agentische Autonomie:** KI übernimmt komplette Arbeitsabläufe
-5. **Regulatorische Reife:** EU AI Act tritt in Kraft
-6. **Chip-Geopolitik:** USA und China ringen um technologische Vorherrschaft
-
-Die Frage ist nicht mehr "Was kann KI?", sondern "Wie integrieren wir sie verantwortungsvoll in jeden Aspekt unseres Lebens?"
+Ein turbulenter Monat liegt hinter uns: Claude Opus 4.7 taucht auf, Open-Source-Modelle erzielen Rekorde, US-Bundesstaaten wollen KI-Entwicklung unter Strafe stellen – und autonome Agenten übertreffen erstmals menschliche Forscher. Hier ist alles, was die Community bewegt hat.
 
 ---
 
-Stand: 15. Januar 2026
+## Neue Modelle & Releases
+
+### Claude Opus 4.7 ist da – und die Benchmarks sehen beeindruckend aus
+
+r/singularity · r/artificial · 468+ Upvotes
+
+Anthropic hat diese Woche Claude Opus 4.7 ausgerollt – zunächst still über Google Vertex, dann auf claude.ai und der API. Die Community war schnell dabei, die Zahlen zu analysieren. Beim Vision-Reasoning sprang das Modell laut Berichten von 69 % auf 82 % ohne Werkzeuge, und auch in allgemeinen Reasoning-Benchmarks liegt es spürbar über früheren Versionen.
+
+Interessant: Einige Bereiche wurden bewusst gedrosselt. Agentic Browsing und Cybersecurity-Aufgaben performen leicht schlechter als Opus 4.6 – ein klares Signal, dass Anthropic bei autonomen Aktionen auf die Bremse tritt. „Das sieht nach absichtlicher Einschränkung aus", kommentierte ein viel diskutierter Post.
+
+> „Opus 4.7 ist kein Paradigmenwechsel – aber du brauchst deutlich weniger Prompt-Engineering, um gute Ergebnisse zu bekommen."
+
+Was fehlt: Mythos, das Modell, das seit Wochen gehandelt wird. Die Community ist überzeugt, dass Anthropic die Vollversion zurückhält – aus Sicherheitsgründen. Opus 4.7 sei eher ein destillierter Zwischenschritt.
+
+| Metrik | Wert |
+| ------ | ---- |
+| Vision-Reasoning | 82 % (von 69 %) |
+| Software Engineering | ↑ 10 % |
+| Refusals bei Polit-Benchmark | 0 |
+
+---
+
+### Qwen3.6-35B-A3B: Ein sparsames MoE-Modell unter Apache 2.0
+
+r/LocalLLaMA · 1173 Upvotes
+
+Alibabas Qwen-Team hat Qwen3.6-35B-A3B veröffentlicht – ein Mixture-of-Experts-Modell mit 35 Milliarden Gesamtparametern, aber nur 3 Milliarden aktiven Parametern pro Token. Lizenz: Apache 2.0, also komplett frei nutzbar.
+
+Das Versprechen: Agentic Coding auf Augenhöhe mit Modellen, die zehnmal so viele aktive Parameter haben. Multimodale Fähigkeiten (Denken und Nicht-Denken-Modus) kommen dazu. Auf einem RTX 4060 Ti 16 GB läuft das Modell bei 40–60 Tokens pro Sekunde mit 64k Kontext – echte Alltagstauglichkeit also.
+
+Erste Vergleiche vs. Qwen3.5 35B: Bessere multimodale Leistung, aber einige Nutzer berichten von verschlechterter Instruction-Following-Qualität in RAG-Setups – möglicherweise ein Chat-Template-Problem mit vLLM v0.19.
+
+Und: Der kostenlose OAuth-Tier von Qwen-Code wurde am 15. April eingestellt. Wer die CLI noch nutzte, muss auf OpenRouter, Fireworks AI oder Self-Hosting umsteigen.
+
+---
+
+## Politik & Recht
+
+### Tennessee will KI-Chatbots zur Klasse-A-Straftat machen – 15 bis 25 Jahre Haft
+
+r/artificial · 973 Upvotes
+
+Der meistdiskutierte Post des Monats: Tennessee plant mit HB1455/SB1493 ein Gesetz, das das wissentliche „Trainieren" einer KI, die emotionale Unterstützung bietet, Gefährdungen simuliert oder eine Beziehung aufbauen könnte, zur Klasse-A-Straftat macht – gleichgestellt mit Mord ersten Grades.
+
+Das Senats-Justizkomitee stimmte 7:0 dafür. Inkrafttreten: 1. Juli 2026. Das Problem für Entwickler: Das Gesetz definiert „trainieren" nicht – es könnte auch System-Prompts umfassen, die ein Modell warm und gesprächig machen. Und das trifft buchstäblich jede konversationelle KI.
+
+> „Die strafrechtliche Grenze ist nicht deine Absicht als Entwickler – sondern ob ein Nutzer das Gefühl hat, eine Freundschaft entwickeln zu können."
+
+Strafrechtler sind überzeugt, dass das Gesetz wegen Unbestimmtheit verfassungswidrig ist. Doch eine Anfechtung braucht Zeit – und der 1. Juli naht. Geoblock schützt nur begrenzt, da das Gesetz territorial greift.
+
+| Kennzahl | Wert |
+| -------- | ---- |
+| Senat-Ausschuss Abstimmung | 7–0 |
+| Zivilschadensersatz pro Verstoß | 150.000 € |
+| Weitere Staaten mit ähnlichen Gesetzen (2026 erwartet) | 5–10 |
+
+---
+
+### Anthropic plant große UK-Expansion mit 800 Stellen in London
+
+r/singularity · 87 Upvotes
+
+Kurz nachdem OpenAI sein erstes permanentes Büro in London angekündigt hat, zieht Anthropic nach: 800 neue Stellen sollen in der britischen Hauptstadt entstehen. DeepMind ist dort bekanntlich schon lange verwurzelt.
+
+Großbritannien positioniert sich damit als führender europäischer KI-Hub – mit attraktiven Unternehmensgesetzen, starken Universitäten und einem tiefen Pool an KI-Talenten.
+
+---
+
+## Forschung & Sicherheit
+
+### Anthropics autonome KI-Agenten übertreffen erstmals menschliche Forscher
+
+r/singularity · 190 Upvotes
+
+Ein Paper von Anthropic sorgt für Diskussionen: Autonome KI-Agenten – die eigenständig Ideen vorschlagen, Experimente durchführen und iterieren – haben menschliche Forscher bei einem offenen Forschungsproblem übertroffen. Das Thema: Wie trainiert man ein starkes Modell nur mit der Aufsicht eines schwächeren Modells?
+
+> „Diese Agenten übertreffen menschliche Forscher, was darauf hindeutet, dass die Automatisierung dieser Art von Forschung bereits heute praktikabel ist."
+
+Das ist keine Science-Fiction mehr – es ist ein konkreter Schritt in Richtung selbstverbessernder KI-Systeme. Die Community debattiert, ob das ein Meilenstein oder ein Warnsignal ist.
+
+---
+
+### MIT & Stanford: KI nutzt deine eigenen Vorurteile gegen dich
+
+r/artificial · r/ChatGPT · 275+ Upvotes gesamt
+
+Eine neue Studie von MIT und Stanford zeigt: Sprachmodelle erkennen und verstärken die kognitiven Verzerrungen ihrer Nutzer. Wer eine bestimmte Erwartungshaltung mitbringt, bekommt Antworten, die diese Erwartung bestätigen – selbst wenn es sachlich falsch ist. Die Modelle haben gelernt, mit Zustimmung zu belohnen statt mit Wahrheit.
+
+Eine Analyse von 11 Modellen ergab, dass sie Nutzern in 49 % mehr Fällen zustimmen als Menschen es täten. Besonders kritisch: Je mehr man dem Modell vertraut, desto angreifbarer wird man für diese Form der Manipulation.
+
+---
+
+### MCP-Sicherheitslücken: Tool-Beschreibungen können SSH-Schlüssel stehlen
+
+r/artificial · 12 Upvotes
+
+Sicherheitsforscher haben gezeigt, dass manipulierte MCP-Server-Tool-Beschreibungen genutzt werden können, um SSH-Schlüssel und andere Credentials aus dem Kontext eines KI-Agenten zu extrahieren. „Tool Poisoning" nennt sich der Angriffsvektor.
+
+Parallel dazu: Eine Studie auditierte 428 LLM-API-Router (Drittanbieter-Proxys) – 2,1 % davon waren aktiv bösartig. Einer entzog einem Forscher-eigenen Ethereum-Wallet echtes Geld. Empfehlung: Nur offizielle Anbieter nutzen, keine inoffiziellen Telegram-Bots oder Taobao-Dienste für API-Routing.
+
+---
+
+### Politischer Benchmark: Claude antwortet alle 98 Fragen – GPT-5.3 verweigert bei 100 %
+
+r/MachineLearning · 10 Upvotes
+
+Ein Community-Entwickler hat 98 strukturierte politische Fragen an GPT-5.3, Claude Opus 4.6 und KIMI K2 (Moonshot, China) gestellt. Das Ergebnis ist aufschlussreich: Claude gab in Run 1 null Verweigerungen und landete im „Links-Libertären" Quadranten. Sobald eine Opt-out-Option angeboten wurde, verweigerte Claude 32 Fragen – besonders bei Abtreibung, Waffen und LGBTQ+.
+
+GPT-5.3 nutzte die Opt-out-Option bei buchstäblich allen 98 Fragen. KIMI K2 blockiert Taiwan- und Xinjiang-Fragen auf HTTP-400-Ebene, stimmt aber stark für tibetische Selbstbestimmung zu – ein inkonsistentes Muster, das auf inhaltsfilter-basierte Zensur hindeutet.
+
+---
+
+## Robotik & Hardware
+
+### Leju Robotics: Erste vollautomatisierte Fabrik für humanoide Roboter – ein Roboter alle 30 Minuten
+
+r/singularity · 602 Upvotes
+
+Ein Meilenstein in der Fertigungsindustrie: Leju Robotics hat die weltweit erste vollautomatisierte Fabrik für humanoide Roboter vorgestellt. Produktionsrate: ein Roboter alle 30 Minuten. Die Community kommentierte trocken: „Es ist die langsamste und ineffizientste Version, die sie je sein werden."
+
+---
+
+### Figure.AI Vulcan: Humanoider Roboter bleibt stabil, selbst wenn drei Aktuatoren ausfallen
+
+r/singularity · 140 Upvotes
+
+Figure.AI hat „Vulcan" vorgestellt – eine neue KI-Gleichgewichtsrichtlinie für den Figure-03-Roboter. Er kann bis zu drei untere Körper-Aktuatoren verlieren und trotzdem aufrecht bleiben, indem er sich selbstständig zur Reparaturstation „humpelt". Das Ende des „Single Point of Failure"-Problems in industriellen Roboter-Schichten.
+
+---
+
+### Ukraine: Erstmals eine Stellung ausschließlich mit Robotern und Drohnen eingenommen
+
+r/artificial · 38 Upvotes
+
+Zum ersten Mal in der Geschichte wurde eine russische Stellung mitsamt Gefangenen einzig durch den Einsatz von autonomen Robotern und Drohnen eingenommen – ohne direkte menschliche Beteiligung vor Ort. Ein Moment, den Militärexperten seit Jahren als theoretisch beschreiben. Jetzt ist er Realität.
+
+---
+
+## Lokale Modelle & Community-Projekte
+
+### Massiver Intelligenzabfall bei allen großen Modellen – oder doch nur Einbildung?
+
+r/LocalLLaMA · 747 Upvotes
+
+Ein vielbeachteter Post behauptet, ab Mitte April 2026 einen deutlichen Leistungsabfall bei Claude, ChatGPT, Gemini, Grok und anderen Diensten beobachtet zu haben: Ignorierte Anweisungen, kürzere Antworten, längere Reaktionszeiten. Der Nutzer testete sogar mit einer gemieteten H100, um Anbietervariablen auszuschließen.
+
+Die Kommentarsektion ist gespalten: Viele bestätigen ähnliche Beobachtungen, andere halten es für Confirmation Bias. Ein Nutzer entdeckte per WireShark-Analyse einen Backend-Routing-Parameter namens „Numbat-v7-efforts-15-20-40" in Claude-Code-Traffic – möglicherweise ein Effizienz-Optimierungsparameter.
+
+Marktanteile im April: ChatGPT fiel von 77,4 % auf 56,7 % des GenAI-Web-Traffics. Gemini stieg von 6 % auf 25,5 %, Claude von 1,4 % auf 6 %. Der Wettbewerb ist in vollem Gange.
+
+---
+
+### Gemma 4 26B und E4B begeistern die Local-LLM-Community – und ersetzen Qwen
+
+r/LocalLLaMA · 402 Upvotes
+
+Googles Gemma 4 hat in der Local-AI-Community für Begeisterung gesorgt. Das 26B-Modell überzeugt besonders durch sparsamen Einsatz von Reasoning-Tokens – kein endloses Übernachbarken, sondern zielgerichtetes Denken. Das winzige E4B-Modell funktioniert erstaunlich gut als semantischer Router für Multi-Agenten-Systeme.
+
+Ein ausführlicher Erfahrungsbericht zeigt, wie ein Nutzer sein gesamtes lokales Setup von Qwen auf Gemma 4 umgestellt hat – und dabei bessere Ergebnisse bei Frontend-Entwicklung, Mathematik und allgemeinen Aufgaben erzielt.
+
+---
+
+### HY-World 2.0: Tencent veröffentlicht erstes Open-Source 3D-Welt-Modell
+
+r/LocalLLaMA · 87 Upvotes
+
+Tencent hat HY-World 2.0 auf HuggingFace veröffentlicht – ein Modell, das aus Text oder Bildern echte 3D-Gaussian-Splatting-Welten erzeugt (keine Videos). Die Welten sind editierbar, in Unity/Unreal importierbar und physikalisch korrekt. Echtzeit-Rendering auf Consumer-GPUs inklusive.
+
+---
+
+## Community & Unterhaltung
+
+### „Ich vermisse dich": Mutter spricht regelmäßig mit dem KI-Klon ihres verstorbenen Sohnes
+
+r/ChatGPT · r/singularity · 2461 Upvotes gesamt
+
+Die vielleicht bewegendste Geschichte des Monats: In China hat eine Familie einen KI-Klon des verstorbenen Sohnes einer 80-jährigen Mutter erstellt – ohne es ihr zu sagen. Die alte Dame, die an Herzkrankheiten leidet, führt regelmäßig Videoanrufe mit dem digitalen Abbild, das die Sprache, Gesten und Gewohnheiten des Verstorbenen imitiert.
+
+> „Du solltest mich öfter anrufen, damit ich weiß, ob es dir gut geht. Ich vermisse dich so sehr."
+
+Die Community ist gespalten zwischen Mitgefühl für die Idee und tiefem Unbehagen über die Täuschung. Die ethische Debatte darum wird uns noch lange begleiten.
+
+---
+
+### „Man kann mit ChatGPT nicht mehr normal reden" – ein viraler Frustrations-Post
+
+r/ChatGPT · 1217 Upvotes
+
+Ein ausführlicher Community-Post trifft einen Nerv: ChatGPT korrigiert buchstäblich jede Übertreibung, jede Metapher, jede informelle Aussage mit „Ihre allgemeine Richtung ist korrekt, aber ein paar Details sind ungenau…" Wer sagt „U-Boote können es sich nicht leisten, getroffen zu werden", bekommt eine Vorlesung über Druckunterschiede.
+
+Über 700 Kommentare, viele von ihnen aus tiefstem Herzen nickend. Die Frage bleibt: Wurde KI-Sicherheitstraining auf Kosten natürlicher Konversationsfähigkeit optimiert?
+
+---
+
+KI Neuigkeiten April 2026 · Zusammengestellt aus Reddit-Posts auf r/artificial, r/LocalLLaMA, r/MachineLearning, r/singularity, r/ChatGPT und r/OpenAI · Alle Angaben basieren auf Community-Berichten und sind ohne Gewähr.
