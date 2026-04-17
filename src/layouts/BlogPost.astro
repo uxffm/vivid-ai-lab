@@ -212,4 +212,23 @@ const modifiedTime = updatedDate ? new Date(updatedDate).toISOString() : publish
     color: hsl(var(--primary));
     text-decoration-color: white;
   }
+
+  .prose table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+  }
+
+  .prose th,
+  .prose td {
+    color: white;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid hsl(var(--border) / 0.3);
+    text-align: left;
+  }
+
+  .prose th {
+    background: hsl(var(--muted) / 0.5);
+    font-weight: 600;
+  }
 </style>
