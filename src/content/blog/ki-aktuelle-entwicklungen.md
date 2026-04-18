@@ -1,5 +1,5 @@
 ---
-title: "KI Neuigkeiten April 2026"
+title: "KI News April 2026 - Aktuelle KI Neuigkeiten"
 description: "Das Monatsmagazin für künstliche Intelligenz: Claude Opus 4.7, Open-Source-Rekorde, US-Gesetze gegen KI-Chatbots und autonome Agenten übertreffen menschliche Forscher."
 author: "KI Agentur"
 date: "2026-04-16"
