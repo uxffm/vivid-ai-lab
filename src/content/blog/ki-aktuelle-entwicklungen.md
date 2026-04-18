@@ -2,7 +2,7 @@
 title: "KI News April 2026 - Aktuelle KI Neuigkeiten"
 description: "Das Monatsmagazin für künstliche Intelligenz: Claude Opus 4.7, Open-Source-Rekorde, US-Gesetze gegen KI-Chatbots und autonome Agenten übertreffen menschliche Forscher."
 author: "KI Agentur"
-date: "2026-04-16"
+date: "2026-04-18"
 category: "KI-News"
 readTime: "20 min Lesezeit"
 image: "/aktuelle-ki-entwicklungen.png"
@@ -132,7 +132,7 @@ GPT-5.3 nutzte die Opt-out-Option bei buchstäblich allen 98 Fragen. KIMI K2 blo
 
 r/singularity · 602 Upvotes
 
-Ein Meilenstein in der Fertigungsindustrie: Leju Robotics hat die weltweit erste vollautomatisierte Fabrik für humanoide Roboter vorgestellt. Produktionsrate: ein Roboter alle 30 Minuten. Die Community kommentierte trocken: „Es ist die langsamste und ineffizientste Version, die sie je sein werden."
+Ein Meilenstein in der Fertigungsindustrie: Leju Robotics hat die weltweit erste vollautomatisierte Fabrik für humanoide Roboter vorgestellt. Produktionsrate: ein Roboter alle 30 Minuten. Die Community kommentierte trocken: „Es ist die langsamste und ineffizienteste Version, die sie je sein werden."
 
 ---
 
@@ -152,7 +152,99 @@ Zum ersten Mal in der Geschichte wurde eine russische Stellung mitsamt Gefangene
 
 ---
 
+### Unitree H1 macht sich für den Halbmarathon bereit – und überholt Usain Bolt zumindest im Meme
+
+r/singularity · 834 Upvotes
+
+Vier Tage vor dem Peking Humanoid Robot Halbmarathon (19. April) veröffentlichte Unitree ein Video, das zeigt, wie der H1 von einem Trott in einen echten Laufstil wechselt – mit dynamischem Übergang und stabiler Haltung. Intern lief das Team laut eigenen Angaben bereits die Strecke in etwas über 50 Minuten, knapp hinter Jacob Kilplimos Weltrekord von 57:30.
+
+Die Community reagierte mit der Formel „Usain Volt" – und dem Kommentar: „Es ist die langsamste und ineffizienteste Version, die sie je sein werden." Das Rennen am 19. April gilt als Symbolereignis für den Reifegrad humanoider Roboter im Jahr 2026.
+
+---
+
+## Kontroversen & Rückschläge
+
+### Opus 4.7: Die Community ist sich einig – das ist ein Rückschritt
+
+r/singularity · r/artificial · 996 + 259 Upvotes
+
+Was als spannende Modellveröffentlichung begann, entwickelte sich schnell zur größten Enttäuschung des Monats. Auf dem erweiterten NYT-Connections-Benchmark stürzte Opus 4.7 von 94,7 % auf erschreckende 41,0 % ab. Auf dem Thematic Generalization Benchmark fiel die Punktzahl von 80,6 auf 72,8. Das sind keine kleinen Ausreißer – es ist ein deutliches Muster.
+
+> „Das ist das erste Mal, dass es im Claude-Subreddit einen einhelligen Konsens gibt: Das ist ein Schritt zurück, kein Schritt vorwärts."
+
+Power-User berichten konkret: Das Modell halluziniert selbstbewusst falsche Preisangaben, das adaptive Reasoning-System wählt fast immer den Low-Effort-Modus, und es verändert Dinge, die der Nutzer gar nicht geändert haben wollte. Ein PhD-Student beschreibt, wie er mitten in der Forschungsarbeit in Loops feststeckt und seine 20 US-Dollar Abo nicht mehr rechtfertigen kann.
+
+Anthropics eigene Erklärung: Die Migrationsdokumentation bestätigt, dass Opus 4.7 „Prompts buchstäblicher interpretiert" – was für API-Pipelines gut sein kann, aber für kreative oder forschungsintensive Nutzung ein echter Rückschritt ist. Das Modell verallgemeinert Anweisungen nicht mehr stillschweigend.
+
+| Metrik | Wert |
+| ------ | ---- |
+| NYT Connections | 41 % (von 94,7 %) |
+| Thematic Generalization | 72,8 (von 80,6) |
+| Fallback | Opus 4.6 bleibt verfügbar |
+
+---
+
+### #QuitGPT: 2,5 Millionen Nutzer boykottieren ChatGPT – Claude landet auf Platz 1 im US App Store
+
+r/artificial · 8 Upvotes (aber massiver gesellschaftlicher Impact)
+
+Die vielleicht politisch bedeutsamste KI-Story des Monats: Das Pentagon wollte, dass KI-Unternehmen einer „Any Lawful Use"-Klausel auf klassifizierten Netzwerken zustimmen. Anthropic-CEO Dario Amodei lehnte ab – er nannte explizit Massenüberwachung und autonome Waffensysteme als Ablehnungsgründe. Reaktion der Trump-Administration: Alle Bundesbehörden sollen Anthropic-Dienste innerhalb von sechs Monaten einstellen. Verteidigungsminister Hegseth erklärte Anthropic zum „Supply-Chain-Risiko".
+
+OpenAI hingegen unterschrieb. Was folgte, war beispiellos: #QuitGPT ging viral. 2,5 Millionen Nutzer kündigten oder boykottierten ihren Account. ChatGPT-Deinstallationen stiegen um 295 Prozent innerhalb einer Nacht. Claude stieg erstmals auf Platz 1 der US-App-Store-Charts. OpenAIs Robotik-Chefin Caitlin Kalinowski trat zurück. Sam Altman räumte ein, das Ganze sei „opportunistisch und unüberlegt wirkend" gewesen.
+
+> „Von 2023 – militärische Nutzung explizit verboten – zu 2026 – Deployment auf klassifizierten Pentagon-Netzwerken. Drei Jahre."
+
+| Kennzahl | Wert |
+| -------- | ---- |
+| Boykottierte Accounts | 2,5 Millionen |
+| ChatGPT-Deinstallationen | +295 % |
+| Claude im US App Store | Platz 1 |
+
+---
+
+### OpenAI: Science Division aufgelöst, Chief Product Officer Kevin Weil verlässt das Unternehmen
+
+r/singularity · r/OpenAI · 273 + 71 Upvotes
+
+Eine weitere turbulente Woche für OpenAI: Kevin Weil, Chief Product Officer und einer der sichtbarsten Führungskräfte des Unternehmens, gibt seinen Abgang bekannt. Gleichzeitig wurde bekannt, dass OpenAIs Science Division vollständig aufgelöst wird.
+
+Parallel dazu: OpenAI plant laut Reuters, mehr als 20 Milliarden US-Dollar in Cerebras-Chips zu investieren und erhält dafür einen Eigenkapitalanteil am Chip-Hersteller – ein deutliches Signal, dass OpenAI die Hardware-Abhängigkeit von Nvidia reduzieren will. Und ein internes Meinungsbild bei Anthropic zeigt: Ein Drittel der Mitarbeiter glaubt, dass Mythos innerhalb von drei Monaten Junior-Ingenieure und -Forscher weitgehend ersetzen könnte.
+
+---
+
+## Neue Produkte & Regierung
+
+### Claude Design: Anthropic Labs bringt KI-gestützte Designtools für Prototypen, Slides und One-Pager
+
+r/singularity · r/artificial · 99 Upvotes
+
+Neben dem Modell-Release überraschte Anthropic mit einem neuen Produkt: Claude Design, ein kollaboratives Designtool, das Opus 4.7 nutzt. Nutzer können visuell ansprechende Prototypen, Präsentationen und One-Pager im Gespräch mit Claude erstellen. Verfügbar in der Research Preview für Pro-, Max-, Team- und Enterprise-Abonnenten.
+
+Das Timing ist interessant: Genau dann, wenn Opus 4.7 für technische Aufgaben kritisiert wird, positioniert Anthropic das Modell als kreativen Designpartner. Die Community beobachtet, ob dieser Use-Case die Stärken der neuen, literaleren Interpretationsweise besser ausspielt.
+
+---
+
+### Weißes Haus will US-Bundesbehörden Zugang zu Claude Mythos geben
+
+r/singularity · 502 Upvotes
+
+Trotz des Streits um den Pentagon-Deal: Bloomberg berichtet, dass das Weiße Haus Maßnahmen einleitet, um US-Bundesbehörden Zugang zu Anthropics Mythos-Modell zu verschaffen. Der US-Finanzminister bezeichnete Mythos als „einen Schritt-Funktions-Wechsel in den Fähigkeiten" – bemerkenswert starke Worte für einen Regierungsvertreter. Das passt zur Einschätzung des britischen AISI, das Mythos ebenfalls als klare Leistungssteigerung gegenüber bisherigen Frontier-Modellen bewertet.
+
+---
+
 ## Lokale Modelle & Community-Projekte
+
+### Qwen3.6 in der Praxis: Die Community ist begeistert – echte Benchmarks, echte Nutzererfahrungen
+
+r/LocalLLaMA · 855 + 333 + 260 Upvotes
+
+Während Modell-Releases oft von Theorie dominiert werden, hat Qwen3.6-35B-A3B in dieser Woche ausgiebige Praxistests bekommen. Ein Nutzer ließ das Modell autonom ein Tower-Defense-Spiel bauen – mit Screenshot-MCP zur Überprüfung – und war sichtlich überwältigt. Ein anderer testete es an einem echten Codebase-Problem (PostgreSQL RLS über Rust, TypeScript und Python) und bekam ein PR-fertiges Ergebnis.
+
+Die zahlenbasierten Vergleiche sprechen ebenfalls für Qwen: In einem strukturierten Harness-Test (37 absichtliche Bugs im 30k-Zeilen-Codebase) löste Qwen3.6 32/37 Probleme ohne eine einzige Regression, während Gemma 4 nur 20 Nettopunkte erreichte und 8 Regressionen produzierte. Qwen war dabei 1,74-mal schneller und brauchte 1,6-mal weniger Token.
+
+Wichtiger Konfigurationshinweis: Statt `--cpu-moe` sollte `--n-cpu-moe 20` verwendet werden – das bringt auf einem RTX 5070 Ti (16 GB) einen Speedup von 54 % und ermöglicht 128k Kontext bei 79 Tokens/Sekunde. Auf dem M3 Ultra (256 GB RAM) erreicht das Modell 100 Tokens/Sekunde mit 100 % Tool-Calling-Kompatibilität über alle gängigen Agent-Frameworks.
+
+---
 
 ### Massiver Intelligenzabfall bei allen großen Modellen – oder doch nur Einbildung?
 
@@ -184,7 +276,45 @@ Tencent hat HY-World 2.0 auf HuggingFace veröffentlicht – ein Modell, das aus
 
 ---
 
-## Community & Unterhaltung
+## Gesellschaft, Bildgenerierung & Tools
+
+### GPT Image 2 ist da – und die Reaktionen sind eindeutig begeistert
+
+r/ChatGPT · 795 Upvotes
+
+OpenAI hat GPT Image 2 (intern auch „NB2" genannt) ausgerollt, zunächst auf ChatGPT. Die Community-Reaktion war unmittelbar: „GPT Image 2 is insane." Texte in Bildern werden deutlich besser verarbeitet, die Detailgenauigkeit hat sich spürbar verbessert. Jetzt können bis zu 10 Bilder in einem Turn generiert werden, was schnelle Iteration ermöglicht.
+
+Ein direkter Vergleich mit Gemini NB2 anhand eines komplexen Prompts (Bananenuhr mit geometrischen Körpern und präzisen Schatten) zeigte: GPT Image 2 scheitert ebenfalls an komplexer Geometrie, aber die Textwiedergabe ist deutlich überlegen.
+
+---
+
+### Elon Musk spricht sich für universelles Grundeinkommen aus – als Gegenmittel zur KI-Arbeitslosigkeit
+
+r/Futurology · 1261 Upvotes
+
+Der meistdiskutierte Futurology-Post dieser Woche: Elon Musk hat sich öffentlich für ein universelles Grundeinkommen (UBI) ausgesprochen, das er als notwendige Reaktion auf die durch KI verursachten Jobverluste sieht. Die Ironie, dass ausgerechnet der Mann hinter Tesla, xAI und Grok diese Position vertritt, blieb der Community nicht verborgen.
+
+Der Post trifft einen Nerv: Laut einer separaten Umfrage glaubt ein Drittel der Anthropic-Mitarbeiter, dass Mythos innerhalb von drei Monaten Junior-Ingenieure und -Forscher weitgehend ersetzen könnte. Die Debatte über die Zukunft von Arbeit und wirtschaftliche Teilhabe ist mitten in der KI-Community angekommen.
+
+---
+
+### Cloudflare veröffentlicht verlustfreies LLM-Kompressionstool – 15–22 % kleinere Modelle ohne Qualitätsverlust
+
+r/LocalLLaMA · 15 Upvotes
+
+Cloudflare hat „Unweight" als Open Source veröffentlicht: ein verlustfreies Kompressionssystem, das die Größe von Sprachmodellen um 15–22 % reduziert, ohne die Ausgabequalität zu beeinträchtigen. Bei Metas Llama-3.1-8B spart das Tool auf NVIDIA-H100-GPUs rund 3 GB VRAM. Die GPU-Kernel sind auf GitHub verfügbar, mit einem technischen Paper, und Pläne zur Erweiterung auf Attention-Gewichte sind angekündigt.
+
+---
+
+### DeepSeek sucht erstmals externe Finanzierung – Bewertung: 10 Milliarden US-Dollar
+
+r/LocalLLaMA · r/artificial · 33 Upvotes
+
+Das chinesische KI-Startup DeepSeek, das mit seinen open-gewichtigen Modellen 2025 die KI-Welt aufgemischt hat, sucht laut Reuters erstmals externe Finanzierung: 300 Millionen US-Dollar bei einer Bewertung von 10 Milliarden. Für ein Unternehmen, das bisher bewusst auf externe Investoren verzichtet hat, ist das ein Paradigmenwechsel – und ein Zeichen dafür, dass auch chinesische KI-Labore den globalen Wettbewerb um Rechenkapazität nicht ohne frisches Kapital gewinnen können.
+
+---
+
+## Community & Ethik
 
 ### „Ich vermisse dich": Mutter spricht regelmäßig mit dem KI-Klon ihres verstorbenen Sohnes
 
@@ -208,8 +338,6 @@ Ein ausführlicher Community-Post trifft einen Nerv: ChatGPT korrigiert buchstä
 
 ---
 
----
-
 ## Weiterführende Links
 
 - [Anthropic News & Research](https://www.anthropic.com/news) – Offizielle Blogbeiträge und Paper zu Claude-Modellen, Safety-Forschung und Agentic AI
@@ -220,4 +348,4 @@ Ein ausführlicher Community-Post trifft einen Nerv: ChatGPT korrigiert buchstä
 
 ---
 
-KI Neuigkeiten April 2026 · Zusammengestellt aus Reddit-Posts auf r/artificial, r/LocalLLaMA, r/MachineLearning, r/singularity, r/ChatGPT und r/OpenAI · Alle Angaben basieren auf Community-Berichten und sind ohne Gewähr.
+KI Neuigkeiten April 2026 · Zusammengestellt aus Reddit-Posts auf r/artificial, r/LocalLLaMA, r/MachineLearning, r/singularity, r/ChatGPT, r/OpenAI und r/Futurology · Aktualisiert mit Posts vom 17.–18. April 2026 · Alle Angaben basieren auf Community-Berichten und sind ohne Gewähr.
