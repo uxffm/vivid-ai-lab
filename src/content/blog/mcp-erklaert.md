@@ -5,7 +5,7 @@ author: "KI Agentur"
 date: "2026-04-19"
 category: "Künstliche Intelligenz"
 readTime: "8 min Lesezeit"
-image: "/mcp-erklaert.jpeg"
+image: "/mcp-erklaert.jpg"
 ---
 
 Der Begriff taucht gerade überall auf. Was steckt wirklich dahinter – und warum sollte dich das interessieren?
