@@ -2,7 +2,7 @@
 title: "KI News April 2026 - Aktuelle KI Neuigkeiten"
 description: "Das Monatsmagazin für künstliche Intelligenz: Erdős-Problem gelöst, Sora 2 Video-Revolution, GPT-5.5, Kinetix KAI Roboter und die Mozilla-Anthropic Bug-Jagd."
 author: "KI Agentur"
-date: "2026-04-29"
+date: "2026-04-27"
 category: "KI-News"
 readTime: "22 min Lesezeit"
 image: "/aktuelle-ki-entwicklungen.png"
@@ -175,5 +175,3 @@ Eine kleine, aber wachsende Zahl von Users berichtet von erratischem Verhalten b
 - [Mozilla & Anthropic Security Collaboration](https://www.reddit.com/r/singularity/comments/1ssc2cv/) – 271 Firefox-Bugs entdeckt
 
 ---
-
-KI Neuigkeiten April 2026 · Zusammengestellt aus Reddit-Posts auf r/artificial, r/LocalLLaMA, r/MachineLearning, r/singularity, r/ChatGPT, r/OpenAI, r/ClaudeAI und r/Anthropic · Aktualisiert mit Posts vom 27.–29. April 2026 · Alle Angaben basieren auf Community-Berichten und sind ohne Gewähr.
