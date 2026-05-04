@@ -1,6 +1,7 @@
 ---
 title: "KI-Entwicklungen im Dezember 2026"
 description: "Die wichtigsten KI-Neuigkeiten: Googles $40B Investition in Claude, Diskussionen um Opus 4.7 und ChatGPTs Bildgenerierung."
+date: "2026-12-22"
 pubDate: "2026-12-22"
 readTime: "12 min"
 author: "KI-Redaktion"
