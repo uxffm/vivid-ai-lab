@@ -1,8 +1,8 @@
 ---
-title: "KI-Entwicklungen: April 2026"
+title: "KI-Entwicklungen: Mai 2026"
 description: "Die wichtigsten KI-Neuigkeiten: Googles $40B Investition in Claude, Diskussionen um Opus 4.7 und ChatGPTs Bildgenerierung."
-date: "2026-04-29"
-pubDate: "2026-04-29"
+date: "2026-05-04"
+pubDate: "2026-05-04"
 readTime: "14 min"
 author: "KI-Redaktion"
 category: "KI-News"
