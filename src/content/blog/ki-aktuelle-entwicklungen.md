@@ -1,6 +1,6 @@
 ---
 title: "KI-Entwicklungen im Dezember 2026"
-date: "2026-12-19"
+date: "2026-12-21"
 readTime: "12 min"
 ---
 
