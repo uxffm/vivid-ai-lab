@@ -1,8 +1,51 @@
 ---
 title: "KI-Entwicklungen im Mai 2026"
-date: "2026-05-01"
-readTime: "8 min"
+date: "2026-05-04"
+readTime: "10 min"
 ---
+
+## Google Deep Research Max: Autonome Recherche mit Vorbehalten
+
+Google hat Deep Research Max vorgestellt – einen autonomen Forschungsagenten, der eigenständig Berichte auf Expertenniveau verfasst. Die Ankündigung wurde in der Community mit gemischten Reaktionen aufgenommen.
+
+Erste praktische Tests zeigen erhebliche Einschränkungen: Das System halluziniert Zitate und übersieht nuancierte Widersprüche in Quellen. User berichten, dass tiefere Branchenkenntnisse übersehen werden – typischerweise wird etwa die Hälfte des generierten Berichts manuell überarbeitet. Die Kosten sind ebenfalls Kritik-Punkt: 20 US-Dollar für einen brauchbaren Bericht ist für viele zu viel, wenn manuelle Nachbearbeitung nötig ist.
+
+Fazit der Community: Gut für erste Drafts und Exploration, aber nicht für mission-critical Anwendungen geeignet. Claude und ChatGPT schneiden in vergleichbaren Tests deutlich besser ab.
+
+## RobotEra L7: Tausende Humanoid-Roboter in Logistik-Zentren
+
+RobotEra kündigte an, tausende L7 Humanoid-Roboter über 10+ Logistik-Zentren zu verteilen für Sortieraufgaben. Das Post erreichte über 950 Punkte und löste intensive Community-Debatte aus.
+
+Kritische Stimmen hinterfragen die praktische Implementierung: Warum humanoid Roboter für Sortieraufgaben verwenden, wenn spezialisierte Conveyor-Belt-Systeme seit Jahrzehnten deutlich effizienter sind? Ein User zeigte sich frustriert: "Nur eine Förderanlage, die rausgeht – wo ist die Sortierung?"
+
+Die Verteidiger argumentieren pragmatisch: Dies ist ein Proof-of-Concept, das Mobilität, Vision und grundlegende Funktionalität demonstriert. Fortschritt entsteht nicht durch 0-zu-100 Sprünge, sondern durch iterative 5%-Verbesserungen. Das Sub sei zu pessimistisch bei jeder neuen Demo.
+
+## ECCV 2026: Debatte über Review-Qualität in der Computer Vision
+
+Die Konferenz-Community diskutiert intensiv die Qualität von eingereichten Peer Reviews für ECCV 2026. Die Meta-Frage: Sind Reviews AI-generiert?
+
+Mehrere Paper-Einreicher berichten von unprofessionellem Feedback: Ein Reviewer verwechselt Supervised und Self-Supervised Learning, ein anderer verstehen CLIP nicht richtig. Ein User fasst zusammen: "Reviewer 2 hat das Paper offensichtlich nicht gelesen. Einige Kommentare sind wirklich dumm zu beantworten."
+
+Bemerkenswert: Die Review-Qualität scheint gegenüber CVPR 2026 gesunken zu sein. User spekulieren, dass LLM-generierte Reviews eine Rolle spielen könnten – ein Meta-Moment, in dem KI-Kritik über KI-Arbeiten selbst unter Verdacht gerät.
+
+## ChatGPT-Bilder: "Normal on Surface, Terrifying on Closer Inspection"
+
+Ein virales ChatGPT-Post forderte das Modell auf, Bilder zu generieren, die an der Oberfläche normal aussehen, aber erschreckend werden, wenn man sie genauer untersucht. Das Post erreichte über 3000 Punkte.
+
+Die generierten Bilder waren verstörend-kreativ: Augen die leicht zu leuchten begannen, seltsame Markierungen an Wänden, geometrische Unmöglichkeiten. User repliziert die Prompts mit Variationen ("avoid clichés") und teilten ihre eigenen unheimlichen Kreationen.
+
+Das Phänomen zeigt ChatGPTs Fähigkeit, stilistische Nuancen zu verstehen und subtile Horror-Elemente zu integrieren – eine überraschend konsistente Interpretation eines komplexen, mehrstufigen visuellen Briefs.
+
+## Vibecoding: Die Kurve der Programmierer-Erleuchtung
+
+Aus r/LocalLLaMA trendete ein Meme über die "Vibecoding Learning Curve" – eine Parody auf die Dunning-Kruger-Kurve, die verschiedene Phasen der KI-basierten Programmierung zeigt.
+
+Die Community identifiziert sich mit den Phasen:
+- Peak of Stupidity: "Bin ein Genie, das Modell schreibt meinen Code!"
+- Valley of Despair: "Das Modell versteht nichts und ist nutzlos"
+- Slope of Enlightenment: "OK, das Modell ist großartig, aber nur wenn ich selbst gut Code schreiben kann"
+
+Kernaussage eines erfahrenen Vibecoder: "Das Modell ersetzt nicht das Verständnis dafür, was man eigentlich bauen will." Für Anfänger ist KI-gestützte Entwicklung eher verhängnisvoll, für erfahrene Programmierer ist es transformativ.
 
 ## Mistral Medium 3.5 128B: Die nächste Generation lokaler KI-Modelle
 
