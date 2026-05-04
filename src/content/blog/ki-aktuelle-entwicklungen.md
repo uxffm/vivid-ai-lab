@@ -5,7 +5,8 @@ date: "2026-04-29"
 pubDate: "2026-04-29"
 readTime: "14 min"
 author: "KI-Redaktion"
-category: "KI News"
+category: "KI-News"
+image: "/aktuelle-ki-entwicklungen.png"
 ---
 
 ## KI erkennt Pankreaskrebs-Frühindikatoren vor Tumoren entwickeln sich
