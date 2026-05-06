@@ -1,5 +1,5 @@
 ---
-title: "KI-Entwicklungen: Mai 2026"
+title: "KI News Mai 2026 - Aktuelle KI Neuigkeiten"
 description: "Die wichtigsten KI-Neuigkeiten: Gemma 4 vs. Qwen-Vergleiche, Claude Opus 4.7 Qualitätsdiskussion, LLM Debate Benchmark Updates, und mehr."
 date: "2026-05-06"
 pubDate: "2026-05-06"
@@ -8,6 +8,8 @@ author: "KI-Redaktion"
 category: "KI-News"
 image: "/aktuelle-ki-entwicklungen.png"
 ---
+
+## Aktuelle KI News für Mai 2026
 
 ## Gemma 4 dominiert in spezialisierten Aufgaben gegenüber Qwen 3.6
 
