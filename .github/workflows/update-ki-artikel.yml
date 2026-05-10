@@ -1,0 +1,37 @@
+name: KI-Artikel täglich aktualisieren
+
+on:
+  schedule:
+    - cron: '0 12 * * *'  # 14:00 Uhr Berlin (CEST, UTC+2)
+  workflow_dispatch:        # Manueller Start über GitHub UI möglich
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Abhängigkeiten installieren
+        working-directory: scripts
+        run: npm install
+
+      - name: Artikel aktualisieren
+        working-directory: scripts
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node update-article.mjs
+
+      - name: Commit und Push
+        run: |
+          git config user.name "KI Update Bot"
+          git config user.email "bot@frankfurt-ai.de"
+          git add src/content/blog/ki-aktuelle-entwicklungen.md
+          git diff --staged --quiet || git commit -m "KI-Artikel Update $(date +%Y-%m-%d) [skip ci]"
+          git push
