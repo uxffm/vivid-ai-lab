@@ -2,7 +2,7 @@ name: KI-Artikel täglich aktualisieren
 
 on:
   schedule:
-    - cron: '0 12 * * *'  # 14:00 Uhr Berlin (CEST, UTC+2)
+    - cron: '30 18 * * *'  # 20:30 Uhr Berlin (CEST, UTC+2)
   workflow_dispatch:        # Manueller Start über GitHub UI möglich
 
 jobs:
