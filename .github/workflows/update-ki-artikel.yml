@@ -35,6 +35,3 @@ jobs:
           git add src/content/blog/ki-aktuelle-entwicklungen.md
           git diff --staged --quiet || git commit -m "KI-Artikel Update $(date +%Y-%m-%d)"
           git push
-
-      - name: Netlify Deploy auslösen
-        run: curl -X POST -d '{}' "${{ secrets.NETLIFY_DEPLOY_HOOK }}"
