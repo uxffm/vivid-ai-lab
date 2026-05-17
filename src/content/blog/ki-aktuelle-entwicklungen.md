@@ -1,8 +1,8 @@
 ---
 title: "KI News Mai 2026 - Aktuelle KI Neuigkeiten"
 description: "Die wichtigsten KI-Neuigkeiten: Grok 4 Heavy Benchmark-Dominanz, Claude Opus 4.5 Rollenspiel-Kontroverse, Gemma 4 vs. Qwen-Vergleiche, LLM Debate Benchmark Updates, und mehr."
-date: "2026-05-16"
-pubDate: "2026-05-16"
+date: "2026-05-17"
+pubDate: "2026-05-17"
 readTime: "22 min"
 author: "KI-Redaktion"
 category: "KI-News"
