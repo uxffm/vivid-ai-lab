@@ -1,8 +1,8 @@
 ---
 title: "KI News Mai 2026 - Aktuelle KI Neuigkeiten"
 description: "Die wichtigsten KI-Neuigkeiten: OpenAI o3 Pro Kontext-Probleme, Gemini 2.5 Pro Deep Research, Claude Sonnet 4.5 Coding-Leistung, Grok 4 Heavy Benchmark-Dominanz, und mehr."
-date: "2026-05-18"
-pubDate: "2026-05-18"
+date: "2026-05-19"
+pubDate: "2026-05-19"
 readTime: "28 min"
 author: "KI-Redaktion"
 category: "KI-News"
@@ -298,5 +298,3 @@ Praktische Ergebnisse sind enttäuschend:
 Eine Bewertung fasst es zusammen: "Deep Research Max will hallucinate citations. It'll miss nuance in contradictory sources. It's great for initial drafts or exploration, but you can't ship those reports without human review."
 
 Fazit: Nicht für mission-critical Anwendungen geeignet. Gut für Exploration und erste Drafts, aber nicht als Produktivitäts-Tool.
-
-## RobotEra L7: Tausende Humanoid-
