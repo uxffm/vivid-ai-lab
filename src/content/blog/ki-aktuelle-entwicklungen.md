@@ -1,8 +1,8 @@
 ---
 title: "KI News Mai 2026 - Aktuelle KI Neuigkeiten"
 description: "Die wichtigsten KI-Neuigkeiten: OpenAI o3 Pro Kontext-Probleme, Gemini 2.5 Pro Deep Research, Claude Sonnet 4.5 Coding-Leistung, Grok 4 Heavy Benchmark-Dominanz, und mehr."
-date: "2026-05-30"
-pubDate: "2026-05-30"
+date: "2026-05-31"
+pubDate: "2026-05-31"
 readTime: "28 min"
 author: "KI-Redaktion"
 category: "KI-News"
