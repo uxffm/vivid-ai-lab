@@ -1,0 +1,39 @@
+name: Täglich KI-Post generieren
+
+on:
+  schedule:
+    - cron: '0 7 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  create-post:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Abhängigkeiten installieren
+        working-directory: scripts
+        run: npm install
+
+      - name: KI-Post generieren
+        working-directory: scripts
+        run: node generate-ai-post.mjs
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+      - name: Commit und Push
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'Täglich KI-Post veröffentlicht'
+          file_pattern: 'src/content/blog/*.md'
