@@ -3,9 +3,18 @@ import path from 'node:path';
 
 const SUBREDDITS = ['Anthropic'];
 const POSTS_PER_SUBREDDIT = 30;
+const FALLBACK_FEEDS = [
+  { name: 'Anthropic News', url: 'https://www.anthropic.com/rss.xml' },
+  { name: 'Anthropic Research', url: 'https://www.anthropic.com/research/rss.xml' },
+  { name: 'The Verge AI', url: 'https://www.theverge.com/ai-artificial-intelligence/rss/index.xml' },
+  { name: 'Ars Technica AI', url: 'https://feeds.arstechnica.com/arstechnica/technology-lab' },
+  { name: 'VentureBeat AI', url: 'https://venturebeat.com/category/ai/feed/' },
+];
 const OUTPUT_DIR = 'src/content/blog';
 const SITE_URL = 'https://frankfurt-ai.de';
 const isDryRun = process.env.DRY_RUN === '1';
+const redditClientId = process.env.REDDIT_CLIENT_ID;
+const redditClientSecret = process.env.REDDIT_CLIENT_SECRET;
 const anthropicApiKey = process.env.ANTHROPIC_API_KEY;
 
 if (!anthropicApiKey) {
@@ -41,12 +50,82 @@ const computeScore = (post) => {
   return post.score + post.numComments * 3 + freshnessBonus;
 };
 
-const fetchRedditPosts = async (subreddit) => {
+const decodeHtml = (value = '') =>
+  value
+    .replace(/<!\[CDATA\[(.*?)\]\]>/gs, '$1')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&#x27;/g, "'")
+    .trim();
+
+const getTagValue = (item, tag) => {
+  const match = item.match(new RegExp(`<${tag}[^>]*>([\\s\\S]*?)<\\/${tag}>`, 'i'));
+  return match ? decodeHtml(match[1]) : '';
+};
+
+const getFeedItems = async ({ name, url }) => {
   try {
-    const res = await fetch(
-      `https://www.reddit.com/r/${subreddit}/hot.json?limit=${POSTS_PER_SUBREDDIT}`,
-      { headers: { 'User-Agent': 'frankfurt-ai.de daily AI content bot' } }
-    );
+    const response = await fetch(url, {
+      headers: {
+        'User-Agent': 'frankfurt-ai.de daily AI content bot',
+        Accept: 'application/rss+xml, application/xml, text/xml',
+      },
+    });
+    if (!response.ok) throw new Error(`Status ${response.status}`);
+    const xml = await response.text();
+    return [...xml.matchAll(/<item\b[\s\S]*?<\/item>/gi)]
+      .slice(0, 8)
+      .map(([item]) => {
+        const pubDate = getTagValue(item, 'pubDate');
+        const createdUtc = pubDate ? Math.floor(new Date(pubDate).getTime() / 1000) : Math.floor(Date.now() / 1000) - 86400;
+        return {
+          source: name,
+          title: sanitizeText(getTagValue(item, 'title')),
+          url: getTagValue(item, 'link'),
+          selftext: sanitizeText(getTagValue(item, 'description').replace(/<[^>]+>/g, '').slice(0, 500)),
+          score: 100,
+          numComments: 0,
+          createdUtc,
+          subreddit: null,
+        };
+      })
+      .filter((item) => item.title && item.url);
+  } catch (err) {
+    console.warn(`Feed ${name} nicht erreichbar: ${err.message}`);
+    return [];
+  }
+};
+
+const getRedditAccessToken = async () => {
+  if (!redditClientId || !redditClientSecret) return undefined;
+  const auth = Buffer.from(`${redditClientId}:${redditClientSecret}`).toString('base64');
+  const response = await fetch('https://www.reddit.com/api/v1/access_token', {
+    method: 'POST',
+    headers: {
+      Authorization: `Basic ${auth}`,
+      'Content-Type': 'application/x-www-form-urlencoded',
+      'User-Agent': 'frankfurt-ai.de daily AI content bot',
+    },
+    body: 'grant_type=client_credentials',
+  });
+  if (!response.ok) throw new Error(`Reddit auth failed ${response.status}`);
+  const json = await response.json();
+  return json.access_token;
+};
+
+const fetchRedditPosts = async (subreddit, accessToken) => {
+  try {
+    const url = accessToken
+      ? `https://oauth.reddit.com/r/${subreddit}/hot?limit=${POSTS_PER_SUBREDDIT}`
+      : `https://www.reddit.com/r/${subreddit}/hot.json?limit=${POSTS_PER_SUBREDDIT}`;
+    const headers = {
+      'User-Agent': 'frankfurt-ai.de daily AI content bot',
+      ...(accessToken ? { Authorization: `Bearer ${accessToken}` } : {}),
+    };
+    const res = await fetch(url, { headers });
     if (!res.ok) throw new Error(`Status ${res.status}`);
     const data = await res.json();
     return (data?.data?.children ?? [])
@@ -102,7 +181,7 @@ const generatePost = async (topPost, relatedPosts) => {
     .slice(1, 4)
     .map((p) => `- ${p.title}`)
     .join('\n');
-  const source = `r/${topPost.subreddit}`;
+  const source = topPost.subreddit ? `r/${topPost.subreddit}` : topPost.source;
 
   const prompt = `Du bist ein erfahrener KI-Experte und schreibst für das Blog von Frankfurt AI (frankfurt-ai.de), einer KI-Agentur aus Frankfurt am Main.
 
@@ -173,14 +252,29 @@ const run = async () => {
   await fs.mkdir(OUTPUT_DIR, { recursive: true });
 
   console.log('Lade Reddit-Beiträge...');
+  let accessToken;
+  try {
+    accessToken = await getRedditAccessToken();
+    if (accessToken) console.log('Reddit OAuth-Token erhalten.');
+  } catch (err) {
+    console.warn(`Reddit OAuth fehlgeschlagen: ${err.message}`);
+  }
+
   const allPosts = [];
   for (const sub of SUBREDDITS) {
-    const posts = await fetchRedditPosts(sub);
+    const posts = await fetchRedditPosts(sub, accessToken);
     console.log(`  r/${sub}: ${posts.length} Beiträge`);
     allPosts.push(...posts);
-    if (SUBREDDITS.indexOf(sub) < SUBREDDITS.length - 1) {
-      await new Promise((r) => setTimeout(r, 600));
+    await new Promise((r) => setTimeout(r, 600));
+  }
+
+  if (allPosts.length < 3) {
+    console.warn(`Reddit nicht verfügbar (${allPosts.length} Posts), verwende RSS-Feeds als Fallback...`);
+    const feedResults = await Promise.allSettled(FALLBACK_FEEDS.map((feed) => getFeedItems(feed)));
+    for (const result of feedResults) {
+      if (result.status === 'fulfilled') allPosts.push(...result.value);
     }
+    console.log(`Gesamt aus RSS-Feeds: ${allPosts.length} Beiträge`);
   }
 
   if (allPosts.length < 3) {
