@@ -3,13 +3,6 @@ import path from 'node:path';
 
 const SUBREDDITS = ['Anthropic'];
 const POSTS_PER_SUBREDDIT = 30;
-const FALLBACK_FEEDS = [
-  { name: 'Anthropic News', url: 'https://www.anthropic.com/rss.xml' },
-  { name: 'Anthropic Research', url: 'https://www.anthropic.com/research/rss.xml' },
-  { name: 'The Verge AI', url: 'https://www.theverge.com/ai-artificial-intelligence/rss/index.xml' },
-  { name: 'Ars Technica AI', url: 'https://feeds.arstechnica.com/arstechnica/technology-lab' },
-  { name: 'VentureBeat AI', url: 'https://venturebeat.com/category/ai/feed/' },
-];
 const OUTPUT_DIR = 'src/content/blog';
 const SITE_URL = 'https://frankfurt-ai.de';
 const isDryRun = process.env.DRY_RUN === '1';
@@ -50,54 +43,6 @@ const computeScore = (post) => {
   return post.score + post.numComments * 3 + freshnessBonus;
 };
 
-const decodeHtml = (value = '') =>
-  value
-    .replace(/<!\[CDATA\[(.*?)\]\]>/gs, '$1')
-    .replace(/&amp;/g, '&')
-    .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>')
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'")
-    .replace(/&#x27;/g, "'")
-    .trim();
-
-const getTagValue = (item, tag) => {
-  const match = item.match(new RegExp(`<${tag}[^>]*>([\\s\\S]*?)<\\/${tag}>`, 'i'));
-  return match ? decodeHtml(match[1]) : '';
-};
-
-const getFeedItems = async ({ name, url }) => {
-  try {
-    const response = await fetch(url, {
-      headers: {
-        'User-Agent': 'frankfurt-ai.de daily AI content bot',
-        Accept: 'application/rss+xml, application/xml, text/xml',
-      },
-    });
-    if (!response.ok) throw new Error(`Status ${response.status}`);
-    const xml = await response.text();
-    return [...xml.matchAll(/<item\b[\s\S]*?<\/item>/gi)]
-      .slice(0, 8)
-      .map(([item]) => {
-        const pubDate = getTagValue(item, 'pubDate');
-        const createdUtc = pubDate ? Math.floor(new Date(pubDate).getTime() / 1000) : Math.floor(Date.now() / 1000) - 86400;
-        return {
-          source: name,
-          title: sanitizeText(getTagValue(item, 'title')),
-          url: getTagValue(item, 'link'),
-          selftext: sanitizeText(getTagValue(item, 'description').replace(/<[^>]+>/g, '').slice(0, 500)),
-          score: 100,
-          numComments: 0,
-          createdUtc,
-          subreddit: null,
-        };
-      })
-      .filter((item) => item.title && item.url);
-  } catch (err) {
-    console.warn(`Feed ${name} nicht erreichbar: ${err.message}`);
-    return [];
-  }
-};
 
 const getRedditAccessToken = async () => {
   if (!redditClientId || !redditClientSecret) return undefined;
@@ -140,8 +85,7 @@ const fetchRedditPosts = async (subreddit, accessToken) => {
         createdUtc: p.data.created_utc ?? 0,
       }));
   } catch (err) {
-    console.warn(`r/${subreddit} nicht erreichbar: ${err.message}`);
-    return [];
+    throw new Error(`r/${subreddit} nicht erreichbar: ${err.message}`);
   }
 };
 
@@ -266,15 +210,6 @@ const run = async () => {
     console.log(`  r/${sub}: ${posts.length} Beiträge`);
     allPosts.push(...posts);
     await new Promise((r) => setTimeout(r, 600));
-  }
-
-  if (allPosts.length < 3) {
-    console.warn(`Reddit nicht verfügbar (${allPosts.length} Posts), verwende RSS-Feeds als Fallback...`);
-    const feedResults = await Promise.allSettled(FALLBACK_FEEDS.map((feed) => getFeedItems(feed)));
-    for (const result of feedResults) {
-      if (result.status === 'fulfilled') allPosts.push(...result.value);
-    }
-    console.log(`Gesamt aus RSS-Feeds: ${allPosts.length} Beiträge`);
   }
 
   if (allPosts.length < 3) {
