@@ -133,6 +133,12 @@ const Navigation = () => {
                         >
                           KI Rezeption
                         </a>
+                        <a
+                          href="/chatgpt-ads-agentur"
+                          className="block px-4 py-3 text-sm text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-colors"
+                        >
+                          ChatGPT Ads Agentur
+                        </a>
                       </div>
                     )}
                   </div>
