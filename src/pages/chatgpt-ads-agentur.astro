@@ -1,0 +1,210 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation';
+import Contact from '../components/Contact';
+import Footer from '../components/Footer.astro';
+
+const pageTitle = "ChatGPT Ads Agentur – KI-Sichtbarkeit für deine Marke | Frankfurt AI";
+const pageDescription = "Als spezialisierte ChatGPT Ads Agentur sorgen wir dafür, dass deine Marke dort auftaucht, wo deine Kunden heute wirklich nach Empfehlungen suchen – in der KI-Suche.";
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "ChatGPT Ads Agentur",
+  "name": "ChatGPT Ads Agentur Frankfurt",
+  "description": pageDescription,
+  "provider": {
+    "@type": "Organization",
+    "name": "KI Frankfurt",
+    "url": "https://frankfurt-ai.de",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Frankfurt am Main",
+      "addressRegion": "Hessen",
+      "addressCountry": "DE"
+    }
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "Deutschland"
+  }
+};
+---
+
+<Layout
+  title={pageTitle}
+  description={pageDescription}
+  image="/src/assets/ai-hero-image.jpg"
+  type="website"
+  customSchema={serviceSchema}
+>
+  <Navigation client:load />
+
+  <!-- Breadcrumbs -->
+  <nav class="pt-32 pb-4" aria-label="Breadcrumb">
+    <div class="max-w-7xl mx-auto px-6">
+      <ol class="flex items-center gap-2 text-sm text-muted-foreground" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/" itemprop="item" class="hover:text-foreground transition-colors">
+            <span itemprop="name">Home</span>
+          </a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <li aria-hidden="true">/</li>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <span itemprop="name" class="text-foreground">ChatGPT Ads Agentur</span>
+          <meta itemprop="position" content="2" />
+        </li>
+      </ol>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero -->
+    <section class="relative min-h-screen flex items-center overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-blue-400/20 via-purple-400/15 to-transparent" />
+      <div class="pointer-events-none absolute -top-24 -left-24 h-64 w-64 rounded-full bg-blue-500/10 blur-2xl" />
+      <div class="pointer-events-none absolute -bottom-24 -right-24 h-64 w-64 rounded-full bg-purple-400/10 blur-2xl" />
+
+      <div class="relative z-10 max-w-7xl mx-auto px-6">
+        <div class="max-w-3xl mx-auto text-center">
+          <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+            Deine ChatGPT Ads Agentur für Sichtbarkeit in der KI-Suche
+          </h1>
+          <p class="mt-6 text-lg md:text-xl text-muted-foreground">
+            Immer mehr Menschen fragen ChatGPT statt Google. Als spezialisierte ChatGPT Ads Agentur sorgen wir dafür, dass deine Marke dort auftaucht, wo deine Kunden heute wirklich nach Empfehlungen suchen.
+          </p>
+          <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="#kontakt" class="inline-flex items-center justify-center px-6 py-3 rounded-[5px] bg-gradient-to-r from-blue-500 to-purple-500 text-white hover:from-blue-600 hover:to-purple-600 transition-colors">
+              Kostenlose Analyse sichern
+            </a>
+            <a href="#so-funktionierts" class="inline-flex items-center justify-center px-6 py-3 rounded-[5px] border border-border hover:bg-muted transition-colors">
+              So funktioniert's
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Das Problem -->
+    <section class="py-16 bg-gradient-to-b from-blue-400/5 via-purple-400/5 to-transparent">
+      <div class="max-w-3xl mx-auto px-6">
+        <div class="rounded-2xl border border-border/60 bg-gradient-to-br from-background/80 to-background/60 backdrop-blur-sm p-8 shadow-lg text-center">
+          <p class="text-sm font-semibold uppercase tracking-widest text-muted-foreground mb-4">Das Problem</p>
+          <h2 class="text-2xl md:text-3xl font-semibold mb-4">
+            Die Suche hat sich verändert. Deine Werbung noch nicht.
+          </h2>
+          <p class="text-lg text-muted-foreground">
+            Früher ging es darum, bei Google auf Seite 1 zu ranken. Heute stellt dein Kunde eine Frage — und ChatGPT gibt eine Antwort. Ob deine Marke darin vorkommt, ist kein Zufall. Genau hier setzt eine ChatGPT Ads Agentur an.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Die Lösung -->
+    <section class="py-16 bg-gradient-to-b from-purple-400/5 via-blue-400/5 to-transparent">
+      <div class="max-w-3xl mx-auto px-6">
+        <div class="rounded-2xl border border-border/60 bg-gradient-to-br from-background/80 to-background/60 backdrop-blur-sm p-8 shadow-lg text-center">
+          <p class="text-sm font-semibold uppercase tracking-widest text-muted-foreground mb-4">Die Lösung</p>
+          <h2 class="text-2xl md:text-3xl font-semibold mb-4">
+            Wir machen dich zur Antwort, die ChatGPT gibt.
+          </h2>
+          <p class="text-lg text-muted-foreground">
+            So wie SEO und Google Ads eine ganze Generation von Marken groß gemacht haben, entscheidet KI-Werbung über die nächsten zehn Jahre. Als ChatGPT Ads Agentur bringen wir dich mit einem klaren, messbaren System genau dorthin.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- So funktioniert's -->
+    <section id="so-funktionierts" class="py-16 bg-gradient-to-b from-blue-400/5 via-purple-400/5 to-transparent">
+      <div class="max-w-5xl mx-auto px-6">
+        <p class="text-sm font-semibold uppercase tracking-widest text-muted-foreground text-center mb-4">So funktioniert's</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="p-6 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+            <div class="text-sm font-semibold text-muted-foreground mb-1">Schritt 1</div>
+            <h3 class="text-2xl font-semibold mb-3">Analyse</h3>
+            <p class="text-muted-foreground">
+              Wir prüfen, wie ChatGPT aktuell über dich, deine Branche und deine Wettbewerber spricht — und wo deine größten Chancen liegen.
+            </p>
+          </div>
+          <div class="p-6 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+            <div class="text-sm font-semibold text-muted-foreground mb-1">Schritt 2</div>
+            <h3 class="text-2xl font-semibold mb-3">Kampagne & Optimierung</h3>
+            <p class="text-muted-foreground">
+              Wir setzen deine Inhalte und Kampagnen so auf, dass KI-Modelle dich verstehen und empfehlen. Was eine gute ChatGPT Ads Agentur ausmacht, ist genau diese Arbeit im Detail.
+            </p>
+          </div>
+          <div class="p-6 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+            <div class="text-sm font-semibold text-muted-foreground mb-1">Schritt 3</div>
+            <h3 class="text-2xl font-semibold mb-3">Wachstum</h3>
+            <p class="text-muted-foreground">
+              Wir tracken deine Nennungen, optimieren laufend nach und bauen deinen Vorsprung kontinuierlich aus.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Warum wir -->
+    <section class="py-16 bg-gradient-to-b from-purple-400/5 via-blue-400/5 to-transparent">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="rounded-2xl border border-border/60 bg-gradient-to-br from-background/80 to-background/60 backdrop-blur-sm p-8 shadow-lg">
+          <p class="text-sm font-semibold uppercase tracking-widest text-muted-foreground mb-4">Warum wir</p>
+          <h2 class="text-2xl md:text-3xl font-semibold mb-6">
+            Die ChatGPT Ads Agentur, die sich auf nichts anderes konzentriert.
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div class="p-5 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+              <h3 class="font-semibold mb-2">Fokus statt Bauchladen</h3>
+              <p class="text-muted-foreground text-sm">Wir machen KI-Sichtbarkeit und ChatGPT-Werbung, sonst nichts.</p>
+            </div>
+            <div class="p-5 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+              <h3 class="font-semibold mb-2">Messbar</h3>
+              <p class="text-muted-foreground text-sm">Du siehst schwarz auf weiß, wo und wie oft du empfohlen wirst.</p>
+            </div>
+            <div class="p-5 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+              <h3 class="font-semibold mb-2">Vorsprung</h3>
+              <p class="text-muted-foreground text-sm">Wir arbeiten am Puls der Modelle, nicht mit den Regeln von gestern.</p>
+            </div>
+          </div>
+          <p class="text-lg text-muted-foreground">
+            Anders als eine klassische Werbeagentur denkt eine spezialisierte ChatGPT Ads Agentur von Anfang an in KI-Antworten statt in Anzeigenplätzen.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="py-16 bg-gradient-to-b from-blue-400/5 to-transparent">
+      <div class="max-w-3xl mx-auto px-6 text-center">
+        <div class="rounded-2xl border border-border/60 bg-gradient-to-br from-background/80 to-background/60 backdrop-blur-sm p-8 shadow-lg">
+          <blockquote class="text-lg md:text-xl text-muted-foreground italic mb-4">
+            „Seit der Zusammenarbeit werden wir in ChatGPT konstant empfohlen, wenn Kunden nach Anbietern in unserer Branche fragen. Das hat echte Anfragen gebracht."
+          </blockquote>
+          <cite class="text-sm font-semibold text-foreground not-italic">— [Name], [Firma]</cite>
+        </div>
+      </div>
+    </section>
+
+    <!-- Abschluss-CTA -->
+    <section class="py-16 bg-gradient-to-b from-purple-400/5 via-blue-400/5 to-transparent">
+      <div class="max-w-3xl mx-auto px-6 text-center">
+        <h2 class="text-2xl md:text-3xl font-semibold mb-4">Bereit für den nächsten Schritt?</h2>
+        <p class="text-lg text-muted-foreground mb-8">
+          Finde in einem kostenlosen 20-Minuten-Gespräch mit deiner ChatGPT Ads Agentur heraus, wie ChatGPT aktuell über dich spricht — und was dein größter Hebel ist.
+        </p>
+        <a href="#kontakt" class="inline-flex items-center justify-center px-8 py-4 rounded-[5px] bg-gradient-to-r from-blue-500 to-purple-500 text-white hover:from-blue-600 hover:to-purple-600 transition-colors text-lg">
+          Jetzt kostenlose Analyse sichern
+        </a>
+      </div>
+    </section>
+
+    <!-- Kontakt -->
+    <div id="kontakt">
+      <Contact client:load />
+    </div>
+  </main>
+
+  <Footer />
+</Layout>
