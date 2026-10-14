@@ -17,9 +17,10 @@ interface BlogProps {
   posts: BlogCardPost[];
   limit?: number;
   showViewAll?: boolean;
+  showImage?: boolean;
 }
 
-const Blog = ({ posts, limit, showViewAll = false }: BlogProps) => {
+const Blog = ({ posts, limit, showViewAll = false, showImage = true }: BlogProps) => {
   const blogPosts = posts
     .map((post) => ({
       ...post,
@@ -49,14 +50,16 @@ const Blog = ({ posts, limit, showViewAll = false }: BlogProps) => {
             <a key={post.slug} href={`/blog/${post.slug}`} className="block group">
               <div className="group hover:shadow-2xl transition-all duration-300 cursor-pointer relative overflow-hidden rounded-lg p-6 border border-border">
                 {/* Content */}
-                <div className="overflow-hidden rounded-t-lg mb-4">
-                  <img
-                    src={post.image || "/placeholder.svg"}
-                    alt={`Blog Post: ${post.title} - ${post.category} Artikel von ${post.author}`}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                    loading="lazy"
-                  />
-                </div>
+                {showImage && (
+                  <div className="overflow-hidden rounded-t-lg mb-4">
+                    <img
+                      src={post.image || "/placeholder.svg"}
+                      alt={`Blog Post: ${post.title} - ${post.category} Artikel von ${post.author}`}
+                      className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                      loading="lazy"
+                    />
+                  </div>
+                )}
 
                 <div className="mb-4">
                   <div className="flex items-center gap-2 mb-3">

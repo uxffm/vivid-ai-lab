@@ -5,7 +5,7 @@ author: "KI Agentur"
 date: "2026-01-29"
 category: "Künstliche Intelligenz"
 readTime: "25 min Lesezeit"
-image: "/moltbot-sicher.jpg"
+image: "/moltbot-sicher.webp"
 ---
 
 # Umfassende Sicherheitsanalyse des Moltbot-Ökosystems: Risikoprofile, Architekturschwachstellen und Strategien zur Bedrohungsabwehr

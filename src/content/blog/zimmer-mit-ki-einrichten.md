@@ -5,7 +5,7 @@ author: "KI Agentur"
 date: "2025-10-23"
 category: "Künstliche Intelligenz"
 readTime: "10 min Lesezeit"
-image: "/ki-raumplanung.png"
+image: "/ki-raumplanung.webp"
 ---
 
 # Zimmer mit KI einrichten

@@ -5,7 +5,7 @@ author: "KI Agentur"
 date: "2026-01-15"
 category: "Automatisierung"
 readTime: "14 min Lesezeit"
-image: "/n8n-vs-make-was-besser.png"
+image: "/n8n-vs-make-was-besser.webp"
 ---
 
 # n8n vs. Make (Integromat): Ein umfassender Vergleich

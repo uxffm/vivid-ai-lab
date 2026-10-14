@@ -6,7 +6,7 @@ date: "2025-11-14"
 updatedDate: "2026-02-02"
 category: "Lokale KI"
 readTime: "18 min Lesezeit"
-image: "/lokale-ki-mini-pc.png"
+image: "/lokale-ki-mini-pc.webp"
 ---
 
 # Mini-PC-Empfehlungen, Leistungsbedarf und passende Modelle

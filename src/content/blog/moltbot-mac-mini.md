@@ -5,7 +5,7 @@ author: "KI Agentur"
 date: "2026-01-27"
 category: "KI-Agenten"
 readTime: "28 min Lesezeit"
-image: "/clawdbot-mac-mini.jpg"
+image: "/clawdbot-mac-mini.webp"
 ---
 
 Die Landschaft der persönlichen künstlichen Intelligenz durchlief Ende 2025 und Anfang 2026 eine strukturelle Transformation mit der Entstehung agentischer Systeme, die die Grenzen herkömmlicher Chat-Schnittstellen überschreiten. 

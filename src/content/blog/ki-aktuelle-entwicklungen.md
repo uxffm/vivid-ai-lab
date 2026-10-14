@@ -6,7 +6,7 @@ pubDate: "2026-09-05"
 readTime: "28 min"
 author: "KI-Redaktion"
 category: "KI-News"
-image: "/aktuelle-ki-entwicklungen.png"
+image: "/aktuelle-ki-entwicklungen.webp"
 ---
 
 ## Aktuelle KI News für September 2026

@@ -5,7 +5,7 @@ author: "KI Agentur"
 date: "2025-09-23"
 category: "KI-Zufriedenheit"
 readTime: "5 min Lesezeit"
-image: "/ki-zufriedenheit-deutschland.png"
+image: "/ki-zufriedenheit-deutschland.webp"
 ---
 
 Wie Deutsche über KI-Kundenservice denken

@@ -5,7 +5,7 @@ author: "KI Agentur"
 date: "2025-10-23"
 category: "Künstliche Intelligenz"
 readTime: "12 min Lesezeit"
-image: "/ki-reiseplanung.png"
+image: "/ki-reiseplanung.webp"
 ---
 
 # Reiseplanung mit KI: So planen Sie Ihre Reise ganzheitlich

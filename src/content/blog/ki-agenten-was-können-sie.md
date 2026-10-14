@@ -5,7 +5,7 @@ author: "KI Agentur"
 date: "2025-10-14"
 category: "Künstliche Intelligenz"
 readTime: "10 min Lesezeit"
-image: "/ki-agenten.png"
+image: "/ki-agenten.webp"
 ---
 
 # Autonome KI-Agenten im Jahr 2025

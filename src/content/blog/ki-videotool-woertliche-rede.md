@@ -5,7 +5,7 @@ author: "KI Agentur"
 date: "2026-04-19"
 category: "KI-Video"
 readTime: "15 min Lesezeit"
-image: "/ki-video-tools.png"
+image: "/ki-video-tools.webp"
 ---
 
 In den letzten Jahren haben sich viele KI-gestützte Video-Tools etabliert, die das Erstellen von TikToks, Reels und Shorts stark vereinfachen. Besonders relevant sind solche Tools, die deutsche Sprach-Synthese bieten und gängige Social-Media-Formate (z. B. 9:16 vertikale Videos) unterstützen. Wir stellen hier zusätzliche, in Deutschland verbreitete Tools vor und erläutern, für wen sie geeignet sind, welche Funktionen sie bieten und wie man deutsche Sprachinhalte optimal damit umsetzt. Das alles mit wörtlicher Rede.

@@ -5,7 +5,7 @@ author: "KI Agentur"
 date: "2025-10-22"
 category: "KI-Browser"
 readTime: "10 min Lesezeit"
-image: "/chatgpt-atlas-vs-chrome.png"
+image: "/chatgpt-atlas-vs-chrome.webp"
 ---
 
 # ChatGPT Atlas vs. Google Chrome – welcher Browser passt besser?

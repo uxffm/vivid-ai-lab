@@ -5,7 +5,7 @@ author: "KI Agentur"
 date: "2025-10-27"
 category: "Künstliche Intelligenz"
 readTime: "12 min Lesezeit"
-image: "/ki-schulen.png"
+image: "/ki-schulen.webp"
 ---
 
 # Künstliche Intelligenz in Schulen: Vorteile und Nachteile

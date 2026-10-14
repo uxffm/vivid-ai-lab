@@ -5,7 +5,7 @@ author: "KI Agentur"
 date: "2025-12-03"
 category: "KI-Browser"
 readTime: "20 min Lesezeit"
-image: "/norton-neo-besserer-browser.png"
+image: "/norton-neo-besserer-browser.webp"
 ---
 
 # Norton NEO – Der KI-Browser als potenzieller Chrome-Nachfolger

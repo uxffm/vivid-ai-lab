@@ -5,7 +5,7 @@ author: "KI Agentur"
 date: "2025-10-27"
 category: "Künstliche Intelligenz"
 readTime: "15 min Lesezeit"
-image: "/ki-praesentationen.png"
+image: "/ki-praesentationen.webp"
 ---
 
 # KI optimal einsetzen zur Erstellung von Präsentationen

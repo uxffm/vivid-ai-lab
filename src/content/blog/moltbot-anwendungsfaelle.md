@@ -5,7 +5,7 @@ author: "KI Agentur"
 date: "2026-01-30"
 category: "KI-Agenten"
 readTime: "22 min Lesezeit"
-image: "/moltbot-anwedungsfaelle.png"
+image: "/moltbot-anwedungsfaelle.webp"
 ---
 
 # Die agentische Revolution am Desktop: Eine technologische und strategische Analyse von Moltbot und seinen Einsatzszenarien

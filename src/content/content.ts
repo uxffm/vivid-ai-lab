@@ -70,8 +70,8 @@ export const homepageContent = {
     subtitle: "Ihre Experten für KI-Marketing in Frankfurt",
     description: "Wir sind ein Team aus SEO-Experten, Designern und Programmierern, die mit der KI ganz früh angefangen haben. Die KI-Technologie ändert sich täglich - nichts entwickelt sich so schnell wie die künstliche Intelligenz. Als KI-Agentur wissen wir genau, welche KI-Technologie für welche Aufgabe die richtige ist. Wir setzen alle diese Änderungen sofort für unsere Kunden um und bleiben immer am Puls der Zeit.",
     photo: {
-      src: "/team-photo.jpg",
-      alt: "Unser KI-Team aus Frankfurt"
+      src: "/ki-team-frankfurt.webp",
+      alt: "KI-Agentur Frankfurt: Mensch und Roboter vor der Frankfurter Skyline am Main"
     },
     stats: [
       { number: "20+", label: "Zufriedene Kunden" },
