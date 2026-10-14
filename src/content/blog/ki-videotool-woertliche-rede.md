@@ -106,11 +106,11 @@ Diese Plattformen bieten ebenfalls deutsche KI-Stimmen an (meist mit kostenlosen
 
 ### Skript & Storytelling
 
-Schreibe das Voiceover-Skript so, wie du es sprechen würdest. Ein Tipp ist die Nutzung von ChatGPT: Es kann in kurzer Zeit prägnante, unterhaltsame Texte generieren. Achte auf klare Sprache und fesselnde Einstiege (Fragen, Spannung). Kürze das Skript auf wenige Sätze pro Szene – Social-Media-Zuschauer mögen Tempo.
+Schreiben Sie das Voiceover-Skript so, wie Sie es sprechen würden. Ein Tipp ist die Nutzung von ChatGPT: Es kann in kurzer Zeit prägnante, unterhaltsame Texte generieren. Achten Sie auf klare Sprache und fesselnde Einstiege (Fragen, Spannung). Kürzen Sie das Skript auf wenige Sätze pro Szene – Social-Media-Zuschauer mögen Tempo.
 
 ### Intonation und Betonung
 
-Verwende Satzzeichen bewusst: Moderne KI-Stimmen setzen Pausen automatisch bei Punkten oder Kommas. Du kannst zudem Betonungen manuell steuern (z. B. in Murf.ai über spezielle Markierungen oder IPA-Transkriptionen). Experimentiere mit Sprechtempo und Lautstärke, um Dynamik zu erzeugen. Viele Tools (CapCut, Clipchamp) bieten Slider für Geschwindigkeit und Stimmeffekte.
+Verwenden Sie Satzzeichen bewusst: Moderne KI-Stimmen setzen Pausen automatisch bei Punkten oder Kommas. Sie können zudem Betonungen manuell steuern (z. B. in Murf.ai über spezielle Markierungen oder IPA-Transkriptionen). Experimentieren Sie mit Sprechtempo und Lautstärke, um Dynamik zu erzeugen. Viele Tools (CapCut, Clipchamp) bieten Slider für Geschwindigkeit und Stimmeffekte.
 
 ### Stimmwahl & Stil
 
@@ -118,15 +118,15 @@ Wähle eine Stimme passend zum Inhalt. Leicht humorvoll/trockener Ton eignet sic
 
 ### Einsatz von Voice-Cloning
 
-Bei Wiedererkennbarkeit kann es helfen, die eigene Stimme zu klonen (z.B. in ElevenLabs oder Fliki). So bleibt dein Content konsistent. Oder nimm eine „Markenstimme": Beispielsweise immer dieselbe männliche Stimme für Tutorials.
+Bei Wiedererkennbarkeit kann es helfen, die eigene Stimme zu klonen (z.B. in ElevenLabs oder Fliki). So bleibt Ihr Content konsistent. Oder nehmen Sie eine „Markenstimme": Beispielsweise immer dieselbe männliche Stimme für Tutorials.
 
 ### Mobile-Check
 
-Da viele Videos auf dem Handy gesehen werden, teste deine Clips auf kleineren Bildschirmen. Achte auf deutliche Aussprache – besonders bei geräuschvollen Sounds (Musik) sollte der Voiceover klar verständlich sein.
+Da viele Videos auf dem Handy gesehen werden, testen Sie Ihre Clips auf kleineren Bildschirmen. Achten Sie auf deutliche Aussprache – besonders bei geräuschvollen Sounds (Musik) sollte der Voiceover klar verständlich sein.
 
 ### Finales Feintuning
 
-Hört euch das Ergebnis kritisch an und verbessert Tonhöhe, Pausen und Betonung, bis es „natürlich" klingt. Manche Tools bieten übrigens schon Voreinstellungen für virale TikTok-Voiceover (z.B. CapCut-Filter „TikTok Voice"). Setze sie gezielt ein, aber überlade das Video nicht mit Effekten.
+Hören Sie sich das Ergebnis kritisch an und verbessern Sie Tonhöhe, Pausen und Betonung, bis es „natürlich" klingt. Manche Tools bieten übrigens schon Voreinstellungen für virale TikTok-Voiceover (z.B. CapCut-Filter „TikTok Voice"). Setzen Sie sie gezielt ein, aber überladen Sie das Video nicht mit Effekten.
 
 ## Fazit
 
