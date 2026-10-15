@@ -1,183 +1,145 @@
 ---
-title: "Mini-PC/PC Empfehlungen für lokale KI"
-description: "Hardware-Empfehlungen und KI-Modelle für datenschutzkonforme, offline laufende KI-Assistenten zur Dokumentenanalyse und Textzusammenfassung."
+title: "Bester Mini-PC für lokale KI 2026"
+description: "Welcher Mini-PC eignet sich 2026 für lokale KI? Mac mini M6 und M5 Pro, Ryzen AI Max+ 395 und NVIDIA-PC im Vergleich, mit RAM-Tabelle, Modellen und Software."
 author: "KI Agentur"
 date: "2025-11-14"
-updatedDate: "2026-02-02"
+updatedDate: "2026-10-15"
 category: "Lokale KI"
-readTime: "18 min Lesezeit"
+readTime: "8 min Lesezeit"
 image: "/lokale-ki-mini-pc.webp"
 ---
 
-# Mini-PC-Empfehlungen, Leistungsbedarf und passende Modelle
+Sie wollen KI wie ChatGPT nutzen, ohne vertrauliche Dokumente an einen externen Dienst zu schicken? Dafür reicht ein gut ausgestatteter Mini-PC. Er bewältigt Textarbeit, Dokumentenanalyse und interne Wissenssuche zuverlässig. Entscheidend sind dabei weniger der Prozessor als Arbeitsspeicher, GPU und Speicherbandbreite.
 
-Sie wollen KI komplett offline nutzen - für Dokumentenanalyse, Zusammenfassungen und Q&A, ohne dass Daten in die Cloud gehen?
+**Unsere Empfehlung für 2026:**
 
-Die gute Nachricht: Das ist heute problemlos möglich.
+- **Einstieg:** Mac mini M6 mit 32 GB RAM
+- **Größere Modelle:** Mac mini M5 Pro mit 64 GB oder ein Mini-PC mit AMD Ryzen AI Max+ 395 und 64 bis 128 GB
+- **CUDA und Aufrüstbarkeit:** kompakter Desktop-PC mit NVIDIA-Grafikkarte
 
-Die Herausforderung: Sie brauchen die richtige Hardware.
+## Die Geräte im Schnellvergleich
 
-**Hier sind die Top-Empfehlungen für lokale KI im Jahr 2026:**
+| Gerät | Sinnvolle Ausstattung | Geeignet für | Einschränkung |
+|---|---|---|---|
+| Mac mini M6 | 32 GB Unified Memory | Chatbots, Texte, kleine bis mittlere Modelle | Maximal 32 GB Speicher |
+| Mac mini M5 Pro | Bis 64 GB Unified Memory | Größere Modelle, lange Dokumente, Dauereinsatz | Teurer, Speicher nicht nachrüstbar |
+| GMKtec EVO-X2 (Ryzen AI Max+ 395) | 64 oder 128 GB RAM | Große Modelle | Software-Kompatibilität prüfen |
+| HP Z2 Mini G1a | Bis 128 GB RAM | Unternehmen, Workstations | Deutlich teurer |
+| Kompakt-PC mit RTX 5060 Ti | 16 GB VRAM, mind. 32 GB RAM | Schnelle Inferenz, CUDA, Entwicklung | Große Modelle passen nicht in 16 GB |
+| Günstiger Mini-PC ohne GPU | 16–32 GB RAM | Erste Versuche | Langsame Antworten |
 
-Die Wahl ist eigentlich ganz einfach. Es gibt einen klaren Gewinner: den Mac mini. Warum er so weit vorne liegt und für welche Anwendungsfälle er sich besonders eignet, erfahren Sie weiter unten im Text.
+Die Tabelle ist eine Kaufhilfe, kein Benchmark-Ranking: Leistung hängt stark von Modell, Quantisierung, Kontextlänge und Software ab. Zum Marktstart kostete der Mac mini in Deutschland ab 1.049 Euro (M6) bzw. 1.999 Euro (M5 Pro); mehr RAM kostet entsprechend mehr.
 
-[Mac mini kaufen bei Amazon](https://amzn.to/409dUo5)
+## Was bringt lokale KI?
 
-<a href="https://amzn.to/409dUo5" target="_blank" rel="noopener">
-  <img src="/lokale-ki-welt.jpg" alt="Lokale KI Welt Mini-PC Empfehlungen" style="width: 100%; max-width: 500px; margin: 20px 0;">
-</a>
+Bei lokaler KI läuft das Sprachmodell (LLM) direkt auf Ihrem Rechner und berechnet die Antworten dort. Nutzen Sie eine vollständig lokale Anwendung, verlassen Eingaben und Dokumente das Gerät nicht. Nach dem Download funktioniert das sogar offline.
 
-*Hinweis: Dies ist ein Affiliate-Link. Wenn Sie über diesen Link einkaufen, erhalten wir eine kleine Provision, ohne dass Ihnen zusätzliche Kosten entstehen.*
+Das ist vor allem für Unternehmen, Kanzleien, Beratungen und Schulen mit sensiblen Daten interessant. Zwei Einschränkungen gibt es: Große Cloud-Modelle sind bei komplexen Aufgaben oft stärker, und auch lokale Modelle erfinden manchmal Fakten. Wichtige Ergebnisse sollten Sie daher prüfen.
 
-## Warum lokale KI? Der Datenschutz-Vorteil
+## Worauf es bei der Hardware ankommt
 
-Lokale KI bedeutet: Ihre Daten verlassen nie Ihren Rechner. Besonders im Bildungsbereich (DSGVO!) und für Unternehmen ist das essentiell.
+**Speicher zuerst.** Das Modell muss während der Berechnung komplett in den Speicher passen. RAM ist der normale Arbeitsspeicher, VRAM der Speicher einer separaten Grafikkarte. Apple Silicon und AMD Ryzen AI Max nutzen Unified Memory, den sich CPU und GPU teilen. So laufen große Modelle auch ohne Grafikkarte mit viel VRAM.
 
-Moderne Open-Source-Modelle erreichen heute etwa das Niveau von ChatGPT vor 8-12 Monaten - mehr als ausreichend für Dokumentenanalyse und Zusammenfassungen.
+Allerdings entsprechen 64 GB Unified Memory nicht 64 GB VRAM: NVIDIA-Karten haben meist deutlich mehr Bandbreite, und beim geteilten Speicher konkurrieren System, Programme und KI um dieselben Ressourcen.
 
-## Hardware-Empfehlungen: Diese Mini-PCs eignen sich
+**Speicherbandbreite** bestimmt maßgeblich, wie schnell Text entsteht. Laut Apple schafft der M6 bis zu 170 GB/s, der M5 Pro bis zu 307 GB/s. Eine feste Zahl an Token pro Sekunde lässt sich daraus aber nicht ableiten.
 
-#### Apple Mac Mini / Mac Studio (Apple Silicon)
+**Die NPU** ist für viele LLMs zweitrangig. Programme wie Ollama oder LM Studio profitieren vor allem von einer gut unterstützten GPU. Kaufen Sie also nicht nach der TOPS-Angabe.
 
-Der neue Apple Mac Mini M4 (2024) setzt neue Maßstäbe für lokale KI. Mit Unified Memory und bis zu 64 GB RAM bietet er genug Leistung für 13-30B-Parameter-Modelle - bei kompakter Bauweise und nahezu geräuschlosem Betrieb.
+## Wie viel RAM braucht ein Modell?
 
-In der Praxis läuft ein 30B-Modell wie Qwen-30B in 8-Bit mit >50 Token/Sekunde flüssig. Perfekt für Dokumentenanalyse und Zusammenfassungen.
+Die Werte gelten für typische 4-Bit-quantisierte Modelle. Betriebssystem, Kontextfenster und KV-Cache brauchen zusätzlich Speicher.
 
-**Vorteil:** Benutzerfreundliche Tools wie LM Studio oder Ollama nutzen Apple-GPUs optimal. Kein technisches Know-how nötig.
+| Modellgröße (Parameter) | Größe bei 4 Bit | Empfohlener Speicher |
+|---|---|---|
+| 3–4 Mrd. | ca. 2–4 GB | 16 GB |
+| 8–9 Mrd. | ca. 5–7 GB | 16–32 GB |
+| 12–14 Mrd. | ca. 8–11 GB | 24–32 GB oder passende GPU |
+| 20–27 Mrd. | meist 12–20 GB | 32–64 GB |
+| 30–35 Mrd. | meist 19–26 GB | 48–64 GB mit Reserve |
+| ca. 70 Mrd. | meist 40–50 GB | 64–128 GB oder mehrere GPUs |
 
-**Nachteil:** Die 64 GB-Version ist preislich bei ~2.500 €. Für größere Modelle (70B+) brauchen Sie ein Mac Studio mit 128 GB RAM (ab 4.000 €).
+Das „B“ in Modellnamen steht für Milliarden: Ein 7B-Modell hat rund sieben Milliarden Parameter. Quantisierung speichert die Gewichte mit weniger Genauigkeit. Ein dichtes 30B-Modell belegt in FP16 rund 60 GB, in 4 Bit grob 15 GB plus Overhead.
 
-#### Mini-PCs mit AMD Ryzen AI oder Intel Core Ultra
+Auch die Kontextlänge kostet Speicher: Lange Dokumente und Chatverläufe brauchen mehr davon. Ein großes Kontextfenster auf dem Papier heißt nicht, dass es auf Ihrem PC schnell läuft.
 
-Neue Mini-PCs von Spezialanbietern bieten dedizierte KI-Hardware und viel RAM. Beispielsweise gibt es Modelle mit dem AMD Ryzen AI Max+ 395 (Codename "Strix Halo" APU), die bis 128 GB RAM unterstützen.
+## Die Geräte im Einzelnen
 
-Konkret zu nennen sind etwa:
-- **HP Z2 Mini G1A** (professioneller Mini-Workstation, konfigurierbar mit 32–128 GB RAM)
-- **GMKtec EVO-X2** (Enthusiasten-Mini-PC mit Triple-Fan-Kühlung; ~1500–2200 €, bis 128 GB LPDDR5X)
-- **Framework Desktop** mit AMD Ryzen AI (DIY-Kit, 128 GB möglich, ~2000 $)
+### Mac mini M6: der einfache Einstieg
 
-Diese Systeme sind explizit für KI-Inferenz gebaut: Der GMKtec EVO-X2 z.B. wirbt damit, 70B-Parameter-Modelle laden zu können. Mit 64 GB RAM lassen sich schon sehr große Modelle nutzen, wobei 96 GB oder 128 GB-Versionen mehr Spielraum für zukünftige Modelle bieten.
+Klein, leise und mit LM Studio oder Ollama schnell eingerichtet. Apple bietet 16 bis 32 GB Unified Memory bei bis zu 170 GB/s. Nehmen Sie die 32-GB-Version: Sie reicht für moderne 9B- bis 12B-Modelle samt längerer Texte. Für sehr große Modelle ist sie zu knapp, und nachrüsten lässt sich der Speicher nicht. Metal und MLX sorgen dafür, dass die GPU gut genutzt wird.
 
-**Vorteil:** Hohe Speicherbandbreite und eine integrierte GPU, die bis zu 48 GB vom RAM direkt als VRAM nutzen kann. Damit erreichen sie ähnliche Bandbreiten wie ein Mac Mini und können große Modelle ohne separate Grafikkarte stemmen.
+<p><a href="https://link.amazon/B09t0mRuX" target="_blank" rel="noopener sponsored nofollow" style="display:inline-block;background:hsl(var(--primary));color:hsl(var(--primary-foreground));font-weight:600;padding:0.75rem 1.5rem;border-radius:0.375rem;text-decoration:none;">Mac mini M6 bei Amazon ansehen</a></p>
 
-**Nachteil:** Die Verfügbarkeit ist teils eingeschränkt (Versand oft aus China) und Software-Setup unter Windows/Linux für AMDs ROCm erfordert etwas Know-how (ROCm wird aber monatlich stabiler).
+*Affiliate-Link: Wenn Sie über diesen Link einkaufen, erhalten wir eine kleine Provision, ohne dass Ihnen zusätzliche Kosten entstehen.*
 
-#### Kompakte Desktop-PCs mit NVIDIA-GPU
+### Mac mini M5 Pro: mehr Luft für große Modelle
 
-Wenn maximale Performance gewünscht ist (oder falls bereits eine GPU vorhanden ist), kann ein kleiner Tower/ITX-Desktop sinnvoll sein. Hier lässt sich eine NVIDIA RTX-Grafikkarte verbauen, die für KI hervorragend unterstützt wird. Empfohlen ist mindestens eine GPU mit 12 GB VRAM (z.B. RTX 3060 mit 12 GB, RTX 4070 oder höher), um mittelgroße Modelle (~13–20 Mrd. Parameter) komplett in den Grafikspeicher zu laden.
+Bis zu 64 GB Unified Memory und 307 GB/s machen ihn zur Wahl für regelmäßige KI-Arbeit. Modelle der 27B- bis 35B-Klasse laden problemlos. Ein stark quantisiertes 70B-Modell ist möglich, aber mit wenig Tempo und Kontext. Für Büros ist er ein guter Mittelweg aus Platz, Bedienung und Leistung.
 
-Solche GPUs können Open-Source-LLMs deutlich beschleunigen, da die Matrix-Berechnungen optimal auf CUDA-Kernen laufen. Ein mögliches Setup wäre z.B. ein Mini-ITX-Gehäuse mit einer stromsparenden RTX 4060 Ti 16GB (16 GB VRAM) – diese kann ~30B-Modelle in 4‑Bit-Quantisierung noch handhaben – kombiniert mit einem aktuellen Core i7/i9 oder Ryzen 7/9 und 64 GB RAM. Der Rechner bliebe damit kompakt genug für den Schreibtisch.
+<p><a href="https://link.amazon/B0f0UfGWj" target="_blank" rel="noopener sponsored nofollow" style="display:inline-block;background:hsl(var(--primary));color:hsl(var(--primary-foreground));font-weight:600;padding:0.75rem 1.5rem;border-radius:0.375rem;text-decoration:none;">Mac mini M5 Pro bei Amazon ansehen</a></p>
 
-**Vorteil:** NVIDIA-Karten sind der Gold-Standard für KI (beste Unterstützung durch Frameworks).
+*Affiliate-Link: Wenn Sie über diesen Link einkaufen, erhalten wir eine kleine Provision, ohne dass Ihnen zusätzliche Kosten entstehen.*
 
-**Nachteil:** Das System ist weniger "fertig aus der Box" – etwas Bastelarbeit und gute Kühlung sind nötig, und wirklich kleine Gehäuse stoßen mit hitzigen GPUs schnell an thermische Grenzen.
+### AMD Ryzen AI Max+ 395: maximale Speicherkapazität
 
-#### Budget-Option für kleinere Modelle
+Der Chip vereint CPU, Radeon-8060S-GPU und NPU. Den GMKtec EVO-X2 gibt es mit 64 oder 128 GB RAM, die HP Z2 Mini G1a mit bis zu 128 GB. Ein Großteil davon steht der GPU zur Verfügung, also Platz für Modelle, die in keine 16-GB-Grafikkarte passen. Kapazität heißt aber nicht Tempo. Prüfen Sie vorab, ob Ihr Modell mit ROCm oder Vulkan und den aktuellen Treibern gut läuft.
 
-Falls das Budget stark begrenzt ist, kann man zunächst mit einem einfacheren Mini-PC starten, allerdings nur für kleine Modelle. Beispielsweise ein Intel NUC oder ähnlicher Mini-Rechner mit 16 GB RAM (z.B. Intel N100 CPU, 4 Kerner) reicht aus, um in 4‑Bit-Quantisierung ein 7B-Modell zu laden.
+### NVIDIA-PC: für CUDA und Aufrüstbarkeit
 
-Tatsächlich zeigt ein Test, dass ein Intel N100 mit 16 GB RAM noch ein ~6 Mrd.-Parameter-Modell wie Llama-2 7B oder DeepSeek 6.7B bewältigen kann, allerdings nur mit starker Quantisierung – in dem Beispiel musste auf eine 1.3B-Variante zurückgegriffen werden, da 6.7B unquantisiert ~22 GB RAM verlangt hätte. Die Performance ist auf solcher Hardware begrenzt (Antwortzeiten eher im zweistelligen Sekundenbereich, je nach Eingabelänge), für einfache Zusammenfassungen oder Experimente aber brauchbar. Mittelfristig stößt man hier jedoch an Grenzen – die Investition in mindestens 32 GB RAM und/oder eine geeignete GPU ist ratsam, um vernünftig arbeiten zu können.
+Die beste Wahl, wenn Sie auch entwickeln oder Bilder generieren, denn viele Frameworks setzen auf CUDA. Entscheidend ist der VRAM: RTX 5060 Ti und 5070 Ti haben 16 GB, die RTX 5090 hat 32 GB. Achten Sie bei der 5060 Ti auf die 16-GB-Version statt der 8-GB-Variante. Größere Modelle lassen sich zwischen VRAM und RAM aufteilen, laufen dann aber deutlich langsamer. Dafür können Sie die Grafikkarte später tauschen.
 
-**Hinweis:** Bei allen Varianten sollte neben ausreichend RAM auch schneller Massenspeicher (SSD/NVMe) vorhanden sein, da KI-Modelle mehrere Gigabyte groß sind und zügig geladen werden müssen. Eine NVMe-SSD (1 TB+) ist ideal. Außerdem ist eine stabile Stromversorgung und Kühlung wichtig, gerade wenn längere Zeit Inferenz läuft (Mini-PCs mit starker APU/GPU können unter Dauerlast warm werden – hier gegebenenfalls auf gute Gehäuselüftung achten).
+### Günstiger Mini-PC: reichen 16 GB?
 
-## RAM und Leistung: Wieviel ist realistisch nötig?
+Für erste Versuche ja: 3B- und 4B-Modelle laufen, je nach Quantisierung auch manche 7B- bis 9B-Modelle. Ohne starke GPU dauern Antworten aber länger. Wer neu kauft und ernsthaft arbeiten will, sollte 32 GB RAM wählen. Eine NVMe-SSD mit 1 TB bietet Platz für mehrere Modelle und verkürzt die Ladezeiten.
 
-Die tatsächlich benötigte Speicherausstattung hängt stark von der Größe des gewählten KI-Modells ab. Größere Modelle liefern meist bessere Resultate, erfordern aber überproportional mehr RAM/VRAM. Für den Anwendungsfall Textzusammenfassungen und Q&A auf Dokumenten lässt sich oft ein guter Kompromiss finden. Hier einige Richtwerte:
+## Empfehlenswerte Modelle 2026
 
-### Kleine Modelle (bis ~7 Billionen Parameter)
+Für Textarbeit und Dokumentenanalyse eignen sich vor allem Instruct-Modelle, die auf das Befolgen von Anweisungen trainiert sind.
 
-Diese 7B-Modelle (z.B. Mistral 7B, Llama 2 7B) gelten als Einstiegsgröße. Sie benötigen etwa 8 GB RAM im Speicher (ggf. etwas mehr, je nach Precision/Quantisierung) und belegen ca. 4 GB auf der SSD. Solche Modelle laufen auf nahezu jedem modernen Gerät flüssig und liefern für einfache Aufgaben schon brauchbare Ergebnisse (kurze Zusammenfassungen, einfache Fragen).
+- **Qwen3.5:** vielseitig für Texte und Dokumente, von sehr kleinen Varianten bis 9B, 27B und 35B-A3B. Letzteres ist ein Mixture-of-Experts-Modell, das pro Rechenschritt nur einen Teil der Parameter aktiviert. Das spart Rechenzeit, aber keinen Speicher: Alle 35 Mrd. Gewichte müssen geladen sein.
+- **Gemma 4:** Googles Familie mit kompakten Varianten sowie 12B, 26B und 31B. Das 12B-Modell ist für leistungsfähige Laptops und PCs gedacht. Je nach Variante verarbeitet es auch Bilder; achten Sie dann auf eine multimodale Version und passende Software.
+- **gpt-oss-20b:** OpenAIs offenes Reasoning-Modell mit rund 21 Mrd. Parametern, ausgelegt für effiziente lokale Nutzung. Es ist nicht identisch mit dem ChatGPT der Cloud. Prüfen Sie Lizenz und Qualität bei deutschen Texten.
 
-**Vorteil:** Schnell (Antwort oft in 1–2 Sekunden), auch auf CPU noch okay.
+## Die passende Software
 
-**Nachteil:** Verständnis und Output sind begrenzter – für komplexere Inhalte wirken Antworten manchmal oberflächlich.
+- **LM Studio:** grafische Oberfläche zum Suchen, Laden und Testen von Modellen. PDF-, DOCX- und TXT-Dateien lassen sich direkt in den Chat einbinden, auch komplett offline. Unsere Empfehlung für den Einstieg.
+- **Ollama:** stellt eine lokale Schnittstelle bereit, über die andere Programme das Modell ansprechen. Ideal für eigene Chatbots, Wissenssuche und Automatisierungen. Läuft unter macOS, Windows und Linux.
+- **Open WebUI:** Bedienoberfläche für mehrere Nutzer im eigenen Netzwerk.
+- **llama.cpp:** verbreitete technische Grundlage für lokale Inferenz, nutzt das Format GGUF, in dem viele quantisierte Modelle angeboten werden.
 
-### Mittelgroße Modelle (~13 Billionen Parameter)
+## Viele Dokumente durchsuchen: RAG
 
-13B-Modelle (z.B. Llama 2 13B, Vicuna 13B) bieten spürbar mehr Nuanzierung und Textverständnis gegenüber 7B. Sie benötigen rund 16 GB RAM (ggf. etwas weniger mit 4-Bit-Quantisierung). Mit 16 GB oder besser 24–32 GB Arbeitsspeicher kann man solche Modelle komfortabel offline nutzen.
+Ein einzelnes Dokument passt oft direkt ins Kontextfenster. Für Hunderte PDFs brauchen Sie Retrieval-Augmented Generation (RAG): Das System sucht die relevanten Textstellen und gibt sie dem Modell zusammen mit Ihrer Frage. Dafür werden Textabschnitte als Embeddings in einer Vektordatenbank gespeichert.
 
-**Vorteil:** Deutlich bessere Qualität bei Zusammenfassungen und kontextbezogenen Antworten – z.B. bei komplexen Unterrichtstexten oder Konzepten liefert ein 13B-Modell fundiertere Ergebnisse.
+Die Ergebnisse stehen und fallen mit der Datenqualität. Gescannte PDFs brauchen zuerst eine OCR-Texterkennung; Tabellen, Fußnoten und mehrspaltige Layouts erschweren die Analyse. Gute Software zeigt die Quellstellen an, damit Sie Antworten prüfen können. Und damit wirklich nichts das Haus verlässt, müssen auch Embedding-Modell, Datenbank und Oberfläche lokal laufen.
 
-**Nachteil:** Rechenaufwand höher (Antwortzeit 2–4 Sekunden), und auf GPUs müssen ggf. Teile auf den normalen RAM ausgelagert werden, falls VRAM < 16 GB.
+## Geschwindigkeit richtig vergleichen
 
-### Große Modelle (30 B und mehr)
+Tempo wird meist in Token pro Sekunde angegeben. Ein aussagekräftiger Benchmark nennt Modell, Quantisierung, Software und Hardware – und misst auch, wie schnell lange Eingaben eingelesen werden. Eine hohe Ausgaberate allein sagt wenig darüber, wie flüssig die Arbeit mit großen Dokumenten ist. Soll der Rechner dauerhaft als KI-Server laufen, zählen außerdem Stromverbrauch, Kühlung und Lautstärke.
 
-Offene Modelle in der Größenordnung 30–34 Billionen Parameter nähern sich bereits ChatGPT-Niveau bei einigen Aufgaben. Beispiele sind Qwen-30B (Alibaba), GPT-OSS-21B, Google Gemma 27B oder Stable Beluga 30B. Sie benötigen typischerweise 15–20 GB VRAM (oder ca. 30–40 GB normalen RAM ohne GPU) für die Vollauflösung. In 4-Bit komprimiert kann man sie mit ~16 GB VRAM betreiben, was etwa einer 24–32 GB RAM Maschine mit guter GPU entspricht.
+## Datenschutz und DSGVO
 
-**Vorteil:** Sehr hochwertige Ergebnisse – diese Modelle können bereits komplexe Analysen, logische Schlussfolgerungen und präzise Zusammenfassungen erstellen, die an kommerzielle KI-APIs vom Vorjahr heranreichen.
+Lokaler Betrieb ist eine gute Grundlage, aber keine Garantie. Manche Programme bieten zusätzlich Cloud-Modelle oder Online-Funktionen. Bei Ollama lässt sich ein reiner Lokalmodus aktivieren; LM Studio arbeitet mit heruntergeladenen Modellen und Dokumenten auch ohne Internet. Kontrollieren Sie bei sensiblen Daten trotzdem alle Netzwerkverbindungen.
 
-**Nachteil:** Hardware-intensiv – ohne spezielle High-End-Mini-PCs (64 GB+ RAM oder >=16 GB Grafikspeicher) läuft hier wenig. Außerdem ist die Inferenz spürbar träger (je nach Hardware vielleicht 5–10 Token/Sekunde, was für längere Antworten einige Sekunden Wartezeit bedeuten kann).
+DSGVO-konform wird eine Lösung erst durch technische und organisatorische Maßnahmen: Zugriffsrechte, Verschlüsselung, Backups, Löschfristen und eine Rechtsgrundlage für die Verarbeitung.
 
-### Extrem große Modelle (65B+)
+## Häufige Fragen
 
-Modelle wie Llama 2 70B oder gar OpenAI GPT-3/4-äquivalente Größen sind auf einem einzelnen Mini-PC kaum mehr praktikabel. Sie erfordern >= 32 GB VRAM oder über 100 GB RAM und sind damit eher Servern oder Multi-GPU-Workstations vorbehalten. Für den genannten Anwendungsfall (Zusammenfassung von Dokumenten) wären solche Modelle überdimensioniert. Es ist oft effizienter, stattdessen ein kleineres Modell speziell auf die Domäne zu fine-tunen.
+**Kann ich ChatGPT offline auf einem Mini-PC nutzen?**
+Nicht ChatGPT selbst, aber offene Sprachmodelle, die ähnliche Aufgaben erledigen. Nach dem Download laufen sie ohne Internet.
 
-**Praxis-Tipp:** Man kann klein anfangen (z.B. 7B-Modell ausprobieren) und dann hochskalieren. Viele lokale KI-Programme erlauben den Wechsel des Modells mit wenigen Klicks. So kann man ein Gefühl dafür bekommen, ob z.B. ein 13B-Modell schon gute Ergebnisse liefert – falls ja, muss man nicht auf Biegen und Brechen ein 30B-Modell zum Laufen bringen. Außerdem lassen sich Modelle auch quantisieren (z.B. 4-Bit), wodurch sie deutlich weniger RAM belegen, oft bei minimalem Qualitätsverlust. Dadurch passt ein vormals 20 GB großes Modell eventuell in 10 GB RAM. Für Textzusammenfassung reicht oft eine quantisierte Variante aus, solange der Kontext (Dokumentinhalt) separat eingebunden wird.
+**Wie viel RAM sollte mein Mini-PC haben?**
+16 GB für erste Tests, 32 GB für regelmäßige Nutzung. Für große Modelle, lange Dokumente und RAG sind 64 bis 128 GB sinnvoll.
 
-## Lokale KI-Modelle für Texte, Zusammenfassungen und Dokumentenarbeit
+**Mac mini oder Windows-PC mit NVIDIA?**
+Der Mac mini ist kompakt und einfach einzurichten. Der NVIDIA-PC punktet mit CUDA und aufrüstbarer Grafikkarte. Entscheidend sind Ihre Software und die gewünschte Modellgröße.
 
-Mittlerweile existiert eine ganze Reihe offener Sprachmodelle, die speziell für Textgenerierung und Inhaltszusammenfassung gut geeignet sind. Wichtig ist, dass das Modell eine Instruct/Chat-Finetuning hat – also darauf trainiert wurde, Befehle zu verstehen und erklärende Antworten zu geben. Folgende Modelle und Tools haben sich bewährt:
-
-### Llama-2 (7B/13B)
-
-Metas Llama 2 ist ein populäres Grundmodell, das es in 7B und 13B Größen gibt. Die 13B-Chat-Version liefert bereits sehr solide Resultate für Zusammenfassungen und Fragen zu Textinhalten.
-
-**Vorteil:** Weit verbreitet, viele Community-Abwandlungen (z.B. Vicuna, Alpaca, Beluga etc.), gute Verfügbarkeit. Läuft lokal ab ~16 GB RAM gut. Meta selbst verlangt theoretisch eine Lizenz für kommerzielle Nutzung, aber für den Bildungsbereich sollte das unkritisch sein.
-
-### Mistral 7B
-
-Ein neues 7B-Modell (2023) mit überraschend guter Performance. In vielen Benchmarks schlägt Mistral 7B andere 7Bs und nähert sich 13B-Niveau – und das bei geringem Ressourcenbedarf (8 GB RAM genügen). Für multilinguale Aufgaben ist Mistral zudem gut geeignet (es wurde mit vielen Sprachen trainiert). In der Praxis kann ein Mistral-7B-basiertes Chatmodell schnelle, kurze Zusammenfassungen liefern und wäre ein guter Startpunkt auf schwächerer Hardware.
-
-### GPT4All/J Familie
-
-Die GPT4All-Plattform bietet eine Sammlung verschiedener offener Modelle (teils basierend auf Llama oder GPT-J) unter einer einfachen Oberfläche. Das Besondere: GPT4All ermöglicht out-of-the-box den Zugriff auf lokale Dokumente im Chat. Man kann Ordner mit PDFs/DOCXs angeben und das Modell damit "füttern", um dann Fragen wie "Fasse Dokument X zusammen" oder "Erkläre Abschnitt Y" zu stellen. Die Software arbeitet vollständig offline – es werden keine Daten ins Netz geschickt.
-
-Für einen Lehrer, der Unterrichtsmaterial befragen will, ist GPT4All ein hervorragender Einstieg, da es ohne Programmierkenntnisse funktioniert. Als Modelle stehen z.B. GPT4All-J (7B) oder neuere Llama2-basierte Varianten zur Auswahl.
-
-**Tipp:** Der Rechner sollte genügend Festplattenspeicher und RAM für das gewählte Modell mitbringen; die Installation von GPT4All weist einen auch darauf hin, dass ein "leistungsfähiger Arbeitsspeicher" nötig ist. Mit 16–32 GB ist man aber für die GPT4All-Standardmodelle gut gerüstet.
-
-### DeepSeek & Qwen (30B-Klasse)
-
-In der Open-Source-Community gelten aktuell einige größere Modelle als besonders stark bei Textverständnis und Reasoning. Dazu zählt DeepSeek R1 (ein ursprünglich riesiges 670B-Modell, distilliert auf handlichere Varianten ab ~7B) und Qwen/QwQ (ein von Alibaba veröffentlichtes 30B-Modell). Beide wurden speziell auf hochwertige Antworten und logische Analysen trainiert.
-
-Für Dokumentationsaufgaben heißt das: Sie können sehr präzise Zusammenfassungen liefern und auch komplizierte Sachverhalte in eigenen Worten erklären. Ein distilliertes DeepSeek R1 7B-Modell läuft z.B. auf einem 16-GB-Mac und kann dort einen langen Bericht in wenigen Sätzen zusammenfassen – der gesamte Text bleibt dabei lokal auf dem Gerät. Qwen/QwQ in der 30B-Version erfordert hingegen um 32 GB RAM (oder entsprechende GPU), bietet dafür fast GPT-4-ähnliche Fähigkeiten in logischen Fragen. Diese Modelle sind über Tools wie LMStudio leicht verfügbar.
-
-Für den Lehrer-Einsatz könnte ein DeepSeek 7B/14B bereits ausreichen, wenn es um normale Texte geht; sollte komplexeres Verständnis nötig sein (z.B. analytische Fragen zu Konzepten), könnte man perspektivisch ein Qwen 30B versuchen – vorausgesetzt die Hardware spielt mit.
-
-### Weitere spezialisierte Modelle
-
-Für reine Abstractive Summaries langer Texte haben Forschungsteams auch spezielle Modelle wie Pegasus oder BART entwickelt. Diese sind deutlich kleiner (meist <1B Parameter) und könnten offline noch schneller Zusammenfassungen generieren. Allerdings sind sie nicht als Chatbot ausgelegt und müssen meist manuell mit dem zu summierenden Text gefüttert werden (z.B. via Skript oder Tool). Für den durchschnittlichen Anwendungsfall reicht jedoch ein feinjustiertes Chatmodell, da man diesem per Prompt auch "Fasse folgendes zusammen: ..." sagen kann.
-
-**Vorteil der Chat-LLMs:** Sie können mehr, als nur zusammenfassen (z.B. auch Rückfragen beantworten, oder einen neuen Text im Stil der Unterlagen entwerfen).
-
-## Tools und Frameworks
-
-Um diese Modelle im Alltag bequem zu nutzen, gibt es Helfer-Programme:
-
-### LM Studio (Windows/Mac)
-
-Bietet eine grafische Oberfläche, in der man mit wenigen Klicks Modelle herunterladen und nutzen kann. Es unterstützt Apple Silicon hervorragend und hat sogar eingebaute Funktionen für Retrieval-Augmented Generation (RAG), d.h. das Einbinden von Dokumenten in den Kontext. LMStudio erlaubt z.B. das gleichzeitige Laden von bis zu 5 Dateien (PDF, DOCX, TXT), welche dann vom Modell gemeinsam analysiert oder zusammengefasst werden. Damit kann man z.B. mehrere Unterrichtsdokumente auf einmal zusammenfassen lassen. Alle gängigen Open-Source-Modelle (Llama, DeepSeek, Qwen, Mistral etc.) werden unterstützt.
-
-### Ollama (Mac, Linux)
-
-Ein Open-Source-Tool ähnlich wie LM Studio, aber auch via Terminal steuerbar. Es bietet einen lokalen Modell-Server und optimierte Implementierungen, läuft ebenfalls sehr gut auf Macs. Ollama hat eine Modelle-Bibliothek zum einfachen Laden diverser Modelle (z.B. über den Befehl `ollama pull llama2:13b`).
-
-### Text-Generation-WebUI (Windows/Linux)
-
-Ein mächtiges Web-Interface für lokale LLMs, ideal wenn man tiefer einsteigen will. Damit kann man Modelle per Webbrowser bedienen, auch mehrere GPUs nutzen oder eigene LoRA-Finetunes durchführen. Für den Einstiegsfall eines Lehrers ist das evtl. etwas "too much", aber gut zu wissen, dass es existiert.
-
-### PrivateGPT / LocalDocs
-
-Dies sind Frameworks, die speziell darauf abzielen, lokale Dokumente durchsuchbar zu machen. PrivateGPT z.B. lädt eine Auswahl an Dokumenten, erstellt Vektor-Repräsentationen und ermöglicht dann Fragen dazu, die mit einem GPT4All-Modell beantwortet werden. Einige dieser Tools laufen im Hintergrund und integrieren sich mit Chat-UIs. Dies kann nützlich sein, wenn man sehr viele Materialien hat und gezielt bestimmte Informationen herausziehen möchte (Stichwort: wissensdatenbank-artige Nutzung der Unterlagen).
+**Brauche ich eine NPU?**
+Nein. Für die meisten lokalen LLMs sind GPU, Speicher und Software-Unterstützung wichtiger.
 
 ## Fazit
 
-Mit den heutigen Möglichkeiten kann man durchaus einen leistungsfähigen KI-Assistenten komplett offline betreiben, der beim Erstellen von Unterrichtsdokumentationen hilft – von der Zusammenfassung von Lehrtexten bis zum Generieren von Fragen zu schulinternen Konzepten. Wichtig ist eine ausgewogene Hardware: Ein Mini-PC mit mindestens 32 GB RAM (besser 64 GB) und nach Möglichkeit einer unterstützten GPU/AI-Beschleunigung bildet die Grundlage.
+Für den unkomplizierten Einstieg ist der Mac mini M6 mit 32 GB die naheliegende Wahl. Wer größere Modelle und viele Dokumente verarbeitet, greift zum Mac mini M5 Pro mit 64 GB. Zählt vor allem Speicherkapazität, sind Ryzen-AI-Max+-395-Rechner mit 128 GB interessant. Für CUDA und Aufrüstbarkeit bleibt der NVIDIA-PC die Alternative.
 
-Darauf aufbauend laufen Open-Source-Modelle wie Llama-2, Vicuna, Mistral oder Qwen zuverlässig lokal und liefern Ergebnisse, die für Bildungszwecke mehr als ausreichend sind. Die Investition in lokale KI-Hardware lohnt sich besonders unter dem Aspekt des Datenschutzes – alle Daten bleiben auf dem eigenen Gerät. Gleichzeitig entfällt die Abhängigkeit von Internet und Cloud-Kosten.
-
-Mit Tools wie GPT4All oder LM Studio ist die Bedienung inzwischen so benutzerfreundlich, dass man kein KI-Forscher sein muss, um sie einzusetzen. Kurz gesagt: Für Ihren Zweck – das offline Auswerten von Unterrichtsmaterialien – ist eine lokale KI mittlerweile realistisch machbar. Mit einem geeigneten Mini-PC (z.B. Mac Mini M2 Pro 32 GB oder ein AMD-basierter Mini mit 64 GB) und den oben genannten Modellen können Sie direkt loslegen und datenschutzkonform die Unterstützung eines KI-„Kollegen" nutzen. Viel Erfolg dabei!
-
----
-
-*Quellen: Die Antwort basiert auf aktuellen Erfahrungen und Tests aus 2024/2025, u.a. Reddit-Diskussionen und Fachartikeln zu lokaler KI-Hardware und -Software.*
+Klären Sie vor dem Kauf, welche Dokumente Sie verarbeiten, wie lang sie sind und wie schnell Antworten kommen müssen. Testen Sie Ihr Wunschmodell möglichst auf vergleichbarer Hardware. Dann zahlen Sie nicht für Leistung, die Sie nicht brauchen – und behalten die Kontrolle über Ihre Daten, ohne Gebühren pro Anfrage.
