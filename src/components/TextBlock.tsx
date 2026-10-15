@@ -27,7 +27,7 @@ type PProps = {
 };
 
 const P = ({ children }: PProps) => (
-  <p className="font-sans text-lg font-normal leading-relaxed text-foreground [&_b]:font-medium [&_strong]:font-medium">
+  <p className="font-sans text-lg font-normal leading-relaxed text-foreground [&_b]:font-bold [&_strong]:font-bold">
     {children}
   </p>
 );

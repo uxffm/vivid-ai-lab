@@ -11,7 +11,7 @@ const ProblemSection = () => {
             erledigt werden müssen?
           </TextBlock.P>
           <TextBlock.P>
-            Oder teure Freelancer und externe Dienstleister die Sie für jede kleine Aufgabe
+            Oder <b>teure Freelancer und externe Dienstleister</b> die Sie für jede kleine Aufgabe
             bezahlen müssen?
           </TextBlock.P>
           <TextBlock.P>

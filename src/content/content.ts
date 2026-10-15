@@ -5,7 +5,7 @@ export const homepageContent = {
       line1: "Ihre KI Agentur",
       line2: "aus Frankfurt am Main."
     },
-    subtitle: "KI nutzen und live miterleben. Wir sind Ihre KI-Agentur aus Frankfurt am Main und revolutionieren Ihren digitalen Auftritt mit intelligenten Lösungen, die messbare Ergebnisse liefern. Ganz nah an der KI Entwicklung dran, nutzen wir die modernsten KI Methoden.",
+    subtitle: "KI nutzen, Zeit sparen und teure Prozesse automatisieren. Wir sind Ihre KI-Agentur aus Frankfurt am Main und revolutionieren Ihren digitalen Auftritt mit intelligenten Lösungen, die messbare Ergebnisse liefern. Ganz nah an der KI Entwicklung dran, nutzen wir die modernsten KI Methoden.",
     buttons: {
       primary: {
         text: "Direkt Kontaktieren",

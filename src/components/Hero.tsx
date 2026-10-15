@@ -1,11 +1,19 @@
 import { ArrowRight } from "lucide-react";
 import { homepageContent } from "@/content/content";
-import Skyline from "@/components/Skyline";
 
 const Hero = () => {
   const { title, subtitle, buttons, trust } = homepageContent.hero;
   return (
-    <section id="hero" className="band-brand relative overflow-hidden">
+    <section
+      id="hero"
+      className="band-brand relative overflow-hidden bg-no-repeat"
+      style={{
+        backgroundImage:
+          "url(/skyline-frankfurt.svg), linear-gradient(#2a3cbf, #2a3cbf)",
+        backgroundPosition: "right bottom, left bottom",
+        backgroundSize: "min(820px, 100vw) auto, 100% 12px",
+      }}
+    >
       <div className="max-w-6xl mx-auto px-6 pt-28 md:pt-32 pb-48 md:pb-32">
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.08]">
           {title.line1}
@@ -42,9 +50,6 @@ const Hero = () => {
           </a>
         </p>
       </div>
-
-      <div className="absolute bottom-0 left-0 right-0 h-3 bg-[#2a3cbf]" aria-hidden="true" />
-      <Skyline className="absolute bottom-0 right-0 w-[min(820px,100vw)] h-auto fill-[#2a3cbf]" />
     </section>
   );
 };
