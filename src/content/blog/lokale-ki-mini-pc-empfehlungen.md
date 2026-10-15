@@ -2,7 +2,7 @@
 title: "Bester Mini-PC für lokale KI 2026"
 description: "Welcher Mini-PC eignet sich 2026 für lokale KI? Mac mini M6 und M5 Pro, Ryzen AI Max+ 395 und NVIDIA-PC im Vergleich, mit RAM-Tabelle, Modellen und Software."
 author: "KI Agentur"
-date: "2025-11-14"
+date: "2026-10-15"
 updatedDate: "2026-10-15"
 category: "Lokale KI"
 readTime: "8 min Lesezeit"

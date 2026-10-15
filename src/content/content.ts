@@ -53,8 +53,8 @@ export const homepageContent = {
         icon: "🔒"
       },
       {
-        title: "Vibe Coding Agentur",
-        description: "Smarte, KI‑gestützte Apps und Workflows – schnell, modular, kosteneffizient. Von MVP bis Rollout, mit klaren Sprints und sauberer Integration.",
+        title: "Chat GPT Ads Agentur Frankfurt",
+        description: "Werbung direkt in ChatGPT schalten. Als Chat GPT Ads Agentur für Frankfurt unterstützen wir Sie von der ersten Strategie bis zur laufenden Optimierung Ihrer Kampagnen.",
         icon: "🎨"
       },
       {
