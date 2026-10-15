@@ -1,0 +1,134 @@
+---
+import Icon from "./Icon.astro";
+/**
+ * Reusable module: heading + optional intro, then items in one of three layouts.
+ *
+ *  layout="rows"     ruled rows, small title left / text right   (default)
+ *  layout="columns"  2-3 columns side by side, thick rule on top
+ *  layout="grid"     2 x N grid, title above text
+ *
+ * background: "white" (default) | "tinted" (light grey) | "brand" (blue band) | "dark"
+ * Items without a title just show their text (use for plain columns).
+ *
+ * Extras (all optional):
+ *   titleMuted   second half of the heading in a softer tone, heading spans full width
+ *   cols         2 | 3 | 4 columns for "columns" / "grid" (default: by item count)
+ *   item.icon    icon name from Icon.astro, shown above the title
+ *   item.chip    short label; icon + label render as a pill (like a UI chip)
+ *   iconStyle    "circle" (orange disc, dark glyph) | "plain" (orange glyph only)
+ *
+ * <FeatureRows title="…" layout="columns" background="tinted"
+ *   items={[{ title: "…", text: ["Absatz 1", "Absatz 2"] }]} />
+ */
+interface Item { title?: string; text: string | string[]; icon?: string; chip?: string }
+interface Props {
+  title?: string;
+  titleMuted?: string;
+  cols?: 2 | 3 | 4;
+  iconStyle?: "circle" | "plain";
+  intro?: string | string[];
+  items: Item[];
+  layout?: "rows" | "columns" | "grid";
+  background?: "white" | "tinted" | "brand" | "dark";
+  id?: string;
+}
+const { title, titleMuted, cols, iconStyle = "circle", intro, items, layout = "rows", background = "white", id } = Astro.props;
+const iconed = items.some((i) => i.icon);
+const wide = Boolean(titleMuted);
+const list = (v?: string | string[]) => (v === undefined ? [] : Array.isArray(v) ? v : [v]);
+const bg = {
+  white: "bg-background",
+  tinted: "bg-card",
+  brand: "band-brand",
+  dark: "band-dark",
+}[background];
+const n = cols ?? (items.length >= 4 ? 4 : items.length === 3 ? 3 : 2);
+const colsClass = { 2: "md:grid-cols-2", 3: "md:grid-cols-3", 4: "md:grid-cols-2 lg:grid-cols-4" }[n];
+---
+
+<section id={id} class:list={["py-20 px-6", bg]}>
+  <div class="max-w-6xl mx-auto">
+    {(title || list(intro).length > 0) && (
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-x-12 gap-y-6 mb-12">
+        {title && !wide && <h2 class="lg:col-span-5 font-display text-3xl md:text-4xl leading-tight">{title}</h2>}
+        {title && wide && (
+          <h2 class="lg:col-span-12 max-w-5xl font-display text-3xl sm:text-4xl md:text-5xl leading-tight">
+            {title}<span class="block text-foreground/60">{titleMuted}</span>
+          </h2>
+        )}
+        {list(intro).length > 0 && (
+          <div class="lg:col-span-7 space-y-5">
+            {list(intro).map((t) => <p class="font-sans text-lg leading-relaxed text-foreground">{t}</p>)}
+          </div>
+        )}
+      </div>
+    )}
+
+    {layout === "rows" && (
+      <ul class="border-b border-border">
+        {items.map((item) => (
+          <li class="border-t border-border py-8 grid grid-cols-1 md:grid-cols-12 gap-x-12 gap-y-3">
+            {item.title && <h3 class="md:col-span-5 font-display text-xl md:text-2xl font-medium leading-snug">{item.title}</h3>}
+            <div class:list={["space-y-4", item.title ? "md:col-span-7" : "md:col-span-12"]}>
+              {list(item.text).map((t) => <p class="font-sans text-lg leading-relaxed text-foreground">{t}</p>)}
+            </div>
+          </li>
+        ))}
+      </ul>
+    )}
+
+    {layout === "columns" && (
+      <ul class:list={["grid grid-cols-1 gap-x-10 gap-y-10", colsClass]}>
+        {items.map((item) => (
+          <li class:list={[iconed ? "pt-2" : "border-t-4 border-foreground pt-6"]}>
+            {item.icon && (
+              <div class="mb-5">
+                {item.chip ? (
+                  <span class="inline-flex items-center gap-3 rounded-full bg-foreground/10 pr-5">
+                    <span class="inline-flex h-11 w-11 items-center justify-center rounded-full bg-primary text-primary-foreground"><Icon name={item.icon} class="w-5 h-5" /></span>
+                    <span class="font-medium">{item.chip}</span>
+                  </span>
+                ) : iconStyle === "circle" ? (
+                  <span class="inline-flex h-11 w-11 items-center justify-center rounded-full bg-primary text-primary-foreground"><Icon name={item.icon} class="w-5 h-5" /></span>
+                ) : (
+                  <span class="inline-flex text-primary"><Icon name={item.icon} class="w-9 h-9" /></span>
+                )}
+              </div>
+            )}
+            {item.title && <h3 class="font-display text-xl md:text-2xl font-medium leading-snug mb-4">{item.title}</h3>}
+            <div class="space-y-4">
+              {list(item.text).map((t) => <p class="font-sans text-lg leading-relaxed text-foreground">{t}</p>)}
+            </div>
+          </li>
+        ))}
+      </ul>
+    )}
+
+    {layout === "grid" && (
+      <ul class:list={["grid grid-cols-1 gap-x-12 gap-y-12", colsClass]}>
+        {items.map((item) => (
+          <li class:list={[iconed ? "pt-2" : "border-t border-border pt-6"]}>
+            {item.icon && (
+              <div class="mb-5">
+                {item.chip ? (
+                  <span class="inline-flex items-center gap-3 rounded-full bg-foreground/10 pr-5">
+                    <span class="inline-flex h-11 w-11 items-center justify-center rounded-full bg-primary text-primary-foreground"><Icon name={item.icon} class="w-5 h-5" /></span>
+                    <span class="font-medium">{item.chip}</span>
+                  </span>
+                ) : iconStyle === "circle" ? (
+                  <span class="inline-flex h-11 w-11 items-center justify-center rounded-full bg-primary text-primary-foreground"><Icon name={item.icon} class="w-5 h-5" /></span>
+                ) : (
+                  <span class="inline-flex text-primary"><Icon name={item.icon} class="w-9 h-9" /></span>
+                )}
+              </div>
+            )}
+            {item.title && <h3 class="font-display text-xl md:text-2xl font-medium leading-snug mb-4">{item.title}</h3>}
+            <div class="space-y-4">
+              {list(item.text).map((t) => <p class="font-sans text-lg leading-relaxed text-foreground">{t}</p>)}
+            </div>
+          </li>
+        ))}
+      </ul>
+    )}
+  </div>
+</section>

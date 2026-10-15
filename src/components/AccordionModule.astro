@@ -1,0 +1,92 @@
+---
+/**
+ * Reusable accordion module (heading + expandable rows with + / - icon).
+ * Pure HTML <details>, no JavaScript: keyboard accessible, content stays in the
+ * page source for SEO. Only one row is open at a time (details[name]).
+ *
+ * <AccordionModule
+ *   title="Unsere Leistungen im Überblick"
+ *   items={[
+ *     { title: "KI Automatisierung", text: "Kurzer Text.", links: [{ label: "Mehr erfahren", href: "/ki-automatisierung" }], image: { src: "/bild.webp", alt: "…" }, open: true },
+ *     { title: "KI Beratung", text: "…" },
+ *   ]}
+ * />
+ */
+interface Item {
+  title: string;
+  text?: string | string[];
+  links?: { label: string; href: string }[];
+  image?: { src: string; alt: string };
+  open?: boolean;
+}
+interface Props {
+  title?: string;
+  items: Item[];
+  name?: string; // groups the rows so only one stays open
+}
+const { title, items, name = "accordion" } = Astro.props;
+---
+
+<section class="bg-background py-20 px-6">
+  <div class="max-w-6xl mx-auto">
+    {title && <h2 class="max-w-3xl text-3xl md:text-4xl leading-tight mb-12">{title}</h2>}
+
+    <div class="border-b border-border">
+      {items.map((item) => (
+        <details name={name} open={item.open} class="acc group border-t border-border">
+          <summary class="flex cursor-pointer list-none items-center gap-5 py-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground [&::-webkit-details-marker]:hidden">
+            <span class="acc-icon" aria-hidden="true"></span>
+            <h3 class="font-sans text-2xl md:text-3xl font-normal">{item.title}</h3>
+          </summary>
+          <div class="pb-8 pl-[3.25rem] md:pl-[4.5rem]">
+            {item.text && (
+              <div class="max-w-2xl space-y-3 text-lg leading-relaxed text-muted-foreground">
+                {(Array.isArray(item.text) ? item.text : [item.text]).map((t) => <p>{t}</p>)}
+              </div>
+            )}
+            {item.links && item.links.length > 0 && (
+              <ul class="mt-5 space-y-3">
+                {item.links.map((l) => (
+                  <li>
+                    <a href={l.href} class="text-lg font-medium text-brand hover:underline underline-offset-4 decoration-2">{l.label} →</a>
+                  </li>
+                ))}
+              </ul>
+            )}
+            {item.image && (
+              <img src={item.image.src} alt={item.image.alt} loading="lazy" class="mt-8 w-full h-auto rounded-md border border-border" />
+            )}
+          </div>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .acc-icon {
+    position: relative;
+    flex: none;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 9999px;
+    background: hsl(var(--primary));
+  }
+  .acc-icon::before,
+  .acc-icon::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 0.875rem;
+    height: 2px;
+    background: hsl(var(--primary-foreground));
+    transform: translate(-50%, -50%);
+    transition: transform 0.2s ease;
+  }
+  .acc-icon::after { transform: translate(-50%, -50%) rotate(90deg); }
+  details[open] > summary .acc-icon::after { transform: translate(-50%, -50%) rotate(0deg); }
+  @media (prefers-reduced-motion: reduce) {
+    .acc-icon::before, .acc-icon::after { transition: none; }
+  }
+</style>

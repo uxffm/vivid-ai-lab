@@ -1,0 +1,87 @@
+---
+/**
+ * Reusable hero module for every page (home and subpages).
+ *
+ * <PageHero
+ *   title="Ihre ChatGPT Ads Agentur"
+ *   titleAccent="für Sichtbarkeit in der KI-Suche"   // optional second line, pale blue
+ *   text="Kurzer Einleitungstext."
+ *   primary={{ text: "Kostenlose Analyse", href: "#kontakt" }}
+ *   secondary={{ text: "So funktioniert's", href: "#so" }}   // optional
+ *   crumbs={[{ label: "Home", href: "/" }, { label: "Aktuelle Seite" }]}
+ *   skyline={false}   // plain variant (subpages): bigger text, no skyline, optional aside
+ * >
+ *   <p slot="note">Optionale Zeile unter den Buttons</p>
+ *   <p slot="aside">Kleiner Text rechts neben den Buttons</p>
+ * </PageHero>
+ */
+interface Link { text: string; href: string }
+interface Crumb { label: string; href?: string }
+interface Props {
+  crumbs?: Crumb[]; // breadcrumb trail shown inside the hero; last item = current page
+  title: string;
+  titleAccent?: string;
+  text?: string | string[];
+  primary?: Link;
+  secondary?: Link;
+  skyline?: boolean;
+  id?: string;
+  size?: "md" | "lg"; // lg = big home headline, md = subpages with longer titles
+}
+const { crumbs, title, titleAccent, text, primary, secondary, skyline = true, id = "hero", size = "md" } = Astro.props;
+const bg = skyline
+  ? "background-image:url(/skyline-frankfurt.svg),linear-gradient(#2a3cbf,#2a3cbf);background-position:right bottom,left bottom;background-size:min(820px,100vw) auto,100% 12px;"
+  : "";
+---
+
+<section id={id} class="band-brand relative overflow-hidden bg-no-repeat" style={bg}>
+  <div class:list={["max-w-6xl mx-auto px-6", skyline ? "pt-28 md:pt-32 pb-48 md:pb-32" : "pt-20 md:pt-28 pb-16 md:pb-24"]}>
+    {crumbs && crumbs.length > 0 && (
+      <nav aria-label="Breadcrumb" class="mb-8">
+        <ol class="flex flex-wrap items-center gap-2 text-sm text-foreground/80" itemscope itemtype="https://schema.org/BreadcrumbList">
+          {crumbs.map((c, i) => (
+            <Fragment>
+              {i > 0 && <li aria-hidden="true">/</li>}
+              <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                {c.href
+                  ? <a href={c.href} itemprop="item" class="underline underline-offset-4 decoration-foreground/40 hover:decoration-foreground"><span itemprop="name">{c.label}</span></a>
+                  : <span itemprop="name" class="text-foreground font-medium">{c.label}</span>}
+                <meta itemprop="position" content={String(i + 1)} />
+              </li>
+            </Fragment>
+          ))}
+        </ol>
+      </nav>
+    )}
+
+    <h1 class:list={["leading-[1.08]", !skyline ? "max-w-5xl text-4xl sm:text-5xl lg:text-6xl" : size === "lg" ? "text-4xl sm:text-5xl md:text-6xl lg:text-7xl" : "text-3xl sm:text-4xl lg:text-5xl"]}>
+      {title}
+      {titleAccent && (skyline ? <span class="text-gradient block">{titleAccent}</span> : <Fragment> {titleAccent}</Fragment>)}
+    </h1>
+
+    {text && (
+      <div class:list={["space-y-4 leading-relaxed text-foreground/90", skyline ? "mt-6 text-lg md:text-xl max-w-2xl" : "mt-8 text-lg md:text-xl max-w-3xl"]}>
+        {(Array.isArray(text) ? text : [text]).map((t) => <p>{t}</p>)}
+      </div>
+    )}
+
+    {(primary || secondary) && (
+      <div class:list={["flex flex-wrap items-center gap-x-6 gap-y-4", skyline ? "mt-8" : "mt-10"]}>
+        {primary && (
+          <a href={primary.href} class="inline-flex items-center gap-2 rounded-md bg-primary px-7 py-4 text-lg font-semibold text-primary-foreground hover:brightness-95 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+            {primary.text}
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+          </a>
+        )}
+        {secondary && (
+          <a href={secondary.href} class="inline-flex items-center rounded-md border-2 border-input px-7 py-[14px] text-lg font-semibold hover:bg-foreground/10 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+            {secondary.text}
+          </a>
+        )}
+        <slot name="aside" />
+      </div>
+    )}
+
+    <slot name="note" />
+  </div>
+</section>

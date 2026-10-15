@@ -41,9 +41,7 @@ const Hero = () => {
         </div>
         <p className="mt-6 text-sm text-foreground">
           {trust.prefix}{" "}
-          <a href={trust.href} target="_blank" rel="noopener noreferrer" className="font-semibold text-highlight underline decoration-2 underline-offset-4 hover:brightness-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
-            {trust.linkText}
-          </a>
+          {trust.linkText}
           <span aria-hidden="true"> · </span>
           <a href={trust.href} target="_blank" rel="noopener noreferrer" className="font-semibold text-highlight underline decoration-2 underline-offset-4 hover:brightness-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
             {trust.rating}

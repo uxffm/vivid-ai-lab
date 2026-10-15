@@ -4,7 +4,25 @@ import { Textarea } from "@/components/ui/textarea";
 import { Send } from "lucide-react";
 import { useState } from "react";
 
-const Contact = () => {
+type ContactProps = {
+  heading?: string;
+  paragraphs?: string[];
+  note?: string;
+  cta?: { text: string; href: string };
+  formTitle?: string;
+  placeholder?: string;
+};
+
+const Contact = ({
+  heading = "Bereit, Ihre Prozesse zu transformieren?",
+  paragraphs = [
+    "Lassen Sie uns gemeinsam die Kraft der KI nutzen, um Ihr Unternehmen in Frankfurt und darüber hinaus zum Erfolg zu führen. Kontaktieren Sie uns für eine kostenlose Beratung.",
+  ],
+  note,
+  cta,
+  formTitle = "Senden Sie uns eine Nachricht",
+  placeholder = "Erzählen Sie uns von Ihrem Projekt und wie wir Ihnen helfen können...",
+}: ContactProps) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -38,13 +56,21 @@ const Contact = () => {
     <section id="contact" className="band-brand py-24 px-6">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-x-12 gap-y-10">
         <div className="lg:col-span-5">
-          <h2 className="text-3xl md:text-4xl leading-tight mb-6">
-            Bereit, Ihre Prozesse zu transformieren?
-          </h2>
-          <p className="text-lg leading-relaxed text-muted-foreground">
-            Lassen Sie uns gemeinsam die Kraft der KI nutzen, um Ihr Unternehmen in Frankfurt und
-            darüber hinaus zum Erfolg zu führen. Kontaktieren Sie uns für eine kostenlose Beratung.
-          </p>
+          <h2 className="text-3xl md:text-4xl leading-tight mb-6">{heading}</h2>
+          <div className="space-y-5 text-lg leading-relaxed text-foreground">
+            {paragraphs.map((t) => (
+              <p key={t}>{t}</p>
+            ))}
+          </div>
+          {note && <p className="mt-5 text-foreground">{note}</p>}
+          {cta && (
+            <a
+              href={cta.href}
+              className="mt-8 inline-flex items-center rounded-md bg-primary px-7 py-4 text-lg font-semibold text-primary-foreground hover:brightness-95 transition"
+            >
+              {cta.text}
+            </a>
+          )}
         </div>
 
         <form
@@ -55,7 +81,7 @@ const Contact = () => {
           onSubmit={handleSubmit}
           className="lg:col-span-7 space-y-6"
         >
-          <h3 className="font-display text-2xl">Senden Sie uns eine Nachricht</h3>
+          <h3 id="contact-form" className="font-display text-2xl">{formTitle}</h3>
           <input type="hidden" name="form-name" value="contact" />
           <p className="hidden">
             <label>
@@ -76,7 +102,7 @@ const Contact = () => {
 
           <div>
             <label className={field} htmlFor="contact-message">Nachricht</label>
-            <Textarea id="contact-message" name="message" placeholder="Erzählen Sie uns von Ihrem Projekt und wie wir Ihnen helfen können..." rows={6} required />
+            <Textarea id="contact-message" name="message" placeholder={placeholder} rows={6} required />
           </div>
 
           <Button type="submit" className="px-8 py-6 text-lg font-semibold" disabled={isSubmitting}>
