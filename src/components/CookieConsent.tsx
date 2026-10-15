@@ -68,7 +68,7 @@ const CookieConsent = () => {
             </Button>
             <Button
               onClick={handleAccept}
-              className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
+              className="w-full sm:w-auto bg-primary hover:bg-primary/90"
             >
               Alle akzeptieren
             </Button>

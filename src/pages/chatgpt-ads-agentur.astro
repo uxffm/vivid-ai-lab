@@ -61,10 +61,10 @@ const serviceSchema = {
 
   <main>
     <!-- Hero -->
-    <section class="relative min-h-screen flex items-center overflow-hidden">
-      <div class="absolute inset-0 bg-gradient-to-br from-blue-400/20 via-purple-400/15 to-transparent" />
-      <div class="pointer-events-none absolute -top-24 -left-24 h-64 w-64 rounded-full bg-blue-500/10 blur-2xl" />
-      <div class="pointer-events-none absolute -bottom-24 -right-24 h-64 w-64 rounded-full bg-purple-400/10 blur-2xl" />
+    <section class="relative min-h-screen flex items-center overflow-hidden band-brand">
+      <div class="absolute inset-0 bg-background" />
+      <div class="pointer-events-none absolute -top-24 -left-24 h-64 w-64 rounded-full bg-foreground/10 blur-2xl" />
+      <div class="pointer-events-none absolute -bottom-24 -right-24 h-64 w-64 rounded-full bg-foreground/10 blur-2xl" />
 
       <div class="relative z-10 max-w-7xl mx-auto px-6">
         <div class="max-w-3xl mx-auto text-center">
@@ -75,7 +75,7 @@ const serviceSchema = {
             Immer mehr Menschen fragen ChatGPT statt Google. Als spezialisierte ChatGPT Ads Agentur sorgen wir dafür, dass Ihre Marke dort auftaucht, wo Ihre Kunden heute wirklich nach Empfehlungen suchen.
           </p>
           <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#kontakt" class="inline-flex items-center justify-center px-6 py-3 rounded-[5px] bg-gradient-to-r from-blue-500 to-purple-500 text-white hover:from-blue-600 hover:to-purple-600 transition-colors">
+            <a href="#kontakt" class="inline-flex items-center justify-center px-6 py-3 rounded-[5px] bg-primary text-primary-foreground transition-colors">
               Kostenlose Analyse sichern
             </a>
             <a href="#so-funktionierts" class="inline-flex items-center justify-center px-6 py-3 rounded-[5px] border border-border hover:bg-muted transition-colors">
@@ -87,9 +87,9 @@ const serviceSchema = {
     </section>
 
     <!-- Das Problem -->
-    <section class="py-16 bg-gradient-to-b from-blue-400/5 via-purple-400/5 to-transparent">
+    <section class="py-16 bg-card">
       <div class="max-w-3xl mx-auto px-6">
-        <div class="rounded-2xl border border-border/60 bg-gradient-to-br from-background/80 to-background/60 backdrop-blur-sm p-8 shadow-lg text-center">
+        <div class="rounded-2xl border border-border/60 bg-foreground/5 backdrop-blur-sm p-8 shadow-lg text-center">
           <p class="text-sm font-semibold uppercase tracking-widest text-muted-foreground mb-4">Das Problem</p>
           <h2 class="text-2xl md:text-3xl font-semibold mb-4">
             Die Suche hat sich verändert. Ihre Werbung noch nicht.
@@ -102,9 +102,9 @@ const serviceSchema = {
     </section>
 
     <!-- Die Lösung -->
-    <section class="py-16 bg-gradient-to-b from-purple-400/5 via-blue-400/5 to-transparent">
+    <section class="py-16 bg-card">
       <div class="max-w-3xl mx-auto px-6">
-        <div class="rounded-2xl border border-border/60 bg-gradient-to-br from-background/80 to-background/60 backdrop-blur-sm p-8 shadow-lg text-center">
+        <div class="rounded-2xl border border-border/60 bg-foreground/5 backdrop-blur-sm p-8 shadow-lg text-center">
           <p class="text-sm font-semibold uppercase tracking-widest text-muted-foreground mb-4">Die Lösung</p>
           <h2 class="text-2xl md:text-3xl font-semibold mb-4">
             Wir machen Sie zur Antwort, die ChatGPT gibt.
@@ -117,9 +117,9 @@ const serviceSchema = {
     </section>
 
     <!-- Was ChatGPT Ads bedeutet -->
-    <section class="py-16 bg-gradient-to-b from-blue-400/5 via-purple-400/5 to-transparent">
+    <section class="py-16 bg-card">
       <div class="max-w-3xl mx-auto px-6">
-        <div class="rounded-2xl border border-border/60 bg-gradient-to-br from-background/80 to-background/60 backdrop-blur-sm p-8 shadow-lg">
+        <div class="rounded-2xl border border-border/60 bg-foreground/5 backdrop-blur-sm p-8 shadow-lg">
           <p class="text-sm font-semibold uppercase tracking-widest text-muted-foreground mb-4">Was „ChatGPT Ads" bei uns bedeutet</p>
           <h2 class="text-2xl md:text-3xl font-semibold mb-6">
             Kurz gesagt: Es geht nicht um Anzeigen — es geht um Empfehlungen.
@@ -137,25 +137,25 @@ const serviceSchema = {
     </section>
 
     <!-- So funktioniert's -->
-    <section id="so-funktionierts" class="py-16 bg-gradient-to-b from-blue-400/5 via-purple-400/5 to-transparent">
+    <section id="so-funktionierts" class="py-16 bg-card">
       <div class="max-w-5xl mx-auto px-6">
         <p class="text-sm font-semibold uppercase tracking-widest text-muted-foreground text-center mb-4">So funktioniert's</p>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div class="p-6 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+          <div class="p-6 rounded-lg border border-border bg-card">
             <div class="text-sm font-semibold text-muted-foreground mb-1">Schritt 1</div>
             <h3 class="text-2xl font-semibold mb-3">Analyse</h3>
             <p class="text-muted-foreground">
               Wir prüfen, wie ChatGPT aktuell über Sie, Ihre Branche und Ihre Wettbewerber spricht — und wo Ihre größten Chancen liegen.
             </p>
           </div>
-          <div class="p-6 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+          <div class="p-6 rounded-lg border border-border bg-card">
             <div class="text-sm font-semibold text-muted-foreground mb-1">Schritt 2</div>
             <h3 class="text-2xl font-semibold mb-3">Kampagne & Optimierung</h3>
             <p class="text-muted-foreground">
               Wir setzen Ihre Inhalte und Kampagnen so auf, dass KI-Modelle Sie verstehen und empfehlen. Was eine gute ChatGPT Ads Agentur ausmacht, ist genau diese Arbeit im Detail.
             </p>
           </div>
-          <div class="p-6 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+          <div class="p-6 rounded-lg border border-border bg-card">
             <div class="text-sm font-semibold text-muted-foreground mb-1">Schritt 3</div>
             <h3 class="text-2xl font-semibold mb-3">Wachstum</h3>
             <p class="text-muted-foreground">
@@ -167,24 +167,24 @@ const serviceSchema = {
     </section>
 
     <!-- Was Sie bekommen -->
-    <section class="py-16 bg-gradient-to-b from-blue-400/5 via-purple-400/5 to-transparent">
+    <section class="py-16 bg-card">
       <div class="max-w-5xl mx-auto px-6">
         <p class="text-sm font-semibold uppercase tracking-widest text-muted-foreground text-center mb-4">Was Sie bekommen</p>
         <h2 class="text-2xl md:text-3xl font-semibold text-center mb-8">Konkret arbeiten wir an drei Hebeln.</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div class="p-6 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+          <div class="p-6 rounded-lg border border-border bg-card">
             <h3 class="text-xl font-semibold mb-3">Sichtbarkeits-Audit</h3>
             <p class="text-muted-foreground text-sm">
               Wir testen mit hunderten realen Fragen, wie ChatGPT, Gemini & Perplexity heute über Sie und Ihre Wettbewerber sprechen — inklusive Baseline, wo Sie gerade stehen.
             </p>
           </div>
-          <div class="p-6 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+          <div class="p-6 rounded-lg border border-border bg-card">
             <h3 class="text-xl font-semibold mb-3">Content & Daten</h3>
             <p class="text-muted-foreground text-sm">
               Wir bauen und optimieren die Inhalte, strukturierten Daten und externen Quellen, aus denen KI-Modelle ihre Antworten ziehen — damit Ihre Marke als vertrauenswürdige Empfehlung auftaucht.
             </p>
           </div>
-          <div class="p-6 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+          <div class="p-6 rounded-lg border border-border bg-card">
             <h3 class="text-xl font-semibold mb-3">Monitoring & Reporting</h3>
             <p class="text-muted-foreground text-sm">
               Sie bekommen ein Dashboard mit Ihren Nennungen: bei welchen Fragen Sie empfohlen werden, wie sich das über die Zeit entwickelt und wo der nächste Hebel liegt.
@@ -195,9 +195,9 @@ const serviceSchema = {
     </section>
 
     <!-- Für wen -->
-    <section class="py-16 bg-gradient-to-b from-purple-400/5 via-blue-400/5 to-transparent">
+    <section class="py-16 bg-card">
       <div class="max-w-5xl mx-auto px-6">
-        <div class="rounded-2xl border border-border/60 bg-gradient-to-br from-background/80 to-background/60 backdrop-blur-sm p-8 shadow-lg">
+        <div class="rounded-2xl border border-border/60 bg-foreground/5 backdrop-blur-sm p-8 shadow-lg">
           <p class="text-sm font-semibold uppercase tracking-widest text-muted-foreground mb-4">Für wen</p>
           <h2 class="text-2xl md:text-3xl font-semibold mb-8">Passt zu Ihnen, wenn …</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -227,23 +227,23 @@ const serviceSchema = {
     </section>
 
     <!-- Warum wir -->
-    <section class="py-16 bg-gradient-to-b from-purple-400/5 via-blue-400/5 to-transparent">
+    <section class="py-16 bg-card">
       <div class="max-w-6xl mx-auto px-6">
-        <div class="rounded-2xl border border-border/60 bg-gradient-to-br from-background/80 to-background/60 backdrop-blur-sm p-8 shadow-lg">
+        <div class="rounded-2xl border border-border/60 bg-foreground/5 backdrop-blur-sm p-8 shadow-lg">
           <p class="text-sm font-semibold uppercase tracking-widest text-muted-foreground mb-4">Warum wir</p>
           <h2 class="text-2xl md:text-3xl font-semibold mb-6">
             Die ChatGPT Ads Agentur, die sich auf nichts anderes konzentriert.
           </h2>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-            <div class="p-5 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+            <div class="p-5 rounded-lg border border-border bg-card">
               <h3 class="font-semibold mb-2">Fokus statt Bauchladen</h3>
               <p class="text-muted-foreground text-sm">Wir machen KI-Sichtbarkeit und ChatGPT-Werbung, sonst nichts.</p>
             </div>
-            <div class="p-5 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+            <div class="p-5 rounded-lg border border-border bg-card">
               <h3 class="font-semibold mb-2">Messbar</h3>
               <p class="text-muted-foreground text-sm">Sie sehen schwarz auf weiß, wo und wie oft Sie empfohlen werden.</p>
             </div>
-            <div class="p-5 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+            <div class="p-5 rounded-lg border border-border bg-card">
               <h3 class="font-semibold mb-2">Vorsprung</h3>
               <p class="text-muted-foreground text-sm">Wir arbeiten am Puls der Modelle, nicht mit den Regeln von gestern.</p>
             </div>
@@ -256,9 +256,9 @@ const serviceSchema = {
     </section>
 
     <!-- Social Proof -->
-    <section class="py-16 bg-gradient-to-b from-blue-400/5 to-transparent">
+    <section class="py-16 bg-card">
       <div class="max-w-3xl mx-auto px-6 text-center">
-        <div class="rounded-2xl border border-border/60 bg-gradient-to-br from-background/80 to-background/60 backdrop-blur-sm p-8 shadow-lg">
+        <div class="rounded-2xl border border-border/60 bg-foreground/5 backdrop-blur-sm p-8 shadow-lg">
           <blockquote class="text-lg md:text-xl text-muted-foreground italic mb-4">
             „Seit der Zusammenarbeit werden wir in ChatGPT konstant empfohlen, wenn Kunden nach Anbietern in unserer Branche fragen. Das hat echte Anfragen gebracht."
           </blockquote>
@@ -268,11 +268,11 @@ const serviceSchema = {
     </section>
 
     <!-- FAQ -->
-    <section class="py-16 bg-gradient-to-b from-blue-400/5 via-purple-400/5 to-transparent">
+    <section class="py-16 bg-card">
       <div class="max-w-3xl mx-auto px-6">
         <p class="text-sm font-semibold uppercase tracking-widest text-muted-foreground text-center mb-4">FAQ</p>
         <div class="space-y-4">
-          <details class="rounded-lg border border-border bg-white/60 dark:bg-white/5 p-5 group">
+          <details class="rounded-lg border border-border bg-card p-5 group">
             <summary class="font-semibold cursor-pointer list-none flex justify-between items-center">
               Kann man in ChatGPT überhaupt Werbung schalten?
               <span class="text-muted-foreground text-lg">+</span>
@@ -281,7 +281,7 @@ const serviceSchema = {
               Aktuell gibt es keine klassischen Anzeigenplätze wie bei Google Ads. Sichtbarkeit in ChatGPT entsteht über die Inhalte und Signale, aus denen die KI ihre Antworten bildet. Genau darauf sind wir spezialisiert.
             </p>
           </details>
-          <details class="rounded-lg border border-border bg-white/60 dark:bg-white/5 p-5">
+          <details class="rounded-lg border border-border bg-card p-5">
             <summary class="font-semibold cursor-pointer list-none flex justify-between items-center">
               Wie schnell sehe ich Ergebnisse?
               <span class="text-muted-foreground text-lg">+</span>
@@ -290,7 +290,7 @@ const serviceSchema = {
               Erste Bewegungen sind oft nach 4–8 Wochen messbar. Ein stabiler Vorsprung baut sich über 3–6 Monate auf — ähnlich wie bei SEO, nur früher im Zyklus.
             </p>
           </details>
-          <details class="rounded-lg border border-border bg-white/60 dark:bg-white/5 p-5">
+          <details class="rounded-lg border border-border bg-card p-5">
             <summary class="font-semibold cursor-pointer list-none flex justify-between items-center">
               Wie messt ihr, ob es funktioniert?
               <span class="text-muted-foreground text-lg">+</span>
@@ -299,7 +299,7 @@ const serviceSchema = {
               Wir tracken, bei welchen realen Nutzerfragen Ihre Marke genannt wird, und zeigen die Entwicklung in einem Dashboard. Sie sehen schwarz auf weiß, wo Sie vorher standen und wo Sie jetzt stehen.
             </p>
           </details>
-          <details class="rounded-lg border border-border bg-white/60 dark:bg-white/5 p-5">
+          <details class="rounded-lg border border-border bg-card p-5">
             <summary class="font-semibold cursor-pointer list-none flex justify-between items-center">
               Ersetzt das mein bestehendes SEO / Google Ads?
               <span class="text-muted-foreground text-lg">+</span>
@@ -308,7 +308,7 @@ const serviceSchema = {
               Nein — es ergänzt sie. KI-Suche ist ein zusätzlicher Kanal, der gerade an Bedeutung gewinnt. Wer beides bespielt, ist am besten aufgestellt.
             </p>
           </details>
-          <details class="rounded-lg border border-border bg-white/60 dark:bg-white/5 p-5">
+          <details class="rounded-lg border border-border bg-card p-5">
             <summary class="font-semibold cursor-pointer list-none flex justify-between items-center">
               Gibt es eine Mindestlaufzeit?
               <span class="text-muted-foreground text-lg">+</span>
@@ -317,7 +317,7 @@ const serviceSchema = {
               Wir starten mit einem Monat Audit, danach flexibel monatlich kündbar.
             </p>
           </details>
-          <details class="rounded-lg border border-border bg-white/60 dark:bg-white/5 p-5">
+          <details class="rounded-lg border border-border bg-card p-5">
             <summary class="font-semibold cursor-pointer list-none flex justify-between items-center">
               Was kostet das?
               <span class="text-muted-foreground text-lg">+</span>
@@ -331,7 +331,7 @@ const serviceSchema = {
     </section>
 
     <!-- Abschluss-CTA -->
-    <section class="py-16 bg-gradient-to-b from-purple-400/5 via-blue-400/5 to-transparent">
+    <section class="py-16 band-brand">
       <div class="max-w-3xl mx-auto px-6 text-center">
         <h2 class="text-2xl md:text-3xl font-semibold mb-4">Finden Sie heraus, ob ChatGPT Sie schon kennt.</h2>
         <p class="text-lg text-muted-foreground mb-3">
@@ -341,7 +341,7 @@ const serviceSchema = {
           Unverbindlich, keine Vertragsbindung, kein Verkaufsdruck. Sie gehen mit konkreten Erkenntnissen raus, egal ob wir zusammenarbeiten oder nicht.
         </p>
         <p class="text-sm text-muted-foreground mb-8">Wir melden uns innerhalb von 24 Stunden.</p>
-        <a href="#kontakt" class="inline-flex items-center justify-center px-8 py-4 rounded-[5px] bg-gradient-to-r from-blue-500 to-purple-500 text-white hover:from-blue-600 hover:to-purple-600 transition-colors text-lg">
+        <a href="#kontakt" class="inline-flex items-center justify-center px-8 py-4 rounded-[5px] bg-primary text-primary-foreground transition-colors text-lg">
           Jetzt kostenlose Analyse sichern
         </a>
       </div>

@@ -96,8 +96,8 @@ export default function ExitNewsletterPopup() {
 
         {/* Icon */}
         <div className="flex justify-center mb-4">
-          <div className="w-16 h-16 rounded-full bg-blue-500/10 flex items-center justify-center">
-            <svg className="w-8 h-8 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="w-16 h-16 rounded-full bg-foreground/10 flex items-center justify-center">
+            <svg className="w-8 h-8 text-highlight" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
           </div>
@@ -121,7 +121,7 @@ export default function ExitNewsletterPopup() {
               name="email"
               placeholder="Ihre E-Mail-Adresse"
               required
-              className="w-full px-4 py-3 rounded-lg border border-input bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-3 rounded-lg border border-input bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary"
             />
           </div>
 
@@ -130,17 +130,17 @@ export default function ExitNewsletterPopup() {
               type="checkbox"
               name="consent"
               required
-              className="mt-0.5 rounded border-input bg-background text-blue-500 focus:ring-2 focus:ring-blue-500"
+              className="mt-0.5 rounded border-input bg-background text-highlight focus:ring-2 focus:ring-primary"
             />
             <span>
-              Ich stimme der <a href="/datenschutz" className="text-blue-500 hover:underline">Datenschutzerklärung</a> zu und möchte den Newsletter erhalten.*
+              Ich stimme der <a href="/datenschutz" className="text-highlight hover:underline">Datenschutzerklärung</a> zu und möchte den Newsletter erhalten.*
             </span>
           </label>
 
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full px-6 py-3 text-sm font-medium text-white rounded-lg bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-full px-6 py-3 text-sm font-medium text-primary-foreground rounded-lg bg-primary transition-all disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {isSubmitting ? 'Wird gesendet...' : 'Jetzt kostenlos anmelden'}
           </button>

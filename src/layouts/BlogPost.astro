@@ -21,7 +21,7 @@ const modifiedTime = updatedDate ? new Date(updatedDate).toISOString() : publish
 ---
 
 <!DOCTYPE html>
-<html lang="de" class="dark">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
 
@@ -93,6 +93,7 @@ const modifiedTime = updatedDate ? new Date(updatedDate).toISOString() : publish
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@400;500;600&family=Spline+Sans:wght@400;500;600;700&display=swap" />
 
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
@@ -129,7 +130,7 @@ const modifiedTime = updatedDate ? new Date(updatedDate).toISOString() : publish
       "inLanguage": "de-DE"
     })} />
   </head>
-  <body class="dark">
+  <body>
     <slot />
     <SonnerToaster client:load />
     <CookieConsent client:load />
@@ -143,6 +144,11 @@ const modifiedTime = updatedDate ? new Date(updatedDate).toISOString() : publish
     line-height: 1.75;
   }
   
+  .prose h1, .prose h2 {
+    font-family: var(--font-display);
+    font-weight: 500;
+  }
+
   .prose h1, .prose h2, .prose h3, .prose h4 {
     color: hsl(var(--foreground));
     font-weight: 700;
@@ -158,7 +164,7 @@ const modifiedTime = updatedDate ? new Date(updatedDate).toISOString() : publish
   
   .prose p {
     margin-bottom: 1.5rem;
-    color: white;
+    color: hsl(var(--foreground));
   }
 
   .prose ul, .prose ol {
@@ -168,7 +174,7 @@ const modifiedTime = updatedDate ? new Date(updatedDate).toISOString() : publish
 
   .prose li {
     margin-bottom: 0.5rem;
-    color: white;
+    color: hsl(var(--foreground));
   }
 
   .prose blockquote {
@@ -176,7 +182,7 @@ const modifiedTime = updatedDate ? new Date(updatedDate).toISOString() : publish
     padding-left: 1rem;
     margin: 2rem 0;
     font-style: italic;
-    color: white;
+    color: hsl(var(--foreground));
   }
   
   .prose code {
@@ -202,15 +208,15 @@ const modifiedTime = updatedDate ? new Date(updatedDate).toISOString() : publish
   }
   
   .prose a {
-    color: white;
+    color: hsl(var(--foreground));
     text-decoration: underline;
     text-decoration-color: hsl(var(--primary));
     text-underline-offset: 2px;
   }
   
   .prose a:hover {
-    color: hsl(var(--primary));
-    text-decoration-color: white;
+    color: hsl(var(--highlight));
+    text-decoration-color: hsl(var(--foreground));
   }
 
   .prose table {
@@ -221,7 +227,7 @@ const modifiedTime = updatedDate ? new Date(updatedDate).toISOString() : publish
 
   .prose th,
   .prose td {
-    color: white;
+    color: hsl(var(--foreground));
     padding: 0.5rem 0.75rem;
     border: 1px solid hsl(var(--border) / 0.3);
     text-align: left;

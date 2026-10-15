@@ -62,10 +62,10 @@ const serviceSchema = {
 
   <main>
     <!-- Hero -->
-    <section class="relative py-20 overflow-hidden">
-      <div class="absolute inset-0 bg-gradient-to-br from-blue-400/20 via-purple-400/15 to-transparent" />
-      <div class="pointer-events-none absolute -top-24 -left-24 h-64 w-64 rounded-full bg-blue-500/10 blur-2xl" />
-      <div class="pointer-events-none absolute -bottom-24 -right-24 h-64 w-64 rounded-full bg-purple-400/10 blur-2xl" />
+    <section class="relative py-20 overflow-hidden band-brand">
+      <div class="absolute inset-0 bg-background" />
+      <div class="pointer-events-none absolute -top-24 -left-24 h-64 w-64 rounded-full bg-foreground/10 blur-2xl" />
+      <div class="pointer-events-none absolute -bottom-24 -right-24 h-64 w-64 rounded-full bg-foreground/10 blur-2xl" />
 
       <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <h1 class="text-3xl md:text-5xl font-bold leading-tight mb-6">
@@ -82,7 +82,7 @@ const serviceSchema = {
           Souveräne KI-Lösungen – lokal, unabhängig, sicher.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="#kontakt" class="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-gradient-to-r from-blue-500 to-purple-500 text-white hover:from-blue-600 hover:to-purple-600 transition-all text-lg font-semibold shadow-lg">
+          <a href="#kontakt" class="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-primary text-primary-foreground transition-all text-lg font-semibold shadow-lg">
             Jetzt Strategiegespräch buchen →
           </a>
         </div>
@@ -90,31 +90,31 @@ const serviceSchema = {
     </section>
 
     <!-- Barriers Section -->
-    <section class="py-20 bg-gradient-to-b from-blue-400/5 via-purple-400/5 to-transparent">
+    <section class="py-20 bg-card">
       <div class="max-w-5xl mx-auto px-6">
         <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
           Steht Ihre KI-Strategie vor einer dieser Barrieren?
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div class="p-8 rounded-2xl border border-border bg-white/60 dark:bg-white/5 backdrop-blur-sm">
+          <div class="p-8 rounded-2xl border border-border bg-card backdrop-blur-sm">
             <h3 class="text-xl font-bold mb-3 text-foreground">🔒 Die Compliance-Sperre</h3>
             <p class="text-foreground">
               Sie würden gerne KI nutzen, aber Ihre Rechtsabteilung untersagt die Nutzung von Cloud-Anbietern wegen des Datenschutzes.
             </p>
           </div>
-          <div class="p-8 rounded-2xl border border-border bg-white/60 dark:bg-white/5 backdrop-blur-sm">
+          <div class="p-8 rounded-2xl border border-border bg-card backdrop-blur-sm">
             <h3 class="text-xl font-bold mb-3 text-foreground">💸 Die Kosten-Falle</h3>
             <p class="text-foreground">
               Mit steigender Nutzung explodieren die API-Gebühren für GPT-4 & Co. – eine Skalierung wird unbezahlbar.
             </p>
           </div>
-          <div class="p-8 rounded-2xl border border-border bg-white/60 dark:bg-white/5 backdrop-blur-sm">
+          <div class="p-8 rounded-2xl border border-border bg-card backdrop-blur-sm">
             <h3 class="text-xl font-bold mb-3 text-foreground">🎯 Der Kontrollverlust</h3>
             <p class="text-foreground">
               Sie sind abhängig von der Verfügbarkeit und den Preisänderungen externer Tech-Giganten.
             </p>
           </div>
-          <div class="p-8 rounded-2xl border border-border bg-white/60 dark:bg-white/5 backdrop-blur-sm">
+          <div class="p-8 rounded-2xl border border-border bg-card backdrop-blur-sm">
             <h3 class="text-xl font-bold mb-3 text-foreground">⚠️ Mangelnde Präzision</h3>
             <p class="text-foreground">
               Standard-Modelle "halluzinieren" bei Ihren spezifischen Fachbegriffen oder internen Dokumenten zu oft.
@@ -133,7 +133,7 @@ const serviceSchema = {
     <!-- Case Study Section -->
     <section class="pt-0 pb-20">
       <div class="max-w-5xl mx-auto px-6">
-        <div class="p-8 md:p-12 rounded-2xl border-2 border-primary/20 bg-gradient-to-br from-blue-500/5 via-purple-500/5 to-green-500/5">
+        <div class="p-8 md:p-12 rounded-2xl border-2 border-primary/20 bg-foreground/5">
           <h2 class="text-3xl md:text-4xl font-bold mb-6 text-foreground">
             Case Study: Schluss mit der Zettelwirtschaft
           </h2>
@@ -155,19 +155,19 @@ const serviceSchema = {
           <div class="mb-8">
             <h3 class="text-2xl font-bold mb-6 text-foreground">Das Ergebnis:</h3>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div class="p-6 rounded-xl bg-white/60 dark:bg-white/5 backdrop-blur-sm">
+              <div class="p-6 rounded-xl bg-card backdrop-blur-sm">
                 <div class="text-3xl font-bold text-gradient mb-2">⚡ Zeit gespart</div>
                 <p class="text-muted-foreground">
                   Mitarbeiter finden Infos jetzt in 5 Sekunden statt in 30 Minuten.
                 </p>
               </div>
-              <div class="p-6 rounded-xl bg-white/60 dark:bg-white/5 backdrop-blur-sm">
+              <div class="p-6 rounded-xl bg-card backdrop-blur-sm">
                 <div class="text-3xl font-bold text-gradient mb-2">🔒 Sicherheit</div>
                 <p class="text-muted-foreground">
                   Alle Daten blieben zu 100 % im Haus.
                 </p>
               </div>
-              <div class="p-6 rounded-xl bg-white/60 dark:bg-white/5 backdrop-blur-sm">
+              <div class="p-6 rounded-xl bg-card backdrop-blur-sm">
                 <div class="text-3xl font-bold text-gradient mb-2">💰 Geld gespart</div>
                 <p class="text-muted-foreground">
                   Das System hat sich nach nur 4 Monaten durch die gewonnene Zeit selbst bezahlt.
@@ -176,7 +176,7 @@ const serviceSchema = {
             </div>
           </div>
 
-          <div class="mt-8 p-6 rounded-xl bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-primary/30">
+          <div class="mt-8 p-6 rounded-xl bg-foreground/5 border border-primary/30">
             <p class="text-lg italic text-foreground text-center">
               „Endlich eine KI, die unsere internen Abläufe kennt, aber keine Geheimnisse verrät."
             </p>
@@ -197,19 +197,19 @@ const serviceSchema = {
           </p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div class="p-6 rounded-2xl border border-border bg-gradient-to-br from-green-500/5 to-blue-500/5">
+          <div class="p-6 rounded-2xl border border-border bg-foreground/5">
             <h3 class="text-lg font-bold mb-3 text-foreground">DATENSCHUTZ ALS WETTBEWERBSVORTEIL</h3>
             <p class="text-muted-foreground text-sm">
               Während andere zögern, schaffen wir Lösungen, die jede Revision bestehen. 100% DSGVO-konform durch physische Trennung von der Außenwelt.
             </p>
           </div>
-          <div class="p-6 rounded-2xl border border-border bg-gradient-to-br from-purple-500/5 to-pink-500/5">
+          <div class="p-6 rounded-2xl border border-border bg-foreground/5">
             <h3 class="text-lg font-bold mb-3 text-foreground">TECHNISCHE EXZELLENZ</h3>
             <p class="text-muted-foreground text-sm">
               Wir implementieren keine Standard-Software, sondern optimiere High-End-Modelle wie Llama 3 oder Mistral exakt auf Ihre Rechenleistung.
             </p>
           </div>
-          <div class="p-6 rounded-2xl border border-border bg-gradient-to-br from-blue-500/5 to-cyan-500/5">
+          <div class="p-6 rounded-2xl border border-border bg-foreground/5">
             <h3 class="text-lg font-bold mb-3 text-foreground">EFFIZIENZ DURCH FINE-TUNING</h3>
             <p class="text-muted-foreground text-sm">
               Eine KI sollte Ihre Prozesse kennen. Wir trainieren die Modelle so, dass sie Ihre interne Sprache verstehen und echtes Expertenwissen generieren.
@@ -220,25 +220,25 @@ const serviceSchema = {
     </section>
 
     <!-- Solutions Section -->
-    <section class="py-20 bg-gradient-to-b from-purple-400/5 via-blue-400/5 to-transparent">
+    <section class="py-20 bg-card">
       <div class="max-w-5xl mx-auto px-6">
         <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
           Strategische Lösungen für Ihr Unternehmen
         </h2>
         <div class="space-y-8">
-          <div class="p-8 rounded-2xl border border-border bg-white/60 dark:bg-white/5 backdrop-blur-sm">
+          <div class="p-8 rounded-2xl border border-border bg-card backdrop-blur-sm">
             <h3 class="text-2xl font-bold mb-4 text-foreground">Infrastruktur & Modellauswahl</h3>
             <p class="text-muted-foreground mb-4">
               Welche Hardware brauchen Sie wirklich? Wir dimensionieren Ihre Umgebung (On-Prem oder Private Cloud) so, dass sie performant läuft, ohne das Budget zu sprengen.
             </p>
           </div>
-          <div class="p-8 rounded-2xl border border-border bg-white/60 dark:bg-white/5 backdrop-blur-sm">
+          <div class="p-8 rounded-2xl border border-border bg-card backdrop-blur-sm">
             <h3 class="text-2xl font-bold mb-4 text-foreground">Custom Implementation</h3>
             <p class="text-muted-foreground mb-4">
               Von der Installation der Frameworks bis zur fertigen API-Schnittstelle: Wir integrieren lokale KI-Modelle nahtlos in Ihre bestehende IT-Landschaft.
             </p>
           </div>
-          <div class="p-8 rounded-2xl border border-border bg-white/60 dark:bg-white/5 backdrop-blur-sm">
+          <div class="p-8 rounded-2xl border border-border bg-card backdrop-blur-sm">
             <h3 class="text-2xl font-bold mb-4 text-foreground">RAG & Wissensmanagement</h3>
             <p class="text-muted-foreground mb-4">
               Wir verknüpfen die KI mit Ihren internen Dokumenten. Das Ergebnis: Eine interne Wissensdatenbank, die Fragen präzise beantwortet – ohne dass ein Bit Ihr Haus verlässt.
@@ -260,29 +260,29 @@ const serviceSchema = {
               <tr class="border-b-2 border-border">
                 <th class="text-left p-4 font-bold text-foreground">Faktor</th>
                 <th class="text-left p-4 font-bold text-foreground">Cloud-KI (z.B. OpenAI)</th>
-                <th class="text-left p-4 font-bold text-foreground bg-gradient-to-r from-green-500/10 to-blue-500/10">Lokale KI (Ihre Lösung)</th>
+                <th class="text-left p-4 font-bold text-foreground bg-foreground/5">Lokale KI (Ihre Lösung)</th>
               </tr>
             </thead>
             <tbody class="divide-y divide-border">
               <tr>
                 <td class="p-4 font-semibold">Datenschutz</td>
                 <td class="p-4 text-muted-foreground">Daten verlassen das Unternehmen</td>
-                <td class="p-4 text-foreground bg-gradient-to-r from-green-500/5 to-blue-500/5">100% In-House & Sicher</td>
+                <td class="p-4 text-foreground bg-foreground/5">100% In-House & Sicher</td>
               </tr>
               <tr>
                 <td class="p-4 font-semibold">Kosten</td>
                 <td class="p-4 text-muted-foreground">Monatlich steigend (Pay-per-Token)</td>
-                <td class="p-4 text-foreground bg-gradient-to-r from-green-500/5 to-blue-500/5">Fixkosten / Kalkulierbar</td>
+                <td class="p-4 text-foreground bg-foreground/5">Fixkosten / Kalkulierbar</td>
               </tr>
               <tr>
                 <td class="p-4 font-semibold">Abhängigkeit</td>
                 <td class="p-4 text-muted-foreground">Hoch (Vendor Lock-in)</td>
-                <td class="p-4 text-foreground bg-gradient-to-r from-green-500/5 to-blue-500/5">Vollständige Autonomie</td>
+                <td class="p-4 text-foreground bg-foreground/5">Vollständige Autonomie</td>
               </tr>
               <tr>
                 <td class="p-4 font-semibold">Latenz</td>
                 <td class="p-4 text-muted-foreground">Abhängig von Internet & Serverlast</td>
-                <td class="p-4 text-foreground bg-gradient-to-r from-green-500/5 to-blue-500/5">Echtzeit-Performance lokal</td>
+                <td class="p-4 text-foreground bg-foreground/5">Echtzeit-Performance lokal</td>
               </tr>
             </tbody>
           </table>
@@ -304,14 +304,14 @@ const serviceSchema = {
     </section>
 
     <!-- Process Section -->
-    <section class="py-20 bg-gradient-to-b from-blue-400/5 via-purple-400/5 to-transparent">
+    <section class="py-20 bg-card">
       <div class="max-w-5xl mx-auto px-6">
         <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
           So bringen wir die KI zu Ihnen
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div class="text-center">
-            <div class="w-16 h-16 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
+            <div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-primary-foreground text-2xl font-bold mx-auto mb-4">
               1
             </div>
             <h3 class="text-xl font-bold mb-3 text-foreground">ANALYTISCH</h3>
@@ -320,7 +320,7 @@ const serviceSchema = {
             </p>
           </div>
           <div class="text-center">
-            <div class="w-16 h-16 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
+            <div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-primary-foreground text-2xl font-bold mx-auto mb-4">
               2
             </div>
             <h3 class="text-xl font-bold mb-3 text-foreground">SKALIERBAR</h3>
@@ -329,7 +329,7 @@ const serviceSchema = {
             </p>
           </div>
           <div class="text-center">
-            <div class="w-16 h-16 rounded-full bg-gradient-to-r from-pink-500 to-orange-500 flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
+            <div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-primary-foreground text-2xl font-bold mx-auto mb-4">
               3
             </div>
             <h3 class="text-xl font-bold mb-3 text-foreground">TRANSPARENT</h3>
@@ -342,13 +342,13 @@ const serviceSchema = {
     </section>
 
     <!-- FAQ Section -->
-    <section class="py-20 bg-gradient-to-b from-blue-400/5 via-purple-400/5 to-transparent">
+    <section class="py-20 bg-card">
       <div class="max-w-4xl mx-auto px-6">
         <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
           Häufig gestellte Fragen zu lokalen KI-Modellen
         </h2>
         <div class="space-y-6">
-          <details open class="group p-6 rounded-2xl border border-border bg-white/60 dark:bg-white/5 backdrop-blur-sm">
+          <details open class="group p-6 rounded-2xl border border-border bg-card backdrop-blur-sm">
             <summary class="cursor-pointer font-bold text-lg text-foreground list-none flex items-center justify-between">
               <span>Warum sollte mein Unternehmen lokale Modelle statt ChatGPT nutzen?</span>
               <span class="transition-transform group-open:rotate-180">▼</span>
@@ -358,7 +358,7 @@ const serviceSchema = {
             </div>
           </details>
 
-          <details open class="group p-6 rounded-2xl border border-border bg-white/60 dark:bg-white/5 backdrop-blur-sm">
+          <details open class="group p-6 rounded-2xl border border-border bg-card backdrop-blur-sm">
             <summary class="cursor-pointer font-bold text-lg text-foreground list-none flex items-center justify-between">
               <span>Ist die Qualität lokaler Modelle vergleichbar mit GPT-4?</span>
               <span class="transition-transform group-open:rotate-180">▼</span>
@@ -368,7 +368,7 @@ const serviceSchema = {
             </div>
           </details>
 
-          <details open class="group p-6 rounded-2xl border border-border bg-white/60 dark:bg-white/5 backdrop-blur-sm">
+          <details open class="group p-6 rounded-2xl border border-border bg-card backdrop-blur-sm">
             <summary class="cursor-pointer font-bold text-lg text-foreground list-none flex items-center justify-between">
               <span>Welche Hardware-Voraussetzungen gibt es?</span>
               <span class="transition-transform group-open:rotate-180">▼</span>
@@ -378,7 +378,7 @@ const serviceSchema = {
             </div>
           </details>
 
-          <details open class="group p-6 rounded-2xl border border-border bg-white/60 dark:bg-white/5 backdrop-blur-sm">
+          <details open class="group p-6 rounded-2xl border border-border bg-card backdrop-blur-sm">
             <summary class="cursor-pointer font-bold text-lg text-foreground list-none flex items-center justify-between">
               <span>Wie sieht es mit der DSGVO-Konformität aus?</span>
               <span class="transition-transform group-open:rotate-180">▼</span>
@@ -388,7 +388,7 @@ const serviceSchema = {
             </div>
           </details>
 
-          <details open class="group p-6 rounded-2xl border border-border bg-white/60 dark:bg-white/5 backdrop-blur-sm">
+          <details open class="group p-6 rounded-2xl border border-border bg-card backdrop-blur-sm">
             <summary class="cursor-pointer font-bold text-lg text-foreground list-none flex items-center justify-between">
               <span>Lohnt sich die Investition finanziell?</span>
               <span class="transition-transform group-open:rotate-180">▼</span>
@@ -398,7 +398,7 @@ const serviceSchema = {
             </div>
           </details>
 
-          <details open class="group p-6 rounded-2xl border border-border bg-white/60 dark:bg-white/5 backdrop-blur-sm">
+          <details open class="group p-6 rounded-2xl border border-border bg-card backdrop-blur-sm">
             <summary class="cursor-pointer font-bold text-lg text-foreground list-none flex items-center justify-between">
               <span>Kann die KI auf unser internes Firmenwissen zugreifen?</span>
               <span class="transition-transform group-open:rotate-180">▼</span>
@@ -420,7 +420,7 @@ const serviceSchema = {
         <p class="text-xl text-muted-foreground mb-8">
           Die Technologie ist bereit. Sind Sie es auch? Lassen Sie uns in einem ersten Gespräch klären, wie wir lokale KI-Modelle in Ihre Infrastruktur integrieren.
         </p>
-        <a href="#kontakt" class="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-gradient-to-r from-blue-500 to-purple-500 text-white hover:from-blue-600 hover:to-purple-600 transition-all text-lg font-semibold shadow-lg">
+        <a href="#kontakt" class="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-primary text-primary-foreground transition-all text-lg font-semibold shadow-lg">
           Termin für kostenlose Erstberatung wählen
         </a>
       </div>

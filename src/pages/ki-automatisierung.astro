@@ -117,10 +117,10 @@ const serviceSchema = {
 
   <main>
     <!-- Hero -->
-    <section class="relative min-h-screen flex items-center overflow-hidden">
-      <div class="absolute inset-0 bg-gradient-to-br from-blue-400/20 via-purple-400/15 to-transparent" />
-      <div class="pointer-events-none absolute -top-24 -left-24 h-64 w-64 rounded-full bg-blue-500/10 blur-2xl" />
-      <div class="pointer-events-none absolute -bottom-24 -right-24 h-64 w-64 rounded-full bg-purple-400/10 blur-2xl" />
+    <section class="relative min-h-screen flex items-center overflow-hidden band-brand">
+      <div class="absolute inset-0 bg-background" />
+      <div class="pointer-events-none absolute -top-24 -left-24 h-64 w-64 rounded-full bg-foreground/10 blur-2xl" />
+      <div class="pointer-events-none absolute -bottom-24 -right-24 h-64 w-64 rounded-full bg-foreground/10 blur-2xl" />
       
       <div class="relative z-10 max-w-7xl mx-auto px-6">
         <div class="max-w-3xl mx-auto text-center">
@@ -134,7 +134,7 @@ const serviceSchema = {
             Wir analysieren Ihre bestehenden Prozesse, identifizieren Automatisierungspotenziale und implementieren maßgeschneiderte KI-Lösungen. Mit Tools wie n8n, Make und OpenClaw bauen wir stabile Workflows, die Ihr Team entlasten und messbare Effizienzgewinne bringen – für Unternehmen in Frankfurt, Wiesbaden, Mainz, Darmstadt und dem gesamten Rhein-Main-Gebiet.
           </p>
           <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#kontakt" class="inline-flex items-center justify-center px-6 py-3 rounded-[5px] bg-gradient-to-r from-blue-500 to-purple-500 text-white hover:from-blue-600 hover:to-purple-600 transition-colors">
+            <a href="#kontakt" class="inline-flex items-center justify-center px-6 py-3 rounded-[5px] bg-primary text-primary-foreground transition-colors">
               Kostenlose Beratung
             </a>
 
@@ -144,68 +144,68 @@ const serviceSchema = {
     </section>
 
     <!-- Mit was wir arbeiten -->
-    <section class="py-16 bg-gradient-to-b from-purple-400/5 via-blue-400/5 to-transparent">
+    <section class="py-16 bg-card">
       <div class="max-w-5xl mx-auto px-6">
         <h2 class="text-2xl md:text-3xl font-semibold mb-8 text-center">Mit was wir arbeiten</h2>
         <p class="text-lg text-muted-foreground text-center mb-12 max-w-3xl mx-auto">
           Als KI Automatisierung Agentur setzen wir auf bewährte und leistungsstarke Automatisierungs-Plattformen, um Ihre Workflows effizient und zuverlässig zu gestalten.
         </p>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div class="p-8 rounded-2xl border border-border/60 bg-gradient-to-br from-background/80 to-background/60 backdrop-blur-sm shadow-lg hover:shadow-xl transition-shadow">
+          <div class="p-8 rounded-2xl border border-border/60 bg-foreground/5 backdrop-blur-sm shadow-lg hover:shadow-xl transition-shadow">
             <div class="flex items-start gap-4">
-              <div class="flex-shrink-0 w-16 h-16 rounded-lg bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center text-white text-2xl font-bold">
+              <div class="flex-shrink-0 w-16 h-16 rounded-lg bg-primary flex items-center justify-center text-primary-foreground text-2xl font-bold">
                 n8n
               </div>
               <div class="flex-1">
                 <h3 class="text-xl font-semibold mb-2">
-                  <a href="https://n8n.io" target="_blank" rel="noopener noreferrer" class="hover:text-blue-500 transition-colors">
+                  <a href="https://n8n.io" target="_blank" rel="noopener noreferrer" class="hover:text-highlight transition-colors">
                     n8n
                   </a>
                 </h3>
                 <p class="text-muted-foreground mb-4">
                   Open-Source Workflow-Automatisierung mit über 400 Integrationen. Perfekt für komplexe, KI-gestützte Workflows und volle Datenkontrolle durch Self-Hosting.
                 </p>
-                <a href="https://n8n.io" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-blue-500 hover:text-blue-600 transition-colors">
+                <a href="https://n8n.io" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-highlight hover:text-highlight transition-colors">
                   Mehr erfahren →
                 </a>
               </div>
             </div>
           </div>
-          <div class="p-8 rounded-2xl border border-border/60 bg-gradient-to-br from-background/80 to-background/60 backdrop-blur-sm shadow-lg hover:shadow-xl transition-shadow">
+          <div class="p-8 rounded-2xl border border-border/60 bg-foreground/5 backdrop-blur-sm shadow-lg hover:shadow-xl transition-shadow">
             <div class="flex items-start gap-4">
-              <div class="flex-shrink-0 w-16 h-16 rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-white text-2xl font-bold">
+              <div class="flex-shrink-0 w-16 h-16 rounded-lg bg-primary flex items-center justify-center text-primary-foreground text-2xl font-bold">
                 M
               </div>
               <div class="flex-1">
                 <h3 class="text-xl font-semibold mb-2">
-                  <a href="https://www.make.com" target="_blank" rel="noopener noreferrer" class="hover:text-purple-500 transition-colors">
+                  <a href="https://www.make.com" target="_blank" rel="noopener noreferrer" class="hover:text-highlight transition-colors">
                     Make (ehemals Integromat)
                   </a>
                 </h3>
                 <p class="text-muted-foreground mb-4">
                   Visuelle Automatisierungs-Plattform mit intuitiver Bedienung und umfangreichen Integrationen. Ideal für schnelle Implementierung und agile Anpassungen.
                 </p>
-                <a href="https://www.make.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-purple-500 hover:text-purple-600 transition-colors">
+                <a href="https://www.make.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-highlight hover:text-highlight transition-colors">
                   Mehr erfahren →
                 </a>
               </div>
             </div>
           </div>
-          <div class="p-8 rounded-2xl border border-border/60 bg-gradient-to-br from-background/80 to-background/60 backdrop-blur-sm shadow-lg hover:shadow-xl transition-shadow">
+          <div class="p-8 rounded-2xl border border-border/60 bg-foreground/5 backdrop-blur-sm shadow-lg hover:shadow-xl transition-shadow">
             <div class="flex items-start gap-4">
-              <div class="flex-shrink-0 w-16 h-16 rounded-lg bg-gradient-to-br from-emerald-500 to-teal-500 flex items-center justify-center text-white text-xl font-bold">
+              <div class="flex-shrink-0 w-16 h-16 rounded-lg bg-primary flex items-center justify-center text-primary-foreground text-xl font-bold">
                 OC
               </div>
               <div class="flex-1">
                 <h3 class="text-xl font-semibold mb-2">
-                  <a href="https://openclaw.ai" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-500 transition-colors">
+                  <a href="https://openclaw.ai" target="_blank" rel="noopener noreferrer" class="hover:underline transition-colors">
                     OpenClaw
                   </a>
                 </h3>
                 <p class="text-muted-foreground mb-4">
                   KI-Agenten-Plattform für intelligente Prozessautomatisierung. Ermöglicht autonome Agenten, die komplexe mehrstufige Aufgaben selbstständig ausführen und mit Ihren bestehenden Systemen interagieren.
                 </p>
-                <a href="https://openclaw.ai" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-emerald-500 hover:text-emerald-600 transition-colors">
+                <a href="https://openclaw.ai" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-highlight hover:underline transition-colors">
                   Mehr erfahren →
                 </a>
               </div>
@@ -219,9 +219,9 @@ const serviceSchema = {
     </section>
 
     <!-- Intro Text -->
-    <section class="py-16 bg-gradient-to-b from-blue-400/5 via-purple-400/5 to-transparent">
+    <section class="py-16 bg-card">
       <div class="max-w-3xl mx-auto px-6">
-        <div class="rounded-2xl border border-border/60 bg-gradient-to-br from-background/80 to-background/60 backdrop-blur-sm p-8 shadow-lg text-center">
+        <div class="rounded-2xl border border-border/60 bg-foreground/5 backdrop-blur-sm p-8 shadow-lg text-center">
         <h2 class="text-2xl md:text-3xl font-semibold mb-4">Wie KI-Automatisierung Ihrem Team hilft</h2>
         <div class="space-y-8 text-lg text-muted-foreground">
           <p>
@@ -230,19 +230,19 @@ const serviceSchema = {
           <div>
             <h3 class="text-xl font-semibold mb-4 text-foreground">Typische Anwendungsfälle</h3>
             <ul class="space-y-3 text-left">
-              <li class="p-4 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+              <li class="p-4 rounded-lg border border-border bg-card">
                 Support-Chatbots, die Standardfragen sofort beantworten und Tickets vorsortieren.
               </li>
-              <li class="p-4 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+              <li class="p-4 rounded-lg border border-border bg-card">
                 Automatisierte E-Mail- und Angebotsprozesse (z. B. Leads qualifizieren, Antworten vorformulieren).
               </li>
-              <li class="p-4 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+              <li class="p-4 rounded-lg border border-border bg-card">
                 Dokumentenverarbeitung mit KI (Rechnungen, Verträge, Formulare automatisch auslesen und ablegen).
               </li>
-              <li class="p-4 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+              <li class="p-4 rounded-lg border border-border bg-card">
                 Marketing-Automation (Content-Entwürfe, Social-Posts, A/B-Varianten generieren und planen).
               </li>
-              <li class="p-4 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+              <li class="p-4 rounded-lg border border-border bg-card">
                 Interne Freigabe-Workflows, die sich selbst anstoßen und den Status transparent halten.
               </li>
             </ul>
@@ -257,7 +257,7 @@ const serviceSchema = {
       <div class="mt-12 max-w-5xl mx-auto px-6">
         <h3 class="text-xl font-semibold mb-4 text-foreground text-center">Unser Vorgehen in drei Schritten</h3>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-left">
-          <div class="p-6 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+          <div class="p-6 rounded-lg border border-border bg-card">
             <div class="text-sm font-semibold text-muted-foreground mb-1">Schritt 1</div>
             <h4 class="text-3xl md:text-2xl font-semibold mb-2">Analyse-Workshop</h4>
             <div class="text-sm text-muted-foreground mb-3">Wir analysieren Ihre Prozesse und priorisieren Quick Wins.</div>
@@ -267,7 +267,7 @@ const serviceSchema = {
               <li>Roadmap mit Aufwand/Nutzen-Bewertung</li>
             </ul>
           </div>
-          <div class="p-6 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+          <div class="p-6 rounded-lg border border-border bg-card">
             <div class="text-sm font-semibold text-muted-foreground mb-1">Schritt 2</div>
             <h4 class="text-3xl md:text-2xl font-semibold mb-2">Prototyping</h4>
             <div class="text-sm text-muted-foreground mb-3">POC mit Ihren Tools (z. B. Slack, Google Workspace, Microsoft 365, CRM, Shop-Systeme).</div>
@@ -277,7 +277,7 @@ const serviceSchema = {
               <li>Feedbackschleifen mit Ihrem Team</li>
             </ul>
           </div>
-          <div class="p-6 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+          <div class="p-6 rounded-lg border border-border bg-card">
             <div class="text-sm font-semibold text-muted-foreground mb-1">Schritt 3</div>
             <h4 class="text-3xl md:text-2xl font-semibold mb-2">Rollout & Schulung</h4>
             <div class="text-sm text-muted-foreground mb-3">Zuverlässige Integration, Dokumentation und Enablement Ihres Teams.</div>
@@ -292,9 +292,9 @@ const serviceSchema = {
     </section>
 
     <!-- Zusätzlicher Textbereich -->
-    <section class="py-16 bg-gradient-to-b from-purple-400/5 via-blue-400/5 to-transparent">
+    <section class="py-16 bg-card">
       <div class="max-w-6xl mx-auto px-6">
-        <div class="rounded-2xl border border-border/60 bg-gradient-to-br from-background/80 to-background/60 backdrop-blur-sm p-8 shadow-lg">
+        <div class="rounded-2xl border border-border/60 bg-foreground/5 backdrop-blur-sm p-8 shadow-lg">
           <h2 class="text-2xl md:text-3xl font-semibold mb-6">Mehr über KI‑Automatisierung</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-lg text-muted-foreground">
             <div class="space-y-6">
@@ -380,7 +380,7 @@ const serviceSchema = {
               class="w-80 h-80 rounded-full object-cover"
               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
             />
-            <div class="w-80 h-80 rounded-full bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center text-white text-4xl font-bold" style="display: none;">
+            <div class="w-80 h-80 rounded-full bg-primary flex items-center justify-center text-primary-foreground text-4xl font-bold" style="display: none;">
               KI
             </div>
           </div>
@@ -401,20 +401,20 @@ const serviceSchema = {
     </section>
 
     <!-- Rhein-Main Region -->
-    <section class="py-16 bg-gradient-to-b from-blue-400/5 via-purple-400/5 to-transparent">
+    <section class="py-16 bg-card">
       <div class="max-w-5xl mx-auto px-6">
-        <div class="rounded-2xl border border-border/60 bg-gradient-to-br from-background/80 to-background/60 backdrop-blur-sm p-8 shadow-lg">
+        <div class="rounded-2xl border border-border/60 bg-foreground/5 backdrop-blur-sm p-8 shadow-lg">
           <h2 class="text-2xl md:text-3xl font-semibold mb-4">KI Automatisierung im Rhein-Main-Gebiet</h2>
           <p class="text-lg text-muted-foreground mb-6">
             Als regionale KI-Agentur sind wir vor Ort für Unternehmen im Rhein-Main-Gebiet – von Frankfurt über Wiesbaden und Mainz bis Darmstadt und Offenbach. Wir kennen die lokale Unternehmenslandschaft und begleiten Sie persönlich von der ersten Idee bis zur fertigen Lösung.
           </p>
           <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
             {["Frankfurt am Main", "Wiesbaden", "Mainz", "Darmstadt", "Offenbach", "Rüsselsheim", "Bad Homburg"].map((city) => (
-              <div class="p-3 rounded-lg border border-border bg-white/60 dark:bg-white/5 text-center text-sm font-medium">
+              <div class="p-3 rounded-lg border border-border bg-card text-center text-sm font-medium">
                 {city}
               </div>
             ))}
-            <a href="/ki-automatisierung-hanau" class="p-3 rounded-lg border border-blue-400/50 bg-white/60 dark:bg-white/5 text-center text-sm font-medium text-blue-500 hover:border-blue-500 transition-colors">
+            <a href="/ki-automatisierung-hanau" class="p-3 rounded-lg border border-foreground/50 bg-card text-center text-sm font-medium text-highlight hover:border-primary transition-colors">
               Hanau
             </a>
           </div>

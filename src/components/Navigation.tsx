@@ -47,11 +47,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-      isScrolled || isOpen
-        ? 'bg-background/95 backdrop-blur-md border-b border-border' 
-        : 'bg-transparent'
-    }`}>
+    <nav className="band-brand fixed top-0 w-full z-50">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
@@ -60,7 +56,7 @@ const Navigation = () => {
             className="flex items-center space-x-2 text-left"
             aria-label="Zur Startseite"
           >
-            <div className="w-10 h-10 border-2 border-blue-600 rounded-lg flex items-center justify-center">
+            <div className="w-10 h-10 border-2 border-primary rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-sm">KI</span>
             </div>
             <span className="text-xl font-bold">{homepageContent.navigation.logo}</span>
@@ -160,7 +156,7 @@ const Navigation = () => {
           <div className="hidden md:block">
             <Button 
               onClick={() => scrollToSection('#contact')}
-              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-0"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground border-0"
             >
               {homepageContent.navigation.cta}
             </Button>
@@ -190,7 +186,7 @@ const Navigation = () => {
               ))}
               <Button 
                 onClick={() => scrollToSection('#contact')}
-                className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-0"
+                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground border-0"
               >
                 {homepageContent.navigation.cta}
               </Button>

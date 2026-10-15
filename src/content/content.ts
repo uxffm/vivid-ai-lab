@@ -16,7 +16,13 @@ export const homepageContent = {
         href: "tel:+491627519335"
       }
     },
-    trust: "Vertraut von 20+ Unternehmen aus Frankfurt und Umgebung"
+    trust: {
+      prefix: "Vertraut von Unternehmen aus",
+      linkText: "Frankfurt und Umgebung",
+      rating: "Bewertet mit 5/5 auf Google",
+      // TODO: replace with the real Google Business Profile link
+      href: "https://www.google.com/maps/search/?api=1&query=KI+Agentur+FAI+Frankfurt"
+    }
   },
 
   // Navigation
@@ -70,7 +76,7 @@ export const homepageContent = {
     subtitle: "Ihre Experten für KI-Marketing in Frankfurt",
     description: "Wir sind ein Team aus SEO-Experten, Designern und Programmierern, die mit der KI ganz früh angefangen haben. Die KI-Technologie ändert sich täglich - nichts entwickelt sich so schnell wie die künstliche Intelligenz. Als KI-Agentur wissen wir genau, welche KI-Technologie für welche Aufgabe die richtige ist. Wir setzen alle diese Änderungen sofort für unsere Kunden um und bleiben immer am Puls der Zeit.",
     photo: {
-      src: "/ki-team-frankfurt.webp",
+      src: "/ki-automatisierung-frankfurt.webp",
       alt: "KI-Agentur Frankfurt: Mensch und Roboter vor der Frankfurter Skyline am Main"
     },
     stats: [

@@ -3,48 +3,71 @@
 @tailwind utilities;
 
 @layer base {
-  :root { /* Default to mid-light theme */
-    --background: 210 20% 94%; /* soft light grey */
-    --foreground: 222.2 47.4% 11.2%; /* dark neutral text */
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 47.4% 11.2%;
+  :root { /* Fathom light: white sections, near-black ink, orange primary action */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 7%;
+    --card: 225 22% 96%;
+    --card-foreground: 0 0% 7%;
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 47.4% 11.2%;
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 210 25% 92%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-    --muted: 210 25% 92%;
-    --muted-foreground: 215.4 16.3% 40%;
-    --accent: 210 25% 92%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --popover-foreground: 0 0% 7%;
+    --primary: 29 87% 56%;
+    --primary-foreground: 0 0% 7%;
+    --secondary: 225 22% 96%;
+    --secondary-foreground: 0 0% 7%;
+    --muted: 225 22% 96%;
+    --muted-foreground: 0 0% 35%;
+    --accent: 225 22% 96%;
+    --accent-foreground: 0 0% 7%;
     --destructive: 0 72% 52%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 214.3 20% 85%;
-    --input: 214.3 20% 85%;
-    --ring: 222.2 47.4% 11.2%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 223 14% 90%;
+    --input: 222 7% 50%;
+    --ring: 0 0% 7%;
+    --radius: 0.375rem;
+    --brand: 232 85% 60%;
+    --highlight: 25 85% 42%;
+    --font-display: 'Spline Sans Mono', ui-monospace, 'SF Mono', monospace;
+    --font-sans: 'Spline Sans', system-ui, -apple-system, sans-serif;
   }
 
-  .dark { /* Dark theme override */
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+  /* Blue band: hero, nav, contact/CTA. Re-maps the tokens inside it. */
+  .band-brand {
+    --background: 232 85% 60%;
+    --foreground: 0 0% 100%;
+    --card: 232 67% 52%;
+    --card-foreground: 0 0% 100%;
+    --popover: 232 67% 52%;
+    --popover-foreground: 0 0% 100%;
+    --secondary: 232 67% 52%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 232 67% 52%;
+    --muted-foreground: 233 90% 96%;
+    --accent: 232 67% 52%;
+    --accent-foreground: 0 0% 100%;
+    --border: 232 86% 73%;
+    --input: 233 84% 88%;
+    --ring: 0 0% 100%;
+    --highlight: 38 91% 63%;
+    background: hsl(var(--background));
+    color: hsl(var(--foreground));
+  }
+
+  /* Dark ground: footer */
+  .band-dark {
+    --background: 0 0% 12%;
+    --foreground: 0 0% 100%;
+    --card: 0 0% 7%;
+    --card-foreground: 0 0% 100%;
+    --muted: 0 0% 7%;
+    --muted-foreground: 0 0% 64%;
+    --accent: 0 0% 7%;
+    --accent-foreground: 0 0% 100%;
+    --border: 0 0% 20%;
+    --input: 0 0% 64%;
+    --ring: 0 0% 100%;
+    --highlight: 38 91% 63%;
+    background: hsl(var(--background));
+    color: hsl(var(--foreground));
   }
 
   .light { /* Light theme override */
@@ -73,7 +96,18 @@
     border-color: hsl(var(--border));
   }
 
+  h1, h2 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+  }
+
+  h3, h4 {
+    letter-spacing: -0.01em;
+  }
+
   body {
+    font-family: var(--font-sans);
     color: hsl(var(--foreground));
     background: hsl(var(--background));
     -webkit-font-smoothing: antialiased;
@@ -97,18 +131,15 @@
 
 @layer components {
   .text-gradient {
-    background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #c7cdfa; /* on-brand-muted: second half of a two-tone headline */
   }
 
   .hero-gradient {
-    background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%);
+    background: hsl(var(--brand));
   }
 
   .hero-gradient-subtle {
-    background: linear-gradient(135deg, rgba(96, 165, 250, 0.12) 0%, rgba(167, 139, 250, 0.12) 100%);
+    background: linear-gradient(135deg, rgba(64, 88, 240, 0.08) 0%, rgba(64, 88, 240, 0.08) 100%);
   }
 
   .smooth-transition {
@@ -116,7 +147,7 @@
   }
 
   .glow-effect {
-    box-shadow: 0 0 24px rgba(96, 165, 250, 0.28);
+    box-shadow: 0 0 24px rgba(240, 138, 44, 0.35);
   }
 }
 
@@ -185,7 +216,7 @@
 }
 
 .prose details summary:hover {
-  color: #60a5fa;
+  color: #f08a2c;
 }
 
 .prose details summary::marker {
@@ -216,6 +247,6 @@
 }
 
 .prose details ul li a:hover {
-  color: #60a5fa;
+  color: #f08a2c;
   transform: translateX(4px);
 }

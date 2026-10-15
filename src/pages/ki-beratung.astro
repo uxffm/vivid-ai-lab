@@ -107,10 +107,10 @@ const serviceSchema = {
 
   <main>
     <!-- Hero -->
-    <section class="relative min-h-screen flex items-center overflow-hidden">
-      <div class="absolute inset-0 bg-gradient-to-br from-blue-400/20 via-purple-400/15 to-transparent" />
-      <div class="pointer-events-none absolute -top-24 -left-24 h-64 w-64 rounded-full bg-blue-500/10 blur-2xl" />
-      <div class="pointer-events-none absolute -bottom-24 -right-24 h-64 w-64 rounded-full bg-purple-400/10 blur-2xl" />
+    <section class="relative min-h-screen flex items-center overflow-hidden band-brand">
+      <div class="absolute inset-0 bg-background" />
+      <div class="pointer-events-none absolute -top-24 -left-24 h-64 w-64 rounded-full bg-foreground/10 blur-2xl" />
+      <div class="pointer-events-none absolute -bottom-24 -right-24 h-64 w-64 rounded-full bg-foreground/10 blur-2xl" />
 
       <div class="relative z-10 max-w-7xl mx-auto px-6">
         <div class="max-w-3xl mx-auto text-center">
@@ -122,7 +122,7 @@ const serviceSchema = {
             Unser Ansatz: Praxisnahe Workshops, realistische Roadmaps und hands-on Unterstützung. Wir helfen Ihnen, KI-Tools sinnvoll einzusetzen und Ihre Prozesse nachhaltig zu optimieren.
           </p>
           <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#kontakt" class="inline-flex items-center justify-center px-6 py-3 rounded-[5px] bg-gradient-to-r from-blue-500 to-purple-500 text-white hover:from-blue-600 hover:to-purple-600 transition-colors">
+            <a href="#kontakt" class="inline-flex items-center justify-center px-6 py-3 rounded-[5px] bg-primary text-primary-foreground transition-colors">
               Kostenlose Erstberatung
             </a>
           </div>
@@ -131,9 +131,9 @@ const serviceSchema = {
     </section>
 
     <!-- Intro Text -->
-    <section class="py-16 bg-gradient-to-b from-blue-400/5 via-purple-400/5 to-transparent">
+    <section class="py-16 bg-card">
       <div class="max-w-3xl mx-auto px-6">
-        <div class="rounded-2xl border border-border/60 bg-gradient-to-br from-background/80 to-background/60 backdrop-blur-sm p-8 shadow-lg text-center">
+        <div class="rounded-2xl border border-border/60 bg-foreground/5 backdrop-blur-sm p-8 shadow-lg text-center">
         <h2 class="text-2xl md:text-3xl font-semibold mb-4">Was KI-Beratung für Ihr Unternehmen bringt</h2>
         <div class="space-y-8 text-lg text-muted-foreground">
           <p>
@@ -150,19 +150,19 @@ const serviceSchema = {
           <div>
             <h3 class="text-xl font-semibold mb-4 text-foreground">Typische Beratungsschwerpunkte</h3>
             <ul class="space-y-3 text-left">
-              <li class="p-4 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+              <li class="p-4 rounded-lg border border-border bg-card">
                 KI-Potenzialanalyse: Identifikation von Quick Wins und strategischen Projekten.
               </li>
-              <li class="p-4 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+              <li class="p-4 rounded-lg border border-border bg-card">
                 Tool-Evaluation: Vergleich von KI-Plattformen, APIs und Custom Solutions.
               </li>
-              <li class="p-4 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+              <li class="p-4 rounded-lg border border-border bg-card">
                 Prozessoptimierung: Automatisierung von Routineaufgaben mit KI-Unterstützung.
               </li>
-              <li class="p-4 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+              <li class="p-4 rounded-lg border border-border bg-card">
                 Change Management: Vorbereitung Ihrer Teams auf KI-gestützte Workflows.
               </li>
-              <li class="p-4 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+              <li class="p-4 rounded-lg border border-border bg-card">
                 Pilotprojekte: Schnelle POCs zur Validierung von Business Cases.
               </li>
             </ul>
@@ -181,7 +181,7 @@ const serviceSchema = {
       <div class="mt-12 max-w-5xl mx-auto px-6">
         <h3 class="text-xl font-semibold mb-4 text-foreground text-center">Unser Beratungsprozess in drei Schritten</h3>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-left">
-          <div class="p-6 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+          <div class="p-6 rounded-lg border border-border bg-card">
             <div class="text-sm font-semibold text-muted-foreground mb-1">Schritt 1</div>
             <h4 class="text-3xl md:text-2xl font-semibold mb-2">Discovery Workshop</h4>
             <div class="text-sm text-muted-foreground mb-3">Wir analysieren Ihre Prozesse, Ziele und identifizieren konkrete KI-Potenziale.</div>
@@ -191,7 +191,7 @@ const serviceSchema = {
               <li>Priorisierung nach ROI & Aufwand</li>
             </ul>
           </div>
-          <div class="p-6 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+          <div class="p-6 rounded-lg border border-border bg-card">
             <div class="text-sm font-semibold text-muted-foreground mb-1">Schritt 2</div>
             <h4 class="text-3xl md:text-2xl font-semibold mb-2">Strategie & Roadmap</h4>
             <div class="text-sm text-muted-foreground mb-3">Gemeinsame Entwicklung einer KI-Strategie mit konkreten Meilensteinen.</div>
@@ -201,7 +201,7 @@ const serviceSchema = {
               <li>Phasenplan mit Quick Wins</li>
             </ul>
           </div>
-          <div class="p-6 rounded-lg border border-border bg-white/60 dark:bg-white/5">
+          <div class="p-6 rounded-lg border border-border bg-card">
             <div class="text-sm font-semibold text-muted-foreground mb-1">Schritt 3</div>
             <h4 class="text-3xl md:text-2xl font-semibold mb-2">Implementierung & Enablement</h4>
             <div class="text-sm text-muted-foreground mb-3">Begleitung bei Umsetzung und Training Ihrer Teams für nachhaltige Nutzung.</div>
@@ -216,9 +216,9 @@ const serviceSchema = {
     </section>
 
     <!-- Zusatzbereich -->
-    <section class="py-16 bg-gradient-to-b from-purple-400/5 via-blue-400/5 to-transparent">
+    <section class="py-16 bg-card">
       <div class="max-w-6xl mx-auto px-6">
-        <div class="rounded-2xl border border-border/60 bg-gradient-to-br from-background/80 to-background/60 backdrop-blur-sm p-8 shadow-lg">
+        <div class="rounded-2xl border border-border/60 bg-foreground/5 backdrop-blur-sm p-8 shadow-lg">
           <h2 class="text-2xl md:text-3xl font-semibold mb-6">Mehr über unsere KI-Beratung</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-lg text-muted-foreground">
             <div class="space-y-6">
