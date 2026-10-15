@@ -13,7 +13,7 @@ Sie wollen KI wie ChatGPT nutzen, ohne vertrauliche Dokumente an einen externen 
 
 **Unsere Empfehlung für 2026:**
 
-- **Einstieg:** <a href="https://link.amazon/B09t0mRuX" target="_blank" rel="noopener sponsored nofollow">Mac mini M6</a> mit 32 GB RAM
+- **Einstieg:** <a href="https://link.amazon/B09t0mRuX" target="_blank" rel="noopener sponsored nofollow">Mac mini M6</a> mit 24 GB RAM
 - **Größere Modelle:** <a href="https://link.amazon/B0f0UfGWj" target="_blank" rel="noopener sponsored nofollow">Mac mini M5 Pro</a> mit 64 GB oder ein Mini-PC mit AMD Ryzen AI Max+ 395 und 64 bis 128 GB
 - **CUDA und Aufrüstbarkeit:** kompakter Desktop-PC mit NVIDIA-Grafikkarte
 
@@ -23,7 +23,7 @@ Sie wollen KI wie ChatGPT nutzen, ohne vertrauliche Dokumente an einen externen 
 
 | Gerät | Sinnvolle Ausstattung | Geeignet für | Einschränkung |
 |---|---|---|---|
-| <a href="https://link.amazon/B09t0mRuX" target="_blank" rel="noopener sponsored nofollow">Mac mini M6</a> | 32 GB Unified Memory | Chatbots, Texte, kleine bis mittlere Modelle | Maximal 32 GB Speicher |
+| <a href="https://link.amazon/B09t0mRuX" target="_blank" rel="noopener sponsored nofollow">Mac mini M6</a> | 24 GB Unified Memory | Chatbots, Texte, kleine bis mittlere Modelle | Maximal 24 GB Speicher |
 | <a href="https://link.amazon/B0f0UfGWj" target="_blank" rel="noopener sponsored nofollow">Mac mini M5 Pro</a> | Bis 64 GB Unified Memory | Größere Modelle, lange Dokumente, Dauereinsatz | Teurer, Speicher nicht nachrüstbar |
 | GMKtec EVO-X2 (Ryzen AI Max+ 395) | 64 oder 128 GB RAM | Große Modelle | Software-Kompatibilität prüfen |
 | HP Z2 Mini G1a | Bis 128 GB RAM | Unternehmen, Workstations | Deutlich teurer |
@@ -69,7 +69,7 @@ Auch die Kontextlänge kostet Speicher: Lange Dokumente und Chatverläufe brauch
 
 ### Mac mini M6: der einfache Einstieg
 
-Klein, leise und mit LM Studio oder Ollama schnell eingerichtet. Apple bietet 16 bis 32 GB Unified Memory bei bis zu 170 GB/s. Nehmen Sie die 32-GB-Version: Sie reicht für moderne 9B- bis 12B-Modelle samt längerer Texte. Für sehr große Modelle ist sie zu knapp, und nachrüsten lässt sich der Speicher nicht. Metal und MLX sorgen dafür, dass die GPU gut genutzt wird.
+Klein, leise und mit LM Studio oder Ollama schnell eingerichtet. Apple bietet 16 bis 24 GB Unified Memory bei bis zu 170 GB/s. Nehmen Sie die 24-GB-Version: Sie reicht für moderne 9B- bis 12B-Modelle samt längerer Texte. Für sehr große Modelle ist sie zu knapp, und nachrüsten lässt sich der Speicher nicht. Metal und MLX sorgen dafür, dass die GPU gut genutzt wird.
 
 <p><a href="https://link.amazon/B09t0mRuX" target="_blank" rel="noopener sponsored nofollow" style="display:inline-block;background:hsl(var(--primary));color:hsl(var(--primary-foreground));font-weight:600;padding:0.75rem 1.5rem;border-radius:0.375rem;text-decoration:none;">Mac mini M6 bei Amazon ansehen</a></p>
 
@@ -132,7 +132,7 @@ DSGVO-konform wird eine Lösung erst durch technische und organisatorische Maßn
 Nicht ChatGPT selbst, aber offene Sprachmodelle, die ähnliche Aufgaben erledigen. Nach dem Download laufen sie ohne Internet.
 
 **Wie viel RAM sollte mein Mini-PC haben?**
-16 GB für erste Tests, 32 GB für regelmäßige Nutzung. Für große Modelle, lange Dokumente und RAG sind 64 bis 128 GB sinnvoll.
+16 GB für erste Tests, 24 bis 32 GB für regelmäßige Nutzung. Für große Modelle, lange Dokumente und RAG sind 64 bis 128 GB sinnvoll.
 
 **Mac mini oder Windows-PC mit NVIDIA?**
 Der Mac mini ist kompakt und einfach einzurichten. Der NVIDIA-PC punktet mit CUDA und aufrüstbarer Grafikkarte. Entscheidend sind Ihre Software und die gewünschte Modellgröße.
@@ -142,6 +142,6 @@ Nein. Für die meisten lokalen LLMs sind GPU, Speicher und Software-Unterstützu
 
 ## Fazit
 
-Für den unkomplizierten Einstieg ist der Mac mini M6 mit 32 GB die naheliegende Wahl. Wer größere Modelle und viele Dokumente verarbeitet, greift zum Mac mini M5 Pro mit 64 GB. Zählt vor allem Speicherkapazität, sind Ryzen-AI-Max+-395-Rechner mit 128 GB interessant. Für CUDA und Aufrüstbarkeit bleibt der NVIDIA-PC die Alternative.
+Für den unkomplizierten Einstieg ist der Mac mini M6 mit 24 GB die naheliegende Wahl. Wer größere Modelle und viele Dokumente verarbeitet, greift zum Mac mini M5 Pro mit 64 GB. Zählt vor allem Speicherkapazität, sind Ryzen-AI-Max+-395-Rechner mit 128 GB interessant. Für CUDA und Aufrüstbarkeit bleibt der NVIDIA-PC die Alternative.
 
 Klären Sie vor dem Kauf, welche Dokumente Sie verarbeiten, wie lang sie sind und wie schnell Antworten kommen müssen. Testen Sie Ihr Wunschmodell möglichst auf vergleichbarer Hardware. Dann zahlen Sie nicht für Leistung, die Sie nicht brauchen – und behalten die Kontrolle über Ihre Daten, ohne Gebühren pro Anfrage.
