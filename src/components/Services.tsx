@@ -5,7 +5,7 @@ import TextBlock from "./TextBlock";
 const hrefs: Record<string, string> = {
   "KI Automatisierung": "/ki-automatisierung",
   "Lokale KI Modelle": "/ki-modelle-lokal",
-  "Chat GPT Ads Agentur Frankfurt": "/chatgpt-ads-agentur",
+  "Vibe Coding Agentur": "/vibe-coding",
   "KI Beratung": "/ki-beratung",
   "KI Rezeption": "/ki-rezeption",
 };
