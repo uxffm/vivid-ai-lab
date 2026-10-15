@@ -13,16 +13,18 @@ Sie wollen KI wie ChatGPT nutzen, ohne vertrauliche Dokumente an einen externen 
 
 **Unsere Empfehlung für 2026:**
 
-- **Einstieg:** Mac mini M6 mit 32 GB RAM
-- **Größere Modelle:** Mac mini M5 Pro mit 64 GB oder ein Mini-PC mit AMD Ryzen AI Max+ 395 und 64 bis 128 GB
+- **Einstieg:** <a href="https://link.amazon/B09t0mRuX" target="_blank" rel="noopener sponsored nofollow">Mac mini M6</a> mit 32 GB RAM
+- **Größere Modelle:** <a href="https://link.amazon/B0f0UfGWj" target="_blank" rel="noopener sponsored nofollow">Mac mini M5 Pro</a> mit 64 GB oder ein Mini-PC mit AMD Ryzen AI Max+ 395 und 64 bis 128 GB
 - **CUDA und Aufrüstbarkeit:** kompakter Desktop-PC mit NVIDIA-Grafikkarte
+
+*Die Links zu den Mac minis sind Affiliate-Links: Wenn Sie darüber einkaufen, erhalten wir eine kleine Provision, ohne dass Ihnen zusätzliche Kosten entstehen.*
 
 ## Die Geräte im Schnellvergleich
 
 | Gerät | Sinnvolle Ausstattung | Geeignet für | Einschränkung |
 |---|---|---|---|
-| Mac mini M6 | 32 GB Unified Memory | Chatbots, Texte, kleine bis mittlere Modelle | Maximal 32 GB Speicher |
-| Mac mini M5 Pro | Bis 64 GB Unified Memory | Größere Modelle, lange Dokumente, Dauereinsatz | Teurer, Speicher nicht nachrüstbar |
+| <a href="https://link.amazon/B09t0mRuX" target="_blank" rel="noopener sponsored nofollow">Mac mini M6</a> | 32 GB Unified Memory | Chatbots, Texte, kleine bis mittlere Modelle | Maximal 32 GB Speicher |
+| <a href="https://link.amazon/B0f0UfGWj" target="_blank" rel="noopener sponsored nofollow">Mac mini M5 Pro</a> | Bis 64 GB Unified Memory | Größere Modelle, lange Dokumente, Dauereinsatz | Teurer, Speicher nicht nachrüstbar |
 | GMKtec EVO-X2 (Ryzen AI Max+ 395) | 64 oder 128 GB RAM | Große Modelle | Software-Kompatibilität prüfen |
 | HP Z2 Mini G1a | Bis 128 GB RAM | Unternehmen, Workstations | Deutlich teurer |
 | Kompakt-PC mit RTX 5060 Ti | 16 GB VRAM, mind. 32 GB RAM | Schnelle Inferenz, CUDA, Entwicklung | Große Modelle passen nicht in 16 GB |
