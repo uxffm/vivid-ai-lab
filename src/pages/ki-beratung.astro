@@ -7,6 +7,12 @@ import Footer from '../components/Footer.astro';
 const pageTitle = "KI Beratung  – Strategische KI-Integration | KI Agentur";
 const pageDescription = "Professionelle KI-Beratung in Frankfurt: Wir helfen Ihnen, künstliche Intelligenz strategisch in Ihr Unternehmen zu integrieren. Individuelle Beratung für nachhaltige Erfolge.";
 
+const alternates = [
+  { hreflang: "de", href: "/ki-beratung/" },
+  { hreflang: "en", href: "/en/ai-consulting-frankfurt/" },
+  { hreflang: "x-default", href: "/ki-beratung/" },
+];
+
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
@@ -83,6 +89,8 @@ const serviceSchema = {
   image="/src/assets/ai-hero-image.jpg"
   type="website"
   customSchema={serviceSchema}
+  lang="de"
+  alternates={alternates}
 >
   <Navigation client:load />
 
@@ -274,5 +282,5 @@ const serviceSchema = {
     </div>
   </main>
 
-  <Footer />
+  <Footer altHref="/en/ai-consulting-frankfurt/" />
 </Layout>

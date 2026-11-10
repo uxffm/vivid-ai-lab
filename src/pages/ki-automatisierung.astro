@@ -7,6 +7,12 @@ import Footer from '../components/Footer.astro';
 const pageTitle = "KI Automatisierung Agentur Rhein-Main – Prozesse automatisieren mit KI";
 const pageDescription = "KI Automatisierung Agentur für Rhein-Main: Chatbots, Workflows, Datenverarbeitung und mehr für Unternehmen in Frankfurt, Wiesbaden, Darmstadt und dem gesamten Rhein-Main-Gebiet. Effizienter arbeiten, Kosten senken, schneller skalieren.";
 
+const alternates = [
+  { hreflang: "de", href: "/ki-automatisierung/" },
+  { hreflang: "en", href: "/en/ai-automation-agency-frankfurt/" },
+  { hreflang: "x-default", href: "/ki-automatisierung/" },
+];
+
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
@@ -93,6 +99,8 @@ const serviceSchema = {
   image="/src/assets/ai-hero-image.jpg"
   type="website"
   customSchema={serviceSchema}
+  lang="de"
+  alternates={alternates}
 >
   <Navigation client:load />
 
@@ -431,7 +439,7 @@ const serviceSchema = {
     </div>
   </main>
 
-  <Footer />
+  <Footer altHref="/en/ai-automation-agency-frankfurt/" />
 </Layout>
 
 

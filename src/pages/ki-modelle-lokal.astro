@@ -8,6 +8,12 @@ const pageTitle = "Lokale KI-Modelle für Unternehmen – Ihre Daten bleiben bei
 const pageDescription = "Souveräne KI-Lösungen für Ihr Unternehmen: 100% DSGVO-konform, vollständige Datenkontrolle und kalkulierbare Kosten. Lokale Large Language Models ohne Cloud-Abhängigkeit.";
 const pageImage = "/lokale-ki-modelle-unternehmen.png";
 
+const alternates = [
+  { hreflang: "de", href: "/ki-modelle-lokal/" },
+  { hreflang: "en", href: "/en/local-ai-models-for-business/" },
+  { hreflang: "x-default", href: "/ki-modelle-lokal/" },
+];
+
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
@@ -38,6 +44,8 @@ const serviceSchema = {
   image={pageImage}
   type="website"
   customSchema={serviceSchema}
+  lang="de"
+  alternates={alternates}
 >
   <Navigation client:load />
 
@@ -432,5 +440,5 @@ const serviceSchema = {
     </div>
   </main>
 
-  <Footer />
+  <Footer altHref="/en/local-ai-models-for-business/" />
 </Layout>

@@ -1,0 +1,241 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navigation from '../../components/Navigation';
+import Contact from '../../components/Contact';
+import Footer from '../../components/Footer.astro';
+import PageHero from '../../components/PageHero.astro';
+import FeatureRows from '../../components/FeatureRows.astro';
+import AccordionModule from '../../components/AccordionModule.astro';
+import TextBlock from '../../components/TextBlock';
+
+const pageTitle = "ChatGPT Ads Agency Frankfurt – AI Visibility for Your Brand | Frankfurt AI";
+const pageDescription = "ChatGPT ads agency from Frankfurt, Germany: we support you with strategy, setup and optimization of your advertising campaigns in ChatGPT. Get a free consultation.";
+
+const alternates = [
+  { hreflang: "de", href: "/chatgpt-ads-agentur/" },
+  { hreflang: "en", href: "/en/chatgpt-ads-agency-frankfurt/" },
+  { hreflang: "x-default", href: "/chatgpt-ads-agentur/" },
+];
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "ChatGPT ads agency",
+  "name": "ChatGPT Ads Agency Frankfurt",
+  "description": pageDescription,
+  "inLanguage": "en",
+  "provider": {
+    "@type": "Organization",
+    "name": "KI Frankfurt",
+    "url": "https://frankfurt-ai.de",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Frankfurt am Main",
+      "addressRegion": "Hessen",
+      "addressCountry": "DE"
+    }
+  },
+  "areaServed": { "@type": "Country", "name": "Germany" }
+};
+
+const textSections: { title: string; paragraphs: string[] }[] = [
+  {
+    title: "ChatGPT Ads: a new advertising channel for businesses",
+    paragraphs: [
+      "Since 2026, companies can place paid ads in ChatGPT. They appear as clearly labeled, sponsored placements below an AI answer. The advertising is separate from the actual answer and does not change what ChatGPT recommends.",
+      "Unlike a classic Google search, the selection of an ad can be based on the context and intent of a conversation. People inform themselves, compare offers or prepare a purchase decision. For advertisers this opens up an additional way to reach their target audience. And that can pay off.",
+      "In the OpenAI Ads Manager you can create campaigns, manage ad groups, design ads and evaluate results. The results are promising. The conversion rate for many companies using these paid ads has been very positive.",
+      "That is also why ChatGPT Ads are quickly gaining awareness in Germany.",
+    ],
+  },
+  {
+    title: "What do ChatGPT Ads cost?",
+    paragraphs: [
+      "The cost depends on the chosen campaign goal, your bid, delivery and the competition for suitable ad placements. In the Ads Manager, campaigns billed by clicks (CPC) or per 1,000 impressions (CPM) are possible, among others. Conversion-optimized campaigns have additional requirements.",
+      "The advertising budget goes to the platform. Separate from that, we charge for strategic support, setup and ongoing optimization, the so-called management fee.",
+      "In the initial call we clarify which investment makes sense for a meaningful test. We do not promise fixed click prices or guaranteed leads.",
+    ],
+  },
+  {
+    title: "ChatGPT Ads and GEO: two different paths to AI visibility",
+    paragraphs: [
+      "Paid ChatGPT ads and organic recommendations are not the same thing. With ChatGPT Ads you book advertising that is labeled as sponsored. With Generative Engine Optimization (GEO), on the other hand, you improve the conditions for AI search engines to recognize your content and your brand as a relevant source of information.",
+      "For organic AI visibility we review, among other things, content, structured data, understandable service descriptions and external brand mentions. Other AI systems such as Gemini or Perplexity can be part of this. A mention or recommendation cannot be guaranteed.",
+      "As a ChatGPT ads agency in Frankfurt we can align both areas sensibly: paid campaigns for additional reach and GEO as a longer-term complement to your SEO strategy.",
+    ],
+  },
+  {
+    title: "ChatGPT Ads for companies from Frankfurt and the Rhine-Main region",
+    paragraphs: [
+      "As a ChatGPT ads agency we support companies from Frankfurt am Main, Offenbach and the Rhine-Main region as well as customers nationwide. What matters is where you want to reach your customers, not only where your company is based.",
+      "Important for local providers: current campaign targeting allows alignment by target country. You should therefore not assume a reliable restriction of ads to the city of Frankfurt alone.",
+      "We openly discuss whether ChatGPT Ads can make economic sense for your regional offering.",
+    ],
+  },
+  {
+    title: "Who is advertising in ChatGPT suited for?",
+    paragraphs: [
+      "ChatGPT advertising can be interesting if your customers compare services, seek advice before buying or search specifically for solutions. This applies to many B2B services, software offerings, online shops and advice-intensive products.",
+      "The channel is less suitable if you absolutely only want to reach people in a very narrow local radius or expect a fixed number of inquiries immediately.",
+      "As a ChatGPT ads agency we also tell you when Google Ads, SEO or other measures initially fit your goal better.",
+    ],
+  },
+];
+
+const faqs = [
+  { title: "Can you advertise in ChatGPT in Germany?", text: ["Yes. The OpenAI Ads Manager has been available for independent use in Germany since August 2026. Requirements are a suitable ad account, the necessary details and approval of your ads."] },
+  { title: "Where are ChatGPT ads displayed?", text: ["Ads can appear below ChatGPT answers and are clearly labeled as sponsored. They do not change the AI answer.", "Advertising can appear for suitable users on the Free and Go plans, but not on the ad-free paid plans."] },
+  { title: "How does targeting work?", text: ["With ChatGPT Ads, the conversation context, the presumed intent and the relevance of your ad play a role. Advertisers can use context hints and available campaign settings. Delivery for a specific question is not guaranteed."] },
+  { title: "Can I run ChatGPT ads only in Frankfurt?", text: ["An ad delivery limited exclusively to Frankfurt cannot be reliably promised with the currently documented country targeting.", "If you mainly want to win local customers, we therefore first check whether the advertising channel fits your target group."] },
+  { title: "How much budget do I need?", text: ["That depends on your goal and your industry. You can set budgets and bids in the Ads Manager; the platform's current minimum requirements apply.", "We help you determine a realistic test budget."] },
+  { title: "How quickly will I see results?", text: ["After approval and launch of a campaign, first impressions and clicks can become visible. Whether these turn into inquiries or sales depends on your offer, the budget and the landing page, among other things.", "For a reliable assessment, campaigns need enough data."] },
+  { title: "How is success measured?", text: ["We look at impressions, clicks, click-through rate, costs, conversions and, as far as the data allows, the cost per inquiry.", "Tracking parameters and conversion measurement help to better classify visits and results."] },
+  { title: "Do ChatGPT Ads replace my SEO or Google Ads?", text: ["No. Google Ads reaches people through the search engine, ChatGPT Ads through sponsored ads within ChatGPT. SEO and GEO take care of organic visibility.", "Which combination makes sense depends on your company."] },
+  { title: "Is there a minimum contract term?", text: ["We discuss the right term for our support in advance. Campaigns can be paused or adjusted in the Ads Manager. The minimum term is two months. That is the minimum time needed to optimize keywords and ads, based on our experience.", "For a meaningful evaluation we recommend not judging success or failure after just a few clicks."] },
+];
+---
+
+<Layout
+  title={pageTitle}
+  description={pageDescription}
+  image="/src/assets/ai-hero-image.jpg"
+  type="website"
+  customSchema={serviceSchema}
+  lang="en"
+  alternates={alternates}
+>
+  <Navigation client:load lang="en" altHref="/chatgpt-ads-agentur/" />
+
+  <main>
+    <PageHero
+      crumbs={[{ label: "Home", href: "/" }, { label: "ChatGPT Ads Agency" }]}
+      skyline={false}
+      title="ChatGPT Ads Agency Frankfurt – Place Advertising Directly in ChatGPT"
+      text={[
+        "Instead of googling, people are now chatting. Your customers no longer only search on Google. They also ask ChatGPT about products, providers and suitable solutions.",
+        "And now, with ChatGPT Ads, companies can place their advertising in this environment. As a ChatGPT ads agency for Frankfurt we support you from the first strategy to the ongoing optimization of your campaigns.",
+      ]}
+      primary={{ text: "Book a free consultation", href: "#kontakt" }}
+      secondary={{ text: "View services", href: "#leistungen" }}
+    />
+
+    <section class="pt-12 pb-4 px-6 bg-background">
+      <div class="max-w-6xl mx-auto grid gap-6 md:grid-cols-2">
+        <img src="/chatgpt-ad-moebelhaus.webp" alt="Example ChatGPT ad: Möbelhaus Schmidt furniture store, dream homes come true" width="1600" height="560" loading="lazy" decoding="async" class="w-full h-auto" />
+        <img src="/chatgpt-ad-autohaus.webp" alt="Example ChatGPT ad: Autohaus Müller car dealership, your dream car is waiting" width="1600" height="560" loading="lazy" decoding="async" class="w-full h-auto" />
+      </div>
+    </section>
+
+    <section class="py-20 px-6 bg-background">
+      <div class="max-w-6xl mx-auto">
+        <TextBlock title={textSections[0].title}>
+          {textSections[0].paragraphs.map((t) => <TextBlock.P>{t}</TextBlock.P>)}
+        </TextBlock>
+      </div>
+    </section>
+
+    <FeatureRows
+      layout="columns"
+      background="dark"
+      cols={3}
+      title="Why advertising in ChatGPT"
+      titleMuted="can pay off for your business"
+      items={[
+        { icon: "search", title: "Visibility at the moment of interest", text: "Someone searching for a solution often already has a need. A suitable ad can draw attention to your company at exactly this moment, when possible providers are being considered. Whether and when it is shown is decided by the ad system." },
+        { icon: "chat", title: "An additional channel alongside Google Ads", text: "Many people now only use ChatGPT, but and this is very important ChatGPT advertising does not automatically replace your search engine advertising. It can complement your existing online marketing and help you create new touchpoints with potential customers." },
+        { icon: "chart", title: "Results instead of mere reach", text: "Key metrics are impressions, clicks, click-through rate (CTR), cost per click (CPC) and, with correctly set up measurement, of course conversions. This is how we judge whether your campaigns contribute to your business goals." },
+      ]}
+    />
+
+    <FeatureRows
+      id="leistungen"
+      layout="grid"
+      cols={2}
+      title="Our services as a ChatGPT ads agency"
+      items={[
+        { icon: "target", title: "Strategy and potential analysis", text: "Before you invest advertising budget, we look at your offer, your target group, your landing pages and your previous marketing channels. We clarify which products or services are suitable for ChatGPT ads and which campaign goals are realistic." },
+        { icon: "code", title: "Setup in the OpenAI Ads Manager", text: ["We support you with the ad account, the campaign structure and the basic settings. This includes goal, budget, target countries and suitable ad groups.", "Context hints help the system match your ads to relevant conversations. They do not work like guaranteed exact-match keywords in Google Ads."] },
+        { icon: "doc", title: "Ads and landing page optimization", text: ["We develop understandable ad copy, titles and suitable creatives. At the same time we check whether your landing page answers questions and leads visitors to the desired action. If it does not, we adapt the website accordingly.", "Because a good ad achieves little if the offer on your website does not convince."] },
+        { icon: "chart", title: "Tracking, reporting and campaign optimization", text: ["We set up the available conversion measurement and, if needed, use UTM parameters for your web analytics. We then monitor reach, click-through rate, CPC, spend and conversions. We present all of this clearly in a report you can understand.", "On this basis we adjust ads, bids, budget and messaging. You learn what works and where we are improving."] },
+      ]}
+    />
+
+    <FeatureRows
+      layout="columns"
+      background="brand"
+      cols={3}
+      iconStyle="plain"
+      title="How your"
+      titleMuted="ChatGPT ad campaigns start"
+      items={[
+        { icon: "phone", title: "Step 1: Free 20-minute initial call", text: "We talk about your company, your target group and your previous advertising measures. You get a first assessment of whether paid ChatGPT advertising makes sense for your offer." },
+        { icon: "bolt", title: "Step 2: Strategy and campaign launch", text: "We define the campaign goal, prepare the Ads Manager, create ads and check the landing page. After approval by the platform, the campaign can start." },
+        { icon: "chart", title: "Step 3: Measure and improve", text: "We monitor campaign performance and optimize based on the available data. In this way we develop, step by step, an advertising strategy that fits your budget and your goal." },
+      ]}
+    />
+
+    <section class="py-20 px-6 bg-card">
+      <div class="max-w-6xl mx-auto">
+        <TextBlock title={textSections[1].title}>
+          {textSections[1].paragraphs.map((t) => <TextBlock.P>{t}</TextBlock.P>)}
+        </TextBlock>
+      </div>
+    </section>
+
+    <section class="py-20 px-6 bg-background">
+      <div class="max-w-6xl mx-auto">
+        <TextBlock title={textSections[2].title}>
+          {textSections[2].paragraphs.map((t) => <TextBlock.P>{t}</TextBlock.P>)}
+        </TextBlock>
+      </div>
+    </section>
+
+    <FeatureRows
+      layout="columns"
+      background="tinted"
+      title={textSections[3].title}
+      items={textSections[3].paragraphs.map((t) => ({ text: t }))}
+    />
+
+    <section class="py-20 px-6 bg-background">
+      <div class="max-w-6xl mx-auto">
+        <TextBlock title={textSections[4].title}>
+          {textSections[4].paragraphs.map((t) => <TextBlock.P>{t}</TextBlock.P>)}
+        </TextBlock>
+      </div>
+    </section>
+
+    <FeatureRows
+      layout="columns"
+      background="tinted"
+      cols={3}
+      title="Why work with our"
+      titleMuted="ChatGPT ads agency?"
+      items={[
+        { icon: "code", title: "Advertising and technology thought together", text: "We work very granularly and look at more than the ad. The website, the user journey and the conversion tracking also have to be right so that interest can turn into an inquiry. This is how your ads become a full success." },
+        { icon: "chart", title: "Clear evaluation instead of big promises", text: "You see which results can actually be measured in the Ads Manager. We explain the numbers clearly and distinguish measured conversions from mere assumptions." },
+        { icon: "users", title: "Personal support from the Frankfurt area", text: "You have a direct contact person for strategy, implementation and questions. We rely on traceable steps and a collaboration that fits your company. No generic reports that reveal nothing." },
+      ]}
+    />
+
+    <AccordionModule title="Frequently asked questions about ChatGPT Ads" items={faqs} name="faq" />
+
+    <div id="kontakt">
+      <Contact
+        client:load
+        lang="en"
+        heading="Check now whether ChatGPT Ads fit your business"
+        paragraphs={[
+          "Do you want to advertise in ChatGPT but don't yet know how to start?",
+          "In a free, non-binding 20-minute consultation we discuss your offer, possible campaign goals and the next sensible step.",
+          "You get a clear assessment, because ChatGPT Ads are not suitable for every company.",
+        ]}
+        note="We will get back to you within 24 hours."
+        cta={{ text: "Request a free consultation", href: "#contact-form" }}
+        placeholder="Tell us briefly about your company and your goal with ChatGPT Ads."
+      />
+    </div>
+  </main>
+
+  <Footer lang="en" altHref="/chatgpt-ads-agentur/" />
+</Layout>

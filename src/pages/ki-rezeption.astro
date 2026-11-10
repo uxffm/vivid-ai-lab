@@ -8,6 +8,12 @@ const pageTitle = "KI Rezeption & Sekretariat – Intelligente Anrufannahme für
 const pageDescription = "KI-gestützte Rezeption und Sekretariat: 24/7 erreichbar, nie krank, immer freundlich. Automatische Anrufannahme, Terminbuchung und Kundenbetreuung mit künstlicher Intelligenz.";
 const pageImage = "/ki-rezeption-sekretariat.png";
 
+const alternates = [
+  { hreflang: "de", href: "/ki-rezeption/" },
+  { hreflang: "en", href: "/en/ai-receptionist/" },
+  { hreflang: "x-default", href: "/ki-rezeption/" },
+];
+
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
@@ -38,6 +44,8 @@ const serviceSchema = {
   image={pageImage}
   type="website"
   customSchema={serviceSchema}
+  lang="de"
+  alternates={alternates}
 >
   <Navigation client:load />
 
@@ -430,5 +438,5 @@ const serviceSchema = {
     </div>
   </main>
 
-  <Footer />
+  <Footer altHref="/en/ai-receptionist/" />
 </Layout>

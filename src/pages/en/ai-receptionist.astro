@@ -1,0 +1,440 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navigation from '../../components/Navigation';
+import Contact from '../../components/Contact';
+import Footer from '../../components/Footer.astro';
+
+const pageTitle = "AI Receptionist & Secretary – Intelligent Call Answering for Your Business | Frankfurt AI";
+const pageDescription = "AI-powered reception and secretary service: available 24/7, never sick, always friendly. Automatic call answering, appointment booking and customer service with artificial intelligence.";
+const pageImage = "/ki-rezeption-sekretariat.png";
+
+const alternates = [
+  { hreflang: "de", href: "/ki-rezeption/" },
+  { hreflang: "en", href: "/en/ai-receptionist/" },
+  { hreflang: "x-default", href: "/ki-rezeption/" },
+];
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "AI receptionist & secretary",
+  "name": "AI Receptionist for Businesses",
+  "description": pageDescription,
+  "inLanguage": "en",
+  "provider": {
+    "@type": "Organization",
+    "name": "KI Frankfurt",
+    "url": "https://frankfurt-ai.de",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Frankfurt am Main",
+      "addressRegion": "Hessen",
+      "addressCountry": "DE"
+    }
+  },
+  "areaServed": { "@type": "Country", "name": "Germany" }
+};
+---
+
+<Layout
+  title={pageTitle}
+  description={pageDescription}
+  image={pageImage}
+  type="website"
+  customSchema={serviceSchema}
+  lang="en"
+  alternates={alternates}
+>
+  <Navigation client:load lang="en" altHref="/ki-rezeption/" />
+
+  <!-- Breadcrumbs -->
+  <nav class="pt-32 pb-4" aria-label="Breadcrumb">
+    <div class="max-w-7xl mx-auto px-6">
+      <ol class="flex items-center gap-2 text-sm text-muted-foreground" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/" itemprop="item" class="hover:text-foreground transition-colors">
+            <span itemprop="name">Home</span>
+          </a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <li aria-hidden="true">/</li>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <span itemprop="name" class="text-foreground">AI Receptionist</span>
+          <meta itemprop="position" content="2" />
+        </li>
+      </ol>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero -->
+    <section class="relative py-20 overflow-hidden band-brand">
+      <div class="absolute inset-0 bg-background" />
+      <div class="pointer-events-none absolute -top-24 -left-24 h-64 w-64 rounded-full bg-foreground/10 blur-2xl" />
+      <div class="pointer-events-none absolute -bottom-24 -right-24 h-64 w-64 rounded-full bg-foreground/10 blur-2xl" />
+
+      <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
+        <h1 class="text-3xl md:text-5xl font-bold leading-tight mb-6">
+          AI Receptionist & Secretary for Businesses
+        </h1>
+        <p class="text-2xl md:text-3xl font-semibold text-foreground mb-6">
+          Your reception is staffed 24/7.<br />
+          No sick days, no waiting times.
+        </p>
+        <p class="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+          We implement an AI-powered phone system that answers calls professionally, books appointments, answers questions and delights your customers, around the clock, 365 days a year.
+        </p>
+        <p class="text-xl md:text-2xl font-semibold text-foreground mb-8">
+          Intelligent call answering: personal, efficient, scalable.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#kontakt" class="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-primary text-primary-foreground transition-all text-lg font-semibold shadow-lg">
+            Book a strategy call now →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Barriers Section -->
+    <section class="py-20 bg-card">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+          Do you recognize these front-desk challenges?
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="p-8 rounded-2xl border border-border bg-card backdrop-blur-sm">
+            <h3 class="text-xl font-bold mb-3 text-foreground">📞 Missed calls</h3>
+            <p class="text-foreground">
+              During meetings, after hours or on vacation, important customer calls are lost, and with them potential orders.
+            </p>
+          </div>
+          <div class="p-8 rounded-2xl border border-border bg-card backdrop-blur-sm">
+            <h3 class="text-xl font-bold mb-3 text-foreground">💰 High staffing costs</h3>
+            <p class="text-foreground">
+              A full-time receptionist costs €40,000+ per year, plus sick leave, vacation and social contributions.
+            </p>
+          </div>
+          <div class="p-8 rounded-2xl border border-border bg-card backdrop-blur-sm">
+            <h3 class="text-xl font-bold mb-3 text-foreground">⏰ Limited availability</h3>
+            <p class="text-foreground">
+              Customers now expect 24/7 availability. But who can afford shift work?
+            </p>
+          </div>
+          <div class="p-8 rounded-2xl border border-border bg-card backdrop-blur-sm">
+            <h3 class="text-xl font-bold mb-3 text-foreground">📋 Manual processes</h3>
+            <p class="text-foreground">
+              Appointment bookings, callback notes, forwarding: all manual. Error-prone and time-consuming.
+            </p>
+          </div>
+        </div>
+        <div class="text-center mt-12">
+          <p class="text-2xl font-bold text-foreground mb-4">The solution: an AI that answers the phone for you.</p>
+          <p class="text-lg text-muted-foreground max-w-3xl mx-auto">
+            Modern voice AI understands natural language, holds real conversations and gets things done, from booking appointments to answering complex questions. And it learns from every call.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Case Study Section -->
+    <section class="pt-0 pb-20">
+      <div class="max-w-5xl mx-auto px-6">
+        <div class="p-8 md:p-12 rounded-2xl border-2 border-primary/20 bg-foreground/5">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6 text-foreground">
+            Case study: never miss a call again
+          </h2>
+
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold mb-4 text-foreground">The problem:</h3>
+            <p class="text-muted-foreground">
+              A medical practice with 3 doctors missed an average of 40 calls every day during office hours. The front desk was overloaded, patients frustrated, and new patients went to the competition.
+            </p>
+          </div>
+
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold mb-4 text-foreground">The solution:</h3>
+            <p class="text-muted-foreground">
+              We implemented an AI receptionist that answers calls, books appointments directly in the practice system, takes prescription requests and only transfers urgent cases, all in natural German.
+            </p>
+          </div>
+
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold mb-6 text-foreground">The result:</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div class="p-6 rounded-xl bg-card backdrop-blur-sm">
+                <div class="text-3xl font-bold text-gradient mb-2">📞 100% availability</div>
+                <p class="text-muted-foreground">
+                  No call is lost anymore, not even at 10 pm or on weekends.
+                </p>
+              </div>
+              <div class="p-6 rounded-xl bg-card backdrop-blur-sm">
+                <div class="text-3xl font-bold text-gradient mb-2">⏱️ 70% time saved</div>
+                <p class="text-muted-foreground">
+                  The front desk can concentrate on patients on site.
+                </p>
+              </div>
+              <div class="p-6 rounded-xl bg-card backdrop-blur-sm">
+                <div class="text-3xl font-bold text-gradient mb-2">📈 +25% new patients</div>
+                <p class="text-muted-foreground">
+                  Through instant appointment booking instead of a busy line.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 p-6 rounded-xl bg-foreground/5 border border-primary/30">
+            <p class="text-lg italic text-foreground text-center">
+              “Our patients think we hired a new employee. But it is an AI that never takes a break.”
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section class="py-20">
+      <div class="max-w-4xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">
+          Why we implement your AI receptionist
+        </h2>
+        <div class="text-center mb-12">
+          <p class="text-xl text-muted-foreground">
+            We are your team. We make sure your phone availability no longer depends on staff, but on intelligent technology.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="p-6 rounded-2xl border border-border bg-foreground/5">
+            <h3 class="text-lg font-bold mb-3 text-foreground">NATURAL CONVERSATIONS</h3>
+            <p class="text-muted-foreground text-sm">
+              Our AI does not sound like a robot. It understands dialects, interruptions and complex requests, and answers naturally.
+            </p>
+          </div>
+          <div class="p-6 rounded-2xl border border-border bg-foreground/5">
+            <h3 class="text-lg font-bold mb-3 text-foreground">SEAMLESS INTEGRATION</h3>
+            <p class="text-muted-foreground text-sm">
+              We connect the AI with your calendar, CRM, practice software or ticket system. Everything works together automatically.
+            </p>
+          </div>
+          <div class="p-6 rounded-2xl border border-border bg-foreground/5">
+            <h3 class="text-lg font-bold mb-3 text-foreground">CONTINUOUS OPTIMIZATION</h3>
+            <p class="text-muted-foreground text-sm">
+              The AI learns from every conversation. We regularly analyze performance and optimize the dialogue flow.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section class="py-20 bg-card">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+          Everything your AI receptionist can do
+        </h2>
+        <div class="space-y-8">
+          <div class="p-8 rounded-2xl border border-border bg-card backdrop-blur-sm">
+            <h3 class="text-2xl font-bold mb-4 text-foreground">Intelligent call answering</h3>
+            <p class="text-muted-foreground mb-4">
+              The AI greets callers personally, recognizes the reason for the call and forwards accordingly, or handles the request itself.
+            </p>
+          </div>
+          <div class="p-8 rounded-2xl border border-border bg-card backdrop-blur-sm">
+            <h3 class="text-2xl font-bold mb-4 text-foreground">Automatic appointment booking</h3>
+            <p class="text-muted-foreground mb-4">
+              Direct integration into your calendar. The AI checks availability, suggests appointments and confirms the booking, including automatic reminder SMS.
+            </p>
+          </div>
+          <div class="p-8 rounded-2xl border border-border bg-card backdrop-blur-sm">
+            <h3 class="text-2xl font-bold mb-4 text-foreground">FAQ & information</h3>
+            <p class="text-muted-foreground mb-4">
+              Opening hours, directions, prices, services: the AI answers all standard questions immediately and relieves your team.
+            </p>
+          </div>
+          <div class="p-8 rounded-2xl border border-border bg-card backdrop-blur-sm">
+            <h3 class="text-2xl font-bold mb-4 text-foreground">Intelligent forwarding</h3>
+            <p class="text-muted-foreground mb-4">
+              Urgent matters are transferred immediately. Everything else is documented and created as a task, so you stay in control.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="py-20">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+          The fact check: AI receptionist vs. traditional
+        </h2>
+        <div class="overflow-x-auto">
+          <table class="w-full border-collapse">
+            <thead>
+              <tr class="border-b-2 border-border">
+                <th class="text-left p-4 font-bold text-foreground">Factor</th>
+                <th class="text-left p-4 font-bold text-foreground">Traditional reception</th>
+                <th class="text-left p-4 font-bold text-foreground bg-foreground/5">AI receptionist</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-border">
+              <tr>
+                <td class="p-4 font-semibold">Availability</td>
+                <td class="p-4 text-muted-foreground">Mon–Fri, 9–5 (with breaks)</td>
+                <td class="p-4 text-foreground bg-foreground/5">24/7/365, always reachable</td>
+              </tr>
+              <tr>
+                <td class="p-4 font-semibold">Cost/month</td>
+                <td class="p-4 text-muted-foreground">€3,500+ (salary, social contributions)</td>
+                <td class="p-4 text-foreground bg-foreground/5">From €299/month</td>
+              </tr>
+              <tr>
+                <td class="p-4 font-semibold">Downtime</td>
+                <td class="p-4 text-muted-foreground">Vacation, illness, resignations</td>
+                <td class="p-4 text-foreground bg-foreground/5">None, 99.9% uptime</td>
+              </tr>
+              <tr>
+                <td class="p-4 font-semibold">Scalability</td>
+                <td class="p-4 text-muted-foreground">Limited by staff</td>
+                <td class="p-4 text-foreground bg-foreground/5">Unlimited in parallel</td>
+              </tr>
+              <tr>
+                <td class="p-4 font-semibold">Waiting time</td>
+                <td class="p-4 text-muted-foreground">Often on hold at peak times</td>
+                <td class="p-4 text-foreground bg-foreground/5">Instant answering</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-20 bg-card">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+          How we implement your AI receptionist
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-primary-foreground text-2xl font-bold mx-auto mb-4">
+              1
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-foreground">ANALYSIS</h3>
+            <p class="text-muted-foreground">
+              We analyze your typical calls, frequent questions and existing systems. From that we develop the optimal conversation flow.
+            </p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-primary-foreground text-2xl font-bold mx-auto mb-4">
+              2
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-foreground">IMPLEMENTATION</h3>
+            <p class="text-muted-foreground">
+              We train the AI on your requirements, integrate your systems and test extensively with real scenarios.
+            </p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-primary-foreground text-2xl font-bold mx-auto mb-4">
+              3
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-foreground">GO-LIVE & OPTIMIZATION</h3>
+            <p class="text-muted-foreground">
+              After go-live we monitor performance, analyze conversations and optimize continuously for the best results.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-card">
+      <div class="max-w-4xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+          Frequently asked questions about the AI receptionist
+        </h2>
+        <div class="space-y-6">
+          <details open class="group p-6 rounded-2xl border border-border bg-card backdrop-blur-sm">
+            <summary class="cursor-pointer font-bold text-lg text-foreground list-none flex items-center justify-between">
+              <span>Do callers notice they are talking to an AI?</span>
+              <span class="transition-transform group-open:rotate-180">▼</span>
+            </summary>
+            <div class="mt-4 text-muted-foreground">
+              Modern voice AI sounds remarkably natural. Most callers notice no difference from a human conversation partner. The AI can understand dialects, react to interruptions and answer naturally. On request it can also introduce itself as an AI assistant, which creates transparency and is received positively by many customers.
+            </div>
+          </details>
+
+          <details open class="group p-6 rounded-2xl border border-border bg-card backdrop-blur-sm">
+            <summary class="cursor-pointer font-bold text-lg text-foreground list-none flex items-center justify-between">
+              <span>What happens with complex requests?</span>
+              <span class="transition-transform group-open:rotate-180">▼</span>
+            </summary>
+            <div class="mt-4 text-muted-foreground">
+              The AI automatically recognizes when a request exceeds its capabilities or requires personal advice. In such cases it transfers directly to an employee, takes a detailed message or arranges a callback. You always keep full control over the escalation rules.
+            </div>
+          </details>
+
+          <details open class="group p-6 rounded-2xl border border-border bg-card backdrop-blur-sm">
+            <summary class="cursor-pointer font-bold text-lg text-foreground list-none flex items-center justify-between">
+              <span>How secure is my customer data?</span>
+              <span class="transition-transform group-open:rotate-180">▼</span>
+            </summary>
+            <div class="mt-4 text-muted-foreground">
+              Data protection has top priority. All calls are transmitted and processed encrypted. On request we can run the solution entirely in your own infrastructure, so no data leaves your company. Of course everything is GDPR-compliant.
+            </div>
+          </details>
+
+          <details open class="group p-6 rounded-2xl border border-border bg-card backdrop-blur-sm">
+            <summary class="cursor-pointer font-bold text-lg text-foreground list-none flex items-center justify-between">
+              <span>Which systems can be integrated?</span>
+              <span class="transition-transform group-open:rotate-180">▼</span>
+            </summary>
+            <div class="mt-4 text-muted-foreground">
+              Practically all of them! From Google Calendar and Microsoft 365 to Salesforce and HubSpot, as well as industry-specific solutions such as medical practice software (e.g. CGM, Medistar) or tradesperson software. If needed we also develop custom integrations for your specific systems.
+            </div>
+          </details>
+
+          <details open class="group p-6 rounded-2xl border border-border bg-card backdrop-blur-sm">
+            <summary class="cursor-pointer font-bold text-lg text-foreground list-none flex items-center justify-between">
+              <span>How much does an AI receptionist cost?</span>
+              <span class="transition-transform group-open:rotate-180">▼</span>
+            </summary>
+            <div class="mt-4 text-muted-foreground">
+              The cost depends on call volume and complexity. Our solutions start at €299/month for small businesses. Compared with a full-time receptionist (€40,000+/year) you typically save 70–80%, with better availability. ROI is usually reached after 2–3 months.
+            </div>
+          </details>
+
+          <details open class="group p-6 rounded-2xl border border-border bg-card backdrop-blur-sm">
+            <summary class="cursor-pointer font-bold text-lg text-foreground list-none flex items-center justify-between">
+              <span>Can the AI also make outbound calls?</span>
+              <span class="transition-transform group-open:rotate-180">▼</span>
+            </summary>
+            <div class="mt-4 text-muted-foreground">
+              Yes! The AI can automatically call with appointment reminders, collect confirmations or hold follow-up conversations. This is especially valuable for practices (appointment reminders) or sales (lead qualification). All of course in compliance with legal requirements.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+          Never miss a call again.
+        </h2>
+        <p class="text-xl text-muted-foreground mb-8">
+          Your customers expect availability. Let's implement an AI receptionist together that delights your callers, 24/7, without breaks, without downtime.
+        </p>
+        <a href="#kontakt" class="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-primary text-primary-foreground transition-all text-lg font-semibold shadow-lg">
+          Schedule a free demo
+        </a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <div id="kontakt">
+      <Contact client:load lang="en" heading="Ready to transform your processes?" paragraphs={["Let's use the power of AI together to make your business in Frankfurt and beyond successful. Contact us for a free consultation."]} placeholder="Tell us about your project and how we can help..." />
+    </div>
+  </main>
+
+  <Footer lang="en" altHref="/ki-rezeption/" />
+</Layout>

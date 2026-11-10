@@ -21,6 +21,21 @@ const en = lang === 'en';
         {altHref && (<div class="mt-2"><a href={altHref} hreflang={en ? 'de' : 'en'} lang={en ? 'de' : 'en'} class="underline underline-offset-4 hover:text-foreground">{en ? 'Deutsche Version' : 'English version'}</a></div>)}
       </div>
 
+      {en && (
+      <div class="order-2 md:order-3 md:col-span-2">
+        <h4 class="text-sm font-semibold text-foreground mb-3">Services</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/en/geo-agency-frankfurt/" class="text-muted-foreground hover:text-foreground transition-colors">GEO Agency (AI Visibility)</a></li>
+          <li><a href="/en/ai-consulting-frankfurt/" class="text-muted-foreground hover:text-foreground transition-colors">AI Consulting</a></li>
+          <li><a href="/en/ai-automation-agency-frankfurt/" class="text-muted-foreground hover:text-foreground transition-colors">AI Automation Agency</a></li>
+          <li><a href="/en/local-ai-models-for-business/" class="text-muted-foreground hover:text-foreground transition-colors">Local AI Models for Business</a></li>
+          <li><a href="/en/chatgpt-ads-agency-frankfurt/" class="text-muted-foreground hover:text-foreground transition-colors">ChatGPT Ads Agency Frankfurt</a></li>
+          <li><a href="/en/ai-receptionist/" class="text-muted-foreground hover:text-foreground transition-colors">AI Receptionist & Secretary</a></li>
+          <li><a href="/en/vibe-coding-agency/" class="text-muted-foreground hover:text-foreground transition-colors">Vibe Coding Agency</a></li>
+        </ul>
+      </div>
+      )}
+
       {!en && (
       <Fragment>
       <!-- Helpful Links -->

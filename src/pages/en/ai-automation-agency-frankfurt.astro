@@ -1,0 +1,388 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navigation from '../../components/Navigation';
+import Contact from '../../components/Contact';
+import Footer from '../../components/Footer.astro';
+
+const pageTitle = "AI Automation Agency Rhine-Main – Automate Processes with AI | Frankfurt AI";
+const pageDescription = "AI automation agency for the Rhine-Main region: chatbots, workflows, data processing and more for companies in Frankfurt, Wiesbaden, Darmstadt and the whole Rhine-Main area. Work more efficiently, cut costs, scale faster.";
+
+const alternates = [
+  { hreflang: "de", href: "/ki-automatisierung/" },
+  { hreflang: "en", href: "/en/ai-automation-agency-frankfurt/" },
+  { hreflang: "x-default", href: "/ki-automatisierung/" },
+];
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "AI automation",
+  "name": "AI Automation for Businesses",
+  "description": pageDescription,
+  "inLanguage": "en",
+  "provider": {
+    "@type": "Organization",
+    "name": "KI Frankfurt",
+    "url": "https://frankfurt-ai.de",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Frankfurt am Main",
+      "addressRegion": "Hessen",
+      "addressCountry": "DE"
+    }
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Frankfurt am Main" },
+    { "@type": "City", "name": "Wiesbaden" },
+    { "@type": "City", "name": "Darmstadt" },
+    { "@type": "City", "name": "Mainz" },
+    { "@type": "AdministrativeArea", "name": "Rhine-Main region" }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "AI automation solutions",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Support chatbots", "description": "AI chatbots for automated customer support" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Workflow automation", "description": "Automating email and business processes" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Document processing", "description": "AI-assisted processing of invoices, contracts and forms" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Marketing automation", "description": "Automated content creation and social media planning" } }
+    ]
+  }
+};
+---
+
+<Layout
+  title={pageTitle}
+  description={pageDescription}
+  image="/src/assets/ai-hero-image.jpg"
+  type="website"
+  customSchema={serviceSchema}
+  lang="en"
+  alternates={alternates}
+>
+  <Navigation client:load lang="en" altHref="/ki-automatisierung/" />
+
+  <!-- Breadcrumbs -->
+  <nav class="pt-32 pb-4" aria-label="Breadcrumb">
+    <div class="max-w-7xl mx-auto px-6">
+      <ol class="flex items-center gap-2 text-sm text-muted-foreground" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/" itemprop="item" class="hover:text-foreground transition-colors">
+            <span itemprop="name">Home</span>
+          </a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <li aria-hidden="true">/</li>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <span itemprop="name" class="text-foreground">AI Automation Rhine-Main</span>
+          <meta itemprop="position" content="2" />
+        </li>
+      </ol>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero -->
+    <section class="relative min-h-screen flex items-center overflow-hidden band-brand">
+      <div class="absolute inset-0 bg-background" />
+      <div class="pointer-events-none absolute -top-24 -left-24 h-64 w-64 rounded-full bg-foreground/10 blur-2xl" />
+      <div class="pointer-events-none absolute -bottom-24 -right-24 h-64 w-64 rounded-full bg-foreground/10 blur-2xl" />
+
+      <div class="relative z-10 max-w-7xl mx-auto px-6">
+        <div class="max-w-3xl mx-auto text-center">
+          <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+            AI Automation Agency Rhine-Main
+          </h1>
+          <p class="mt-6 text-lg md:text-xl text-muted-foreground">
+            As an AI automation agency in the Rhine-Main region, we automate recurring tasks with AI, from support chatbots and process workflows to intelligent data processing. Less manual work, more focus on growth.
+          </p>
+          <p class="mt-4 text-lg md:text-xl text-muted-foreground">
+            We analyze your existing processes, identify automation potential and implement tailored AI solutions. With tools like n8n, Make and OpenClaw we build stable workflows that relieve your team and deliver measurable efficiency gains, for companies in Frankfurt, Wiesbaden, Mainz, Darmstadt and the entire Rhine-Main region.
+          </p>
+          <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="#kontakt" class="inline-flex items-center justify-center px-6 py-3 rounded-[5px] bg-primary text-primary-foreground transition-colors">
+              Free consultation
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tools -->
+    <section class="py-16 bg-card">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-2xl md:text-3xl font-semibold mb-8 text-center">What we work with</h2>
+        <p class="text-lg text-muted-foreground text-center mb-12 max-w-3xl mx-auto">
+          As an AI automation agency we rely on proven, powerful automation platforms to build your workflows efficiently and reliably.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="p-8 rounded-2xl border border-border/60 bg-foreground/5 backdrop-blur-sm shadow-lg hover:shadow-xl transition-shadow">
+            <div class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-16 h-16 rounded-lg bg-primary flex items-center justify-center text-primary-foreground text-2xl font-bold">
+                n8n
+              </div>
+              <div class="flex-1">
+                <h3 class="text-xl font-semibold mb-2">
+                  <a href="https://n8n.io" target="_blank" rel="noopener noreferrer" class="hover:text-highlight transition-colors">
+                    n8n
+                  </a>
+                </h3>
+                <p class="text-muted-foreground mb-4">
+                  Open-source workflow automation with over 400 integrations. Perfect for complex, AI-powered workflows and full data control through self-hosting.
+                </p>
+                <a href="https://n8n.io" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-highlight hover:text-highlight transition-colors">
+                  Learn more →
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="p-8 rounded-2xl border border-border/60 bg-foreground/5 backdrop-blur-sm shadow-lg hover:shadow-xl transition-shadow">
+            <div class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-16 h-16 rounded-lg bg-primary flex items-center justify-center text-primary-foreground text-2xl font-bold">
+                M
+              </div>
+              <div class="flex-1">
+                <h3 class="text-xl font-semibold mb-2">
+                  <a href="https://www.make.com" target="_blank" rel="noopener noreferrer" class="hover:text-highlight transition-colors">
+                    Make (formerly Integromat)
+                  </a>
+                </h3>
+                <p class="text-muted-foreground mb-4">
+                  Visual automation platform with intuitive handling and extensive integrations. Ideal for fast implementation and agile adjustments.
+                </p>
+                <a href="https://www.make.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-highlight hover:text-highlight transition-colors">
+                  Learn more →
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="p-8 rounded-2xl border border-border/60 bg-foreground/5 backdrop-blur-sm shadow-lg hover:shadow-xl transition-shadow">
+            <div class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-16 h-16 rounded-lg bg-primary flex items-center justify-center text-primary-foreground text-xl font-bold">
+                OC
+              </div>
+              <div class="flex-1">
+                <h3 class="text-xl font-semibold mb-2">
+                  <a href="https://openclaw.ai" target="_blank" rel="noopener noreferrer" class="hover:underline transition-colors">
+                    OpenClaw
+                  </a>
+                </h3>
+                <p class="text-muted-foreground mb-4">
+                  AI agent platform for intelligent process automation. Enables autonomous agents that carry out complex multi-step tasks on their own and interact with your existing systems.
+                </p>
+                <a href="https://openclaw.ai" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-highlight hover:underline transition-colors">
+                  Learn more →
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="text-center text-muted-foreground mt-8">
+          We choose the right platform based on your requirements: self-hosted for maximum control, cloud-based for fast scaling, or AI agents with OpenClaw for autonomous, multi-step processes.
+        </p>
+      </div>
+    </section>
+
+    <!-- Intro Text -->
+    <section class="py-16 bg-card">
+      <div class="max-w-3xl mx-auto px-6">
+        <div class="rounded-2xl border border-border/60 bg-foreground/5 backdrop-blur-sm p-8 shadow-lg text-center">
+        <h2 class="text-2xl md:text-3xl font-semibold mb-4">How AI automation helps your team</h2>
+        <div class="space-y-8 text-lg text-muted-foreground">
+          <p>
+            We identify repetitive processes, deploy the right AI building blocks and connect your tools into smart workflows, measurably faster, cheaper and more stable.
+          </p>
+          <div>
+            <h3 class="text-xl font-semibold mb-4 text-foreground">Typical use cases</h3>
+            <ul class="space-y-3 text-left">
+              <li class="p-4 rounded-lg border border-border bg-card">
+                Support chatbots that answer standard questions immediately and pre-sort tickets.
+              </li>
+              <li class="p-4 rounded-lg border border-border bg-card">
+                Automated email and quotation processes (e.g. qualifying leads, drafting replies).
+              </li>
+              <li class="p-4 rounded-lg border border-border bg-card">
+                Document processing with AI (automatically reading and filing invoices, contracts, forms).
+              </li>
+              <li class="p-4 rounded-lg border border-border bg-card">
+                Marketing automation (generating and scheduling content drafts, social posts, A/B variants).
+              </li>
+              <li class="p-4 rounded-lg border border-border bg-card">
+                Internal approval workflows that trigger themselves and keep the status transparent.
+              </li>
+            </ul>
+          </div>
+          <p>
+            Results you can expect: 20–50% less manual work in routine tasks, higher data quality and faster response times, without additional staff costs.
+          </p>
+        </div>
+        </div>
+      </div>
+      <!-- Wider three-step grid -->
+      <div class="mt-12 max-w-5xl mx-auto px-6">
+        <h3 class="text-xl font-semibold mb-4 text-foreground text-center">Our approach in three steps</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-left">
+          <div class="p-6 rounded-lg border border-border bg-card">
+            <div class="text-sm font-semibold text-muted-foreground mb-1">Step 1</div>
+            <h4 class="text-3xl md:text-2xl font-semibold mb-2">Analysis workshop</h4>
+            <div class="text-sm text-muted-foreground mb-3">We analyze your processes and prioritize quick wins.</div>
+            <ul class="text-sm text-muted-foreground space-y-1 list-disc pl-4">
+              <li>Assessment of your current tools and workflows</li>
+              <li>Identifying repetitive tasks</li>
+              <li>Roadmap with effort/benefit rating</li>
+            </ul>
+          </div>
+          <div class="p-6 rounded-lg border border-border bg-card">
+            <div class="text-sm font-semibold text-muted-foreground mb-1">Step 2</div>
+            <h4 class="text-3xl md:text-2xl font-semibold mb-2">Prototyping</h4>
+            <div class="text-sm text-muted-foreground mb-3">Proof of concept with your tools (e.g. Slack, Google Workspace, Microsoft 365, CRM, shop systems).</div>
+            <ul class="text-sm text-muted-foreground space-y-1 list-disc pl-4">
+              <li>Fast prototype in 1–2 weeks</li>
+              <li>Real data, real use cases</li>
+              <li>Feedback loops with your team</li>
+            </ul>
+          </div>
+          <div class="p-6 rounded-lg border border-border bg-card">
+            <div class="text-sm font-semibold text-muted-foreground mb-1">Step 3</div>
+            <h4 class="text-3xl md:text-2xl font-semibold mb-2">Rollout & training</h4>
+            <div class="text-sm text-muted-foreground mb-3">Reliable integration, documentation and enablement of your team.</div>
+            <ul class="text-sm text-muted-foreground space-y-1 list-disc pl-4">
+              <li>Secure, scalable implementation</li>
+              <li>Documentation & handover</li>
+              <li>Training & support for your team</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- More -->
+    <section class="py-16 bg-card">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="rounded-2xl border border-border/60 bg-foreground/5 backdrop-blur-sm p-8 shadow-lg">
+          <h2 class="text-2xl md:text-3xl font-semibold mb-6">More about AI automation</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-lg text-muted-foreground">
+            <div class="space-y-6">
+              <p>
+                We connect your existing tools (e.g. CRM, email, chat, DMS) with AI building blocks.
+                Routine tasks then run faster and with fewer errors.
+              </p>
+              <p>
+                The result: shorter processing times, clear responsibilities and a transparent flow. Your data quality rises because checks happen automatically.
+              </p>
+              <p>
+                We start small with a prototype. After that we expand step by step, only where it really adds value.
+              </p>
+              <p>
+                You stay in control: every automation has clear rules and can be paused or adjusted at any time. Nothing runs “secretly” in the background.
+              </p>
+              <p>
+                We measure success together. Typical metrics are processing time, response time, error rate or cost per case.
+                That way you quickly see what pays off.
+              </p>
+              <h3 class="text-xl font-semibold text-foreground">Your benefits at a glance</h3>
+              <ul class="list-disc pl-5 space-y-2">
+                <li>Faster workflows and fewer errors</li>
+                <li>Clear responsibilities and transparent processes</li>
+                <li>Measurable improvements with clear KPIs</li>
+                <li>Step-by-step expansion instead of a big-bang project</li>
+              </ul>
+            </div>
+            <div class="space-y-6">
+              <p>
+                Examples: automatic distribution of incoming items (emails, forms),
+                reading documents (invoices, contracts), fast knowledge search,
+                suggested replies, quality assurance and approvals. Handovers to
+                Slack, Teams, HubSpot or your ERP are possible.
+              </p>
+              <p>
+                Security included: protection of personal data, role permissions,
+                traceable logs and guardrails for reliable answers.
+              </p>
+              <p>
+                This gives your team time for what matters: less copy & paste, fewer breaks in the process, less waiting.
+              </p>
+              <p>
+                Starter examples: a mailbox pre-sorts requests automatically.
+                Invoices land correctly in the system. Your team receives ready-made
+                draft replies that only need to be reviewed.
+              </p>
+              <p>
+                Next steps: free initial consultation, short workshop,
+                prototype in 1–2 weeks. After that you decide how we expand.
+              </p>
+              <h3 class="text-xl font-semibold text-foreground">Typical building blocks</h3>
+              <ul class="list-disc pl-5 space-y-2">
+                <li>Inbound routing for emails and forms</li>
+                <li>Document recognition and data extraction</li>
+                <li>Knowledge search (RAG) and suggested replies</li>
+                <li>Quality assurance, approvals and logging</li>
+                <li>Integration with Slack, Teams, HubSpot, ERP</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Your AI expert -->
+    <section class="py-16">
+      <div class="max-w-2xl mx-auto px-6">
+        <div class="flex flex-col items-center gap-8">
+          <div class="flex-shrink-0">
+            <img
+              src="/ki-ai-automatisierungsexperte.webp"
+              alt="Your AI automation expert"
+              class="w-80 h-80 rounded-full object-cover"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            />
+            <div class="w-80 h-80 rounded-full bg-primary flex items-center justify-center text-primary-foreground text-4xl font-bold" style="display: none;">
+              KI
+            </div>
+          </div>
+          <div class="flex-1 text-left">
+            <h3 class="text-2xl font-semibold mb-4 text-center">Lukasz – your AI automation expert</h3>
+            <p class="text-lg text-muted-foreground mb-6">
+              As one of the first AI enthusiasts in Germany, I have been working with these revolutionary technologies since the early days of artificial intelligence. My passion for AI began when most companies did not even know what machine learning meant.
+            </p>
+            <p class="text-lg text-muted-foreground mb-6">
+              With over 8 years of experience in AI development and automation, I have helped hundreds of companies optimize their processes and work more efficiently. From simple chatbots to complex AI workflows, I bring the right solution for your business.
+            </p>
+            <p class="text-lg text-muted-foreground">
+              My strength is making complex AI technologies understandable and developing practical solutions that deliver measurable results right away. Let's lead your business into the future of AI automation together.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rhine-Main region -->
+    <section class="py-16 bg-card">
+      <div class="max-w-5xl mx-auto px-6">
+        <div class="rounded-2xl border border-border/60 bg-foreground/5 backdrop-blur-sm p-8 shadow-lg">
+          <h2 class="text-2xl md:text-3xl font-semibold mb-4">AI automation in the Rhine-Main region</h2>
+          <p class="text-lg text-muted-foreground mb-6">
+            As a regional AI agency we are on site for companies in the Rhine-Main region, from Frankfurt via Wiesbaden and Mainz to Darmstadt and Offenbach. We know the local business landscape and support you personally from the first idea to the finished solution.
+          </p>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {["Frankfurt am Main", "Wiesbaden", "Mainz", "Darmstadt", "Offenbach", "Rüsselsheim", "Bad Homburg", "Hanau"].map((city) => (
+              <div class="p-3 rounded-lg border border-border bg-card text-center text-sm font-medium">
+                {city}
+              </div>
+            ))}
+          </div>
+          <p class="text-muted-foreground mt-6">
+            Personal on-site consulting, short distances and a deep understanding of the Mittelstand (small and mid-sized businesses) in the Rhine-Main area set us apart from nationwide providers.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <div id="kontakt">
+      <Contact client:load lang="en" heading="Ready to transform your processes?" paragraphs={["Let's use the power of AI together to make your business in Frankfurt and beyond successful. Contact us for a free consultation."]} placeholder="Tell us about your project and how we can help..." />
+    </div>
+  </main>
+
+  <Footer lang="en" altHref="/ki-automatisierung/" />
+</Layout>

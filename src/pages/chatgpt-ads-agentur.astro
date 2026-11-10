@@ -11,6 +11,12 @@ import TextBlock from '../components/TextBlock';
 const pageTitle = "ChatGPT Ads Agentur Frankfurt – KI-Sichtbarkeit für Ihre Marke | Frankfurt AI";
 const pageDescription = "ChatGPT Ads Agentur aus Frankfurt: Wir unterstützen Sie bei Strategie, Einrichtung und Optimierung Ihrer Werbekampagnen in ChatGPT. Jetzt kostenlos beraten lassen.";
 
+const alternates = [
+  { hreflang: "de", href: "/chatgpt-ads-agentur/" },
+  { hreflang: "en", href: "/en/chatgpt-ads-agency-frankfurt/" },
+  { hreflang: "x-default", href: "/chatgpt-ads-agentur/" },
+];
+
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
@@ -100,6 +106,8 @@ const faqs = [
   image="/src/assets/ai-hero-image.jpg"
   type="website"
   customSchema={serviceSchema}
+  lang="de"
+  alternates={alternates}
 >
   <Navigation client:load />
 
@@ -238,5 +246,5 @@ const faqs = [
     </div>
   </main>
 
-  <Footer />
+  <Footer altHref="/en/chatgpt-ads-agency-frankfurt/" />
 </Layout>

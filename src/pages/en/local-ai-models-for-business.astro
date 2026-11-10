@@ -1,0 +1,442 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navigation from '../../components/Navigation';
+import Contact from '../../components/Contact';
+import Footer from '../../components/Footer.astro';
+
+const pageTitle = "Local AI Models for Business – Your Data Stays With You | Frankfurt AI";
+const pageDescription = "Sovereign AI solutions for your company: 100% GDPR-compliant, full data control and predictable costs. Local large language models without cloud dependency.";
+const pageImage = "/lokale-ki-modelle-unternehmen.png";
+
+const alternates = [
+  { hreflang: "de", href: "/ki-modelle-lokal/" },
+  { hreflang: "en", href: "/en/local-ai-models-for-business/" },
+  { hreflang: "x-default", href: "/ki-modelle-lokal/" },
+];
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Local AI models",
+  "name": "Local AI Models for Business",
+  "description": pageDescription,
+  "inLanguage": "en",
+  "provider": {
+    "@type": "Organization",
+    "name": "KI Frankfurt",
+    "url": "https://frankfurt-ai.de",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Frankfurt am Main",
+      "addressRegion": "Hessen",
+      "addressCountry": "DE"
+    }
+  },
+  "areaServed": { "@type": "Country", "name": "Germany" }
+};
+---
+
+<Layout
+  title={pageTitle}
+  description={pageDescription}
+  image={pageImage}
+  type="website"
+  customSchema={serviceSchema}
+  lang="en"
+  alternates={alternates}
+>
+  <Navigation client:load lang="en" altHref="/ki-modelle-lokal/" />
+
+  <!-- Breadcrumbs -->
+  <nav class="pt-32 pb-4" aria-label="Breadcrumb">
+    <div class="max-w-7xl mx-auto px-6">
+      <ol class="flex items-center gap-2 text-sm text-muted-foreground" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/" itemprop="item" class="hover:text-foreground transition-colors">
+            <span itemprop="name">Home</span>
+          </a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <li aria-hidden="true">/</li>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <span itemprop="name" class="text-foreground">Local AI Models</span>
+          <meta itemprop="position" content="2" />
+        </li>
+      </ol>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero -->
+    <section class="relative py-20 overflow-hidden band-brand">
+      <div class="absolute inset-0 bg-background" />
+      <div class="pointer-events-none absolute -top-24 -left-24 h-64 w-64 rounded-full bg-foreground/10 blur-2xl" />
+      <div class="pointer-events-none absolute -bottom-24 -right-24 h-64 w-64 rounded-full bg-foreground/10 blur-2xl" />
+
+      <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
+        <h1 class="text-3xl md:text-5xl font-bold leading-tight mb-6">
+          Local AI Models for Business
+        </h1>
+        <p class="text-2xl md:text-3xl font-semibold text-foreground mb-6">
+          Your data is your biggest asset.<br />
+          Why share it with the world?
+        </p>
+        <p class="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+          We build you an AI infrastructure that stays where it belongs: inside your company. As experts in local large language models (LLMs), we bridge the gap between cutting-edge technology and uncompromising data protection.
+        </p>
+        <p class="text-xl md:text-2xl font-semibold text-foreground mb-8">
+          Sovereign AI solutions: local, independent, secure.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#kontakt" class="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-primary text-primary-foreground transition-all text-lg font-semibold shadow-lg">
+            Book a strategy call now →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Barriers Section -->
+    <section class="py-20 bg-card">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+          Is your AI strategy facing one of these barriers?
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="p-8 rounded-2xl border border-border bg-card backdrop-blur-sm">
+            <h3 class="text-xl font-bold mb-3 text-foreground">🔒 The compliance block</h3>
+            <p class="text-foreground">
+              You would like to use AI, but your legal department prohibits cloud providers because of data protection.
+            </p>
+          </div>
+          <div class="p-8 rounded-2xl border border-border bg-card backdrop-blur-sm">
+            <h3 class="text-xl font-bold mb-3 text-foreground">💸 The cost trap</h3>
+            <p class="text-foreground">
+              As usage grows, API fees for GPT-4 and similar explode, and scaling becomes unaffordable.
+            </p>
+          </div>
+          <div class="p-8 rounded-2xl border border-border bg-card backdrop-blur-sm">
+            <h3 class="text-xl font-bold mb-3 text-foreground">🎯 The loss of control</h3>
+            <p class="text-foreground">
+              You depend on the availability and price changes of external tech giants.
+            </p>
+          </div>
+          <div class="p-8 rounded-2xl border border-border bg-card backdrop-blur-sm">
+            <h3 class="text-xl font-bold mb-3 text-foreground">⚠️ Lack of precision</h3>
+            <p class="text-foreground">
+              Standard models “hallucinate” too often on your specific technical terms or internal documents.
+            </p>
+          </div>
+        </div>
+        <div class="text-center mt-12">
+          <p class="text-2xl font-bold text-foreground mb-4">There is another way.</p>
+          <p class="text-lg text-muted-foreground max-w-3xl mx-auto">
+            Local AI is not a trend, it is digital insurance. You invest in your own hardware or private cloud instances and create a tool that becomes more valuable with every request, without handing data to anyone outside.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Case Study Section -->
+    <section class="pt-0 pb-20">
+      <div class="max-w-5xl mx-auto px-6">
+        <div class="p-8 md:p-12 rounded-2xl border-2 border-primary/20 bg-foreground/5">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6 text-foreground">
+            Case study: ending the paper chase
+          </h2>
+
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold mb-4 text-foreground">The problem:</h3>
+            <p class="text-muted-foreground">
+              A company with 80 employees spent hours every day searching old project files and emails for information. Cloud AI was prohibited because of strict data protection rules.
+            </p>
+          </div>
+
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold mb-4 text-foreground">The solution:</h3>
+            <p class="text-muted-foreground">
+              A private AI of their own. We installed a system that has “read” all internal documents and answers questions about them instantly, like an extremely experienced employee who never forgets anything.
+            </p>
+          </div>
+
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold mb-6 text-foreground">The result:</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div class="p-6 rounded-xl bg-card backdrop-blur-sm">
+                <div class="text-3xl font-bold text-gradient mb-2">⚡ Time saved</div>
+                <p class="text-muted-foreground">
+                  Employees now find information in 5 seconds instead of 30 minutes.
+                </p>
+              </div>
+              <div class="p-6 rounded-xl bg-card backdrop-blur-sm">
+                <div class="text-3xl font-bold text-gradient mb-2">🔒 Security</div>
+                <p class="text-muted-foreground">
+                  All data stayed 100% in-house.
+                </p>
+              </div>
+              <div class="p-6 rounded-xl bg-card backdrop-blur-sm">
+                <div class="text-3xl font-bold text-gradient mb-2">💰 Money saved</div>
+                <p class="text-muted-foreground">
+                  The system paid for itself after just 4 months through the time gained.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 p-6 rounded-xl bg-foreground/5 border border-primary/30">
+            <p class="text-lg italic text-foreground text-center">
+              “Finally an AI that knows our internal processes but doesn't give away any secrets.”
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section class="py-20">
+      <div class="max-w-4xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">
+          Why we support you with local AI
+        </h2>
+        <div class="text-center mb-12">
+          <p class="text-xl text-muted-foreground">
+            We are your team. We make sure AI in your company does not remain an experiment but becomes a productive standard.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="p-6 rounded-2xl border border-border bg-foreground/5">
+            <h3 class="text-lg font-bold mb-3 text-foreground">DATA PROTECTION AS A COMPETITIVE ADVANTAGE</h3>
+            <p class="text-muted-foreground text-sm">
+              While others hesitate, we create solutions that pass any audit. 100% GDPR-compliant through physical separation from the outside world.
+            </p>
+          </div>
+          <div class="p-6 rounded-2xl border border-border bg-foreground/5">
+            <h3 class="text-lg font-bold mb-3 text-foreground">TECHNICAL EXCELLENCE</h3>
+            <p class="text-muted-foreground text-sm">
+              We do not deploy off-the-shelf software, we optimize high-end models like Llama 3 or Mistral exactly for your computing power.
+            </p>
+          </div>
+          <div class="p-6 rounded-2xl border border-border bg-foreground/5">
+            <h3 class="text-lg font-bold mb-3 text-foreground">EFFICIENCY THROUGH FINE-TUNING</h3>
+            <p class="text-muted-foreground text-sm">
+              An AI should know your processes. We train the models to understand your internal language and generate real expert knowledge.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section class="py-20 bg-card">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+          Strategic solutions for your company
+        </h2>
+        <div class="space-y-8">
+          <div class="p-8 rounded-2xl border border-border bg-card backdrop-blur-sm">
+            <h3 class="text-2xl font-bold mb-4 text-foreground">Infrastructure & model selection</h3>
+            <p class="text-muted-foreground mb-4">
+              What hardware do you really need? We size your environment (on-premises or private cloud) so that it performs well without blowing the budget.
+            </p>
+          </div>
+          <div class="p-8 rounded-2xl border border-border bg-card backdrop-blur-sm">
+            <h3 class="text-2xl font-bold mb-4 text-foreground">Custom implementation</h3>
+            <p class="text-muted-foreground mb-4">
+              From installing the frameworks to the finished API interface: we integrate local AI models seamlessly into your existing IT landscape.
+            </p>
+          </div>
+          <div class="p-8 rounded-2xl border border-border bg-card backdrop-blur-sm">
+            <h3 class="text-2xl font-bold mb-4 text-foreground">RAG & knowledge management</h3>
+            <p class="text-muted-foreground mb-4">
+              We connect the AI with your internal documents. The result: an internal knowledge base that answers questions precisely, without a single bit leaving your house.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="py-20">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+          The fact check: local vs. cloud
+        </h2>
+        <div class="overflow-x-auto">
+          <table class="w-full border-collapse">
+            <thead>
+              <tr class="border-b-2 border-border">
+                <th class="text-left p-4 font-bold text-foreground">Factor</th>
+                <th class="text-left p-4 font-bold text-foreground">Cloud AI (e.g. OpenAI)</th>
+                <th class="text-left p-4 font-bold text-foreground bg-foreground/5">Local AI (your solution)</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-border">
+              <tr>
+                <td class="p-4 font-semibold">Data protection</td>
+                <td class="p-4 text-muted-foreground">Data leaves the company</td>
+                <td class="p-4 text-foreground bg-foreground/5">100% in-house & secure</td>
+              </tr>
+              <tr>
+                <td class="p-4 font-semibold">Cost</td>
+                <td class="p-4 text-muted-foreground">Rising monthly (pay-per-token)</td>
+                <td class="p-4 text-foreground bg-foreground/5">Fixed costs / predictable</td>
+              </tr>
+              <tr>
+                <td class="p-4 font-semibold">Dependency</td>
+                <td class="p-4 text-muted-foreground">High (vendor lock-in)</td>
+                <td class="p-4 text-foreground bg-foreground/5">Full autonomy</td>
+              </tr>
+              <tr>
+                <td class="p-4 font-semibold">Latency</td>
+                <td class="p-4 text-muted-foreground">Depends on internet & server load</td>
+                <td class="p-4 text-foreground bg-foreground/5">Real-time performance locally</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Image Section -->
+    <section class="py-20">
+      <div class="max-w-5xl mx-auto px-6">
+        <div class="rounded-2xl overflow-hidden shadow-2xl">
+          <img
+            src="/lokale-ki-modelle-unternehmen.png"
+            alt="Local AI models for business"
+            class="w-full h-auto"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-20 bg-card">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+          How we bring the AI to you
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-primary-foreground text-2xl font-bold mx-auto mb-4">
+              1
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-foreground">ANALYTICAL</h3>
+            <p class="text-muted-foreground">
+              We do not start with the technology, but with the use case. Where does the AI save you the most time and money?
+            </p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-primary-foreground text-2xl font-bold mx-auto mb-4">
+              2
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-foreground">SCALABLE</h3>
+            <p class="text-muted-foreground">
+              We build modularly. We start small with a core project and expand capacity once success is measurable.
+            </p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-primary-foreground text-2xl font-bold mx-auto mb-4">
+              3
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-foreground">TRANSPARENT</h3>
+            <p class="text-muted-foreground">
+              You get full insight into the models and frameworks. No “black box” system, but open-source power under your control.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-card">
+      <div class="max-w-4xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+          Frequently asked questions about local AI models
+        </h2>
+        <div class="space-y-6">
+          <details open class="group p-6 rounded-2xl border border-border bg-card backdrop-blur-sm">
+            <summary class="cursor-pointer font-bold text-lg text-foreground list-none flex items-center justify-between">
+              <span>Why should my company use local models instead of ChatGPT?</span>
+              <span class="transition-transform group-open:rotate-180">▼</span>
+            </summary>
+            <div class="mt-4 text-muted-foreground">
+              The decisive difference is data sovereignty. With cloud solutions like ChatGPT or Claude, your data is transmitted to external servers and often used to further train the models. Local models run on your own hardware or in a shielded private cloud. Your sensitive trade secrets, customer data and strategies never leave your controlled environment.
+            </div>
+          </details>
+
+          <details open class="group p-6 rounded-2xl border border-border bg-card backdrop-blur-sm">
+            <summary class="cursor-pointer font-bold text-lg text-foreground list-none flex items-center justify-between">
+              <span>Is the quality of local models comparable to GPT-4?</span>
+              <span class="transition-transform group-open:rotate-180">▼</span>
+            </summary>
+            <div class="mt-4 text-muted-foreground">
+              Yes, absolutely. Modern open-source models like Llama 3 or Mistral have caught up massively in recent months. For specific business tasks (such as document analysis or customer service) they are often even superior, because we can fine-tune them exactly to your specialist language and internal processes.
+            </div>
+          </details>
+
+          <details open class="group p-6 rounded-2xl border border-border bg-card backdrop-blur-sm">
+            <summary class="cursor-pointer font-bold text-lg text-foreground list-none flex items-center justify-between">
+              <span>What hardware requirements are there?</span>
+              <span class="transition-transform group-open:rotate-180">▼</span>
+            </summary>
+            <div class="mt-4 text-muted-foreground">
+              That depends on the model size. Many efficient models already run on modern standard servers with powerful graphics cards (GPUs such as the NVIDIA RTX 4090 or A100). For smaller applications, existing workstations are often enough. We help you size things precisely so you do not invest more in hardware than necessary.
+            </div>
+          </details>
+
+          <details open class="group p-6 rounded-2xl border border-border bg-card backdrop-blur-sm">
+            <summary class="cursor-pointer font-bold text-lg text-foreground list-none flex items-center justify-between">
+              <span>What about GDPR compliance?</span>
+              <span class="transition-transform group-open:rotate-180">▼</span>
+            </summary>
+            <div class="mt-4 text-muted-foreground">
+              Local AI is the “royal road” for data protection. Since no data flows to third-party providers (often in the USA), complex assessments of data transfers to third countries are no longer needed. You keep full control over access logs and deletion periods, which makes compliance with the GDPR and the new EU AI Act much easier.
+            </div>
+          </details>
+
+          <details open class="group p-6 rounded-2xl border border-border bg-card backdrop-blur-sm">
+            <summary class="cursor-pointer font-bold text-lg text-foreground list-none flex items-center justify-between">
+              <span>Is the investment financially worthwhile?</span>
+              <span class="transition-transform group-open:rotate-180">▼</span>
+            </summary>
+            <div class="mt-4 text-muted-foreground">
+              Usually yes. While cloud providers charge per request (tokens), which leads to unpredictable costs at high usage, a local solution has a one-time setup cost and low, fixed operating costs. Most companies reach the break-even point after 6 to 12 months.
+            </div>
+          </details>
+
+          <details open class="group p-6 rounded-2xl border border-border bg-card backdrop-blur-sm">
+            <summary class="cursor-pointer font-bold text-lg text-foreground list-none flex items-center justify-between">
+              <span>Can the AI access our internal company knowledge?</span>
+              <span class="transition-transform group-open:rotate-180">▼</span>
+            </summary>
+            <div class="mt-4 text-muted-foreground">
+              Yes, this is one of the main use cases. Through a method called RAG (Retrieval-Augmented Generation), we connect the model with your PDF documents, databases or wikis. Your employees then get precise answers based on your internal knowledge, securely and without hallucinations.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+          Take back sovereignty over your data.
+        </h2>
+        <p class="text-xl text-muted-foreground mb-8">
+          The technology is ready. Are you? In a first conversation we clarify how we can integrate local AI models into your infrastructure.
+        </p>
+        <a href="#kontakt" class="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-primary text-primary-foreground transition-all text-lg font-semibold shadow-lg">
+          Schedule a free initial consultation
+        </a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <div id="kontakt">
+      <Contact client:load lang="en" heading="Ready to transform your processes?" paragraphs={["Let's use the power of AI together to make your business in Frankfurt and beyond successful. Contact us for a free consultation."]} placeholder="Tell us about your project and how we can help..." />
+    </div>
+  </main>
+
+  <Footer lang="en" altHref="/ki-modelle-lokal/" />
+</Layout>
