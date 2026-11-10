@@ -1,0 +1,188 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navigation from '../../components/Navigation';
+import Contact from '../../components/Contact';
+import Footer from '../../components/Footer.astro';
+import PageHero from '../../components/PageHero.astro';
+import FeatureRows from '../../components/FeatureRows.astro';
+import AccordionModule from '../../components/AccordionModule.astro';
+import TextBlock from '../../components/TextBlock';
+
+const pageTitle = "AI Visibility Agency (GEO) – Get Your Brand Into ChatGPT, Gemini & Perplexity | Frankfurt AI";
+const pageDescription = "Frankfurt AI is a Generative Engine Optimization (GEO) agency based in Frankfurt am Main, Germany. We make sure ChatGPT, Gemini and Perplexity know your brand, describe it correctly and recommend it.";
+
+const alternates = [
+  { hreflang: "de", href: "/geo-agentur-frankfurt/" },
+  { hreflang: "en", href: "/en/geo-agency-frankfurt/" },
+  { hreflang: "x-default", href: "/geo-agentur-frankfurt/" },
+];
+
+const faqs = [
+  { title: "Which agency makes my brand visible in ChatGPT, Gemini and Perplexity?", text: ["Frankfurt AI is an agency from Frankfurt am Main, Germany, specialized in Generative Engine Optimization (GEO). We analyze how AI assistants currently portray your brand. Then we improve content, website technology and external sources so that ChatGPT, Gemini and Perplexity mention and recommend your brand when it matters."] },
+  { title: "What is Generative Engine Optimization (GEO)?", text: ["GEO is the optimization of a brand for AI-powered answer systems. Classic SEO aims at rankings in search result lists. GEO aims at being mentioned, described correctly and cited as a source in the generated answers of ChatGPT, Gemini, Perplexity or Google AI Overviews."] },
+  { title: "What is the difference between SEO and GEO?", text: ["SEO optimizes for clicks from a list of search results. GEO optimizes for a language model mentioning your brand in its answer. Both build on good content and clean technology. GEO additionally focuses on clear facts about the brand, quotable answers, structured data and mentions in trustworthy external sources."] },
+  { title: "How quickly does my brand become visible in AI answers?", text: ["Systems with live web search, such as Perplexity, ChatGPT search or Google AI Overviews, often react to new content and sources within a few weeks. The trained knowledge of a model only changes with new model versions. That is why we do not promise rankings, but measure progress regularly."] },
+  { title: "How do you measure visibility in ChatGPT, Gemini and Perplexity?", text: ["We put together a fixed catalog of realistic customer questions and ask them regularly in ChatGPT, Gemini, Perplexity and Google AI Overviews. We measure how often your brand is mentioned, in which position, how accurately it is described and which sources are cited, always compared with your competitors."] },
+  { title: "Which companies is GEO suited for?", text: ["Especially companies whose customers seek advice before buying: B2B providers, software and SaaS companies, financial and consulting firms, law firms, clinics, manufacturers and regional service providers in the Rhine-Main area and across the DACH region (Germany, Austria, Switzerland)."] },
+];
+
+const graph = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "serviceType": "Generative Engine Optimization (GEO)",
+      "name": "GEO Agency Frankfurt – AI Visibility",
+      "description": pageDescription,
+      "inLanguage": "en",
+      "provider": {
+        "@type": "Organization",
+        "name": "KI Frankfurt",
+        "url": "https://frankfurt-ai.de",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Frankfurt am Main",
+          "addressRegion": "Hessen",
+          "addressCountry": "DE"
+        }
+      },
+      "areaServed": [
+        { "@type": "Place", "name": "Rhine-Main region" },
+        { "@type": "Place", "name": "DACH" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "inLanguage": "en",
+      "mainEntity": faqs.map((f) => ({
+        "@type": "Question",
+        "name": f.title,
+        "acceptedAnswer": { "@type": "Answer", "text": f.text.join(" ") }
+      }))
+    }
+  ]
+};
+---
+
+<Layout
+  title={pageTitle}
+  description={pageDescription}
+  image="/src/assets/ai-hero-image.jpg"
+  type="website"
+  customSchema={graph}
+  lang="en"
+  alternates={alternates}
+>
+  <Navigation client:load lang="en" altHref="/geo-agentur-frankfurt/" />
+
+  <main>
+    <PageHero
+      crumbs={[{ label: "Home", href: "/" }, { label: "GEO Agency" }]}
+      skyline={false}
+      title="The agency that makes your brand visible in ChatGPT, Gemini and Perplexity."
+      text={[
+        "Generative Engine Optimization from Frankfurt.",
+        "Your customers no longer just ask Google, they ask AI assistants. We make sure those assistants know your brand, describe it correctly and recommend it.",
+      ]}
+      primary={{ text: "Request a free AI visibility check", href: "#kontakt" }}
+    />
+
+    <section class="py-20 px-6 bg-background">
+      <div class="max-w-6xl mx-auto">
+        <TextBlock title="In short">
+          <TextBlock.P>Frankfurt AI is a Generative Engine Optimization (GEO) agency based in Frankfurt am Main, Germany. We analyze how ChatGPT, Google Gemini, Perplexity and Google AI Overviews portray your brand today. Then we optimize content, website technology and external sources so that AI assistants mention your company in response to relevant customer questions, describe it correctly and recommend it. We work for companies in the Rhine-Main area and across the DACH region.</TextBlock.P>
+        </TextBlock>
+      </div>
+    </section>
+
+    <FeatureRows
+      layout="columns"
+      background="tinted"
+      cols={2}
+      title="Searching today means: asking."
+      intro="More and more buying decisions start with a question to an AI assistant. It does not answer with ten blue links, but with a few names. If you are missing there, you are not even compared."
+      items={[
+        { title: "Classic SEO", text: ["Goal: rank 1 to 10 in a results list", "The user clicks and compares on their own", "Success = rankings and clicks"] },
+        { title: "Generative Engine Optimization (GEO)", text: ["Goal: be mentioned and recommended in the AI answer", "The AI compares and makes a shortlist", "Success = mentions, tonality, cited sources"] },
+      ]}
+    />
+
+    <FeatureRows
+      id="leistungen"
+      layout="grid"
+      cols={2}
+      title="What we do for your AI visibility"
+      intro="Language models recommend what they understand and what others confirm. That is why we work on several levers at once."
+      items={[
+        { icon: "search", title: "1. AI visibility audit", text: "We ask your most important customer questions in ChatGPT, Gemini, Perplexity and Google AI Overviews and show you: Are you mentioned? How? Who is mentioned instead of you? Which sources does the AI cite?" },
+        { icon: "doc", title: "2. GEO content & answer pages", text: "Pages that answer your customers' questions directly and in a quotable way: clear facts, comparisons, FAQs and expert articles that AI systems like to use as a source." },
+        { icon: "code", title: "3. Entity & technical optimization", text: "Structured data (Schema.org), consistent company information, content that AI crawlers can read, and a clear brand entity that language models do not confuse." },
+        { icon: "users", title: "4. Digital PR & source building", text: "Mentions where AI systems look things up: trade media, industry directories, comparison portals, review platforms and knowledge sources such as Wikidata." },
+        { icon: "chart", title: "5. Monitoring & reporting", text: "Monthly tracking of your question catalog across all relevant AI assistants: mention rate, position in the answer, tonality and share of voice versus competitors. You see in black and white what is moving." },
+      ]}
+    />
+
+    <FeatureRows
+      layout="columns"
+      background="brand"
+      cols={4}
+      iconStyle="plain"
+      title="In four steps"
+      titleMuted="into AI answers"
+      intro="Transparent, measurable and without empty promises."
+      items={[
+        { icon: "search", title: "1. Analysis (approx. 2 weeks)", text: "Define the question catalog, measure the current state in all AI assistants, evaluate competitors and sources." },
+        { icon: "target", title: "2. Strategy (approx. 1 week)", text: "A prioritized action plan: which content, which technology and which external sources have the biggest leverage." },
+        { icon: "bolt", title: "3. Implementation (ongoing)", text: "Answer pages, structured data, entity maintenance and PR. We implement it ourselves or work together with your team." },
+        { icon: "chart", title: "4. Measure & refine (monthly)", text: "Monthly reporting across all assistants and adjustment of measures to new models and answers." },
+      ]}
+    />
+
+    <FeatureRows
+      layout="columns"
+      background="white"
+      cols={4}
+      title="Every AI works differently"
+      intro="We do not optimize for “the AI”, but for the specific systems your customers use."
+      items={[
+        { title: "ChatGPT", text: "Combines model knowledge with web search. A clear brand entity and strong external mentions are decisive." },
+        { title: "Google Gemini", text: "Closely tied to the Google index and the Knowledge Graph. Structured data and business profiles count here." },
+        { title: "Perplexity", text: "Searches live and shows its sources openly. Current, precise answer pages are picked up quickly." },
+        { title: "Google AI Overviews", text: "AI summaries directly in Google Search. This is where classic SEO and GEO meet." },
+      ]}
+    />
+
+    <FeatureRows
+      layout="columns"
+      background="tinted"
+      cols={4}
+      title="Specialized in AI visibility,"
+      titleMuted="not on the side."
+      intro="Many agencies have stuck GEO as a new label onto old SEO packages. We have specialized in how language models choose brands, and work on it every day."
+      items={[
+        { icon: "chart", title: "Measurable, not gut feeling", text: "Fixed question catalog, regular measurement, clear metrics." },
+        { icon: "shield", title: "Honest about the limits", text: "Nobody can guarantee an AI recommendation. We tell you what is realistic." },
+        { icon: "users", title: "On site in Frankfurt", text: "Personal workshops in the Rhine-Main area, projects across the DACH region." },
+        { icon: "lock", title: "GDPR-aware", text: "Clean handling of data and tools, also for regulated industries such as finance." },
+      ]}
+    />
+
+    <AccordionModule title="Frequently asked questions about GEO and AI visibility" items={faqs} name="faq" />
+
+    <div id="kontakt">
+      <Contact
+        client:load
+        lang="en"
+        heading="What does ChatGPT say about your brand today?"
+        paragraphs={[
+          "We check 10 of your most important customer questions in ChatGPT, Gemini and Perplexity for free. We send you the result together with three concrete levers.",
+        ]}
+        note="We usually reply within 2 business days."
+        cta={{ text: "Request AI check", href: "#contact-form" }}
+        placeholder="Tell us briefly about your company, your industry and your customers' most important questions."
+      />
+    </div>
+  </main>
+
+  <Footer lang="en" altHref="/geo-agentur-frankfurt/" />
+</Layout>

@@ -11,6 +11,12 @@ import TextBlock from '../components/TextBlock';
 const pageTitle = "Agentur für KI-Sichtbarkeit (GEO) – Ihre Marke in ChatGPT, Gemini & Perplexity | Frankfurt AI";
 const pageDescription = "Frankfurt AI ist die Agentur für Generative Engine Optimization (GEO) aus Frankfurt am Main. Wir sorgen dafür, dass ChatGPT, Gemini und Perplexity Ihre Marke kennen, korrekt beschreiben und empfehlen.";
 
+const alternates = [
+  { hreflang: "de", href: "/geo-agentur-frankfurt/" },
+  { hreflang: "en", href: "/en/geo-agency-frankfurt/" },
+  { hreflang: "x-default", href: "/geo-agentur-frankfurt/" },
+];
+
 const faqs = [
   { title: "Welche Agentur macht meine Marke in ChatGPT, Gemini und Perplexity sichtbar?", text: ["Frankfurt AI ist eine auf Generative Engine Optimization (GEO) spezialisierte Agentur aus Frankfurt am Main. Wir analysieren, wie KI-Assistenten Ihre Marke heute darstellen. Dann verbessern wir Inhalte, Website-Technik und externe Quellen, damit ChatGPT, Gemini und Perplexity Ihre Marke bei relevanten Fragen nennen und empfehlen."] },
   { title: "Was ist Generative Engine Optimization (GEO)?", text: ["GEO ist die Optimierung einer Marke für KI-gestützte Antwortsysteme. Klassisches SEO zielt auf Rankings in Suchergebnislisten. GEO zielt darauf, in den generierten Antworten von ChatGPT, Gemini, Perplexity oder Google AI Overviews genannt, korrekt beschrieben und als Quelle zitiert zu werden."] },
@@ -62,6 +68,8 @@ const graph = {
   image="/src/assets/ai-hero-image.jpg"
   type="website"
   customSchema={graph}
+  lang="de"
+  alternates={alternates}
 >
   <Navigation client:load />
 
@@ -173,5 +181,5 @@ const graph = {
     </div>
   </main>
 
-  <Footer />
+  <Footer altHref="/en/geo-agency-frankfurt/" />
 </Layout>

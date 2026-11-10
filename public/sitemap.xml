@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xhtml="http://www.w3.org/1999/xhtml"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
@@ -51,6 +52,17 @@
   <loc>https://frankfurt-ai.de/geo-agentur-frankfurt/</loc>
   <lastmod>2026-11-10T10:00:00+00:00</lastmod>
   <priority>0.80</priority>
+  <xhtml:link rel="alternate" hreflang="de" href="https://frankfurt-ai.de/geo-agentur-frankfurt/" />
+  <xhtml:link rel="alternate" hreflang="en" href="https://frankfurt-ai.de/en/geo-agency-frankfurt/" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://frankfurt-ai.de/geo-agentur-frankfurt/" />
+</url>
+<url>
+  <loc>https://frankfurt-ai.de/en/geo-agency-frankfurt/</loc>
+  <lastmod>2026-11-10T10:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+  <xhtml:link rel="alternate" hreflang="de" href="https://frankfurt-ai.de/geo-agentur-frankfurt/" />
+  <xhtml:link rel="alternate" hreflang="en" href="https://frankfurt-ai.de/en/geo-agency-frankfurt/" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://frankfurt-ai.de/geo-agentur-frankfurt/" />
 </url>
 <url>
   <loc>https://frankfurt-ai.de/blog/ki-aktuelle-entwicklungen/</loc>

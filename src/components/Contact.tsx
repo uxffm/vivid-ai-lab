@@ -11,18 +11,21 @@ type ContactProps = {
   cta?: { text: string; href: string };
   formTitle?: string;
   placeholder?: string;
+  lang?: "de" | "en";
 };
 
 const Contact = ({
+  lang = "de",
   heading = "Bereit, Ihre Prozesse zu transformieren?",
   paragraphs = [
     "Lassen Sie uns gemeinsam die Kraft der KI nutzen, um Ihr Unternehmen in Frankfurt und darüber hinaus zum Erfolg zu führen. Kontaktieren Sie uns für eine kostenlose Beratung.",
   ],
   note,
   cta,
-  formTitle = "Senden Sie uns eine Nachricht",
+  formTitle = lang === "en" ? "Send us a message" : "Senden Sie uns eine Nachricht",
   placeholder = "Erzählen Sie uns von Ihrem Projekt und wie wir Ihnen helfen können...",
 }: ContactProps) => {
+  const en = lang === "en";
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -42,10 +45,10 @@ const Contact = ({
       if (response.ok) {
         window.location.href = "/thank-you";
       } else {
-        alert("Es gab ein Problem beim Senden der Nachricht. Bitte versuchen Sie es erneut.");
+        alert(en ? "There was a problem sending your message. Please try again." : "Es gab ein Problem beim Senden der Nachricht. Bitte versuchen Sie es erneut.");
       }
     } catch (error) {
-      alert("Es gab ein Problem beim Senden der Nachricht. Bitte versuchen Sie es erneut.");
+      alert(en ? "There was a problem sending your message. Please try again." : "Es gab ein Problem beim Senden der Nachricht. Bitte versuchen Sie es erneut.");
     } finally {
       setIsSubmitting(false);
     }
@@ -85,29 +88,29 @@ const Contact = ({
           <input type="hidden" name="form-name" value="contact" />
           <p className="hidden">
             <label>
-              Nicht ausfüllen: <input name="bot-field" />
+              {en ? "Do not fill out:" : "Nicht ausfüllen:"} <input name="bot-field" />
             </label>
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div>
               <label className={field} htmlFor="contact-name">Name</label>
-              <Input id="contact-name" name="name" placeholder="Ihr Name" required />
+              <Input id="contact-name" name="name" placeholder={en ? "Your name" : "Ihr Name"} required />
             </div>
             <div>
-              <label className={field} htmlFor="contact-email">E-Mail</label>
-              <Input id="contact-email" type="email" name="email" placeholder="ihre.email@beispiel.de" required />
+              <label className={field} htmlFor="contact-email">{en ? "Email" : "E-Mail"}</label>
+              <Input id="contact-email" type="email" name="email" placeholder={en ? "your.email@example.com" : "ihre.email@beispiel.de"} required />
             </div>
           </div>
 
           <div>
-            <label className={field} htmlFor="contact-message">Nachricht</label>
+            <label className={field} htmlFor="contact-message">{en ? "Message" : "Nachricht"}</label>
             <Textarea id="contact-message" name="message" placeholder={placeholder} rows={6} required />
           </div>
 
           <Button type="submit" className="px-8 py-6 text-lg font-semibold" disabled={isSubmitting}>
             <Send className="w-4 h-4 mr-2" aria-hidden="true" />
-            {isSubmitting ? "Wird gesendet..." : "Nachricht senden"}
+            {isSubmitting ? (en ? "Sending..." : "Wird gesendet...") : (en ? "Send message" : "Nachricht senden")}
           </Button>
         </form>
       </div>

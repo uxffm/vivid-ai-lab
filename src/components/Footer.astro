@@ -8,6 +8,8 @@ const latest = posts
   .slice(0, 4);
 
 const currentYear = new Date().getFullYear();
+const { lang = 'de', altHref } = Astro.props as { lang?: 'de' | 'en'; altHref?: string };
+const en = lang === 'en';
 ---
 
 <footer class="band-dark py-8 px-6">
@@ -15,9 +17,12 @@ const currentYear = new Date().getFullYear();
     <div class="grid grid-cols-1 md:grid-cols-4 gap-8 items-start">
       <!-- Copyright -->
       <div class="text-sm text-muted-foreground order-3 md:order-1">
-        © {currentYear} KI Agentur Frankfurt. Alle Rechte vorbehalten.
+        © {currentYear} KI Agentur Frankfurt. {en ? 'All rights reserved.' : 'Alle Rechte vorbehalten.'}
+        {altHref && (<div class="mt-2"><a href={altHref} hreflang={en ? 'de' : 'en'} lang={en ? 'de' : 'en'} class="underline underline-offset-4 hover:text-foreground">{en ? 'Deutsche Version' : 'English version'}</a></div>)}
       </div>
 
+      {!en && (
+      <Fragment>
       <!-- Helpful Links -->
       <div class="order-1 md:order-2">
         <h4 class="text-sm font-semibold text-foreground mb-3">Hilfreiche Links</h4>
@@ -68,6 +73,8 @@ const currentYear = new Date().getFullYear();
           </li>
         </ul>
       </div>
+      </Fragment>
+      )}
 
       <!-- Legal Links -->
       <div class="flex md:justify-end items-center gap-6 text-sm order-3 md:order-4">
@@ -75,13 +82,13 @@ const currentYear = new Date().getFullYear();
           href="/impressum" 
           class="text-muted-foreground hover:text-foreground transition-colors"
         >
-          Impressum
+          {en ? "Legal notice (DE)" : "Impressum"}
         </a>
         <a 
           href="/datenschutz" 
           class="text-muted-foreground hover:text-foreground transition-colors"
         >
-          Datenschutz
+          {en ? "Privacy (DE)" : "Datenschutz"}
         </a>
       </div>
     </div>

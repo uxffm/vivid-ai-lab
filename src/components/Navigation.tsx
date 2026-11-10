@@ -5,7 +5,9 @@ import { homepageContent } from "@/content/content";
 
 const navItems = homepageContent.navigation.menu;
 
-const Navigation = () => {
+type NavProps = { lang?: "de" | "en"; altHref?: string };
+
+const Navigation = ({ lang = "de", altHref }: NavProps = {}) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isServicesHovered, setIsServicesHovered] = useState(false);
@@ -45,6 +47,33 @@ const Navigation = () => {
   const handleLogoClick = () => {
     window.location.href = '/';
   };
+
+  if (lang === "en") {
+    return (
+      <nav className="band-brand fixed top-0 w-full z-50">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="flex items-center justify-between h-20">
+            <a href="/en/geo-agency-frankfurt" className="flex items-center space-x-2 text-left" aria-label="Frankfurt AI">
+              <div className="w-10 h-10 border-2 border-primary rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-sm">KI</span>
+              </div>
+              <span className="text-xl font-bold">{homepageContent.navigation.logo}</span>
+            </a>
+            <div className="flex items-center gap-4">
+              {altHref && (
+                <a href={altHref} hrefLang="de" lang="de" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+                  Deutsch
+                </a>
+              )}
+              <a href="#contact" className="inline-flex items-center rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:bg-primary/90 transition-colors">
+                Free AI check
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    );
+  }
 
   return (
     <nav className="band-brand fixed top-0 w-full z-50">

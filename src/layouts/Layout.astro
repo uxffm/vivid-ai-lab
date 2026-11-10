@@ -13,6 +13,8 @@ export interface Props {
   author?: string;
   noindex?: boolean;
   customSchema?: object;
+  lang?: 'de' | 'en';
+  alternates?: { hreflang: string; href: string }[];
 }
 
 const {
@@ -24,14 +26,16 @@ const {
   modifiedTime,
   author = "KI Marketing Frankfurt",
   noindex = false,
-  customSchema
+  customSchema,
+  lang = 'de',
+  alternates = []
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <!DOCTYPE html>
-<html lang="de">
+<html lang={lang}>
   <head>
     <meta charset="UTF-8" />
     
@@ -64,6 +68,9 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     
     <!-- Canonical URL -->
     <link rel="canonical" href={canonicalURL} />
+
+    <!-- Language alternates (hreflang): every version lists all versions incl. itself -->
+    {alternates.map((a) => <link rel="alternate" hreflang={a.hreflang} href={new URL(a.href, Astro.site)} />)}
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content={type} />
@@ -72,7 +79,8 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta property="og:description" content={description} />
     <meta property="og:image" content={new URL(image, Astro.site)} />
     <meta property="og:site_name" content="KI Marketing Frankfurt" />
-    <meta property="og:locale" content="de_DE" />
+    <meta property="og:locale" content={lang === "en" ? "en_US" : "de_DE"} />
+    {alternates.filter((a) => a.hreflang !== lang && a.hreflang !== "x-default").map((a) => <meta property="og:locale:alternate" content={a.hreflang === "en" ? "en_US" : "de_DE"} />)}
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
@@ -82,7 +90,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta property="twitter:image" content={new URL(image, Astro.site)} />
     
     <!-- Additional SEO Meta Tags -->
-    <meta name="keywords" content="KI-Marketing, Künstliche Intelligenz, Marketing Agentur, Frankfurt, Digital Marketing, AI Marketing, Machine Learning Marketing" />
+    <meta name="keywords" content={lang === "en" ? "GEO agency, generative engine optimization, AI visibility, ChatGPT, Gemini, Perplexity, Frankfurt" : "KI-Marketing, Künstliche Intelligenz, Marketing Agentur, Frankfurt, Digital Marketing, AI Marketing, Machine Learning Marketing"} />
     <meta name="geo.region" content="DE-HE" />
     <meta name="geo.placename" content="Frankfurt am Main" />
     <meta name="geo.position" content="50.1109;8.6821" />
