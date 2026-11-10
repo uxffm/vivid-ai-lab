@@ -135,6 +135,12 @@ const Navigation = () => {
                         >
                           ChatGPT Ads Agentur
                         </a>
+                        <a
+                          href="/geo-agentur-frankfurt"
+                          className="block px-4 py-3 text-sm text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-colors"
+                        >
+                          GEO Agentur (KI-Sichtbarkeit)
+                        </a>
                       </div>
                     )}
                   </div>
