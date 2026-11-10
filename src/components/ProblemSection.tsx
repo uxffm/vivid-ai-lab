@@ -1,7 +1,22 @@
 import React from "react";
 import TextBlock from "./TextBlock";
+import { homepageContentEn } from "@/content/content";
 
-const ProblemSection = () => {
+const ProblemSection = ({ lang = "de" }: { lang?: "de" | "en" }) => {
+  if (lang === "en") {
+    const { title, paragraphs } = homepageContentEn.problems;
+    return (
+      <section className="py-24 px-6 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <TextBlock title={title}>
+            {paragraphs.map((t) => (
+              <TextBlock.P key={t}><span dangerouslySetInnerHTML={{ __html: t }} /></TextBlock.P>
+            ))}
+          </TextBlock>
+        </div>
+      </section>
+    );
+  }
   return (
     <section className="py-24 px-6 bg-white">
       <div className="max-w-6xl mx-auto">

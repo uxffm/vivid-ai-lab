@@ -13,6 +13,13 @@ import { getCollection } from 'astro:content';
 const pageTitle = "KI Automatisierung Frankfurt – KI Agentur für Rhein-Main";
 const pageDescription = "KI Automatisierung Agentur Frankfurt: Workflows, Chatbots und Prozessautomatisierung für Unternehmen in Frankfurt und dem Rhein-Main-Gebiet. Persönliche Beratung, schnelle Umsetzung, messbare Ergebnisse.";
 
+const alternates = [
+  { hreflang: "de", href: "/" },
+  { hreflang: "en", href: "/en/" },
+  { hreflang: "x-default", href: "/" },
+];
+
+
 const posts = (await getCollection('blog')).map((p) => ({
   slug: p.slug,
   title: p.data.title,
@@ -30,8 +37,10 @@ const posts = (await getCollection('blog')).map((p) => ({
   description={pageDescription}
   image="/src/assets/ai-hero-image.jpg"
   type="website"
+  lang="de"
+  alternates={alternates}
 >
-  <Navigation client:load />
+  <Navigation client:load altHref="/en/" />
   
   <main>
     <div id="hero">
@@ -100,7 +109,7 @@ const posts = (await getCollection('blog')).map((p) => ({
     </div>
   </main>
 
-  <Footer />
+  <Footer altHref="/en/" />
 
   <!-- Additional Structured Data for Homepage -->
   <script type="application/ld+json" set:html={JSON.stringify({

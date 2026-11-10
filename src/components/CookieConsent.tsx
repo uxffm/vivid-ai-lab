@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { X } from "lucide-react";
 
-const CookieConsent = () => {
+const CookieConsent = ({ lang = "de" }: { lang?: "de" | "en" }) => {
+  const en = lang === "en";
   const [showBanner, setShowBanner] = useState(false);
 
   useEffect(() => {
@@ -48,14 +49,23 @@ const CookieConsent = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
           <div className="flex-1">
-            <h3 className="text-lg font-semibold mb-2">Cookie-Einstellungen</h3>
+            <h3 className="text-lg font-semibold mb-2">{en ? "Cookie settings" : "Cookie-Einstellungen"}</h3>
             <p className="text-sm text-muted-foreground">
-              Wir verwenden Cookies und ähnliche Technologien, um die Nutzung unserer Website zu analysieren und Ihre Erfahrung zu verbessern.
-              Durch die Nutzung unserer Website stimmen Sie der Verwendung von Cookies gemäß unserer{" "}
-              <a href="/datenschutz" className="underline hover:text-foreground">
-                Datenschutzerklärung
-              </a>{" "}
-              zu. Sie können Ihre Einwilligung jederzeit widerrufen.
+              {en ? (
+                <>
+                  We use cookies and similar technologies to analyze the use of our website and to improve your experience.
+                  By using our website you agree to the use of cookies in accordance with our{" "}
+                  <a href="/en/privacy-policy" className="underline hover:text-foreground">privacy policy</a>.
+                  You can withdraw your consent at any time.
+                </>
+              ) : (
+                <>
+                  Wir verwenden Cookies und ähnliche Technologien, um die Nutzung unserer Website zu analysieren und Ihre Erfahrung zu verbessern.
+                  Durch die Nutzung unserer Website stimmen Sie der Verwendung von Cookies gemäß unserer{" "}
+                  <a href="/datenschutz" className="underline hover:text-foreground">Datenschutzerklärung</a>{" "}
+                  zu. Sie können Ihre Einwilligung jederzeit widerrufen.
+                </>
+              )}
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
@@ -64,13 +74,13 @@ const CookieConsent = () => {
               variant="outline"
               className="w-full sm:w-auto"
             >
-              Nur notwendige
+              {en ? "Necessary only" : "Nur notwendige"}
             </Button>
             <Button
               onClick={handleAccept}
               className="w-full sm:w-auto bg-primary hover:bg-primary/90"
             >
-              Alle akzeptieren
+              {en ? "Accept all" : "Alle akzeptieren"}
             </Button>
           </div>
         </div>

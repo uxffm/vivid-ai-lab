@@ -1,5 +1,5 @@
 import { ArrowRight } from "lucide-react";
-import { homepageContent } from "@/content/content";
+import { homepageContent, homepageContentEn } from "@/content/content";
 import TextBlock from "./TextBlock";
 
 const hrefs: Record<string, string> = {
@@ -10,19 +10,21 @@ const hrefs: Record<string, string> = {
   "KI Rezeption": "/ki-rezeption",
 };
 
-const Services = () => {
+const Services = ({ lang = "de" }: { lang?: "de" | "en" }) => {
+  const en = lang === "en";
+  const content: any = en ? homepageContentEn : homepageContent;
   return (
     <section className="pb-24 px-6">
       <div className="max-w-6xl mx-auto">
         <TextBlock
           className="mb-12"
-          title={homepageContent.services.title}
-          text={homepageContent.services.subtitle}
+          title={content.services.title}
+          text={content.services.subtitle}
         />
 
         <ul className="border-b border-border">
-          {homepageContent.services.services.map((service) => {
-            const href = hrefs[service.title];
+          {content.services.services.map((service: any) => {
+            const href = en ? service.href : hrefs[service.title];
             return (
               <li key={service.title} className="border-t border-border">
                 <a
@@ -35,7 +37,7 @@ const Services = () => {
                   <div className="md:col-span-7">
                     <p className="text-muted-foreground leading-relaxed">{service.description}</p>
                     <span className="mt-3 inline-block font-semibold underline underline-offset-4 decoration-2 decoration-primary">
-                      Mehr erfahren →
+                      {en ? content.services.more : "Mehr erfahren →"}
                     </span>
                   </div>
                   <ArrowRight

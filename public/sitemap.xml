@@ -12,6 +12,17 @@
   <loc>https://frankfurt-ai.de/</loc>
   <lastmod>2026-01-15T14:42:10+00:00</lastmod>
   <priority>1.00</priority>
+  <xhtml:link rel="alternate" hreflang="de" href="https://frankfurt-ai.de/" />
+  <xhtml:link rel="alternate" hreflang="en" href="https://frankfurt-ai.de/en/" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://frankfurt-ai.de/" />
+</url>
+<url>
+  <loc>https://frankfurt-ai.de/en/</loc>
+  <lastmod>2026-11-10T10:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+  <xhtml:link rel="alternate" hreflang="de" href="https://frankfurt-ai.de/" />
+  <xhtml:link rel="alternate" hreflang="en" href="https://frankfurt-ai.de/en/" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://frankfurt-ai.de/" />
 </url>
 <url>
   <loc>https://frankfurt-ai.de/ki-automatisierung/</loc>
@@ -33,6 +44,17 @@
   <loc>https://frankfurt-ai.de/ki-automatisierung-hanau/</loc>
   <lastmod>2026-03-15T10:00:00+00:00</lastmod>
   <priority>0.80</priority>
+  <xhtml:link rel="alternate" hreflang="de" href="https://frankfurt-ai.de/ki-automatisierung-hanau/" />
+  <xhtml:link rel="alternate" hreflang="en" href="https://frankfurt-ai.de/en/ai-automation-hanau/" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://frankfurt-ai.de/ki-automatisierung-hanau/" />
+</url>
+<url>
+  <loc>https://frankfurt-ai.de/en/ai-automation-hanau/</loc>
+  <lastmod>2026-11-10T10:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+  <xhtml:link rel="alternate" hreflang="de" href="https://frankfurt-ai.de/ki-automatisierung-hanau/" />
+  <xhtml:link rel="alternate" hreflang="en" href="https://frankfurt-ai.de/en/ai-automation-hanau/" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://frankfurt-ai.de/ki-automatisierung-hanau/" />
 </url>
 <url>
   <loc>https://frankfurt-ai.de/ki-modelle-lokal/</loc>
@@ -232,4 +254,36 @@
 </url>
 
 
+<url>
+  <loc>https://frankfurt-ai.de/ki-automatisierung-wiesbaden/</loc>
+  <lastmod>2026-11-10T10:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+  <xhtml:link rel="alternate" hreflang="de" href="https://frankfurt-ai.de/ki-automatisierung-wiesbaden/" />
+  <xhtml:link rel="alternate" hreflang="en" href="https://frankfurt-ai.de/en/ai-automation-wiesbaden/" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://frankfurt-ai.de/ki-automatisierung-wiesbaden/" />
+</url>
+<url>
+  <loc>https://frankfurt-ai.de/en/ai-automation-wiesbaden/</loc>
+  <lastmod>2026-11-10T10:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+  <xhtml:link rel="alternate" hreflang="de" href="https://frankfurt-ai.de/ki-automatisierung-wiesbaden/" />
+  <xhtml:link rel="alternate" hreflang="en" href="https://frankfurt-ai.de/en/ai-automation-wiesbaden/" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://frankfurt-ai.de/ki-automatisierung-wiesbaden/" />
+</url>
+<url>
+  <loc>https://frankfurt-ai.de/automatisierung-agentur-marburg/</loc>
+  <lastmod>2026-11-10T10:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+  <xhtml:link rel="alternate" hreflang="de" href="https://frankfurt-ai.de/automatisierung-agentur-marburg/" />
+  <xhtml:link rel="alternate" hreflang="en" href="https://frankfurt-ai.de/en/ai-automation-agency-marburg/" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://frankfurt-ai.de/automatisierung-agentur-marburg/" />
+</url>
+<url>
+  <loc>https://frankfurt-ai.de/en/ai-automation-agency-marburg/</loc>
+  <lastmod>2026-11-10T10:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+  <xhtml:link rel="alternate" hreflang="de" href="https://frankfurt-ai.de/automatisierung-agentur-marburg/" />
+  <xhtml:link rel="alternate" hreflang="en" href="https://frankfurt-ai.de/en/ai-automation-agency-marburg/" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://frankfurt-ai.de/automatisierung-agentur-marburg/" />
+</url>
 </urlset>

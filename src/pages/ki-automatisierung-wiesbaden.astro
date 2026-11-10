@@ -7,6 +7,13 @@ import Footer from '../components/Footer.astro';
 const pageTitle = "KI Automatisierung Agentur Wiesbaden – KI-Workflows & Chatbots";
 const pageDescription = "KI Automatisierung Agentur für Wiesbaden: Maßgeschneiderte Workflows, Chatbots und Prozessautomatisierung für Unternehmen in Wiesbaden und dem Rheingau-Taunus-Kreis. Persönliche Beratung vor Ort.";
 
+const alternates = [
+  { hreflang: "de", href: "/ki-automatisierung-wiesbaden/" },
+  { hreflang: "en", href: "/en/ai-automation-wiesbaden/" },
+  { hreflang: "x-default", href: "/ki-automatisierung-wiesbaden/" },
+];
+
+
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
@@ -38,8 +45,10 @@ const serviceSchema = {
   image="/src/assets/ai-hero-image.jpg"
   type="website"
   customSchema={serviceSchema}
+  lang="de"
+  alternates={alternates}
 >
-  <Navigation client:load />
+  <Navigation client:load altHref="/en/ai-automation-wiesbaden/" />
 
   <!-- Breadcrumbs -->
   <nav class="pt-32 pb-4" aria-label="Breadcrumb">
@@ -216,5 +225,5 @@ const serviceSchema = {
     </div>
   </main>
 
-  <Footer />
+  <Footer altHref="/en/ai-automation-wiesbaden/" />
 </Layout>

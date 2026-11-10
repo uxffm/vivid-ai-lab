@@ -67,7 +67,7 @@ const serviceSchema = {
     <div class="max-w-7xl mx-auto px-6">
       <ol class="flex items-center gap-2 text-sm text-muted-foreground" itemscope itemtype="https://schema.org/BreadcrumbList">
         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a href="/" itemprop="item" class="hover:text-foreground transition-colors">
+          <a href="/en/" itemprop="item" class="hover:text-foreground transition-colors">
             <span itemprop="name">Home</span>
           </a>
           <meta itemprop="position" content="1" />
@@ -365,11 +365,14 @@ const serviceSchema = {
             As a regional AI agency we are on site for companies in the Rhine-Main region, from Frankfurt via Wiesbaden and Mainz to Darmstadt and Offenbach. We know the local business landscape and support you personally from the first idea to the finished solution.
           </p>
           <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {["Frankfurt am Main", "Wiesbaden", "Mainz", "Darmstadt", "Offenbach", "Rüsselsheim", "Bad Homburg", "Hanau"].map((city) => (
+            {["Frankfurt am Main", "Wiesbaden", "Mainz", "Darmstadt", "Offenbach", "Rüsselsheim", "Bad Homburg"].map((city) => (
               <div class="p-3 rounded-lg border border-border bg-card text-center text-sm font-medium">
                 {city}
               </div>
             ))}
+            <a href="/en/ai-automation-hanau/" class="p-3 rounded-lg border border-foreground/50 bg-card text-center text-sm font-medium text-highlight hover:border-primary transition-colors">
+              Hanau
+            </a>
           </div>
           <p class="text-muted-foreground mt-6">
             Personal on-site consulting, short distances and a deep understanding of the Mittelstand (small and mid-sized businesses) in the Rhine-Main area set us apart from nationwide providers.

@@ -43,7 +43,7 @@ const Contact = ({
       });
 
       if (response.ok) {
-        window.location.href = "/thank-you";
+        window.location.href = lang === "en" ? "/en/thank-you/" : "/thank-you";
       } else {
         alert(en ? "There was a problem sending your message. Please try again." : "Es gab ein Problem beim Senden der Nachricht. Bitte versuchen Sie es erneut.");
       }

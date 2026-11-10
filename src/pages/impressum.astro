@@ -9,7 +9,7 @@ import Footer from '../components/Footer.astro';
   description="Impressum und rechtliche Informationen von KI Frankfurt"
   noindex={true}
 >
-  <Navigation client:load />
+  <Navigation client:load altHref="/en/legal-notice/" />
 
   <div class="min-h-screen bg-background py-20 px-6">
     <div class="max-w-4xl mx-auto">
@@ -54,5 +54,5 @@ import Footer from '../components/Footer.astro';
     </div>
   </div>
 
-  <Footer />
+  <Footer altHref="/en/legal-notice/" />
 </Layout>

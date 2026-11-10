@@ -94,16 +94,16 @@ const en = lang === 'en';
       <!-- Legal Links -->
       <div class="flex md:justify-end items-center gap-6 text-sm order-3 md:order-4">
         <a 
-          href="/impressum" 
+          href={en ? "/en/legal-notice/" : "/impressum"} 
           class="text-muted-foreground hover:text-foreground transition-colors"
         >
-          {en ? "Legal notice (DE)" : "Impressum"}
+          {en ? "Legal notice" : "Impressum"}
         </a>
         <a 
-          href="/datenschutz" 
+          href={en ? "/en/privacy-policy/" : "/datenschutz"} 
           class="text-muted-foreground hover:text-foreground transition-colors"
         >
-          {en ? "Privacy (DE)" : "Datenschutz"}
+          {en ? "Privacy policy" : "Datenschutz"}
         </a>
       </div>
     </div>

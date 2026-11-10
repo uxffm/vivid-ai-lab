@@ -1,0 +1,62 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navigation from '../../components/Navigation';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout
+  title="Legal notice - KI Frankfurt"
+  description="Legal notice and legal information of KI Frankfurt"
+  noindex={true}
+  lang="en"
+>
+  <Navigation client:load lang="en" altHref="/impressum/" />
+
+  <div class="min-h-screen bg-background py-20 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Legal notice</h1>
+      <p class="text-sm text-muted-foreground mb-8">
+        Convenience translation. The German version (<a href="/impressum/" class="underline hover:text-foreground">Impressum</a>) is the legally binding one.
+      </p>
+
+      <div class="prose prose-invert max-w-none">
+        <h2 class="text-2xl font-semibold mt-8 mb-4">Information pursuant to § 5 TMG</h2>
+
+        <div class="mb-8">
+          <img
+            src="/imoportant.png"
+            alt="Contact information"
+            class="max-w-md"
+            loading="lazy"
+          />
+        </div>
+
+        <h2 class="text-2xl font-semibold mt-8 mb-4">Liability for content</h2>
+        <p class="text-muted-foreground mb-4">
+          As a service provider, we are responsible for our own content on these pages in accordance with general laws pursuant to Section 7 (1) TMG. Pursuant to Sections 8 to 10 TMG, however, we are not obliged as a service provider to monitor transmitted or stored third-party information or to investigate circumstances that indicate unlawful activity.
+        </p>
+        <p class="text-muted-foreground mb-4">
+          Obligations to remove or block the use of information under general laws remain unaffected. However, liability in this regard is only possible from the point in time at which a specific infringement becomes known. If we become aware of corresponding infringements, we will remove this content immediately.
+        </p>
+
+        <h2 class="text-2xl font-semibold mt-8 mb-4">Liability for links</h2>
+        <p class="text-muted-foreground mb-4">
+          Our offer contains links to external third-party websites over whose content we have no influence. Therefore we cannot accept any liability for this external content. The respective provider or operator of the linked pages is always responsible for their content. The linked pages were checked for possible legal violations at the time of linking. Unlawful content was not recognizable at the time of linking.
+        </p>
+        <p class="text-muted-foreground mb-4">
+          However, permanent monitoring of the content of the linked pages is not reasonable without concrete evidence of an infringement. If we become aware of any infringements, we will remove such links immediately.
+        </p>
+
+        <h2 class="text-2xl font-semibold mt-8 mb-4">Copyright</h2>
+        <p class="text-muted-foreground mb-4">
+          The content and works created by the site operators on these pages are subject to German copyright law. Reproduction, editing, distribution and any kind of use beyond the limits of copyright law require the written consent of the respective author or creator. Downloads and copies of this page are only permitted for private, non-commercial use.
+        </p>
+        <p class="text-muted-foreground mb-4">
+          Insofar as the content on this page was not created by the operator, the copyrights of third parties are respected. In particular, third-party content is marked as such. Should you nevertheless become aware of a copyright infringement, please let us know. If we become aware of infringements, we will remove such content immediately.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <Footer lang="en" altHref="/impressum/" />
+</Layout>

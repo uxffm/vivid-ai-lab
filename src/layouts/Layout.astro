@@ -156,7 +156,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     })} />
 
     <!-- LocalBusiness Schema for Frankfurt location (only on service pages) -->
-    {type === "website" && Astro.url.pathname.includes("/ki-") && (
+    {type === "website" && !noindex && (Astro.url.pathname.includes("/ki-") || Astro.url.pathname.startsWith("/en/")) && (
       <script type="application/ld+json" set:html={JSON.stringify({
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
@@ -216,6 +216,6 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
       <p class="hidden"><label>Don't fill this out: <input name="bot-field" /></label></p>
     </form>
     <SonnerToaster client:load />
-    <CookieConsent client:load />
+    <CookieConsent client:load lang={lang} />
   </body>
 </html>

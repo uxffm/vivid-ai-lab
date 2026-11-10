@@ -118,3 +118,57 @@ export const homepageContent = {
     }
   }
 };
+
+export const homepageContentEn = {
+  hero: {
+    title: { line1: "Your AI agency", line2: "from Frankfurt am Main." },
+    subtitle: "Use AI, save time and automate expensive processes. We are your AI agency from Frankfurt am Main and transform your digital presence with intelligent solutions that deliver measurable results. Staying very close to AI development, we use the most modern AI methods.",
+    buttons: {
+      primary: { text: "Contact us directly", href: "#contact" },
+      secondary: { text: "Call us", href: "tel:+491627519335" }
+    },
+    trust: {
+      prefix: "Trusted by companies from",
+      linkText: "Frankfurt and the surrounding area",
+      rating: "Rated 5/5 on Google",
+      href: "https://www.google.com/maps/search/?api=1&query=KI+Agentur+FAI+Frankfurt"
+    }
+  },
+  services: {
+    title: "Our AI services",
+    subtitle: "We offer tailored AI solutions for your business, from chatbots and process automation to modern web design. All solutions are cost-effective, efficient and tailored to your specific needs. With AI you can automate the boring, repetitive tasks in your company without relying on expensive freelancers.",
+    more: "Learn more →",
+    services: [
+      { title: "AI Automation", key: "KI Automatisierung", href: "/en/ai-automation-agency-frankfurt/", description: "Automate all processes with AI technology, whichever workflows you want to optimize. Reduce manual work and increase your team's efficiency." },
+      { title: "Local AI Models", key: "Lokale KI Modelle", href: "/en/local-ai-models-for-business/", description: "Maximum data control and GDPR compliance through local AI models in your own infrastructure. Independent, cost-efficient and fully under your control." },
+      { title: "Vibe Coding Agency", key: "Vibe Coding Agentur", href: "/en/vibe-coding-agency/", description: "Smart, AI-powered apps and workflows: fast, modular, cost-efficient. From MVP to rollout, with clear sprints and clean integration." },
+      { title: "AI Consulting", key: "KI Beratung", href: "/en/ai-consulting-frankfurt/", description: "Strategic AI consulting for lasting business success. From potential analysis and strategy development to implementation: practical and measurable." },
+      { title: "AI Receptionist", key: "KI Rezeption", href: "/en/ai-receptionist/", description: "Available 24/7, never sick, always friendly. AI-powered call answering, automatic appointment booking and intelligent customer service for your business." },
+      { title: "GEO Agency (AI Visibility)", key: "GEO", href: "/en/geo-agency-frankfurt/", description: "Make your brand visible in ChatGPT, Gemini and Perplexity. We make sure AI assistants know your brand, describe it correctly and recommend it." },
+      { title: "ChatGPT Ads Agency", key: "ChatGPT Ads", href: "/en/chatgpt-ads-agency-frankfurt/", description: "Place advertising directly in ChatGPT: from the first strategy to the ongoing optimization of your campaigns." }
+    ]
+  },
+  problems: {
+    title: "Do you know these problems?",
+    paragraphs: [
+      "Do you know boring, repetitive tasks that nobody likes doing but that still have to be done?",
+      "Or <b>expensive freelancers and external service providers</b> that you have to pay for every small task?",
+      "Maybe you are also losing valuable time on manual processes that could actually be automated?",
+      "That is what we do with AI: automate the boring tasks, save money and win back valuable time."
+    ]
+  },
+  about: {
+    title: "About us",
+    description: "We are a team of SEO experts, designers and programmers who started with AI very early. AI technology changes every day, nothing develops as fast as artificial intelligence. As an AI agency we know exactly which AI technology is right for which task. We implement all these changes immediately for our customers and always stay on top of things.",
+    photo: { src: "/ki-automatisierung-frankfurt.webp", alt: "AI agency Frankfurt: human and robot in front of the Frankfurt skyline on the Main river" }
+  },
+  navigation: {
+    menu: [
+      { label: "Services", href: "/en/#services" },
+      { label: "About us", href: "/en/#about" },
+      { label: "Blog", href: "/blog" },
+      { label: "Contact", href: "#contact" }
+    ],
+    cta: "Free consultation"
+  }
+};

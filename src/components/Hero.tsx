@@ -1,8 +1,8 @@
 import { ArrowRight } from "lucide-react";
-import { homepageContent } from "@/content/content";
+import { homepageContent, homepageContentEn } from "@/content/content";
 
-const Hero = () => {
-  const { title, subtitle, buttons, trust } = homepageContent.hero;
+const Hero = ({ lang = "de" }: { lang?: "de" | "en" }) => {
+  const { title, subtitle, buttons, trust } = (lang === "en" ? homepageContentEn : homepageContent).hero;
   return (
     <section
       id="hero"

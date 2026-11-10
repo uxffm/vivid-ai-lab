@@ -1,8 +1,8 @@
 import React from "react";
-import { homepageContent } from "@/content/content";
+import { homepageContent, homepageContentEn } from "@/content/content";
 
-const About = () => {
-  const { title, description, photo } = homepageContent.about;
+const About = ({ lang = "de" }: { lang?: "de" | "en" }) => {
+  const { title, description, photo } = (lang === "en" ? homepageContentEn : homepageContent).about;
   return (
     <section className="py-24 px-6">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-x-12 gap-y-10 items-start">

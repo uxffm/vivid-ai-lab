@@ -1,0 +1,229 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navigation from '../../components/Navigation';
+import Contact from '../../components/Contact';
+import Footer from '../../components/Footer.astro';
+
+const pageTitle = "AI Automation Agency Wiesbaden – AI Workflows & Chatbots";
+const pageDescription = "AI automation agency for Wiesbaden: tailored workflows, chatbots and process automation for companies in Wiesbaden and the Rheingau-Taunus district. Personal on-site consulting.";
+
+const alternates = [
+  { hreflang: "de", href: "/ki-automatisierung-wiesbaden/" },
+  { hreflang: "en", href: "/en/ai-automation-wiesbaden/" },
+  { hreflang: "x-default", href: "/ki-automatisierung-wiesbaden/" },
+];
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "AI automation",
+  "name": "AI automation for companies in Wiesbaden",
+  "description": pageDescription,
+  "inLanguage": "en",
+  "provider": {
+    "@type": "Organization",
+    "name": "Vivid AI Lab",
+    "url": "https://frankfurt-ai.de",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Frankfurt am Main",
+      "addressRegion": "Hessen",
+      "addressCountry": "DE"
+    }
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Wiesbaden" },
+    { "@type": "AdministrativeArea", "name": "Rheingau-Taunus-Kreis" },
+    { "@type": "AdministrativeArea", "name": "Rhine-Main region" }
+  ]
+};
+---
+
+<Layout
+  title={pageTitle}
+  description={pageDescription}
+  image="/src/assets/ai-hero-image.jpg"
+  type="website"
+  customSchema={serviceSchema}
+  lang="en"
+  alternates={alternates}
+>
+  <Navigation client:load lang="en" altHref="/ki-automatisierung-wiesbaden/" />
+
+  <!-- Breadcrumbs -->
+  <nav class="pt-32 pb-4" aria-label="Breadcrumb">
+    <div class="max-w-7xl mx-auto px-6">
+      <ol class="flex items-center gap-2 text-sm text-muted-foreground flex-wrap" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/en/" itemprop="item" class="hover:text-foreground transition-colors">
+            <span itemprop="name">Home</span>
+          </a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <li aria-hidden="true">/</li>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/en/ai-automation-agency-frankfurt/" itemprop="item" class="hover:text-foreground transition-colors">
+            <span itemprop="name">AI Automation Rhine-Main</span>
+          </a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <li aria-hidden="true">/</li>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <span itemprop="name" class="text-foreground">Wiesbaden</span>
+          <meta itemprop="position" content="3" />
+        </li>
+      </ol>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero -->
+    <section class="relative min-h-screen flex items-center overflow-hidden band-brand">
+      <div class="absolute inset-0 bg-background" />
+      <div class="pointer-events-none absolute -top-24 -left-24 h-64 w-64 rounded-full bg-foreground/10 blur-2xl" />
+      <div class="pointer-events-none absolute -bottom-24 -right-24 h-64 w-64 rounded-full bg-foreground/10 blur-2xl" />
+
+      <div class="relative z-10 max-w-7xl mx-auto px-6">
+        <div class="max-w-3xl mx-auto text-center">
+          <div class="inline-block px-4 py-1 rounded-full border border-border/60 bg-card text-sm text-muted-foreground mb-6">
+            AI agency for Wiesbaden & the Rheingau-Taunus district
+          </div>
+          <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+            AI Automation Agency Wiesbaden
+          </h1>
+          <p class="mt-6 text-lg md:text-xl text-muted-foreground">
+            As the state capital of Hesse, Wiesbaden is a strong business location with companies from financial services, IT, pharma and the public sector, industries with enormous automation potential. We develop tailored AI solutions for companies in Wiesbaden and the Rheingau-Taunus district.
+          </p>
+          <p class="mt-4 text-lg md:text-xl text-muted-foreground">
+            From automated workflows with n8n and Make to autonomous AI agents with OpenClaw: we analyze your processes, build the prototype in 1–2 weeks and support you personally on site.
+          </p>
+          <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="#kontakt" class="inline-flex items-center justify-center px-6 py-3 rounded-[5px] bg-primary text-primary-foreground transition-colors">
+              Free consultation in Wiesbaden
+            </a>
+            <a href="/en/ai-automation-agency-frankfurt/" class="inline-flex items-center justify-center px-6 py-3 rounded-[5px] border border-border hover:bg-foreground/10 transition-colors">
+              AI automation Rhine-Main →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Industries -->
+    <section class="py-16 bg-card">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-2xl md:text-3xl font-semibold mb-4 text-center">Industries in Wiesbaden we serve</h2>
+        <p class="text-muted-foreground text-center mb-10 max-w-2xl mx-auto">
+          Wiesbaden's economy is shaped by finance, IT, pharma, public administration and services. This is exactly where the biggest automation potential lies.
+        </p>
+        <div class="flex flex-wrap gap-3 justify-center">
+          {["Financial services", "IT & software", "Pharma & life sciences", "Public administration", "Insurance", "Consulting", "Healthcare"].map((industry) => (
+            <span class="px-5 py-2 rounded-full border border-border bg-card text-sm font-medium">
+              {industry}
+            </span>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="py-16 bg-card">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-2xl md:text-3xl font-semibold mb-8 text-center">What we do for companies in Wiesbaden</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="p-6 rounded-2xl border border-border/60 bg-foreground/5 backdrop-blur-sm shadow-sm">
+            <h3 class="text-lg font-semibold mb-2">Workflow automation</h3>
+            <p class="text-muted-foreground text-sm">
+              We connect your existing systems (ERP, CRM, email, DMS) with AI building blocks into stable workflows, with n8n, Make or OpenClaw. Fewer manual handovers, fewer errors.
+            </p>
+          </div>
+          <div class="p-6 rounded-2xl border border-border/60 bg-foreground/5 backdrop-blur-sm shadow-sm">
+            <h3 class="text-lg font-semibold mb-2">Document processing</h3>
+            <p class="text-muted-foreground text-sm">
+              Automatically read, check and transfer contracts, notices, applications and forms into the system. Particularly relevant for administration, insurers and financial service providers.
+            </p>
+          </div>
+          <div class="p-6 rounded-2xl border border-border/60 bg-foreground/5 backdrop-blur-sm shadow-sm">
+            <h3 class="text-lg font-semibold mb-2">Support chatbots</h3>
+            <p class="text-muted-foreground text-sm">
+              AI chatbots answer standard questions immediately, pre-sort tickets and forward complex requests to your team, around the clock, without waiting time.
+            </p>
+          </div>
+          <div class="p-6 rounded-2xl border border-border/60 bg-foreground/5 backdrop-blur-sm shadow-sm">
+            <h3 class="text-lg font-semibold mb-2">Compliance & reporting</h3>
+            <p class="text-muted-foreground text-sm">
+              AI automatically checks data for compliance, detects deviations and creates reports, without manual preparation. Ideal for regulated industries such as finance and pharma.
+            </p>
+          </div>
+          <div class="p-6 rounded-2xl border border-border/60 bg-foreground/5 backdrop-blur-sm shadow-sm">
+            <h3 class="text-lg font-semibold mb-2">Marketing automation</h3>
+            <p class="text-muted-foreground text-sm">
+              Automatically generate and schedule content drafts, social posts and email campaigns. More visibility for your company in Wiesbaden, with less effort.
+            </p>
+          </div>
+          <div class="p-6 rounded-2xl border border-border/60 bg-foreground/5 backdrop-blur-sm shadow-sm">
+            <h3 class="text-lg font-semibold mb-2">Custom AI agents</h3>
+            <p class="text-muted-foreground text-sm">
+              With OpenClaw we build autonomous AI agents that complete multi-step tasks on their own and are deeply integrated into your systems, for demanding automation scenarios.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tools -->
+    <section class="py-16 bg-card">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-2xl md:text-3xl font-semibold mb-8 text-center">What we work with</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="p-6 rounded-2xl border border-border/60 bg-foreground/5 backdrop-blur-sm shadow-sm text-center">
+            <div class="w-14 h-14 rounded-lg bg-primary flex items-center justify-center text-primary-foreground text-xl font-bold mx-auto mb-4">n8n</div>
+            <h3 class="font-semibold mb-2">n8n</h3>
+            <p class="text-muted-foreground text-sm">Open-source workflow automation with over 400 integrations. Self-hosting for full data control.</p>
+          </div>
+          <div class="p-6 rounded-2xl border border-border/60 bg-foreground/5 backdrop-blur-sm shadow-sm text-center">
+            <div class="w-14 h-14 rounded-lg bg-primary flex items-center justify-center text-primary-foreground text-xl font-bold mx-auto mb-4">M</div>
+            <h3 class="font-semibold mb-2">Make</h3>
+            <p class="text-muted-foreground text-sm">Visual automation platform: intuitive, quick to implement, ideal for agile adjustments.</p>
+          </div>
+          <div class="p-6 rounded-2xl border border-border/60 bg-foreground/5 backdrop-blur-sm shadow-sm text-center">
+            <div class="w-14 h-14 rounded-lg bg-primary flex items-center justify-center text-primary-foreground text-xl font-bold mx-auto mb-4">OC</div>
+            <h3 class="font-semibold mb-2">OpenClaw</h3>
+            <p class="text-muted-foreground text-sm">AI agent platform for autonomous, multi-step process automation, deeply integrated into your system landscape.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Approach -->
+    <section class="py-16 bg-card">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-2xl md:text-3xl font-semibold mb-8 text-center">Our approach in Wiesbaden</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="p-6 rounded-lg border border-border bg-card">
+            <div class="text-sm font-semibold text-muted-foreground mb-1">Step 1</div>
+            <h3 class="text-xl font-semibold mb-2">Analysis workshop</h3>
+            <p class="text-sm text-muted-foreground">In person on site in Wiesbaden or remote: we analyze your processes, identify automation potential and create a prioritized roadmap.</p>
+          </div>
+          <div class="p-6 rounded-lg border border-border bg-card">
+            <div class="text-sm font-semibold text-muted-foreground mb-1">Step 2</div>
+            <h3 class="text-xl font-semibold mb-2">Prototype in 1–2 weeks</h3>
+            <p class="text-sm text-muted-foreground">No concept paper, a real, working prototype with your data. That way you see immediately what is possible and can give feedback right away.</p>
+          </div>
+          <div class="p-6 rounded-lg border border-border bg-card">
+            <div class="text-sm font-semibold text-muted-foreground mb-1">Step 3</div>
+            <h3 class="text-xl font-semibold mb-2">Rollout & training</h3>
+            <p class="text-sm text-muted-foreground">Secure integration into your systems, documentation and training of your team. Ongoing support and further development as needed.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <div id="kontakt">
+      <Contact client:load lang="en" heading="Ready to transform your processes?" paragraphs={["Let's use the power of AI together to make your business in Frankfurt and beyond successful. Contact us for a free consultation."]} placeholder="Tell us about your project and how we can help..." />
+    </div>
+  </main>
+
+  <Footer lang="en" altHref="/ki-automatisierung-wiesbaden/" />
+</Layout>
