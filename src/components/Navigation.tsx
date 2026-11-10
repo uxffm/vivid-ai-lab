@@ -7,6 +7,27 @@ const navItems = homepageContent.navigation.menu;
 
 type NavProps = { lang?: "de" | "en"; altHref?: string };
 
+const LangSwitch = ({ lang, altHref, className = "" }: { lang: "de" | "en"; altHref?: string; className?: string }) => {
+  if (!altHref) return null;
+  const cur = "font-semibold text-foreground";
+  const other = "text-muted-foreground hover:text-foreground transition-colors";
+  return (
+    <div className={`flex items-center gap-2 text-sm ${className}`} role="group" aria-label={lang === "en" ? "Language" : "Sprache"}>
+      {lang === "de" ? (
+        <span className={cur} lang="de" aria-current="true">DE</span>
+      ) : (
+        <a href={altHref} hrefLang="de" lang="de" className={other}>DE</a>
+      )}
+      <span className="text-muted-foreground" aria-hidden="true">|</span>
+      {lang === "en" ? (
+        <span className={cur} lang="en" aria-current="true">EN</span>
+      ) : (
+        <a href={altHref} hrefLang="en" lang="en" className={other}>EN</a>
+      )}
+    </div>
+  );
+};
+
 const Navigation = ({ lang = "de", altHref }: NavProps = {}) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -60,11 +81,7 @@ const Navigation = ({ lang = "de", altHref }: NavProps = {}) => {
               <span className="text-xl font-bold">{homepageContent.navigation.logo}</span>
             </a>
             <div className="flex items-center gap-4">
-              {altHref && (
-                <a href={altHref} hrefLang="de" lang="de" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-                  Deutsch
-                </a>
-              )}
+              <LangSwitch lang="en" altHref={altHref} />
               <a href="#contact" className="inline-flex items-center rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:bg-primary/90 transition-colors">
                 Free AI check
               </a>
@@ -188,7 +205,8 @@ const Navigation = ({ lang = "de", altHref }: NavProps = {}) => {
           </div>
 
           {/* CTA Button */}
-          <div className="hidden md:block">
+          <div className="hidden md:flex items-center gap-5">
+            <LangSwitch lang="de" altHref={altHref} />
             <Button 
               onClick={() => scrollToSection('#contact')}
               className="bg-primary hover:bg-primary/90 text-primary-foreground border-0"
@@ -219,6 +237,7 @@ const Navigation = ({ lang = "de", altHref }: NavProps = {}) => {
                   {item.label}
                 </button>
               ))}
+              <LangSwitch lang="de" altHref={altHref} className="py-2" />
               <Button 
                 onClick={() => scrollToSection('#contact')}
                 className="w-full bg-primary hover:bg-primary/90 text-primary-foreground border-0"
